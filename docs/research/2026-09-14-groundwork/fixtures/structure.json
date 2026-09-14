@@ -1,0 +1,2985 @@
+{
+ "generated_by": "build_structure.py (toc.py) — PyMuPDF 1.26.7",
+ "volumes": [
+  {
+   "year": 2020,
+   "folder": "2020",
+   "file": "2021 외교백서(국문).pdf",
+   "pdf_pages": 190,
+   "edition_title": "2021 외교백서",
+   "display": "2020년치 · 「2021 외교백서」",
+   "title_evidence": [
+    {
+     "pdf_page": 1,
+     "where": "cover (PDF page 1, extractable text)",
+     "quote": "Diplomatic White Paper / 2021"
+    },
+    {
+     "pdf_page": 4,
+     "where": "text line",
+     "quote": "2021 외교백서",
+     "size": 12.0
+    },
+    {
+     "pdf_page": 5,
+     "where": "text line",
+     "quote": "2 0 2 1  외교백서",
+     "size": 8.0
+    },
+    {
+     "pdf_page": 15,
+     "where": "text line",
+     "quote": "2 0 2 1  외교백서",
+     "size": 8.0
+    },
+    {
+     "pdf_page": 3,
+     "where": "date line (인사말 signature or colophon)",
+     "quote": "2021년 12월"
+    },
+    {
+     "pdf_page": 190,
+     "where": "date line (인사말 signature or colophon)",
+     "quote": "발행일"
+    },
+    {
+     "pdf_page": 190,
+     "where": "date line (인사말 signature or colophon)",
+     "quote": "2021년 12월"
+    }
+   ],
+   "title_hits_pages": 10,
+   "printed_pages": {
+    "first_numbered": 8,
+    "last_numbered": 375
+   },
+   "toc_method": "printed 목차 text parsed; 절/부록 start pages re-anchored to body headings",
+   "toc_method_key": "toc_page",
+   "toc": [
+    {
+     "level": 1,
+     "label": "제1장",
+     "title": "2020년 국제 정세 및 외교정책 기조",
+     "printed_page": 6,
+     "printed_end": 25,
+     "divider_pages": [
+      6,
+      7
+     ],
+     "divider_pdf_pages": [
+      5
+     ]
+    },
+    {
+     "level": 2,
+     "label": "제1절",
+     "title": "국제 정세 개관",
+     "printed_page": 8,
+     "printed_end": 20
+    },
+    {
+     "level": 2,
+     "label": "제2절",
+     "title": "외교정책 기조",
+     "printed_page": 21,
+     "printed_end": 25
+    },
+    {
+     "level": 1,
+     "label": "제2장",
+     "title": "코로나19 대응을 위한 외교 전개",
+     "printed_page": 26,
+     "printed_end": 53,
+     "divider_pages": [
+      26,
+      27
+     ],
+     "divider_pdf_pages": [
+      15
+     ]
+    },
+    {
+     "level": 2,
+     "label": "제1절",
+     "title": "우리 국민의 생명과 안전 보호",
+     "printed_page": 28,
+     "printed_end": 35
+    },
+    {
+     "level": 2,
+     "label": "제2절",
+     "title": "기업 애로 발굴 및 해결 지원",
+     "printed_page": 36,
+     "printed_end": 44
+    },
+    {
+     "level": 2,
+     "label": "제3절",
+     "title": "국제협력 및 연대 추진",
+     "printed_page": 45,
+     "printed_end": 53
+    },
+    {
+     "level": 1,
+     "label": "제3장",
+     "title": "한반도 평화와 역내 협력 증진",
+     "printed_page": 54,
+     "printed_end": 93,
+     "divider_pages": [
+      54,
+      55
+     ],
+     "divider_pdf_pages": [
+      29
+     ]
+    },
+    {
+     "level": 2,
+     "label": "제1절",
+     "title": "한반도 평화정착 노력 지속",
+     "printed_page": 56,
+     "printed_end": 61
+    },
+    {
+     "level": 2,
+     "label": "제2절",
+     "title": "북핵 문제의 평화적 해결 추진",
+     "printed_page": 62,
+     "printed_end": 72
+    },
+    {
+     "level": 2,
+     "label": "제3절",
+     "title": "한·미 동맹의 호혜적 발전",
+     "printed_page": 73,
+     "printed_end": 79
+    },
+    {
+     "level": 2,
+     "label": "제4절",
+     "title": "주변국과 협력 외교 추진",
+     "printed_page": 80,
+     "printed_end": 93
+    },
+    {
+     "level": 1,
+     "label": "제4장",
+     "title": "외교지평 확대",
+     "printed_page": 94,
+     "printed_end": 189,
+     "divider_pages": [
+      94,
+      95
+     ],
+     "divider_pdf_pages": [
+      49
+     ]
+    },
+    {
+     "level": 2,
+     "label": "제1절",
+     "title": "신남방정책 고도화",
+     "printed_page": 96,
+     "printed_end": 108
+    },
+    {
+     "level": 2,
+     "label": "제2절",
+     "title": "신북방정책 성과 가시화",
+     "printed_page": 109,
+     "printed_end": 115
+    },
+    {
+     "level": 2,
+     "label": "제3절",
+     "title": "유럽 지역 외교 추진",
+     "printed_page": 116,
+     "printed_end": 139
+    },
+    {
+     "level": 2,
+     "label": "제4절",
+     "title": "미주 지역 외교 추진",
+     "printed_page": 140,
+     "printed_end": 162
+    },
+    {
+     "level": 2,
+     "label": "제5절",
+     "title": "아프리카·중동 지역 외교 추진",
+     "printed_page": 163,
+     "printed_end": 181
+    },
+    {
+     "level": 2,
+     "label": "제6절",
+     "title": "지역 간 외교 추진",
+     "printed_page": 182,
+     "printed_end": 189
+    },
+    {
+     "level": 1,
+     "label": "제5장",
+     "title": "경제외교 강화 및 뉴프런티어 외교 추진",
+     "printed_page": 190,
+     "printed_end": 221,
+     "divider_pages": [
+      190,
+      191
+     ],
+     "divider_pdf_pages": [
+      97
+     ]
+    },
+    {
+     "level": 2,
+     "label": "제1절",
+     "title": "양자 경제외교 강화",
+     "printed_page": 192,
+     "printed_end": 200
+    },
+    {
+     "level": 2,
+     "label": "제2절",
+     "title": "지역 및 글로벌 경제외교 강화",
+     "printed_page": 201,
+     "printed_end": 207
+    },
+    {
+     "level": 2,
+     "label": "제3절",
+     "title": "에너지·자원 협력 및 기후·환경외교 추진",
+     "printed_page": 208,
+     "printed_end": 218
+    },
+    {
+     "level": 2,
+     "label": "제4절",
+     "title": "북극 협력 및 과학기술외교 추진",
+     "printed_page": 219,
+     "printed_end": 221
+    },
+    {
+     "level": 1,
+     "label": "제6장",
+     "title": "국제사회 내 역할 확대 및 위상 제고",
+     "printed_page": 222,
+     "printed_end": 259,
+     "divider_pages": [
+      222,
+      223
+     ],
+     "divider_pdf_pages": [
+      113
+     ]
+    },
+    {
+     "level": 2,
+     "label": "제1절",
+     "title": "중견국·소다자 외교 전개",
+     "printed_page": 224,
+     "printed_end": 227
+    },
+    {
+     "level": 2,
+     "label": "제2절",
+     "title": "국제 평화·안보 증진에 기여",
+     "printed_page": 228,
+     "printed_end": 241
+    },
+    {
+     "level": 2,
+     "label": "제3절",
+     "title": "지속가능발전에 기여하는 전략적 개발협력 추진",
+     "printed_page": 242,
+     "printed_end": 252
+    },
+    {
+     "level": 2,
+     "label": "제4절",
+     "title": "대외관계 및 외교활동의 법적 기반 확충",
+     "printed_page": 253,
+     "printed_end": 259
+    },
+    {
+     "level": 1,
+     "label": "제7장",
+     "title": "국민과 함께하는 외교",
+     "printed_page": 260,
+     "printed_end": 307,
+     "divider_pages": [
+      260,
+      261
+     ],
+     "divider_pdf_pages": [
+      132
+     ]
+    },
+    {
+     "level": 2,
+     "label": "제1절",
+     "title": "통합적·창의적인 공공외교 추진",
+     "printed_page": 262,
+     "printed_end": 279
+    },
+    {
+     "level": 2,
+     "label": "제2절",
+     "title": "국민외교 강화",
+     "printed_page": 280,
+     "printed_end": 285
+    },
+    {
+     "level": 2,
+     "label": "제3절",
+     "title": "주요 외교 사안에 대한 국민적 지지 확보",
+     "printed_page": 286,
+     "printed_end": 291
+    },
+    {
+     "level": 2,
+     "label": "제4절",
+     "title": "해외 체류 국민보호 및 재외동포 지원 강화",
+     "printed_page": 292,
+     "printed_end": 303
+    },
+    {
+     "level": 2,
+     "label": "제5절",
+     "title": "해외 진출 우리 국민 편익 증진",
+     "printed_page": 304,
+     "printed_end": 307
+    },
+    {
+     "level": 1,
+     "label": "제8장",
+     "title": "혁신을 통한 외교 역량 강화",
+     "printed_page": 308,
+     "printed_end": 319,
+     "divider_pages": [
+      308,
+      309
+     ],
+     "divider_pdf_pages": [
+      156
+     ]
+    },
+    {
+     "level": 2,
+     "label": "제1절",
+     "title": "팬데믹 상황하 외교부 혁신 노력 지속",
+     "printed_page": 310,
+     "printed_end": 311
+    },
+    {
+     "level": 2,
+     "label": "제2절",
+     "title": "선진외교 수행 체제 구축 및 역량 강화",
+     "printed_page": 312,
+     "printed_end": 314
+    },
+    {
+     "level": 2,
+     "label": "제3절",
+     "title": "교육 및 평가제도 개선과 연구활동 강화",
+     "printed_page": 315,
+     "printed_end": 319
+    },
+    {
+     "level": 1,
+     "label": "부록",
+     "title": "부록",
+     "printed_page": 320,
+     "printed_end": 375,
+     "divider_pages": [
+      320,
+      321
+     ],
+     "divider_pdf_pages": [
+      162
+     ]
+    },
+    {
+     "level": 2,
+     "label": "부록 1",
+     "title": "외교부 조직도",
+     "printed_page": 322,
+     "printed_end": 323
+    },
+    {
+     "level": 2,
+     "label": "부록 2",
+     "title": "외교관계 수립 현황",
+     "printed_page": 324,
+     "printed_end": 326
+    },
+    {
+     "level": 2,
+     "label": "부록 3",
+     "title": "재외공관 현황",
+     "printed_page": 327,
+     "printed_end": 328
+    },
+    {
+     "level": 2,
+     "label": "부록 4",
+     "title": "남·북한 국제기구 가입 현황",
+     "printed_page": 329,
+     "printed_end": 333
+    },
+    {
+     "level": 2,
+     "label": "부록 5",
+     "title": "2020년 해외 순방 및 외빈 방한 현황",
+     "printed_page": 334,
+     "printed_end": 334
+    },
+    {
+     "level": 2,
+     "label": "부록 6",
+     "title": "경제·통상 관계 현황",
+     "printed_page": 335,
+     "printed_end": 338
+    },
+    {
+     "level": 2,
+     "label": "부록 7",
+     "title": "2020년 조약 발효 현황",
+     "printed_page": 339,
+     "printed_end": 339
+    },
+    {
+     "level": 2,
+     "label": "부록 8",
+     "title": "사증면제협정 체결 현황",
+     "printed_page": 340,
+     "printed_end": 341
+    },
+    {
+     "level": 2,
+     "label": "부록 9",
+     "title": "재외동포 현황",
+     "printed_page": 342,
+     "printed_end": 342
+    },
+    {
+     "level": 2,
+     "label": "부록 10",
+     "title": "운전면허 상호인정 현황",
+     "printed_page": 343,
+     "printed_end": 345
+    },
+    {
+     "level": 2,
+     "label": "부록 11",
+     "title": "여권 발급 및 해외여행자 현황",
+     "printed_page": 346,
+     "printed_end": 346
+    },
+    {
+     "level": 2,
+     "label": "부록 12",
+     "title": "2020년 국제관계 일지",
+     "printed_page": 347,
+     "printed_end": 375
+    }
+   ],
+   "zero_text_halves": [
+    {
+     "pdf_page": 2,
+     "side": "L",
+     "printed": null,
+     "label_status": null,
+     "image_coverage": 0.0
+    },
+    {
+     "pdf_page": 190,
+     "side": "R",
+     "printed": 377,
+     "label_status": "inferred_after_last",
+     "image_coverage": 0.0
+    }
+   ]
+  },
+  {
+   "year": 2021,
+   "folder": "2021",
+   "file": "2021년도 국제정세와 외교활동(외교백서)_홈페이지 게시.pdf",
+   "pdf_pages": 142,
+   "edition_title": "2021년도 국제정세와 외교활동",
+   "display": "2021년치 · 「2021년도 국제정세와 외교활동」",
+   "title_evidence": [
+    {
+     "pdf_page": 1,
+     "where": "cover (PDF page 1, extractable text)",
+     "quote": "발간등록번호 / 11-1260000-000062-10 / 2021년도 국제정세와 외교활동 / 외교백서"
+    },
+    {
+     "pdf_page": 142,
+     "where": "date line (인사말 signature or colophon)",
+     "quote": "발행일  2022년 12월"
+    }
+   ],
+   "title_hits_pages": 0,
+   "printed_pages": {
+    "first_numbered": 7,
+    "last_numbered": 279
+   },
+   "toc_method": "printed 목차 text parsed; 절/부록 start pages re-anchored to body headings",
+   "toc_method_key": "toc_page",
+   "toc": [
+    {
+     "level": 1,
+     "label": "제1장",
+     "title": "2021년 국제정세",
+     "printed_page": 5,
+     "printed_end": 20,
+     "divider_pages": [
+      5,
+      6
+     ],
+     "divider_pdf_pages": [
+      4
+     ]
+    },
+    {
+     "level": 2,
+     "label": "제1절",
+     "title": "국제정세 개관",
+     "printed_page": 7,
+     "printed_end": 20,
+     "toc_page": 6,
+     "note": "목차 says 6, heading printed on page labelled 7"
+    },
+    {
+     "level": 1,
+     "label": "제2장",
+     "title": "코로나19 극복을 위한 외교",
+     "printed_page": 21,
+     "printed_end": 31,
+     "divider_pages": [
+      21
+     ],
+     "divider_pdf_pages": [
+      12
+     ]
+    },
+    {
+     "level": 2,
+     "label": "제1절",
+     "title": "글로벌 보건 및 백신 외교",
+     "printed_page": 22,
+     "printed_end": 26
+    },
+    {
+     "level": 2,
+     "label": "제2절",
+     "title": "우리 국민의 생명과 안전 보호",
+     "printed_page": 27,
+     "printed_end": 28
+    },
+    {
+     "level": 2,
+     "label": "제3절",
+     "title": "코로나19 극복을 위한 기업 지원",
+     "printed_page": 29,
+     "printed_end": 31
+    },
+    {
+     "level": 1,
+     "label": "제3장",
+     "title": "한반도 평화와 역내 협력",
+     "printed_page": 32,
+     "printed_end": 57,
+     "divider_pages": [
+      32,
+      33
+     ],
+     "divider_pdf_pages": [
+      18
+     ]
+    },
+    {
+     "level": 2,
+     "label": "제1절",
+     "title": "한반도 평화정착 노력",
+     "printed_page": 34,
+     "printed_end": 36
+    },
+    {
+     "level": 2,
+     "label": "제2절",
+     "title": "북핵문제의 평화적 해결 노력",
+     "printed_page": 37,
+     "printed_end": 42
+    },
+    {
+     "level": 2,
+     "label": "제3절",
+     "title": "포괄적·호혜적 한·미 동맹",
+     "printed_page": 43,
+     "printed_end": 48
+    },
+    {
+     "level": 2,
+     "label": "제4절",
+     "title": "동북아 평화·번영을 위한 주변국 협력 외교",
+     "printed_page": 49,
+     "printed_end": 57
+    },
+    {
+     "level": 1,
+     "label": "제4장",
+     "title": "지역 외교",
+     "printed_page": 58,
+     "printed_end": 111,
+     "divider_pages": [
+      58,
+      59
+     ],
+     "divider_pdf_pages": [
+      31
+     ]
+    },
+    {
+     "level": 2,
+     "label": "제1절",
+     "title": "아세안 및 서남아·태평양 지역 외교",
+     "printed_page": 60,
+     "printed_end": 68
+    },
+    {
+     "level": 2,
+     "label": "제2절",
+     "title": "유럽·중앙아시아 지역 외교",
+     "printed_page": 69,
+     "printed_end": 77
+    },
+    {
+     "level": 2,
+     "label": "제3절",
+     "title": "미주 지역 외교",
+     "printed_page": 78,
+     "printed_end": 90
+    },
+    {
+     "level": 2,
+     "label": "제4절",
+     "title": "아프리카·중동 지역 외교",
+     "printed_page": 91,
+     "printed_end": 103
+    },
+    {
+     "level": 2,
+     "label": "제5절",
+     "title": "지역협의체 외교",
+     "printed_page": 104,
+     "printed_end": 111
+    },
+    {
+     "level": 1,
+     "label": "제5장",
+     "title": "경제-안보-기술 융합외교",
+     "printed_page": 112,
+     "printed_end": 143,
+     "divider_pages": [
+      112,
+      113
+     ],
+     "divider_pdf_pages": [
+      58
+     ]
+    },
+    {
+     "level": 2,
+     "label": "제1절",
+     "title": "경제안보외교 및 주요국 경제외교",
+     "printed_page": 114,
+     "printed_end": 123
+    },
+    {
+     "level": 2,
+     "label": "제2절",
+     "title": "지역 및 글로벌 경제외교",
+     "printed_page": 124,
+     "printed_end": 129
+    },
+    {
+     "level": 2,
+     "label": "제3절",
+     "title": "기후·환경외교 및 에너지·자원 협력",
+     "printed_page": 130,
+     "printed_end": 139
+    },
+    {
+     "level": 2,
+     "label": "제4절",
+     "title": "과학기술외교 및 북극 협력",
+     "printed_page": 140,
+     "printed_end": 143
+    },
+    {
+     "level": 1,
+     "label": "제6장",
+     "title": "다자외교 및 개발협력",
+     "printed_page": 144,
+     "printed_end": 177,
+     "divider_pages": [
+      144,
+      145
+     ],
+     "divider_pdf_pages": [
+      74
+     ]
+    },
+    {
+     "level": 2,
+     "label": "제1절",
+     "title": "국제 평화·안보 증진 및 인권·민주주의 기여 노력",
+     "printed_page": 146,
+     "printed_end": 159
+    },
+    {
+     "level": 2,
+     "label": "제2절",
+     "title": "지속가능발전을 위한 전략적 개발협력 추진",
+     "printed_page": 160,
+     "printed_end": 170
+    },
+    {
+     "level": 2,
+     "label": "제3절",
+     "title": "외교관계 및 대외활동의 법적 기반 확충",
+     "printed_page": 171,
+     "printed_end": 177
+    },
+    {
+     "level": 1,
+     "label": "제7장",
+     "title": "국민과 함께하는 외교",
+     "printed_page": 178,
+     "printed_end": 215,
+     "divider_pages": [
+      178,
+      179
+     ],
+     "divider_pdf_pages": [
+      91
+     ]
+    },
+    {
+     "level": 2,
+     "label": "제1절",
+     "title": "공공·민간이 함께하는 공공외교 추진",
+     "printed_page": 180,
+     "printed_end": 189
+    },
+    {
+     "level": 2,
+     "label": "제2절",
+     "title": "국민과 함께하는 외교",
+     "printed_page": 190,
+     "printed_end": 192
+    },
+    {
+     "level": 2,
+     "label": "제3절",
+     "title": "외교 사안에 대한 국민적 지지 확보",
+     "printed_page": 193,
+     "printed_end": 197
+    },
+    {
+     "level": 2,
+     "label": "제4절",
+     "title": "해외 체류 국민 보호 및 재외동포 지원 강화",
+     "printed_page": 198,
+     "printed_end": 210
+    },
+    {
+     "level": 2,
+     "label": "제5절",
+     "title": "해외 진출 우리 국민 편익 증진",
+     "printed_page": 211,
+     "printed_end": 215
+    },
+    {
+     "level": 1,
+     "label": "제8장",
+     "title": "외교역량 강화 노력",
+     "printed_page": 216,
+     "printed_end": 225,
+     "divider_pages": [
+      216,
+      217
+     ],
+     "divider_pdf_pages": [
+      110
+     ]
+    },
+    {
+     "level": 2,
+     "label": "제1절",
+     "title": "조직 및 인사",
+     "printed_page": 218,
+     "printed_end": 220
+    },
+    {
+     "level": 2,
+     "label": "제2절",
+     "title": "교육·평가제도 및 연구 활동",
+     "printed_page": 221,
+     "printed_end": 225
+    },
+    {
+     "level": 1,
+     "label": "부록",
+     "title": "부록",
+     "printed_page": 226,
+     "printed_end": 279,
+     "divider_pages": [
+      226,
+      227
+     ],
+     "divider_pdf_pages": [
+      115
+     ]
+    },
+    {
+     "level": 2,
+     "label": "부록 1",
+     "title": "외교부 조직도",
+     "printed_page": 228,
+     "printed_end": 229
+    },
+    {
+     "level": 2,
+     "label": "부록 2",
+     "title": "외교관계 수립 현황",
+     "printed_page": 230,
+     "printed_end": 232
+    },
+    {
+     "level": 2,
+     "label": "부록 3",
+     "title": "재외공관 현황",
+     "printed_page": 233,
+     "printed_end": 234
+    },
+    {
+     "level": 2,
+     "label": "부록 4",
+     "title": "남·북한 국제기구 가입 현황",
+     "printed_page": 235,
+     "printed_end": 238
+    },
+    {
+     "level": 2,
+     "label": "부록 5",
+     "title": "2021년 해외 순방 및 외빈 방한 현황",
+     "printed_page": 239,
+     "printed_end": 239
+    },
+    {
+     "level": 2,
+     "label": "부록 6",
+     "title": "경제·통상 관계 현황",
+     "printed_page": 240,
+     "printed_end": 243
+    },
+    {
+     "level": 2,
+     "label": "부록 7",
+     "title": "2021년 조약 발효 현황",
+     "printed_page": 244,
+     "printed_end": 245
+    },
+    {
+     "level": 2,
+     "label": "부록 8",
+     "title": "사증면제협정 체결 현황",
+     "printed_page": 246,
+     "printed_end": 247
+    },
+    {
+     "level": 2,
+     "label": "부록 9",
+     "title": "재외동포 현황",
+     "printed_page": 248,
+     "printed_end": 248
+    },
+    {
+     "level": 2,
+     "label": "부록 10",
+     "title": "운전면허 상호인정 현황",
+     "printed_page": 249,
+     "printed_end": 251
+    },
+    {
+     "level": 2,
+     "label": "부록 11",
+     "title": "여권 발급 및 해외여행자 현황",
+     "printed_page": 252,
+     "printed_end": 252
+    },
+    {
+     "level": 2,
+     "label": "부록 12",
+     "title": "2021년 주요 국제 관계 일지",
+     "printed_page": 253,
+     "printed_end": 279
+    }
+   ],
+   "zero_text_halves": [
+    {
+     "pdf_page": 2,
+     "side": "L",
+     "printed": 1,
+     "label_status": "inferred",
+     "image_coverage": 0.0
+    },
+    {
+     "pdf_page": 142,
+     "side": "R",
+     "printed": 281,
+     "label_status": "inferred_after_last",
+     "image_coverage": 0.0
+    }
+   ]
+  },
+  {
+   "year": 2022,
+   "folder": "2022",
+   "file": "2022년도 국제정세와 외교활동(외교백서).pdf",
+   "pdf_pages": 173,
+   "edition_title": "2022년도 국제정세와 외교활동",
+   "display": "2022년치 · 「2022년도 국제정세와 외교활동」",
+   "title_evidence": [
+    {
+     "pdf_page": 1,
+     "where": "cover (PDF page 1, extractable text)",
+     "quote": "외교백서 / 2022년도 / 국제정세와 / 외교활동"
+    },
+    {
+     "pdf_page": 2,
+     "where": "date line (인사말 signature or colophon)",
+     "quote": "2023년 12월"
+    },
+    {
+     "pdf_page": 173,
+     "where": "date line (인사말 signature or colophon)",
+     "quote": "발행일  2023년 12월"
+    }
+   ],
+   "title_hits_pages": 0,
+   "printed_pages": {
+    "first_numbered": 8,
+    "last_numbered": 343
+   },
+   "toc_method": "printed 목차 text parsed; 절/부록 start pages re-anchored to body headings",
+   "toc_method_key": "toc_page",
+   "toc": [
+    {
+     "level": 1,
+     "label": "제1장",
+     "title": "2022년 국제정세 및 외교정책 기조",
+     "printed_page": 6,
+     "printed_end": 29,
+     "divider_pages": [
+      6,
+      7
+     ],
+     "divider_pdf_pages": [
+      4
+     ]
+    },
+    {
+     "level": 2,
+     "label": "제1절",
+     "title": "국제정세 개관",
+     "printed_page": 8,
+     "printed_end": 23
+    },
+    {
+     "level": 2,
+     "label": "제2절",
+     "title": "외교정책 기조",
+     "printed_page": 24,
+     "printed_end": 29
+    },
+    {
+     "level": 1,
+     "label": "제2장",
+     "title": "한반도의 자유·평화·번영과 역내 협력",
+     "printed_page": 30,
+     "printed_end": 63,
+     "divider_pages": [
+      30,
+      31
+     ],
+     "divider_pdf_pages": [
+      16
+     ]
+    },
+    {
+     "level": 2,
+     "label": "제1절",
+     "title": "북한 비핵화 추진",
+     "printed_page": 32,
+     "printed_end": 39
+    },
+    {
+     "level": 2,
+     "label": "제2절",
+     "title": "한반도의 지속가능한 평화 구현",
+     "printed_page": 40,
+     "printed_end": 43
+    },
+    {
+     "level": 2,
+     "label": "제3절",
+     "title": "한·미동맹과 한·미·일 협력 강화",
+     "printed_page": 44,
+     "printed_end": 52
+    },
+    {
+     "level": 2,
+     "label": "제4절",
+     "title": "보편가치와 공동이익에 기반한 동아시아 외교",
+     "printed_page": 53,
+     "printed_end": 63
+    },
+    {
+     "level": 1,
+     "label": "제3장",
+     "title": "인도-태평양 전략과 지역별 협력 네트워크",
+     "printed_page": 64,
+     "printed_end": 139,
+     "divider_pages": [
+      64,
+      65
+     ],
+     "divider_pdf_pages": [
+      33
+     ]
+    },
+    {
+     "level": 2,
+     "label": "제1절",
+     "title": "인도-태평양 전략 발표",
+     "printed_page": 66,
+     "printed_end": 68
+    },
+    {
+     "level": 2,
+     "label": "제2절",
+     "title": "아세안 및 인도-태평양 지역 외교",
+     "printed_page": 69,
+     "printed_end": 83
+    },
+    {
+     "level": 2,
+     "label": "제3절",
+     "title": "유럽-중앙아시아 지역 외교",
+     "printed_page": 84,
+     "printed_end": 101
+    },
+    {
+     "level": 2,
+     "label": "제4절",
+     "title": "미주 지역 외교",
+     "printed_page": 102,
+     "printed_end": 116
+    },
+    {
+     "level": 2,
+     "label": "제5절",
+     "title": "아프리카-중동 지역 외교",
+     "printed_page": 117,
+     "printed_end": 130
+    },
+    {
+     "level": 2,
+     "label": "제6절",
+     "title": "지역협의체 외교",
+     "printed_page": 131,
+     "printed_end": 139
+    },
+    {
+     "level": 1,
+     "label": "제4장",
+     "title": "경제안보 및 과학기술외교",
+     "printed_page": 140,
+     "printed_end": 177,
+     "divider_pages": [
+      140,
+      141
+     ],
+     "divider_pdf_pages": [
+      71
+     ]
+    },
+    {
+     "level": 2,
+     "label": "제1절",
+     "title": "능동적 경제안보외교 및 주요국 경제외교",
+     "printed_page": 142,
+     "printed_end": 154
+    },
+    {
+     "level": 2,
+     "label": "제2절",
+     "title": "지역 및 글로벌 경제외교",
+     "printed_page": 155,
+     "printed_end": 161
+    },
+    {
+     "level": 2,
+     "label": "제3절",
+     "title": "기후·환경외교 및 에너지·자원 협력",
+     "printed_page": 162,
+     "printed_end": 173
+    },
+    {
+     "level": 2,
+     "label": "제4절",
+     "title": "과학기술외교 및 북극 협력",
+     "printed_page": 174,
+     "printed_end": 177
+    },
+    {
+     "level": 1,
+     "label": "제5장",
+     "title": "국격에 걸맞은 글로벌 중추국가 역할 강화",
+     "printed_page": 178,
+     "printed_end": 231,
+     "divider_pages": [
+      178,
+      179
+     ],
+     "divider_pdf_pages": [
+      90
+     ]
+    },
+    {
+     "level": 2,
+     "label": "제1절",
+     "title": "국제 평화·안보 증진 및 인권·민주주의 기여",
+     "printed_page": 180,
+     "printed_end": 191
+    },
+    {
+     "level": 2,
+     "label": "제2절",
+     "title": "원자력 협력 및 군축·비확산, 수출통제·제재 외교",
+     "printed_page": 192,
+     "printed_end": 200
+    },
+    {
+     "level": 2,
+     "label": "제3절",
+     "title": "선진국형 국제개발협력 추진",
+     "printed_page": 201,
+     "printed_end": 213
+    },
+    {
+     "level": 2,
+     "label": "제4절",
+     "title": "외교관계 및 대외활동의 법적 기반 확충",
+     "printed_page": 214,
+     "printed_end": 219
+    },
+    {
+     "level": 2,
+     "label": "제5절",
+     "title": "글로벌 가치에 기여하는 맞춤형 공공외교 강화",
+     "printed_page": 220,
+     "printed_end": 231
+    },
+    {
+     "level": 1,
+     "label": "제6장",
+     "title": "국민과 함께하는 외교",
+     "printed_page": 232,
+     "printed_end": 259,
+     "divider_pages": [
+      232,
+      233
+     ],
+     "divider_pdf_pages": [
+      117
+     ]
+    },
+    {
+     "level": 2,
+     "label": "제1절",
+     "title": "국민과 함께하는 외교",
+     "printed_page": 234,
+     "printed_end": 236
+    },
+    {
+     "level": 2,
+     "label": "제2절",
+     "title": "외교 사안에 대한 국민적 지지 확보",
+     "printed_page": 237,
+     "printed_end": 241
+    },
+    {
+     "level": 2,
+     "label": "제3절",
+     "title": "재외국민 지원 및 보호 강화",
+     "printed_page": 242,
+     "printed_end": 252
+    },
+    {
+     "level": 2,
+     "label": "제4절",
+     "title": "재외동포 지원 강화",
+     "printed_page": 253,
+     "printed_end": 255
+    },
+    {
+     "level": 2,
+     "label": "제5절",
+     "title": "재외국민 편익 증진",
+     "printed_page": 256,
+     "printed_end": 259
+    },
+    {
+     "level": 1,
+     "label": "제7장",
+     "title": "외교인프라 및 역량 강화 노력",
+     "printed_page": 260,
+     "printed_end": 269,
+     "divider_pages": [
+      260,
+      261
+     ],
+     "divider_pdf_pages": [
+      131
+     ]
+    },
+    {
+     "level": 2,
+     "label": "제1절",
+     "title": "조직 및 인사",
+     "printed_page": 262,
+     "printed_end": 264
+    },
+    {
+     "level": 2,
+     "label": "제2절",
+     "title": "교육 및 연구 활동",
+     "printed_page": 265,
+     "printed_end": 269
+    },
+    {
+     "level": 1,
+     "label": "부록",
+     "title": "부록",
+     "printed_page": 270,
+     "printed_end": 343,
+     "divider_pages": [
+      270,
+      271
+     ],
+     "divider_pdf_pages": [
+      136
+     ]
+    },
+    {
+     "level": 2,
+     "label": "부록 1",
+     "title": "외교부 조직도",
+     "printed_page": 272,
+     "printed_end": 273
+    },
+    {
+     "level": 2,
+     "label": "부록 2",
+     "title": "외교관계 수립 현황",
+     "printed_page": 274,
+     "printed_end": 276
+    },
+    {
+     "level": 2,
+     "label": "부록 3",
+     "title": "재외공관 현황",
+     "printed_page": 277,
+     "printed_end": 279
+    },
+    {
+     "level": 2,
+     "label": "부록 4",
+     "title": "남·북한 국제기구 가입 현황",
+     "printed_page": 280,
+     "printed_end": 284
+    },
+    {
+     "level": 2,
+     "label": "부록 5",
+     "title": "2022년 해외 순방 및 외빈 방한 현황",
+     "printed_page": 285,
+     "printed_end": 285
+    },
+    {
+     "level": 2,
+     "label": "부록 6",
+     "title": "경제·통상 관계 현황",
+     "printed_page": 286,
+     "printed_end": 289
+    },
+    {
+     "level": 2,
+     "label": "부록 7",
+     "title": "2022년 조약 발효 현황",
+     "printed_page": 290,
+     "printed_end": 291
+    },
+    {
+     "level": 2,
+     "label": "부록 8",
+     "title": "사증면제협정 체결 현황",
+     "printed_page": 292,
+     "printed_end": 295
+    },
+    {
+     "level": 2,
+     "label": "부록 9",
+     "title": "재외동포 현황",
+     "printed_page": 296,
+     "printed_end": 296
+    },
+    {
+     "level": 2,
+     "label": "부록 10",
+     "title": "운전면허 상호인정 현황",
+     "printed_page": 297,
+     "printed_end": 299
+    },
+    {
+     "level": 2,
+     "label": "부록 11",
+     "title": "여권 발급 및 해외여행자 현황",
+     "printed_page": 300,
+     "printed_end": 300
+    },
+    {
+     "level": 2,
+     "label": "부록 12",
+     "title": "2022년 주요 국제 관계 일지",
+     "printed_page": 301,
+     "printed_end": 343
+    }
+   ],
+   "zero_text_halves": [
+    {
+     "pdf_page": 1,
+     "side": "L",
+     "printed": null,
+     "label_status": "cover",
+     "image_coverage": 0.0
+    },
+    {
+     "pdf_page": 173,
+     "side": "R",
+     "printed": 345,
+     "label_status": "inferred_after_last",
+     "image_coverage": 0.0
+    }
+   ]
+  },
+  {
+   "year": 2023,
+   "folder": "2023",
+   "file": "2023년도 국제정세와 외교활동.pdf",
+   "pdf_pages": 199,
+   "edition_title": "2023년도 국제정세와 외교활동",
+   "display": "2023년치 · 「2023년도 국제정세와 외교활동」",
+   "title_evidence": [
+    {
+     "pdf_page": 1,
+     "where": "cover (PDF page 1, extractable text)",
+     "quote": "외교백서 / 2023년도 / 국제정세와 / 외교활동"
+    },
+    {
+     "pdf_page": 2,
+     "where": "date line (인사말 signature or colophon)",
+     "quote": "2024년 12월"
+    },
+    {
+     "pdf_page": 199,
+     "where": "date line (인사말 signature or colophon)",
+     "quote": "발행일  2024년 12월"
+    }
+   ],
+   "title_hits_pages": 0,
+   "printed_pages": {
+    "first_numbered": 8,
+    "last_numbered": 395
+   },
+   "toc_method": "printed 목차 text parsed; 절/부록 start pages re-anchored to body headings",
+   "toc_method_key": "toc_page",
+   "toc": [
+    {
+     "level": 1,
+     "label": "제1장",
+     "title": "2023년 국제정세 및 외교정책 기조",
+     "printed_page": 6,
+     "printed_end": 31,
+     "divider_pages": [
+      6,
+      7
+     ],
+     "divider_pdf_pages": [
+      4
+     ]
+    },
+    {
+     "level": 2,
+     "label": "제1절",
+     "title": "국제정세 개관",
+     "printed_page": 8,
+     "printed_end": 23
+    },
+    {
+     "level": 2,
+     "label": "제2절",
+     "title": "외교정책 기조",
+     "printed_page": 24,
+     "printed_end": 31
+    },
+    {
+     "level": 1,
+     "label": "제2장",
+     "title": "한반도의 자유·평화·번영과 역내 협력",
+     "printed_page": 32,
+     "printed_end": 65,
+     "divider_pages": [
+      32,
+      33
+     ],
+     "divider_pdf_pages": [
+      17
+     ]
+    },
+    {
+     "level": 2,
+     "label": "제1절",
+     "title": "북한 비핵화 추진",
+     "printed_page": 34,
+     "printed_end": 39
+    },
+    {
+     "level": 2,
+     "label": "제2절",
+     "title": "한반도의 지속가능한 평화 구현",
+     "printed_page": 40,
+     "printed_end": 44
+    },
+    {
+     "level": 2,
+     "label": "제3절",
+     "title": "한·미 글로벌 포괄적 전략동맹 및 한·미·일 3국 협력 강화",
+     "printed_page": 45,
+     "printed_end": 53
+    },
+    {
+     "level": 2,
+     "label": "제4절",
+     "title": "보편가치와 공동번영을 위한 동아시아 외교",
+     "printed_page": 54,
+     "printed_end": 65
+    },
+    {
+     "level": 1,
+     "label": "제3장",
+     "title": "인도-태평양 전략과 지역별 협력 네트워크",
+     "printed_page": 66,
+     "printed_end": 175,
+     "divider_pages": [
+      66,
+      67
+     ],
+     "divider_pdf_pages": [
+      34
+     ]
+    },
+    {
+     "level": 2,
+     "label": "제1절",
+     "title": "인도-태평양 전략 추진",
+     "printed_page": 68,
+     "printed_end": 70
+    },
+    {
+     "level": 2,
+     "label": "제2절",
+     "title": "아세안 및 인도-태평양 지역 외교",
+     "printed_page": 71,
+     "printed_end": 86
+    },
+    {
+     "level": 2,
+     "label": "제3절",
+     "title": "유럽·중앙아시아 지역 외교",
+     "printed_page": 87,
+     "printed_end": 114
+    },
+    {
+     "level": 2,
+     "label": "제4절",
+     "title": "미주 지역 외교",
+     "printed_page": 115,
+     "printed_end": 138
+    },
+    {
+     "level": 2,
+     "label": "제5절",
+     "title": "아프리카·중동 지역 외교",
+     "printed_page": 139,
+     "printed_end": 166
+    },
+    {
+     "level": 2,
+     "label": "제6절",
+     "title": "지역협의체 외교",
+     "printed_page": 167,
+     "printed_end": 175
+    },
+    {
+     "level": 1,
+     "label": "제4장",
+     "title": "경제안보 및 과학기술 외교",
+     "printed_page": 176,
+     "printed_end": 219,
+     "divider_pages": [
+      176,
+      177
+     ],
+     "divider_pdf_pages": [
+      89
+     ]
+    },
+    {
+     "level": 2,
+     "label": "제1절",
+     "title": "능동적 경제안보외교 및 주요국 경제외교",
+     "printed_page": 178,
+     "printed_end": 192
+    },
+    {
+     "level": 2,
+     "label": "제2절",
+     "title": "지역 및 글로벌 경제외교",
+     "printed_page": 193,
+     "printed_end": 199
+    },
+    {
+     "level": 2,
+     "label": "제3절",
+     "title": "기후·환경외교 및 에너지·자원 협력",
+     "printed_page": 200,
+     "printed_end": 212
+    },
+    {
+     "level": 2,
+     "label": "제4절",
+     "title": "과학기술외교 및 북극 협력",
+     "printed_page": 213,
+     "printed_end": 219
+    },
+    {
+     "level": 1,
+     "label": "제5장",
+     "title": "국격에 걸맞은 글로벌 중추국가 역할 강화",
+     "printed_page": 220,
+     "printed_end": 279,
+     "divider_pages": [
+      220,
+      221
+     ],
+     "divider_pdf_pages": [
+      111
+     ]
+    },
+    {
+     "level": 2,
+     "label": "제1절",
+     "title": "국제 평화·안보 증진 및 인권·민주주의 기여",
+     "printed_page": 222,
+     "printed_end": 233
+    },
+    {
+     "level": 2,
+     "label": "제2절",
+     "title": "원자력 협력 및 군축·비확산, 수출통제·제재 외교",
+     "printed_page": 234,
+     "printed_end": 243
+    },
+    {
+     "level": 2,
+     "label": "제3절",
+     "title": "선진국형 국제개발협력 추진",
+     "printed_page": 244,
+     "printed_end": 257
+    },
+    {
+     "level": 2,
+     "label": "제4절",
+     "title": "외교관계 및 대외활동의 법적 기반 확충",
+     "printed_page": 258,
+     "printed_end": 265
+    },
+    {
+     "level": 2,
+     "label": "제5절",
+     "title": "공공외교",
+     "printed_page": 266,
+     "printed_end": 279
+    },
+    {
+     "level": 1,
+     "label": "제6장",
+     "title": "국민과 함께하는 외교",
+     "printed_page": 280,
+     "printed_end": 305,
+     "divider_pages": [
+      280,
+      281
+     ],
+     "divider_pdf_pages": [
+      141
+     ]
+    },
+    {
+     "level": 2,
+     "label": "제1절",
+     "title": "국민과 함께하는 외교",
+     "printed_page": 282,
+     "printed_end": 284
+    },
+    {
+     "level": 2,
+     "label": "제2절",
+     "title": "외교 사안에 대한 국민적 지지 확보",
+     "printed_page": 285,
+     "printed_end": 290
+    },
+    {
+     "level": 2,
+     "label": "제3절",
+     "title": "재외국민 지원 및 보호 강화",
+     "printed_page": 291,
+     "printed_end": 302
+    },
+    {
+     "level": 2,
+     "label": "제4절",
+     "title": "재외국민 편익 증진",
+     "printed_page": 303,
+     "printed_end": 305
+    },
+    {
+     "level": 1,
+     "label": "제7장",
+     "title": "외교인프라 및 역량 강화 노력",
+     "printed_page": 306,
+     "printed_end": 315,
+     "divider_pages": [
+      306,
+      307
+     ],
+     "divider_pdf_pages": [
+      154
+     ]
+    },
+    {
+     "level": 2,
+     "label": "제1절",
+     "title": "조직 및 인사",
+     "printed_page": 308,
+     "printed_end": 310
+    },
+    {
+     "level": 2,
+     "label": "제2절",
+     "title": "교육 및 연구 활동",
+     "printed_page": 311,
+     "printed_end": 315
+    },
+    {
+     "level": 1,
+     "label": "부록",
+     "title": "부록",
+     "printed_page": 316,
+     "printed_end": 395,
+     "divider_pages": [
+      316,
+      317
+     ],
+     "divider_pdf_pages": [
+      159
+     ]
+    },
+    {
+     "level": 2,
+     "label": "부록 1",
+     "title": "외교부 조직도",
+     "printed_page": 318,
+     "printed_end": 319
+    },
+    {
+     "level": 2,
+     "label": "부록 2",
+     "title": "외교관계 수립 현황",
+     "printed_page": 320,
+     "printed_end": 322
+    },
+    {
+     "level": 2,
+     "label": "부록 3",
+     "title": "재외공관 현황",
+     "printed_page": 323,
+     "printed_end": 325
+    },
+    {
+     "level": 2,
+     "label": "부록 4",
+     "title": "남·북한 국제기구 가입 현황",
+     "printed_page": 326,
+     "printed_end": 331
+    },
+    {
+     "level": 2,
+     "label": "부록 5",
+     "title": "2023년 해외 순방 및 외빈 방한 현황",
+     "printed_page": 332,
+     "printed_end": 332
+    },
+    {
+     "level": 2,
+     "label": "부록 6",
+     "title": "경제·통상 관계 현황",
+     "printed_page": 333,
+     "printed_end": 336
+    },
+    {
+     "level": 2,
+     "label": "부록 7",
+     "title": "2023년 조약 발효 현황",
+     "printed_page": 337,
+     "printed_end": 338
+    },
+    {
+     "level": 2,
+     "label": "부록 8",
+     "title": "사증면제협정 체결 현황",
+     "printed_page": 339,
+     "printed_end": 342
+    },
+    {
+     "level": 2,
+     "label": "부록 9",
+     "title": "운전면허 상호인정 현황",
+     "printed_page": 343,
+     "printed_end": 345
+    },
+    {
+     "level": 2,
+     "label": "부록 10",
+     "title": "여권 발급 및 해외여행자 현황",
+     "printed_page": 346,
+     "printed_end": 346
+    },
+    {
+     "level": 2,
+     "label": "부록 11",
+     "title": "2023년 주요 국제 관계 일지",
+     "printed_page": 347,
+     "printed_end": 395
+    }
+   ],
+   "zero_text_halves": [
+    {
+     "pdf_page": 1,
+     "side": "L",
+     "printed": null,
+     "label_status": "cover",
+     "image_coverage": 0.0
+    }
+   ]
+  },
+  {
+   "year": 2024,
+   "folder": "2024",
+   "file": "2024년도 국제정세와 외교활동.pdf",
+   "pdf_pages": 194,
+   "edition_title": "2024년도 국제정세와 외교활동",
+   "display": "2024년치 · 「2024년도 국제정세와 외교활동」",
+   "title_evidence": [
+    {
+     "pdf_page": 1,
+     "where": "cover (PDF page 1, extractable text)",
+     "quote": "외교백서 / 2024년도 / 국제정세와 / 외교활동"
+    },
+    {
+     "pdf_page": 3,
+     "where": "date line (인사말 signature or colophon)",
+     "quote": "2025년 5월"
+    },
+    {
+     "pdf_page": 193,
+     "where": "date line (인사말 signature or colophon)",
+     "quote": "발행일  2025년 05월"
+    }
+   ],
+   "title_hits_pages": 0,
+   "printed_pages": {
+    "first_numbered": 10,
+    "last_numbered": 383
+   },
+   "toc_method": "printed 목차 text parsed; 절/부록 start pages re-anchored to body headings",
+   "toc_method_key": "toc_page",
+   "toc": [
+    {
+     "level": 1,
+     "label": "제1장",
+     "title": "2024년 국제정세 및 외교정책 기조",
+     "printed_page": 8,
+     "printed_end": 29,
+     "divider_pages": [
+      8,
+      9
+     ],
+     "divider_pdf_pages": [
+      5
+     ]
+    },
+    {
+     "level": 2,
+     "label": "제1절",
+     "title": "국제정세 개관",
+     "printed_page": 10,
+     "printed_end": 21
+    },
+    {
+     "level": 2,
+     "label": "제2절",
+     "title": "외교정책 기조",
+     "printed_page": 22,
+     "printed_end": 29
+    },
+    {
+     "level": 1,
+     "label": "제2장",
+     "title": "한반도의 자유·평화·번영과 역내 협력",
+     "printed_page": 30,
+     "printed_end": 61,
+     "divider_pages": [
+      30,
+      31
+     ],
+     "divider_pdf_pages": [
+      16
+     ]
+    },
+    {
+     "level": 2,
+     "label": "제1절",
+     "title": "북한 비핵화 추진",
+     "printed_page": 32,
+     "printed_end": 37
+    },
+    {
+     "level": 2,
+     "label": "제2절",
+     "title": "한반도의 지속가능한 평화 구현",
+     "printed_page": 38,
+     "printed_end": 41
+    },
+    {
+     "level": 2,
+     "label": "제3절",
+     "title": "한미동맹 강화 및 한일 파트너십 심화",
+     "printed_page": 42,
+     "printed_end": 54
+    },
+    {
+     "level": 2,
+     "label": "제4절",
+     "title": "한중, 한러 관계의 전략적 관리",
+     "printed_page": 55,
+     "printed_end": 61
+    },
+    {
+     "level": 1,
+     "label": "제3장",
+     "title": "인도-태평양 전략 및 지역별 협력 네트워크",
+     "printed_page": 62,
+     "printed_end": 165,
+     "divider_pages": [
+      62,
+      63
+     ],
+     "divider_pdf_pages": [
+      32
+     ]
+    },
+    {
+     "level": 2,
+     "label": "제1절",
+     "title": "인도-태평양 전략 구체화",
+     "printed_page": 64,
+     "printed_end": 67
+    },
+    {
+     "level": 2,
+     "label": "제2절",
+     "title": "아세안 및 태도국 외교",
+     "printed_page": 68,
+     "printed_end": 82
+    },
+    {
+     "level": 2,
+     "label": "제3절",
+     "title": "유럽 지역 외교",
+     "printed_page": 83,
+     "printed_end": 96
+    },
+    {
+     "level": 2,
+     "label": "제4절",
+     "title": "중앙아시아 지역 외교",
+     "printed_page": 97,
+     "printed_end": 102
+    },
+    {
+     "level": 2,
+     "label": "제5절",
+     "title": "미주 지역 외교",
+     "printed_page": 103,
+     "printed_end": 121
+    },
+    {
+     "level": 2,
+     "label": "제6절",
+     "title": "아프리카·중동 지역 외교",
+     "printed_page": 122,
+     "printed_end": 158
+    },
+    {
+     "level": 2,
+     "label": "제7절",
+     "title": "지역협의체 외교",
+     "printed_page": 159,
+     "printed_end": 165
+    },
+    {
+     "level": 1,
+     "label": "제4장",
+     "title": "경제안보 및 과학기술 외교",
+     "printed_page": 166,
+     "printed_end": 207,
+     "divider_pages": [
+      166,
+      167
+     ],
+     "divider_pdf_pages": [
+      84
+     ]
+    },
+    {
+     "level": 2,
+     "label": "제1절",
+     "title": "경제안보외교 및 안정적 공급망 확보",
+     "printed_page": 168,
+     "printed_end": 184
+    },
+    {
+     "level": 2,
+     "label": "제2절",
+     "title": "지역 및 글로벌 경제외교",
+     "printed_page": 185,
+     "printed_end": 190
+    },
+    {
+     "level": 2,
+     "label": "제3절",
+     "title": "기후·환경외교, 북극협력 및 에너지·자원 협력",
+     "printed_page": 191,
+     "printed_end": 203
+    },
+    {
+     "level": 2,
+     "label": "제4절",
+     "title": "과학기술외교",
+     "printed_page": 204,
+     "printed_end": 207
+    },
+    {
+     "level": 1,
+     "label": "제5장",
+     "title": "글로벌 중추국가 외교",
+     "printed_page": 208,
+     "printed_end": 269,
+     "divider_pages": [
+      208,
+      209
+     ],
+     "divider_pdf_pages": [
+      105
+     ]
+    },
+    {
+     "level": 2,
+     "label": "제1절",
+     "title": "국제 평화·안보 증진 및 인권·민주주의 기여",
+     "printed_page": 210,
+     "printed_end": 224
+    },
+    {
+     "level": 2,
+     "label": "제2절",
+     "title": "원자력 협력 및 군축·비확산, 수출통제·제재 외교",
+     "printed_page": 225,
+     "printed_end": 235
+    },
+    {
+     "level": 2,
+     "label": "제3절",
+     "title": "선진국형 국제개발협력 추진",
+     "printed_page": 236,
+     "printed_end": 248
+    },
+    {
+     "level": 2,
+     "label": "제4절",
+     "title": "외교관계 및 대외활동의 법적 기반 확충",
+     "printed_page": 249,
+     "printed_end": 257
+    },
+    {
+     "level": 2,
+     "label": "제5절",
+     "title": "국가브랜드 제고를 위한 공공문화외교 확대",
+     "printed_page": 258,
+     "printed_end": 269
+    },
+    {
+     "level": 1,
+     "label": "제6장",
+     "title": "국민과 함께하는 외교",
+     "printed_page": 270,
+     "printed_end": 295,
+     "divider_pages": [
+      270,
+      271
+     ],
+     "divider_pdf_pages": [
+      136
+     ]
+    },
+    {
+     "level": 2,
+     "label": "제1절",
+     "title": "국민 참여 확대",
+     "printed_page": 272,
+     "printed_end": 273
+    },
+    {
+     "level": 2,
+     "label": "제2절",
+     "title": "외교 사안에 대한 국민적 지지 확보",
+     "printed_page": 274,
+     "printed_end": 279
+    },
+    {
+     "level": 2,
+     "label": "제3절",
+     "title": "재외국민 지원 및 보호 강화",
+     "printed_page": 280,
+     "printed_end": 291
+    },
+    {
+     "level": 2,
+     "label": "제4절",
+     "title": "재외국민 편익 증진",
+     "printed_page": 292,
+     "printed_end": 295
+    },
+    {
+     "level": 1,
+     "label": "제7장",
+     "title": "외교인프라 및 역량 강화",
+     "printed_page": 296,
+     "printed_end": 307,
+     "divider_pages": [
+      296,
+      297
+     ],
+     "divider_pdf_pages": [
+      149
+     ]
+    },
+    {
+     "level": 2,
+     "label": "제1절",
+     "title": "조직 및 인사",
+     "printed_page": 298,
+     "printed_end": 301
+    },
+    {
+     "level": 2,
+     "label": "제2절",
+     "title": "교육 및 연구 활동",
+     "printed_page": 302,
+     "printed_end": 307
+    },
+    {
+     "level": 1,
+     "label": "부록",
+     "title": "부록",
+     "printed_page": 308,
+     "printed_end": 383,
+     "divider_pages": [
+      308,
+      309
+     ],
+     "divider_pdf_pages": [
+      155
+     ]
+    },
+    {
+     "level": 2,
+     "label": "부록 1",
+     "title": "외교부 조직도",
+     "printed_page": 310,
+     "printed_end": 311
+    },
+    {
+     "level": 2,
+     "label": "부록 2",
+     "title": "외교관계 수립 현황",
+     "printed_page": 312,
+     "printed_end": 314
+    },
+    {
+     "level": 2,
+     "label": "부록 3",
+     "title": "재외공관 현황",
+     "printed_page": 315,
+     "printed_end": 317
+    },
+    {
+     "level": 2,
+     "label": "부록 4",
+     "title": "남·북한 국제기구 가입 현황",
+     "printed_page": 318,
+     "printed_end": 323
+    },
+    {
+     "level": 2,
+     "label": "부록 5",
+     "title": "2024년 해외 순방 및 외빈 방한 현황",
+     "printed_page": 324,
+     "printed_end": 324
+    },
+    {
+     "level": 2,
+     "label": "부록 6",
+     "title": "경제·통상 관계 현황",
+     "printed_page": 325,
+     "printed_end": 328
+    },
+    {
+     "level": 2,
+     "label": "부록 7",
+     "title": "2024년 조약 발효 현황",
+     "printed_page": 329,
+     "printed_end": 331
+    },
+    {
+     "level": 2,
+     "label": "부록 8",
+     "title": "사증면제협정 체결 현황",
+     "printed_page": 332,
+     "printed_end": 335
+    },
+    {
+     "level": 2,
+     "label": "부록 9",
+     "title": "운전면허 상호인정 현황",
+     "printed_page": 336,
+     "printed_end": 338
+    },
+    {
+     "level": 2,
+     "label": "부록 10",
+     "title": "여권 발급 및 우리국민 해외관광객 현황",
+     "printed_page": 339,
+     "printed_end": 339
+    },
+    {
+     "level": 2,
+     "label": "부록 11",
+     "title": "2024년 주요 국제 관계 일지",
+     "printed_page": 340,
+     "printed_end": 383
+    }
+   ],
+   "zero_text_halves": [
+    {
+     "pdf_page": 1,
+     "side": "L",
+     "printed": null,
+     "label_status": "cover",
+     "image_coverage": 0.0
+    },
+    {
+     "pdf_page": 193,
+     "side": "R",
+     "printed": 385,
+     "label_status": "inferred_after_last",
+     "image_coverage": 0.0
+    },
+    {
+     "pdf_page": 194,
+     "side": "S",
+     "printed": 386,
+     "label_status": "inferred_after_last",
+     "image_coverage": 0.0
+    }
+   ]
+  },
+  {
+   "year": 2025,
+   "folder": "2025",
+   "file": "2025년도 국제정세와 외교활동.pdf",
+   "pdf_pages": 171,
+   "edition_title": "2025년도 국제정세와 외교활동",
+   "display": "2025년치 · 「2025년도 국제정세와 외교활동」",
+   "title_evidence": [
+    {
+     "pdf_page": 1,
+     "where": "cover (PDF page 1, extractable text)",
+     "quote": "외교백서 / 2025년도 / 국제정세와 / 외교활동"
+    },
+    {
+     "pdf_page": 171,
+     "where": "text line",
+     "quote": "2025년도 국제정세와 외교활동",
+     "size": 13.3
+    },
+    {
+     "pdf_page": 171,
+     "where": "date line (인사말 signature or colophon)",
+     "quote": "발행일"
+    },
+    {
+     "pdf_page": 171,
+     "where": "date line (인사말 signature or colophon)",
+     "quote": "2026년 07월"
+    }
+   ],
+   "title_hits_pages": 1,
+   "printed_pages": {
+    "first_numbered": 8,
+    "last_numbered": 339
+   },
+   "toc_method": "body 절 headings + running-header 장 titles + 부록 item headings (목차 is an image)",
+   "toc_method_key": "headings",
+   "toc": [
+    {
+     "level": 1,
+     "label": "제1장",
+     "title": "2025년 국제정세 및 외교정책 기조",
+     "printed_page": 6,
+     "printed_end": 29,
+     "divider_pages": [
+      6,
+      7
+     ],
+     "divider_pdf_pages": [
+      4
+     ]
+    },
+    {
+     "level": 2,
+     "label": "제1절",
+     "title": "국제 정세 개관",
+     "printed_page": 8,
+     "printed_end": 21
+    },
+    {
+     "level": 2,
+     "label": "제2절",
+     "title": "외교정책 기조",
+     "printed_page": 22,
+     "printed_end": 29
+    },
+    {
+     "level": 1,
+     "label": "제2장",
+     "title": "한반도 평화증진 및 주변국 협력 강화",
+     "printed_page": 30,
+     "printed_end": 57,
+     "divider_pages": [
+      30,
+      31
+     ],
+     "divider_pdf_pages": [
+      16
+     ]
+    },
+    {
+     "level": 2,
+     "label": "제1절",
+     "title": "북핵문제 해결과 한반도 평화체제를 향한 실질적 진전",
+     "printed_page": 32,
+     "printed_end": 39
+    },
+    {
+     "level": 2,
+     "label": "제2절",
+     "title": "한·미 미래형 포괄 전략동맹 발전",
+     "printed_page": 40,
+     "printed_end": 47
+    },
+    {
+     "level": 2,
+     "label": "제3절",
+     "title": "실용외교에 기반한 주변국 관계 증진",
+     "printed_page": 48,
+     "printed_end": 57
+    },
+    {
+     "level": 1,
+     "label": "제3장",
+     "title": "외교다변화를 통한 전략적 지평 확장",
+     "printed_page": 58,
+     "printed_end": 131,
+     "divider_pages": [
+      58,
+      59
+     ],
+     "divider_pdf_pages": [
+      30
+     ]
+    },
+    {
+     "level": 2,
+     "label": "제1절",
+     "title": "외교다변화 추진",
+     "printed_page": 60,
+     "printed_end": 61
+    },
+    {
+     "level": 2,
+     "label": "제2절",
+     "title": "아세안 및 남아시아·대양주 지역 외교",
+     "printed_page": 62,
+     "printed_end": 80
+    },
+    {
+     "level": 2,
+     "label": "제3절",
+     "title": "유럽 지역 외교",
+     "printed_page": 81,
+     "printed_end": 90
+    },
+    {
+     "level": 2,
+     "label": "제4절",
+     "title": "중앙아시아 지역 외교",
+     "printed_page": 91,
+     "printed_end": 94
+    },
+    {
+     "level": 2,
+     "label": "제5절",
+     "title": "미주 지역 외교",
+     "printed_page": 95,
+     "printed_end": 109
+    },
+    {
+     "level": 2,
+     "label": "제6절",
+     "title": "아프리카·중동 지역 외교",
+     "printed_page": 110,
+     "printed_end": 124
+    },
+    {
+     "level": 2,
+     "label": "제7절",
+     "title": "지역협의체 외교",
+     "printed_page": 125,
+     "printed_end": 131
+    },
+    {
+     "level": 1,
+     "label": "제4장",
+     "title": "경제외교 및 과학기술외교 역량 강화",
+     "printed_page": 132,
+     "printed_end": 173,
+     "divider_pages": [
+      132,
+      133
+     ],
+     "divider_pdf_pages": [
+      67
+     ]
+    },
+    {
+     "level": 2,
+     "label": "제1절",
+     "title": "주요국과의 경제외교 및 경제안보외교",
+     "printed_page": 134,
+     "printed_end": 151
+    },
+    {
+     "level": 2,
+     "label": "제2절",
+     "title": "지역 및 글로벌 경제외교",
+     "printed_page": 152,
+     "printed_end": 161
+    },
+    {
+     "level": 2,
+     "label": "제3절",
+     "title": "기후·환경외교, 북극협력",
+     "printed_page": 162,
+     "printed_end": 169
+    },
+    {
+     "level": 2,
+     "label": "제4절",
+     "title": "과학기술외교",
+     "printed_page": 170,
+     "printed_end": 173
+    },
+    {
+     "level": 1,
+     "label": "제5장",
+     "title": "글로벌 책임강국 위상 제고",
+     "printed_page": 174,
+     "printed_end": 235,
+     "divider_pages": [
+      174,
+      175
+     ],
+     "divider_pdf_pages": [
+      88
+     ]
+    },
+    {
+     "level": 2,
+     "label": "제1절",
+     "title": "국제 평화·안보 증진 및 인권·민주주의 기여",
+     "printed_page": 176,
+     "printed_end": 188
+    },
+    {
+     "level": 2,
+     "label": "제2절",
+     "title": "원자력 협력 및 군축·비확산, 수출통제·제재외교",
+     "printed_page": 189,
+     "printed_end": 200
+    },
+    {
+     "level": 2,
+     "label": "제3절",
+     "title": "통합적·효과적 국제개발협력 추진",
+     "printed_page": 201,
+     "printed_end": 213
+    },
+    {
+     "level": 2,
+     "label": "제4절",
+     "title": "외교관계 및 대외활동의 법적 기반 확충",
+     "printed_page": 214,
+     "printed_end": 221
+    },
+    {
+     "level": 2,
+     "label": "제5절",
+     "title": "K-이니셔티브 실현을 위한 공공외교 강화",
+     "printed_page": 222,
+     "printed_end": 235
+    },
+    {
+     "level": 1,
+     "label": "제6장",
+     "title": "국민이 체감하는 외교",
+     "printed_page": 236,
+     "printed_end": 261,
+     "divider_pages": [
+      236,
+      237
+     ],
+     "divider_pdf_pages": [
+      119
+     ]
+    },
+    {
+     "level": 2,
+     "label": "제1절",
+     "title": "국민 참여 확대",
+     "printed_page": 238,
+     "printed_end": 240
+    },
+    {
+     "level": 2,
+     "label": "제2절",
+     "title": "외교 사안에 대한 국민 소통 강화",
+     "printed_page": 241,
+     "printed_end": 246
+    },
+    {
+     "level": 2,
+     "label": "제3절",
+     "title": "재외국민 지원 및 보호 강화",
+     "printed_page": 247,
+     "printed_end": 258
+    },
+    {
+     "level": 2,
+     "label": "제4절",
+     "title": "재외국민 편익 증진",
+     "printed_page": 259,
+     "printed_end": 261
+    },
+    {
+     "level": 1,
+     "label": "제7장",
+     "title": "외교인프라 및 역량 혁신",
+     "printed_page": 262,
+     "printed_end": 271,
+     "divider_pages": [
+      262,
+      263
+     ],
+     "divider_pdf_pages": [
+      132
+     ]
+    },
+    {
+     "level": 2,
+     "label": "제1절",
+     "title": "조직 및 인사",
+     "printed_page": 264,
+     "printed_end": 266
+    },
+    {
+     "level": 2,
+     "label": "제2절",
+     "title": "교육 및 연구 활동",
+     "printed_page": 267,
+     "printed_end": 271
+    },
+    {
+     "level": 1,
+     "label": "부록",
+     "title": "부록",
+     "printed_page": 272,
+     "printed_end": 339,
+     "divider_pages": [
+      272,
+      273
+     ],
+     "divider_pdf_pages": [
+      137
+     ]
+    },
+    {
+     "level": 2,
+     "label": "부록 1",
+     "title": "외교부 조직도",
+     "printed_page": 274,
+     "printed_end": 275
+    },
+    {
+     "level": 2,
+     "label": "부록 2",
+     "title": "외교관계 수립 현황",
+     "printed_page": 276,
+     "printed_end": 278
+    },
+    {
+     "level": 2,
+     "label": "부록 3",
+     "title": "재외공관 현황",
+     "printed_page": 279,
+     "printed_end": 281
+    },
+    {
+     "level": 2,
+     "label": "부록 4",
+     "title": "남·북한 국제기구 가입 현황",
+     "printed_page": 282,
+     "printed_end": 287
+    },
+    {
+     "level": 2,
+     "label": "부록 5",
+     "title": "2025년 해외 순방 및 외빈 방한 현황",
+     "printed_page": 288,
+     "printed_end": 288
+    },
+    {
+     "level": 2,
+     "label": "부록 6",
+     "title": "경제·통상 관계 현황",
+     "printed_page": 289,
+     "printed_end": 292
+    },
+    {
+     "level": 2,
+     "label": "부록 7",
+     "title": "2025년도 발효 조약",
+     "printed_page": 293,
+     "printed_end": 294
+    },
+    {
+     "level": 2,
+     "label": "부록 8",
+     "title": "사증면제협정 체결 현황",
+     "printed_page": 295,
+     "printed_end": 298
+    },
+    {
+     "level": 2,
+     "label": "부록 9",
+     "title": "운전면허 상호인정 현황",
+     "printed_page": 299,
+     "printed_end": 301
+    },
+    {
+     "level": 2,
+     "label": "부록 10",
+     "title": "여권 발급 및 우리국민 해외관광객 현황",
+     "printed_page": 302,
+     "printed_end": 303
+    },
+    {
+     "level": 2,
+     "label": "부록 11",
+     "title": "2025년 주요 국제 관계 일지",
+     "printed_page": 304,
+     "printed_end": 339
+    }
+   ],
+   "zero_text_halves": [
+    {
+     "pdf_page": 1,
+     "side": "L",
+     "printed": null,
+     "label_status": "cover",
+     "image_coverage": 0.0
+    },
+    {
+     "pdf_page": 2,
+     "side": "L",
+     "printed": 2,
+     "label_status": "inferred",
+     "image_coverage": 1.0
+    },
+    {
+     "pdf_page": 2,
+     "side": "R",
+     "printed": 3,
+     "label_status": "inferred",
+     "image_coverage": 1
+    },
+    {
+     "pdf_page": 3,
+     "side": "L",
+     "printed": 4,
+     "label_status": "inferred",
+     "image_coverage": 1.0
+    },
+    {
+     "pdf_page": 3,
+     "side": "R",
+     "printed": 5,
+     "label_status": "inferred",
+     "image_coverage": 1
+    },
+    {
+     "pdf_page": 4,
+     "side": "L",
+     "printed": 6,
+     "label_status": "inferred",
+     "image_coverage": 1.0
+    },
+    {
+     "pdf_page": 4,
+     "side": "R",
+     "printed": 7,
+     "label_status": "inferred",
+     "image_coverage": 1
+    },
+    {
+     "pdf_page": 15,
+     "side": "R",
+     "printed": 29,
+     "label_status": "inferred",
+     "image_coverage": 1.0
+    },
+    {
+     "pdf_page": 16,
+     "side": "L",
+     "printed": 30,
+     "label_status": "inferred",
+     "image_coverage": 1.0
+    },
+    {
+     "pdf_page": 16,
+     "side": "R",
+     "printed": 31,
+     "label_status": "inferred",
+     "image_coverage": 1.0
+    },
+    {
+     "pdf_page": 29,
+     "side": "R",
+     "printed": 57,
+     "label_status": "inferred",
+     "image_coverage": 1.0
+    },
+    {
+     "pdf_page": 30,
+     "side": "L",
+     "printed": 58,
+     "label_status": "inferred",
+     "image_coverage": 1.0
+    },
+    {
+     "pdf_page": 30,
+     "side": "R",
+     "printed": 59,
+     "label_status": "inferred",
+     "image_coverage": 1.0
+    },
+    {
+     "pdf_page": 67,
+     "side": "L",
+     "printed": 132,
+     "label_status": "inferred",
+     "image_coverage": 1.0
+    },
+    {
+     "pdf_page": 67,
+     "side": "R",
+     "printed": 133,
+     "label_status": "inferred",
+     "image_coverage": 1.0
+    },
+    {
+     "pdf_page": 88,
+     "side": "L",
+     "printed": 174,
+     "label_status": "inferred",
+     "image_coverage": 1.0
+    },
+    {
+     "pdf_page": 88,
+     "side": "R",
+     "printed": 175,
+     "label_status": "inferred",
+     "image_coverage": 1.0
+    },
+    {
+     "pdf_page": 118,
+     "side": "R",
+     "printed": 235,
+     "label_status": "inferred",
+     "image_coverage": 1.0
+    },
+    {
+     "pdf_page": 119,
+     "side": "L",
+     "printed": 236,
+     "label_status": "inferred",
+     "image_coverage": 1.0
+    },
+    {
+     "pdf_page": 119,
+     "side": "R",
+     "printed": 237,
+     "label_status": "inferred",
+     "image_coverage": 1.0
+    },
+    {
+     "pdf_page": 132,
+     "side": "L",
+     "printed": 262,
+     "label_status": "inferred",
+     "image_coverage": 1.0
+    },
+    {
+     "pdf_page": 132,
+     "side": "R",
+     "printed": 263,
+     "label_status": "inferred",
+     "image_coverage": 1
+    },
+    {
+     "pdf_page": 136,
+     "side": "R",
+     "printed": 271,
+     "label_status": "inferred",
+     "image_coverage": 1.0
+    },
+    {
+     "pdf_page": 137,
+     "side": "L",
+     "printed": 272,
+     "label_status": "inferred",
+     "image_coverage": 1.0
+    },
+    {
+     "pdf_page": 137,
+     "side": "R",
+     "printed": 273,
+     "label_status": "inferred",
+     "image_coverage": 1.0
+    },
+    {
+     "pdf_page": 171,
+     "side": "R",
+     "printed": 341,
+     "label_status": "inferred_after_last",
+     "image_coverage": 0.0
+    }
+   ]
+  }
+ ],
+ "missing": [
+  {
+   "year": 2025,
+   "what": "인사말 (장관 인사말)",
+   "printed_from": 2,
+   "printed_to": 3,
+   "reason": "image-only page (no text layer); OCR not done in phase 1",
+   "pdf_pages": [
+    2
+   ]
+  },
+  {
+   "year": 2025,
+   "what": "목차",
+   "printed_from": 4,
+   "printed_to": 5,
+   "reason": "image-only page; the structure itself is recovered from body headings (toc.json)",
+   "pdf_pages": [
+    3
+   ]
+  },
+  {
+   "year": 2025,
+   "what": "제1장 2025년 국제정세 및 외교정책 기조 간지(장 표지)",
+   "printed_from": 6,
+   "printed_to": 7,
+   "reason": "image-only chapter divider (chapter number/title + 절 list with start pages only; same information is in toc)",
+   "pdf_pages": [
+    4
+   ]
+  },
+  {
+   "year": 2025,
+   "what": "제2장 한반도 평화증진 및 주변국 협력 강화 간지(장 표지)",
+   "printed_from": 30,
+   "printed_to": 31,
+   "reason": "image-only chapter divider (chapter number/title + 절 list with start pages only; same information is in toc)",
+   "pdf_pages": [
+    16
+   ]
+  },
+  {
+   "year": 2025,
+   "what": "제3장 외교다변화를 통한 전략적 지평 확장 간지(장 표지)",
+   "printed_from": 58,
+   "printed_to": 59,
+   "reason": "image-only chapter divider (chapter number/title + 절 list with start pages only; same information is in toc)",
+   "pdf_pages": [
+    30
+   ]
+  },
+  {
+   "year": 2025,
+   "what": "제4장 경제외교 및 과학기술외교 역량 강화 간지(장 표지)",
+   "printed_from": 132,
+   "printed_to": 133,
+   "reason": "image-only chapter divider (chapter number/title + 절 list with start pages only; same information is in toc)",
+   "pdf_pages": [
+    67
+   ]
+  },
+  {
+   "year": 2025,
+   "what": "제5장 글로벌 책임강국 위상 제고 간지(장 표지)",
+   "printed_from": 174,
+   "printed_to": 175,
+   "reason": "image-only chapter divider (chapter number/title + 절 list with start pages only; same information is in toc)",
+   "pdf_pages": [
+    88
+   ]
+  },
+  {
+   "year": 2025,
+   "what": "제6장 국민이 체감하는 외교 간지(장 표지)",
+   "printed_from": 236,
+   "printed_to": 237,
+   "reason": "image-only chapter divider (chapter number/title + 절 list with start pages only; same information is in toc)",
+   "pdf_pages": [
+    119
+   ]
+  },
+  {
+   "year": 2025,
+   "what": "제7장 외교인프라 및 역량 혁신 간지(장 표지)",
+   "printed_from": 262,
+   "printed_to": 263,
+   "reason": "image-only chapter divider (chapter number/title + 절 list with start pages only; same information is in toc)",
+   "pdf_pages": [
+    132
+   ]
+  },
+  {
+   "year": 2025,
+   "what": "부록 간지(표지)",
+   "printed_from": 272,
+   "printed_to": 273,
+   "reason": "image-only divider (부록 item list with start pages only; same information is in toc)",
+   "pdf_pages": [
+    137
+   ]
+  },
+  {
+   "year": 2025,
+   "what": "부록 1 외교부 조직도 (조직도 본문)",
+   "printed_from": 274,
+   "printed_to": 275,
+   "reason": "organisation chart is an image; only the running header, heading \"1. 외교부 조직도\" and page numbers are text",
+   "pdf_pages": [
+    138
+   ]
+  },
+  {
+   "year": 2021,
+   "what": "인사말/발간사",
+   "printed_from": null,
+   "printed_to": null,
+   "reason": "not present in the posted PDF (PDF 1 cover, 2 inner title, 3 목차, 4 제1장 간지); unknown whether the printed book has one"
+  }
+ ],
+ "corpus_years": [
+  2020,
+  2021,
+  2022,
+  2023,
+  2024,
+  2025
+ ],
+ "corpus_note": "Phase-1 corpus covers the years 2020-2025 (data folder year = year covered). Questions about 2019 or earlier, or 2026 and later, are out of corpus (status not_in_corpus)."
+}
