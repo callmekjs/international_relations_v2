@@ -1,0 +1,21 @@
+# 백서 원본과 준비 결과 — 저작권 문제로 올리지 않는다 (설계서 1.2, 6.1)
+data/
+corpus/
+
+# 비밀값
+.env
+.env.*
+secrets.toml
+
+# 파이썬
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+
+# 편집기 · 운영체제
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store
