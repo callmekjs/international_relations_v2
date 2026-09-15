@@ -58,6 +58,25 @@ def test_short_quotes_prove_nothing():
     assert check_citation(cite("2023-p999L", 1, "워싱턴에서 열렸다"), SHOWN)["grade"] == UNSUPPORTED
 
 
+def test_quote_length_counts_letters_and_digits_only():
+    page = ShownPage("2023-p030L", 2023, "2023년치 58쪽", ("정상회담(2023.4.26.)이 워싱턴에서 열렸다.",))
+    shown = {page.page_id: page}
+    c = check_citation(cite("2023-p030L", 1, "(2023.4.26.)"), shown)
+    assert (c["grade"], c["reason"]) == (PARAGRAPH_ONLY, "quote_too_short")
+    assert check_citation(cite("2023-p030L", 1, "상회담(2023.4.26.)이"), shown)["reason"] == "quote_too_short"
+    assert check_citation(cite("2023-p030L", 1, "정상회담(2023.4.26.)이"), shown)["grade"] == VERIFIED
+
+
+def test_quote_may_not_drop_a_minus_sign():
+    page = ShownPage("2020-p100L", 2020, "2020년치 198쪽", ("세계 경제 성장률은 \u20133.5%를 기록하였다고 발표하였다.",))
+    shown = {page.page_id: page}
+    dropped = check_citation(cite("2020-p100L", 1, "3.5%를 기록하였다고 발표하였다"), shown)
+    assert (dropped["grade"], dropped["reason"]) == (PARAGRAPH_ONLY, "quote_not_in_paragraph")
+    kept = check_citation(cite("2020-p100L", 1, "\u20133.5%를 기록하였다고 발표하였다"), shown)
+    assert (kept["grade"], kept["evidence"]) == (VERIFIED, "\u20133.5%를 기록하였다고 발표하였다")
+    assert check_citation(cite("2020-p100L", 1, "-3.5%를 기록하였다고 발표하였다"), shown)["grade"] == VERIFIED
+
+
 def test_right_page_wrong_paragraph_is_verified_and_marked():
     c = check_citation(cite("2023-p020L", 1, "확장억제 강화를 위한 워싱턴 선언을 채택"), SHOWN)
     assert (c["grade"], c["reason"], c["corrected"], c["found_paragraph"]) == (VERIFIED, "moved_paragraph", "paragraph", 2)

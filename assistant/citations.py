@@ -84,22 +84,24 @@ def keyed(text: str) -> tuple[str, str, list[int]]:
     return display, "".join(chars), positions
 
 
-def _cuts_number(edge: str, display: str, i: int, step: int) -> bool:
-    """True when the quote's edge digit continues a longer number in the text (47명 is no evidence for 7명)."""
-    if not edge.isdigit() or not 0 <= i < len(display):
+def _cuts_number(edge: str, marked: str, i: int, step: int) -> bool:
+    """True when the quote's edge digit continues a longer or signed number in the text (47명 is no
+    evidence for 7명, and -3.5% none for 3.5%). marked is _mark(display), so minus signs are sentinels."""
+    if not edge.isdigit() or not 0 <= i < len(marked):
         return False
-    if display[i].isdigit():
+    if marked[i].isdigit() or marked[i] == _SIGN_SENTINEL:
         return True
     j = i + step
-    return display[i] in ".," and 0 <= j < len(display) and display[j].isdigit()
+    return marked[i] in ".," and 0 <= j < len(marked) and marked[j].isdigit()
 
 
 def _find(keyed_text: tuple[str, str, list[int]], qkey: str) -> int:
     display, key, positions = keyed_text
+    marked = _mark(display)
     j = key.find(qkey)
     while j >= 0:
         first, last = positions[j], positions[j + len(qkey) - 1]
-        if not (_cuts_number(qkey[0], display, first - 1, -1) or _cuts_number(qkey[-1], display, last + 1, 1)):
+        if not (_cuts_number(qkey[0], marked, first - 1, -1) or _cuts_number(qkey[-1], marked, last + 1, 1)):
             return j
         j = key.find(qkey, j + 1)
     return -1
@@ -127,7 +129,7 @@ def check_citation(citation: Mapping, shown: Mapping[str, ShownPage]) -> dict:
               "found_page_id": None, "found_paragraph": None, "corrected": None, "evidence": None, "label": None}
 
     qkey = cite_key(quote.strip().strip(_QUOTE_EDGES).strip())
-    if len(qkey) < MIN_QUOTE_CHARS:
+    if sum(ch.isalnum() for ch in qkey) < MIN_QUOTE_CHARS:     # spaces and punctuation do not count
         return _fallback(result, page, paragraph, paragraph_ok, "quote_too_short")
 
     candidates: list[tuple[ShownPage, int, str | None, str]] = []
