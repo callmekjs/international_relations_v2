@@ -31,7 +31,7 @@ PYTHONUTF8=1 .venv/Scripts/python.exe -m pytest
 
 - 시험은 OpenAI API를 부르지 않는다 (요금 0원).
 - `-m "not slow"`를 붙이면 6권 코퍼스를 통째로 만드는 시험을 뺀다.
-- PDF가 없거나 PyMuPDF가 없는 곳(앱만 설치한 곳)에서는 PDF 시험이 저절로 건너뛰어진다.
+- PDF나 PyMuPDF가 없는 곳(예: `requirements.txt`에 pytest만 더 설치한 곳)에서는 PDF 시험이 저절로 건너뛰어진다. `requirements.txt`에는 pytest가 없으니 시험을 돌리려면 pytest를 따로 설치한다.
 
 ## OpenAI 열쇠
 
