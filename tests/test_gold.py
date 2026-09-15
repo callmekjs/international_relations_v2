@@ -40,6 +40,18 @@ def test_every_fact_is_on_its_gold_pages(page_keys):
 
 
 @needs_corpus
+def test_every_fact_wording_is_used_somewhere_in_the_corpus(page_keys):
+    keys = [key for _, key in page_keys.values()]
+    unused: dict[str, list[str]] = {}
+    for item in load_gold():
+        for group in item["facts"]:
+            for alternative in group:
+                if not any(cite_key(alternative) in key for key in keys):
+                    unused.setdefault(item["id"], []).append(alternative)
+    assert unused == {}
+
+
+@needs_corpus
 def test_not_found_terms_appear_nowhere(page_keys):
     found = {}
     for item in load_gold():
