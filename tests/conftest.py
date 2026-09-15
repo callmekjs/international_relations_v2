@@ -1,6 +1,6 @@
 import pytest
 
-from prep.volumes import VOLUMES
+from prep.volumes import CORPUS_YEARS, VOLUMES
 
 
 def _pdfs_present() -> bool:
@@ -14,3 +14,12 @@ def pytest_collection_modifyitems(config, items):
     for item in items:
         if "pdf" in item.keywords:
             item.add_marker(skip)
+
+
+@pytest.fixture(scope="session")
+def full_corpus_dir(tmp_path_factory):
+    from prep.build import build
+
+    out = tmp_path_factory.mktemp("corpus")
+    build(out, list(CORPUS_YEARS))
+    return out
