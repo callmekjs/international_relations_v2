@@ -16,6 +16,22 @@
 - OpenAI 사전 조사: `docs/research/2026-09-15-openai-groundwork/README.md` (결정 O1~O14). 코드 원형: `agent-loop/agent_loop_demo.py`, `citations-verify/patched/citation_check.py`, `limits-errors/error_handling_sketch.py`
 - 계획 1 최종 검토에서 넘어온 7가지 (Task 2, 3, 4, Global Constraints에 반영)
 
+## 실행 중 바뀐 점 (2026-09-15)
+
+이 계획서의 코드 블록과 데이터 블록은 처음 계획한 모습이다. 실행하면서 아래가 바뀌었다. **계획서 블록과 저장소가 다르면 저장소의 코드와 데이터가 기준이다.** 블록을 다시 복사해 쓰면 고친 문제가 되살아나니, 저장소 파일을 본다.
+
+| 무엇 | 바뀐 점 | 커밋 |
+|---|---|---|
+| Task 3 `assistant/citations.py` 구절 길이 | `len(qkey)` 대신 글자와 숫자만 센다 (`sum(ch.isalnum() for ch in qkey)`). 문장부호가 많은 짧은 구절이 확인됨을 받던 문제 | 14bc718 |
+| Task 3 `assistant/citations.py` 숫자 가장자리 | 구절 바로 앞이 마이너스 부호면 거절한다 (`_cuts_number`가 부호 표시도 본다). 음수의 부호를 뺀 인용이 확인됨을 받던 문제 | 14bc718 |
+| Task 11 `evals/gold.jsonl` g07 | 사실 대안 "2,275만"을 "2,276만"으로 고침 (백서의 반올림 표현) | 2b1d0d4 |
+| Task 11 `evals/gold.jsonl` g12 | 질문에 "12월"을 넣음 (2021년 한국과 호주의 정상회담이 세 번 있었음) | 147dad0 |
+| Task 11 `evals/gold.jsonl` g02 | 캔버라 문항(2021-p139R, 확인됨이 나올 수 없는 표 칸)을 바하마 문항(정답 쪽 2022-p055L)으로 바꿈 | 758335c |
+| 최종 검토 뒤 보강: `loop.py`, `runner.py`, `errors.py`, `llm_openai.py`, `tools.py`, `ask.py`, `evals/run_gold.py` | 요금 계산 실패, 뜻밖의 예외, 잘못된 연도, 요금 한도 코드, 깨진 스트림, 정답지 한 문항 오류에도 실행이 멈추지 않고 기록을 남긴다. `TurnRecord.price_model`, `LoopOutcome.error`, 기록의 `error` 칸, 안내 `BAD_YEARS`가 새로 생김 | 03b7b57 |
+| 문서 | `.gitignore` 경로 고정(`/runs/`, `/evals/runs/`), README 시험 문장, 설계서 8.1에 "문단 바로잡음", 에러노트 항목 추가 | e17d96b |
+| 보강 검토 뒤: `loop.py`, `textnorm.py`, `tools.py`, `evals/run_gold.py` | 모델 답의 깨진 글자 조각(외톨이 서로게이트)을 '?'로 바꿔 기록을 저장할 수 있게 함. `textnorm.utf8_safe`가 새로 생기고 `tools._utf8_safe`는 없어짐. 정답지 시험은 저장이나 채점만 실패하면 요금을 그대로 적음(`crashed_row`에 `result` 인자 추가) | 71dc26f |
+| Task 10 Step 8 점검 기록 | 실제 점검한 날짜에 맞춰 파일 이름을 `docs/research/2026-09-15-first-live-check.md`로 함 (계획서에는 2026-09-16) | 이 기록을 올린 커밋 |
+
 ## Global Constraints
 
 - 1차 자료는 2020~2025년치 6권이다. `data/`는 읽기만 한다. `data/`, `corpus/`, `.env`, `runs/`, `evals/runs/`는 git에 올리지 않는다.

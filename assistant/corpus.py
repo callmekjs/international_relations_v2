@@ -23,18 +23,23 @@ class Corpus:
         self.index = load_index(directory / "index")
 
     def label(self, page: dict) -> str:
+        """Citation label. Only citable pages get one: other pages are never shown to the model."""
+        if not page["citable"]:
+            raise ValueError(f"인용할 수 없는 쪽에는 쪽 표시를 붙이지 않습니다: {page['page_id']}")
         number = f"{page['printed_page']}쪽" + ("" if page["label_printed"] else "(번호 미인쇄)")
         return f"{page['year']}년치 · 「{page['edition_title']}」 {number}"
 
     def search(self, query: str, years: list[int] | None = None, k: int = 10) -> dict:
+        """order is "score" (best first) or "year_turns" (the years take turns, groundwork D9)."""
         wanted = sorted(set(years or []))
         outside = [y for y in wanted if y not in self.corpus_years]
         inside = [y for y in wanted if y in self.corpus_years]
         if wanted and not inside:
-            return {"hits": [], "out_of_range_years": outside, "corpus_years": self.corpus_years}
-        hits = search_index(self.index, query, inside or None, k, balance_years=len(inside) > 1)
-        return {"hits": [self._hit(h) for h in hits], "out_of_range_years": outside,
-                "corpus_years": self.corpus_years}
+            return {"hits": [], "order": "score", "out_of_range_years": outside, "corpus_years": self.corpus_years}
+        balanced = len(inside) > 1
+        hits = search_index(self.index, query, inside or None, k, balance_years=balanced)
+        return {"hits": [self._hit(h) for h in hits], "order": "year_turns" if balanced else "score",
+                "out_of_range_years": outside, "corpus_years": self.corpus_years}
 
     def read_pages(self, page_ids: list[str]) -> dict:
         if len(page_ids) > MAX_READ_PAGES:
@@ -71,6 +76,7 @@ class Corpus:
             "chapter": _join(page["chapter_label"], page["chapter_title"]),
             "section": _join(page["section_label"], page["section_title"]),
             "is_appendix": page["is_appendix"],
+            "front_matter": not page["chapter_label"] and not page["is_appendix"],
         }
 
 

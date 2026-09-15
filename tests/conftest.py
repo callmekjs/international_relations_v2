@@ -18,8 +18,17 @@ def pytest_collection_modifyitems(config, items):
 
 @pytest.fixture(scope="session")
 def full_corpus_dir(tmp_path_factory):
+    pytest.importorskip("pymupdf", exc_type=ImportError)
     from prep.build import build
 
     out = tmp_path_factory.mktemp("corpus")
     build(out, list(CORPUS_YEARS))
     return out
+
+
+@pytest.fixture()
+def qa_corpus(tmp_path):
+    from assistant.corpus import Corpus
+    from tests.corpus_factory import QA_PAGES, QA_TOC, write_corpus
+
+    return Corpus(write_corpus(tmp_path / "corpus", QA_PAGES, QA_TOC))

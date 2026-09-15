@@ -1,12 +1,13 @@
 import collections
 import re
 
-import pymupdf
 import pytest
 
-from prep import extract
-from prep.pages import list_halves, page_id
-from prep.volumes import VOLUMES
+pymupdf = pytest.importorskip("pymupdf", exc_type=ImportError)
+
+from prep import extract  # noqa: E402
+from prep.pages import list_halves, page_id  # noqa: E402
+from prep.volumes import VOLUMES  # noqa: E402
 
 pytestmark = pytest.mark.pdf
 

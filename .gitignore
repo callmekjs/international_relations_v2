@@ -19,3 +19,7 @@ venv/
 .idea/
 Thumbs.db
 .DS_Store
+
+# 실행 기록 (질문과 근거 구절이 들어 있음)
+/runs/
+/evals/runs/

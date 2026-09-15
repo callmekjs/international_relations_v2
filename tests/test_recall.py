@@ -4,7 +4,7 @@ from pathlib import Path
 import pytest
 
 from assistant.corpus import Corpus
-from assistant.textnorm import match_key
+from assistant.citations import cite_key
 
 pytestmark = [pytest.mark.pdf, pytest.mark.slow]
 
@@ -12,8 +12,8 @@ QUERIES = Path(__file__).with_name("fixtures") / "search_queries.jsonl"
 
 
 def _is_gold(page: dict, gold: list[dict]) -> bool:
-    text = match_key(page["text"])
-    return any(page["year"] == g["year"] and any(all(match_key(n) in text for n in needles) for needles in g["any"])
+    text = cite_key(page["text"])
+    return any(page["year"] == g["year"] and any(all(cite_key(n) in text for n in needles) for needles in g["any"])
                for g in gold)
 
 
