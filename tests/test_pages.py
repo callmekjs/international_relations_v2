@@ -51,7 +51,7 @@ def test_2025_missing_halves_are_images_and_not_citable(records):
 def test_text_hygiene(records):
     for rows in records.values():
         for r in rows:
-            for bad in ("\x07", "\x08", "­"):
+            for bad in ("\x07", "\x08", "\u00ad"):
                 assert bad not in r["text"], (r["page_id"], repr(bad))
     assert "NATO" in _rec(records, "2023-p002R")["text"]
 
