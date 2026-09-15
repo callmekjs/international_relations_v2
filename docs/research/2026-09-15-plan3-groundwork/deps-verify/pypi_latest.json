@@ -1,0 +1,104 @@
+{
+ "gradio": {
+  "latest": "6.27.0",
+  "requires_python": ">=3.10",
+  "uploaded": "2026-09-11T03:01:58.869254Z",
+  "yanked": false
+ },
+ "openai": {
+  "latest": "3.14.0",
+  "requires_python": ">=3.10",
+  "uploaded": "2026-09-14T23:29:08.978455Z",
+  "yanked": false
+ },
+ "httpx2": {
+  "latest": "2.13.0",
+  "requires_python": ">=3.10",
+  "uploaded": "2026-09-14T14:18:03.553890Z",
+  "yanked": false
+ },
+ "numpy": {
+  "latest": "2.5.3",
+  "requires_python": ">=3.12",
+  "uploaded": "2026-09-06T16:24:29.244371Z",
+  "yanked": false
+ },
+ "bm25s": {
+  "latest": "0.3.11",
+  "requires_python": ">=3.8",
+  "uploaded": "2026-08-25T03:14:56.051765Z",
+  "yanked": false
+ },
+ "pydantic": {
+  "latest": "2.13.5",
+  "requires_python": ">=3.9",
+  "uploaded": "2026-08-28T14:03:59.136157Z",
+  "yanked": false
+ },
+ "pydantic-core": {
+  "latest": "2.49.0",
+  "requires_python": ">=3.10",
+  "uploaded": "2026-09-09T21:25:29.286931Z",
+  "yanked": false
+ },
+ "fsspec": {
+  "latest": "2026.7.0",
+  "requires_python": ">=3.10",
+  "uploaded": "2026-07-28T16:34:49.538692Z",
+  "yanked": false
+ },
+ "datasets": {
+  "latest": "5.0.1",
+  "requires_python": ">=3.10.0",
+  "uploaded": "2026-07-28T11:09:10.266825Z",
+  "yanked": false
+ },
+ "mcp": {
+  "latest": "2.2.0",
+  "requires_python": ">=3.10",
+  "uploaded": "2026-09-07T16:06:19.711091Z",
+  "yanked": false
+ },
+ "huggingface-hub": {
+  "latest": "1.31.0",
+  "requires_python": ">=3.10.0",
+  "uploaded": "2026-09-10T10:27:20.798825Z",
+  "yanked": false
+ },
+ "spaces": {
+  "latest": "0.51.3",
+  "requires_python": "<3.15,>=3.10",
+  "uploaded": "2026-08-31T13:19:25.768655Z",
+  "yanked": false
+ },
+ "gradio-client": {
+  "latest": "2.7.0",
+  "requires_python": ">=3.10",
+  "uploaded": "2026-09-11T03:02:10.776606Z",
+  "yanked": false
+ },
+ "httpx": {
+  "latest": "0.28.1",
+  "requires_python": ">=3.8",
+  "uploaded": "2024-12-06T15:37:21.509172Z",
+  "yanked": false
+ },
+ "starlette": {
+  "latest": "1.6.0",
+  "requires_python": ">=3.10",
+  "uploaded": "2026-08-08T18:27:56.196765Z",
+  "yanked": false
+ },
+ "fastapi": {
+  "latest": "0.141.1",
+  "requires_python": ">=3.10",
+  "uploaded": "2026-07-29T17:18:04.364385Z",
+  "yanked": false
+ },
+ "hf-gradio": {
+  "latest": "0.4.1",
+  "requires_python": ">=3.10",
+  "uploaded": "2026-04-17T19:53:31.827135Z",
+  "yanked": false
+ }
+}

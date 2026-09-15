@@ -1,0 +1,61 @@
+{
+ "repo": "C:\\international_relations",
+ "file_count": 27,
+ "total_bytes": 15980226,
+ "largest": [
+  [
+   "corpus/pages.jsonl",
+   4941214
+  ],
+  [
+   "corpus/index/meta.json",
+   3964067
+  ],
+  [
+   "corpus/index/bm25s/data.csc.index.npy",
+   2881156
+  ],
+  [
+   "corpus/index/bm25s/indices.csc.index.npy",
+   2881156
+  ],
+  [
+   "corpus/index/bm25s/vocab.index.json",
+   761119
+  ]
+ ],
+ "from_template": [
+  "README.md",
+  "requirements.txt"
+ ],
+ "problems": [
+  "missing app.py (Plan 3 has not created it yet)"
+ ],
+ "files": [
+  "assistant/__init__.py",
+  "assistant/ask.py",
+  "assistant/citations.py",
+  "assistant/corpus.py",
+  "assistant/errors.py",
+  "assistant/limits.py",
+  "assistant/llm.py",
+  "assistant/llm_openai.py",
+  "assistant/loop.py",
+  "assistant/pricing.py",
+  "assistant/prompts.py",
+  "assistant/runner.py",
+  "assistant/search_index.py",
+  "assistant/textnorm.py",
+  "assistant/tools.py",
+  "corpus/index/bm25s/data.csc.index.npy",
+  "corpus/index/bm25s/indices.csc.index.npy",
+  "corpus/index/bm25s/indptr.csc.index.npy",
+  "corpus/index/bm25s/params.index.json",
+  "corpus/index/bm25s/vocab.index.json",
+  "corpus/index/meta.json",
+  "corpus/missing.json",
+  "corpus/pages.jsonl",
+  "corpus/toc.json",
+  "corpus/volumes.json"
+ ]
+}

@@ -1,0 +1,28 @@
+{
+ "/monitoring/summary": {
+  "status": 200,
+  "body": "{\"functions\":{}}"
+ },
+ "/gradio_api/runs": {
+  "status": 200,
+  "body": "<!doctype html>\n<html\n\tlang=\"en\"\n\tstyle=\"\n\t\tmargin: 0;\n\t\tpadding: 0;\n\t\tmin-height: 100%;\n\t\tdisplay: flex;\n\t\tflex-direction: column;\n\t\"\n>\n\t<head>\n\t\t<meta charset"
+ },
+ "/gradio_api/info": {
+  "status": 200,
+  "body": "{\"named_endpoints\":{\"/lambda\":{\"parameters\":[{\"label\":\"parameter_1\",\"parameter_name\":\"x\",\"parameter_has_default\":false,\"parameter_default\":null,\"type\":{\"type\":\""
+ },
+ "config": {
+  "footer_links": [
+   "api",
+   "gradio",
+   "settings",
+   "runs"
+  ],
+  "run_history": true,
+  "analytics_enabled": false,
+  "show_error": false,
+  "pwa": false,
+  "mcp_server": false
+ }
+}
+Closing server running on port: 7863

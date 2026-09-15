@@ -1,0 +1,114 @@
+{
+"2025": {
+"input": 152845,
+"scen": {
+"low": [
+1445,
+723
+],
+"measured": [
+1945,
+974
+],
+"high": [
+3407,
+1703
+]
+},
+"ceiling": [
+7127,
+3563
+],
+"implicit_cache_extra": 214
+},
+"largest": {
+"input": 66821,
+"scen": {
+"low": [
+518,
+259
+],
+"measured": [
+640,
+320
+],
+"high": [
+896,
+448
+]
+},
+"ceiling": [
+1270,
+635
+],
+"implicit_cache_extra": 94
+},
+"typical": {
+"input": 20402,
+"scen": {
+"low": [
+200,
+100
+],
+"measured": [
+273,
+136
+],
+"high": [
+483,
+241
+]
+},
+"ceiling": [
+1010,
+505
+],
+"implicit_cache_extra": 29
+},
+"smallest": {
+"input": 5350,
+"scen": {
+"low": [
+73,
+37
+],
+"measured": [
+110,
+55
+],
+"high": [
+285,
+143
+]
+},
+"ceiling": [
+926,
+463
+],
+"implicit_cache_extra": 7
+},
+"all44": {
+"input": 971340,
+"scen": {
+"low": [
+9127,
+4564
+],
+"measured": [
+12269,
+6134
+],
+"high": [
+21435,
+10721
+]
+},
+"ceiling": [
+44864,
+22430
+],
+"implicit_cache_extra": 1360
+}
+}
+per 20000 KRW 73 147
+cap-based worst request KRW 1456 spec4.4 16K 1008

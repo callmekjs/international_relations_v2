@@ -1,0 +1,521 @@
+{
+ "corpus_files": {
+  "index/bm25s/data.csc.index.npy": {
+   "bytes": 2881156,
+   "mtime": 1789432494108783200,
+   "sha256": "077162b5327bcd3c"
+  },
+  "index/bm25s/indices.csc.index.npy": {
+   "bytes": 2881156,
+   "mtime": 1789432494109780200,
+   "sha256": "4a0cb1fe4dcdcf99"
+  },
+  "index/bm25s/indptr.csc.index.npy": {
+   "bytes": 365392,
+   "mtime": 1789432494110778000,
+   "sha256": "2995dba0e936386f"
+  },
+  "index/bm25s/params.index.json": {
+   "bytes": 234,
+   "mtime": 1789432494123779800,
+   "sha256": "1d08fd938103108a"
+  },
+  "index/bm25s/vocab.index.json": {
+   "bytes": 761119,
+   "mtime": 1789432494122793500,
+   "sha256": "95fbe94c83788d90"
+  },
+  "index/meta.json": {
+   "bytes": 3964067,
+   "mtime": 1789432494142783500,
+   "sha256": "cb49f7b08e506814"
+  },
+  "missing.json": {
+   "bytes": 565,
+   "mtime": 1789432492851551700,
+   "sha256": "f5464eefdd1b32c6"
+  },
+  "pages.jsonl": {
+   "bytes": 4941214,
+   "mtime": 1789432492951745500,
+   "sha256": "2583a3617c8303dd"
+  },
+  "toc.json": {
+   "bytes": 101351,
+   "mtime": 1789432492851551700,
+   "sha256": "97b5d72c8749d062"
+  },
+  "volumes.json": {
+   "bytes": 1048,
+   "mtime": 1789432492849551600,
+   "sha256": "8f4b3f9d933db56e"
+  }
+ },
+ "corpus_unchanged": true,
+ "corpus_total_bytes": 15897302,
+ "corpus_file_count": 10,
+ "runs": [
+  {
+   "mode": "bare",
+   "steps": [
+    {
+     "step": "start",
+     "s": 0.0,
+     "mem": {
+      "working_set": 17.5,
+      "peak_working_set": 17.5,
+      "private": 8.9
+     }
+    }
+   ],
+   "total_s": 0.0,
+   "rep": 0
+  },
+  {
+   "mode": "numpy_bm25s",
+   "steps": [
+    {
+     "step": "start",
+     "s": 0.0,
+     "mem": {
+      "working_set": 17.7,
+      "peak_working_set": 17.7,
+      "private": 9.1
+     }
+    },
+    {
+     "step": "import numpy+bm25s",
+     "s": 0.297,
+     "mem": {
+      "working_set": 38.7,
+      "peak_working_set": 38.7,
+      "private": 764.5
+     }
+    }
+   ],
+   "total_s": 0.297,
+   "rep": 0
+  },
+  {
+   "mode": "corpus",
+   "use": {
+    "hits": 10,
+    "pages": 5,
+    "toc": 46,
+    "multi_hits": 10,
+    "n_pages": 2136
+   },
+   "steps": [
+    {
+     "step": "start",
+     "s": 0.0,
+     "mem": {
+      "working_set": 17.6,
+      "peak_working_set": 17.6,
+      "private": 8.9
+     }
+    },
+    {
+     "step": "import assistant.corpus",
+     "s": 0.314,
+     "mem": {
+      "working_set": 39.8,
+      "peak_working_set": 39.8,
+      "private": 765.9
+     }
+    },
+    {
+     "step": "Corpus(corpus/)",
+     "s": 0.047,
+     "mem": {
+      "working_set": 67.0,
+      "peak_working_set": 67.0,
+      "private": 793.1
+     }
+    },
+    {
+     "step": "search x2 + read_pages + get_toc",
+     "s": 0.002,
+     "mem": {
+      "working_set": 67.2,
+      "peak_working_set": 67.2,
+      "private": 793.1
+     }
+    }
+   ],
+   "total_s": 0.363,
+   "rep": 0
+  },
+  {
+   "mode": "gradio",
+   "http": 200,
+   "steps": [
+    {
+     "step": "start",
+     "s": 0.0,
+     "mem": {
+      "working_set": 17.6,
+      "peak_working_set": 17.6,
+      "private": 9.0
+     }
+    },
+    {
+     "step": "import gradio",
+     "s": 5.697,
+     "mem": {
+      "working_set": 153.9,
+      "peak_working_set": 153.9,
+      "private": 861.6
+     }
+    },
+    {
+     "step": "import openai + client",
+     "s": 2.067,
+     "mem": {
+      "working_set": 183.8,
+      "peak_working_set": 183.8,
+      "private": 891.2
+     }
+    },
+    {
+     "step": "build Blocks (5 tabs)",
+     "s": 0.187,
+     "mem": {
+      "working_set": 187.7,
+      "peak_working_set": 187.7,
+      "private": 894.2
+     }
+    },
+    {
+     "step": "launch + GET /",
+     "s": 1.045,
+     "mem": {
+      "working_set": 194.7,
+      "peak_working_set": 194.7,
+      "private": 902.2
+     }
+    }
+   ],
+   "total_s": 8.996,
+   "rep": 0
+  },
+  {
+   "mode": "app",
+   "use": {
+    "hits": 10,
+    "pages": 5,
+    "toc": 46,
+    "multi_hits": 10,
+    "n_pages": 2136
+   },
+   "http": 200,
+   "steps": [
+    {
+     "step": "start",
+     "s": 0.0,
+     "mem": {
+      "working_set": 17.6,
+      "peak_working_set": 17.6,
+      "private": 9.0
+     }
+    },
+    {
+     "step": "import assistant.corpus",
+     "s": 0.545,
+     "mem": {
+      "working_set": 39.6,
+      "peak_working_set": 39.6,
+      "private": 765.9
+     }
+    },
+    {
+     "step": "Corpus(corpus/)",
+     "s": 0.078,
+     "mem": {
+      "working_set": 67.2,
+      "peak_working_set": 67.2,
+      "private": 793.5
+     }
+    },
+    {
+     "step": "search x2 + read_pages + get_toc",
+     "s": 0.002,
+     "mem": {
+      "working_set": 67.5,
+      "peak_working_set": 67.5,
+      "private": 793.5
+     }
+    },
+    {
+     "step": "import gradio",
+     "s": 5.341,
+     "mem": {
+      "working_set": 181.9,
+      "peak_working_set": 181.9,
+      "private": 890.0
+     }
+    },
+    {
+     "step": "import openai + client",
+     "s": 1.377,
+     "mem": {
+      "working_set": 211.5,
+      "peak_working_set": 211.5,
+      "private": 918.1
+     }
+    },
+    {
+     "step": "build Blocks (5 tabs)",
+     "s": 0.167,
+     "mem": {
+      "working_set": 215.4,
+      "peak_working_set": 215.4,
+      "private": 922.1
+     }
+    },
+    {
+     "step": "launch + GET /",
+     "s": 1.056,
+     "mem": {
+      "working_set": 222.3,
+      "peak_working_set": 222.3,
+      "private": 929.0
+     }
+    }
+   ],
+   "total_s": 8.566,
+   "rep": 0
+  },
+  {
+   "mode": "bare",
+   "steps": [
+    {
+     "step": "start",
+     "s": 0.0,
+     "mem": {
+      "working_set": 17.6,
+      "peak_working_set": 17.6,
+      "private": 9.0
+     }
+    }
+   ],
+   "total_s": 0.0,
+   "rep": 1
+  },
+  {
+   "mode": "numpy_bm25s",
+   "steps": [
+    {
+     "step": "start",
+     "s": 0.0,
+     "mem": {
+      "working_set": 17.7,
+      "peak_working_set": 17.7,
+      "private": 9.0
+     }
+    },
+    {
+     "step": "import numpy+bm25s",
+     "s": 0.525,
+     "mem": {
+      "working_set": 38.7,
+      "peak_working_set": 38.7,
+      "private": 764.5
+     }
+    }
+   ],
+   "total_s": 0.525,
+   "rep": 1
+  },
+  {
+   "mode": "corpus",
+   "use": {
+    "hits": 10,
+    "pages": 5,
+    "toc": 46,
+    "multi_hits": 10,
+    "n_pages": 2136
+   },
+   "steps": [
+    {
+     "step": "start",
+     "s": 0.0,
+     "mem": {
+      "working_set": 17.7,
+      "peak_working_set": 17.7,
+      "private": 9.1
+     }
+    },
+    {
+     "step": "import assistant.corpus",
+     "s": 0.545,
+     "mem": {
+      "working_set": 39.4,
+      "peak_working_set": 39.4,
+      "private": 765.3
+     }
+    },
+    {
+     "step": "Corpus(corpus/)",
+     "s": 0.084,
+     "mem": {
+      "working_set": 67.2,
+      "peak_working_set": 67.2,
+      "private": 793.4
+     }
+    },
+    {
+     "step": "search x2 + read_pages + get_toc",
+     "s": 0.002,
+     "mem": {
+      "working_set": 67.5,
+      "peak_working_set": 67.5,
+      "private": 793.4
+     }
+    }
+   ],
+   "total_s": 0.631,
+   "rep": 1
+  },
+  {
+   "mode": "gradio",
+   "http": 200,
+   "steps": [
+    {
+     "step": "start",
+     "s": 0.0,
+     "mem": {
+      "working_set": 17.7,
+      "peak_working_set": 17.7,
+      "private": 9.1
+     }
+    },
+    {
+     "step": "import gradio",
+     "s": 5.31,
+     "mem": {
+      "working_set": 153.3,
+      "peak_working_set": 153.3,
+      "private": 861.2
+     }
+    },
+    {
+     "step": "import openai + client",
+     "s": 1.842,
+     "mem": {
+      "working_set": 184.0,
+      "peak_working_set": 184.0,
+      "private": 891.5
+     }
+    },
+    {
+     "step": "build Blocks (5 tabs)",
+     "s": 0.199,
+     "mem": {
+      "working_set": 187.0,
+      "peak_working_set": 187.0,
+      "private": 893.6
+     }
+    },
+    {
+     "step": "launch + GET /",
+     "s": 1.05,
+     "mem": {
+      "working_set": 194.8,
+      "peak_working_set": 194.8,
+      "private": 902.4
+     }
+    }
+   ],
+   "total_s": 8.401,
+   "rep": 1
+  },
+  {
+   "mode": "app",
+   "use": {
+    "hits": 10,
+    "pages": 5,
+    "toc": 46,
+    "multi_hits": 10,
+    "n_pages": 2136
+   },
+   "http": 200,
+   "steps": [
+    {
+     "step": "start",
+     "s": 0.0,
+     "mem": {
+      "working_set": 17.5,
+      "peak_working_set": 17.5,
+      "private": 8.8
+     }
+    },
+    {
+     "step": "import assistant.corpus",
+     "s": 0.525,
+     "mem": {
+      "working_set": 39.6,
+      "peak_working_set": 39.6,
+      "private": 765.7
+     }
+    },
+    {
+     "step": "Corpus(corpus/)",
+     "s": 0.076,
+     "mem": {
+      "working_set": 67.1,
+      "peak_working_set": 67.1,
+      "private": 793.2
+     }
+    },
+    {
+     "step": "search x2 + read_pages + get_toc",
+     "s": 0.002,
+     "mem": {
+      "working_set": 67.4,
+      "peak_working_set": 67.4,
+      "private": 793.2
+     }
+    },
+    {
+     "step": "import gradio",
+     "s": 4.854,
+     "mem": {
+      "working_set": 182.0,
+      "peak_working_set": 182.0,
+      "private": 890.1
+     }
+    },
+    {
+     "step": "import openai + client",
+     "s": 1.954,
+     "mem": {
+      "working_set": 211.7,
+      "peak_working_set": 211.7,
+      "private": 918.1
+     }
+    },
+    {
+     "step": "build Blocks (5 tabs)",
+     "s": 0.213,
+     "mem": {
+      "working_set": 215.5,
+      "peak_working_set": 215.5,
+      "private": 922.0
+     }
+    },
+    {
+     "step": "launch + GET /",
+     "s": 0.973,
+     "mem": {
+      "working_set": 222.2,
+      "peak_working_set": 222.2,
+      "private": 928.7
+     }
+    }
+   ],
+   "total_s": 8.597,
+   "rep": 1
+  }
+ ]
+}

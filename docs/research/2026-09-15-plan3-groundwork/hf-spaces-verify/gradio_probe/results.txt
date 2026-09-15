@@ -1,0 +1,28 @@
+Local Gradio 6.27.0 probe (Windows, Python 3.12.10, GRADIO_ANALYTICS_ENABLED=False), 2026-09-15.
+App: app.py (ssr_mode=False, port 7871) and app_ssr.py (ssr_mode=True, Node v24.18.0 front proxy on 7872 -> Python 7873).
+cwd holds corpus/pages.jsonl (fake line), fake.env (fake value), app.py.
+
+Startup print (both): api_open: True  max_size: None  default_concurrency_limit: 1   (SYSTEM not "spaces" locally)
+SSR banner: "Running on local URL: http://127.0.0.1:7872, with SSR (Node proxy -> Python :7873)"
+
+File access, CSR (7871):
+  /gradio_api/file=corpus/pages.jsonl      -> 403 File not allowed
+  /gradio_api/file=<absolute path>          -> 403
+  /gradio_api/file=app.py                   -> 403
+  /gradio_api/file=fake.env                 -> 403
+  /gradio_api/file=./corpus/pages.jsonl     -> 403
+  /file=corpus/pages.jsonl                  -> 404
+File access, SSR (7872):
+  /gradio_api/file=corpus/pages.jsonl      -> 403
+  /corpus/pages.jsonl, /app.py, /fake.env   -> 200 but body is the app HTML shell (0 matches for file content)
+
+gr.Request via /gradio_api/call/who:
+  CSR, header X-Forwarded-For: "203.0.113.7, 198.51.100.9" -> client.host = 198.51.100.9 (peer 127.0.0.1 is trusted by uvicorn)
+  CSR, no XFF                                              -> client.host = 127.0.0.1
+  SSR, same spoofed XFF                                    -> client.host = 198.51.100.9 (Node passed XFF unchanged; Python peer is 127.0.0.1)
+  SSR, no XFF                                              -> client.host = 127.0.0.1
+Reading: uvicorn trusts X-Forwarded-For only from FORWARDED_ALLOW_IPS (default 127.0.0.1,::1) and then uses the RIGHTMOST entry.
+On Spaces: with SSR (default there) Python's peer is the local Node proxy, so client.host = rightmost XFF entry as received by Node;
+with ssr_mode=False Python's peer is the HF proxy (not 127.0.0.1) so client.host is likely the proxy address. Not verified on a real Space.
+
+Memory: Node SSR proxy process working set about 85 MB (Windows).

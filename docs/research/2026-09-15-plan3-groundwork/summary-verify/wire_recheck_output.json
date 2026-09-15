@@ -1,0 +1,89 @@
+{
+ "openai": "3.14.0",
+ "1_adapter_tools_empty": {
+  "wire": {
+   "keys": [
+    "input",
+    "instructions",
+    "max_output_tokens",
+    "model",
+    "reasoning",
+    "safety_identifier",
+    "store",
+    "stream",
+    "text",
+    "tool_choice",
+    "tools"
+   ],
+   "tools": [],
+   "tool_choice": "none",
+   "service_tier": "<absent>",
+   "timeout_header": null
+  },
+  "status": "completed",
+  "tier": "flex",
+  "events": [
+   "answer_started"
+  ],
+  "usage": {
+   "input": 66821,
+   "cached": 0,
+   "cache_write": 0,
+   "output": 9000,
+   "reasoning": 5600
+  }
+ },
+ "2_omitted_flex": {
+  "wire": {
+   "keys": [
+    "input",
+    "instructions",
+    "max_output_tokens",
+    "model",
+    "prompt_cache_options",
+    "reasoning",
+    "service_tier",
+    "store",
+    "stream"
+   ],
+   "tools": "<absent>",
+   "tool_choice": "<absent>",
+   "service_tier": "flex",
+   "timeout_header": null
+  },
+  "events": [
+   "response.created",
+   "response.queued",
+   "response.output_item.added",
+   "response.output_text.delta",
+   "response.completed"
+  ]
+ },
+ "3_stream_error_after_reasoning_item": {
+  "notice": "stream_broken",
+  "events": [
+   "thinking"
+  ],
+  "requests_sent": 1
+ },
+ "4_429_long_retry_after": {
+  "exc": "RateLimitError",
+  "status": 429,
+  "code": null,
+  "notice": "busy",
+  "retry_delays": [
+   null,
+   null
+  ]
+ },
+ "4_503": {
+  "exc": "InternalServerError",
+  "status": 503,
+  "code": "server_is_overloaded",
+  "notice": "server_error",
+  "retry_delays": [
+   0.46987363822742123,
+   0.9842213728233015
+  ]
+ }
+}

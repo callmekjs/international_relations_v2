@@ -1,0 +1,45 @@
+{
+ "repo": "C:\\Users\\anyca\\AppData\\Local\\Temp\\claude\\C--international-relations\\64b21452-a5cf-4692-b024-1a1f58b7e291\\scratchpad\\plan3\\hf-spaces\\fake_repo",
+ "file_count": 11,
+ "total_bytes": 1293,
+ "largest": [
+  [
+   "app.py",
+   13
+  ],
+  [
+   "corpus/index/bm25s/data.csc.index.npy",
+   6
+  ],
+  [
+   "web/ui.py",
+   5
+  ],
+  [
+   "assistant/x.py",
+   4
+  ],
+  [
+   "corpus/index/meta.json",
+   3
+  ]
+ ],
+ "from_template": [
+  "README.md",
+  "requirements.txt"
+ ],
+ "problems": [],
+ "files": [
+  "app.py",
+  "assistant/x.py",
+  "corpus/index/bm25s/data.csc.index.npy",
+  "corpus/index/meta.json",
+  "corpus/missing.json",
+  "corpus/pages.jsonl",
+  "corpus/toc.json",
+  "corpus/volumes.json",
+  "web/ui.py"
+ ],
+ "written_to": "C:\\Users\\anyca\\AppData\\Local\\Temp\\claude\\C--international-relations\\64b21452-a5cf-4692-b024-1a1f58b7e291\\scratchpad\\plan3\\hf-spaces\\fake_bundle",
+ "forbidden_in_output": []
+}

@@ -1,0 +1,2 @@
+shared files: 0 []
+{'httpcore': ['httpcore'], 'httpcore2': ['httpcore2'], 'httpx': ['httpx'], 'httpx2': ['httpx2']}

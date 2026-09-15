@@ -1,0 +1,22 @@
+...........s.......................................................ssss. [ 30%]
+.......sssssssssssssssssssss.........................................sss [ 61%]
+sssss......................................ssssssssssssssssssssssss..... [ 92%]
+................s                                                        [100%]
+=========================== short test summary info ===========================
+SKIPPED [1] tests\test_build.py: data/ 폴더에 백서 PDF가 없음
+SKIPPED [1] tests\test_gold.py:39: corpus/가 없음: python -m prep.build 로 먼저 만든다
+SKIPPED [1] tests\test_gold.py:53: corpus/가 없음: python -m prep.build 로 먼저 만든다
+SKIPPED [1] tests\test_gold.py:65: corpus/가 없음: python -m prep.build 로 먼저 만든다
+SKIPPED [1] tests\test_gold.py:89: corpus/가 없음: python -m prep.build 로 먼저 만든다
+SKIPPED [3] tests\test_halves.py: data/ 폴더에 백서 PDF가 없음
+SKIPPED [12] tests\test_halves.py:34: data/ 폴더에 백서 PDF가 없음
+SKIPPED [6] tests\test_halves.py:61: data/ 폴더에 백서 PDF가 없음
+SKIPPED [8] tests\test_pages.py: data/ 폴더에 백서 PDF가 없음
+SKIPPED [4] tests\test_toc_build.py: data/ 폴더에 백서 PDF가 없음
+SKIPPED [20] tests\test_toc_build.py:53: data/ 폴더에 백서 PDF가 없음
+SKIPPED [1] tests\test_volumes.py:23: data/ 폴더에 백서 PDF가 없음
+174 passed, 59 skipped, 2 deselected in 15.60s
+
+real	0m17.274s
+user	0m0.000s
+sys	0m0.093s

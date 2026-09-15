@@ -1,0 +1,709 @@
+{"t": 1789474169.9853823, "where": "handler", "what": "request", "session_hash": "5c10fe3c48f7", "client_host": "127.0.0.1", "xff_chain": [], "visitor_key": "2b1db29cbce7", "headers": ["accept", "accept-encoding", "connection", "content-length", "content-type", "host", "user-agent"]}
+{"t": 1789474170.416585, "run": "1637c666", "where": "worker", "what": "emit", "kind": "thinking", "data": {}}
+{"t": 1789474170.4175944, "run": "1637c666", "where": "generator", "what": "yield", "kind": "thinking"}
+{"t": 1789474170.8977928, "run": "1637c666", "where": "worker", "what": "emit", "kind": "tool_requested", "data": {"name": "get_toc"}}
+{"t": 1789474170.8998294, "run": "1637c666", "where": "generator", "what": "yield", "kind": "tool_requested"}
+{"t": 1789474171.2607427, "run": "1637c666", "where": "worker", "what": "emit", "kind": "tool_finished", "data": {"name": "get_toc", "summary": "목차 보기 2023년치", "ok": true}}
+{"t": 1789474171.2617502, "run": "1637c666", "where": "generator", "what": "yield", "kind": "tool_finished"}
+{"t": 1789474171.622264, "run": "1637c666", "where": "worker", "what": "emit", "kind": "thinking", "data": {}}
+{"t": 1789474171.622264, "run": "1637c666", "where": "generator", "what": "yield", "kind": "thinking"}
+{"t": 1789474172.10318, "run": "1637c666", "where": "worker", "what": "emit", "kind": "tool_requested", "data": {"name": "search"}}
+{"t": 1789474172.10318, "run": "1637c666", "where": "generator", "what": "yield", "kind": "tool_requested"}
+{"t": 1789474172.4641628, "run": "1637c666", "where": "worker", "what": "emit", "kind": "tool_finished", "data": {"name": "search", "summary": "찾기 \"![t](http://127.0.0.1:7999/query-md.png) <img src=\"http://127.0.0.1:7999/query-html.png\" onerror=\"window.__xss_query=1\"> ${window.__xss_tpl_q=1} <script>window.__xss_script=1</script>\" (2023년치) → 0쪽", "ok": true}}
+{"t": 1789474172.4651706, "run": "1637c666", "where": "generator", "what": "yield", "kind": "tool_finished"}
+{"t": 1789474172.82603, "run": "1637c666", "where": "worker", "what": "emit", "kind": "thinking", "data": {}}
+{"t": 1789474172.8265347, "run": "1637c666", "where": "generator", "what": "yield", "kind": "thinking"}
+{"t": 1789474173.3070896, "run": "1637c666", "where": "worker", "what": "emit", "kind": "tool_requested", "data": {"name": "search"}}
+{"t": 1789474173.3070896, "run": "1637c666", "where": "generator", "what": "yield", "kind": "tool_requested"}
+{"t": 1789474173.6687036, "run": "1637c666", "where": "worker", "what": "emit", "kind": "tool_finished", "data": {"name": "search", "summary": "찾기 \"한미 정상회담\" (2023년치) → 4쪽", "ok": true}}
+{"t": 1789474173.6687036, "run": "1637c666", "where": "generator", "what": "yield", "kind": "tool_finished"}
+{"t": 1789474174.0304987, "run": "1637c666", "where": "worker", "what": "emit", "kind": "thinking", "data": {}}
+{"t": 1789474174.0310287, "run": "1637c666", "where": "generator", "what": "yield", "kind": "thinking"}
+{"t": 1789474174.5116754, "run": "1637c666", "where": "worker", "what": "emit", "kind": "tool_requested", "data": {"name": "read_pages"}}
+{"t": 1789474174.5116754, "run": "1637c666", "where": "generator", "what": "yield", "kind": "tool_requested"}
+{"t": 1789474174.8729193, "run": "1637c666", "where": "worker", "what": "emit", "kind": "tool_finished", "data": {"name": "read_pages", "summary": "쪽 읽기 2023년치 38쪽, 2023년치 39쪽", "ok": true}}
+{"t": 1789474174.8739276, "run": "1637c666", "where": "generator", "what": "yield", "kind": "tool_finished"}
+{"t": 1789474175.2342782, "run": "1637c666", "where": "worker", "what": "emit", "kind": "thinking", "data": {}}
+{"t": 1789474175.2342782, "run": "1637c666", "where": "generator", "what": "yield", "kind": "thinking"}
+{"t": 1789474175.7151456, "run": "1637c666", "where": "worker", "what": "emit", "kind": "answer_started", "data": {}}
+{"t": 1789474175.716352, "run": "1637c666", "where": "generator", "what": "yield", "kind": "answer_started"}
+{"t": 1789474176.077136, "run": "1637c666", "where": "worker", "what": "emit", "kind": "done", "data": {"status": "answered"}}
+{"t": 1789474176.078143, "run": "1637c666", "where": "worker", "what": "run_returned", "status": "answered", "notice": null, "reason": null}
+{"t": 1789474176.0806506, "run": "1637c666", "where": "generator", "what": "yield", "kind": "result"}
+{"t": 1789474195.5244973, "where": "handler", "what": "request", "session_hash": "0ac90df40d22", "client_host": "198.51.100.2", "xff_chain": ["203.0.113.7", "198.51.100.2"], "visitor_key": "6fd37d67a55e", "headers": ["accept", "accept-encoding", "connection", "content-length", "content-type", "host", "user-agent", "x-forwarded-for"]}
+{"t": 1789474195.8896017, "run": "6d379f88", "where": "worker", "what": "emit", "kind": "thinking", "data": {}}
+{"t": 1789474195.8906813, "run": "6d379f88", "where": "generator", "what": "yield", "kind": "thinking"}
+{"t": 1789474196.371313, "run": "6d379f88", "where": "worker", "what": "emit", "kind": "tool_requested", "data": {"name": "get_toc"}}
+{"t": 1789474196.371313, "run": "6d379f88", "where": "generator", "what": "yield", "kind": "tool_requested"}
+{"t": 1789474196.7326996, "run": "6d379f88", "where": "worker", "what": "emit", "kind": "tool_finished", "data": {"name": "get_toc", "summary": "목차 보기 2023년치", "ok": true}}
+{"t": 1789474196.7337108, "run": "6d379f88", "where": "generator", "what": "yield", "kind": "tool_finished"}
+{"t": 1789474197.094361, "run": "6d379f88", "where": "worker", "what": "emit", "kind": "thinking", "data": {}}
+{"t": 1789474197.094361, "run": "6d379f88", "where": "generator", "what": "yield", "kind": "thinking"}
+{"t": 1789474197.575326, "run": "6d379f88", "where": "worker", "what": "emit", "kind": "tool_requested", "data": {"name": "search"}}
+{"t": 1789474197.5763354, "run": "6d379f88", "where": "generator", "what": "yield", "kind": "tool_requested"}
+{"t": 1789474197.937252, "run": "6d379f88", "where": "worker", "what": "emit", "kind": "tool_finished", "data": {"name": "search", "summary": "찾기 \"![t](http://127.0.0.1:7999/query-md.png) <img src=\"http://127.0.0.1:7999/query-html.png\" onerror=\"window.__xss_query=1\"> ${window.__xss_tpl_q=1} <script>window.__xss_script=1</script>\" (2023년치) → 0쪽", "ok": true}}
+{"t": 1789474197.9382632, "run": "6d379f88", "where": "generator", "what": "yield", "kind": "tool_finished"}
+{"t": 1789474198.2984564, "run": "6d379f88", "where": "worker", "what": "emit", "kind": "thinking", "data": {}}
+{"t": 1789474198.2984564, "run": "6d379f88", "where": "generator", "what": "yield", "kind": "thinking"}
+{"t": 1789474198.779636, "run": "6d379f88", "where": "worker", "what": "emit", "kind": "tool_requested", "data": {"name": "search"}}
+{"t": 1789474198.7806706, "run": "6d379f88", "where": "generator", "what": "yield", "kind": "tool_requested"}
+{"t": 1789474199.1411796, "run": "6d379f88", "where": "worker", "what": "emit", "kind": "tool_finished", "data": {"name": "search", "summary": "찾기 \"한미 정상회담\" (2023년치) → 4쪽", "ok": true}}
+{"t": 1789474199.14219, "run": "6d379f88", "where": "generator", "what": "yield", "kind": "tool_finished"}
+{"t": 1789474199.502612, "run": "6d379f88", "where": "worker", "what": "emit", "kind": "thinking", "data": {}}
+{"t": 1789474199.5036237, "run": "6d379f88", "where": "generator", "what": "yield", "kind": "thinking"}
+{"t": 1789474199.9841192, "run": "6d379f88", "where": "worker", "what": "emit", "kind": "tool_requested", "data": {"name": "read_pages"}}
+{"t": 1789474199.9841192, "run": "6d379f88", "where": "generator", "what": "yield", "kind": "tool_requested"}
+{"t": 1789474200.3456337, "run": "6d379f88", "where": "worker", "what": "emit", "kind": "tool_finished", "data": {"name": "read_pages", "summary": "쪽 읽기 2023년치 38쪽, 2023년치 39쪽", "ok": true}}
+{"t": 1789474200.3466911, "run": "6d379f88", "where": "generator", "what": "yield", "kind": "tool_finished"}
+{"t": 1789474200.707167, "run": "6d379f88", "where": "worker", "what": "emit", "kind": "thinking", "data": {}}
+{"t": 1789474200.707167, "run": "6d379f88", "where": "generator", "what": "yield", "kind": "thinking"}
+{"t": 1789474201.1883967, "run": "6d379f88", "where": "worker", "what": "emit", "kind": "answer_started", "data": {}}
+{"t": 1789474201.1889033, "run": "6d379f88", "where": "generator", "what": "yield", "kind": "answer_started"}
+{"t": 1789474201.5499287, "run": "6d379f88", "where": "worker", "what": "emit", "kind": "done", "data": {"status": "answered"}}
+{"t": 1789474201.550938, "run": "6d379f88", "where": "worker", "what": "run_returned", "status": "answered", "notice": null, "reason": null}
+{"t": 1789474201.5539827, "run": "6d379f88", "where": "generator", "what": "yield", "kind": "result"}
+{"t": 1789474217.3407907, "where": "handler", "what": "request", "session_hash": "dd051f658d74", "client_host": "127.0.0.1", "xff_chain": [], "visitor_key": "72c4062b1b04", "headers": ["accept", "accept-encoding", "connection", "content-length", "content-type", "host", "user-agent"]}
+{"t": 1789474217.3543217, "where": "handler", "what": "request", "session_hash": "1d325e0b9a02", "client_host": "127.0.0.1", "xff_chain": [], "visitor_key": "7ed4807a98ed", "headers": ["accept", "accept-encoding", "connection", "content-length", "content-type", "host", "user-agent"]}
+{"t": 1789474217.3543217, "where": "handler", "what": "request", "session_hash": "e06fd0aa488e", "client_host": "127.0.0.1", "xff_chain": [], "visitor_key": "1e077fc8f7d2", "headers": ["accept", "accept-encoding", "connection", "content-length", "content-type", "host", "user-agent"]}
+{"t": 1789474217.3543217, "where": "handler", "what": "request", "session_hash": "c06087c2abfc", "client_host": "127.0.0.1", "xff_chain": [], "visitor_key": "1fc3844ef17c", "headers": ["accept", "accept-encoding", "connection", "content-length", "content-type", "host", "user-agent"]}
+{"t": 1789474217.725707, "run": "05ddfa4b", "where": "worker", "what": "emit", "kind": "thinking", "data": {}}
+{"t": 1789474217.7272115, "run": "05ddfa4b", "where": "generator", "what": "yield", "kind": "thinking"}
+{"t": 1789474217.750733, "run": "992bd618", "where": "worker", "what": "emit", "kind": "thinking", "data": {}}
+{"t": 1789474217.7512455, "run": "b234d0ae", "where": "worker", "what": "emit", "kind": "thinking", "data": {}}
+{"t": 1789474217.7512455, "run": "992daa81", "where": "worker", "what": "emit", "kind": "thinking", "data": {}}
+{"t": 1789474217.7512455, "run": "992bd618", "where": "generator", "what": "yield", "kind": "thinking"}
+{"t": 1789474217.7522483, "run": "b234d0ae", "where": "generator", "what": "yield", "kind": "thinking"}
+{"t": 1789474217.7532485, "run": "992daa81", "where": "generator", "what": "yield", "kind": "thinking"}
+{"t": 1789474218.2077272, "run": "05ddfa4b", "where": "worker", "what": "emit", "kind": "tool_requested", "data": {"name": "get_toc"}}
+{"t": 1789474218.2077272, "run": "05ddfa4b", "where": "generator", "what": "yield", "kind": "tool_requested"}
+{"t": 1789474218.2321432, "run": "992bd618", "where": "worker", "what": "emit", "kind": "tool_requested", "data": {"name": "get_toc"}}
+{"t": 1789474218.2332535, "run": "b234d0ae", "where": "worker", "what": "emit", "kind": "tool_requested", "data": {"name": "get_toc"}}
+{"t": 1789474218.2332535, "run": "992bd618", "where": "generator", "what": "yield", "kind": "tool_requested"}
+{"t": 1789474218.2338042, "run": "992daa81", "where": "worker", "what": "emit", "kind": "tool_requested", "data": {"name": "get_toc"}}
+{"t": 1789474218.2338042, "run": "b234d0ae", "where": "generator", "what": "yield", "kind": "tool_requested"}
+{"t": 1789474218.2368147, "run": "992daa81", "where": "generator", "what": "yield", "kind": "tool_requested"}
+{"t": 1789474218.5689406, "run": "05ddfa4b", "where": "worker", "what": "emit", "kind": "tool_finished", "data": {"name": "get_toc", "summary": "목차 보기 2023년치", "ok": true}}
+{"t": 1789474218.569948, "run": "05ddfa4b", "where": "generator", "what": "yield", "kind": "tool_finished"}
+{"t": 1789474218.5940828, "run": "992bd618", "where": "worker", "what": "emit", "kind": "tool_finished", "data": {"name": "get_toc", "summary": "목차 보기 2023년치", "ok": true}}
+{"t": 1789474218.5945885, "run": "b234d0ae", "where": "worker", "what": "emit", "kind": "tool_finished", "data": {"name": "get_toc", "summary": "목차 보기 2023년치", "ok": true}}
+{"t": 1789474218.5945885, "run": "992bd618", "where": "generator", "what": "yield", "kind": "tool_finished"}
+{"t": 1789474218.5955956, "run": "b234d0ae", "where": "generator", "what": "yield", "kind": "tool_finished"}
+{"t": 1789474218.5981174, "run": "992daa81", "where": "worker", "what": "emit", "kind": "tool_finished", "data": {"name": "get_toc", "summary": "목차 보기 2023년치", "ok": true}}
+{"t": 1789474218.5995505, "run": "992daa81", "where": "generator", "what": "yield", "kind": "tool_finished"}
+{"t": 1789474218.9305813, "run": "05ddfa4b", "where": "worker", "what": "emit", "kind": "thinking", "data": {}}
+{"t": 1789474218.9311092, "run": "05ddfa4b", "where": "generator", "what": "yield", "kind": "thinking"}
+{"t": 1789474218.9554124, "run": "992bd618", "where": "worker", "what": "emit", "kind": "thinking", "data": {}}
+{"t": 1789474218.9559414, "run": "b234d0ae", "where": "worker", "what": "emit", "kind": "thinking", "data": {}}
+{"t": 1789474218.9559414, "run": "992bd618", "where": "generator", "what": "yield", "kind": "thinking"}
+{"t": 1789474218.9569492, "run": "b234d0ae", "where": "generator", "what": "yield", "kind": "thinking"}
+{"t": 1789474218.9599562, "run": "992daa81", "where": "worker", "what": "emit", "kind": "thinking", "data": {}}
+{"t": 1789474218.9620686, "run": "992daa81", "where": "generator", "what": "yield", "kind": "thinking"}
+{"t": 1789474219.4116693, "run": "05ddfa4b", "where": "worker", "what": "emit", "kind": "tool_requested", "data": {"name": "search"}}
+{"t": 1789474219.412678, "run": "05ddfa4b", "where": "generator", "what": "yield", "kind": "tool_requested"}
+{"t": 1789474219.4365418, "run": "992bd618", "where": "worker", "what": "emit", "kind": "tool_requested", "data": {"name": "search"}}
+{"t": 1789474219.4375498, "run": "b234d0ae", "where": "worker", "what": "emit", "kind": "tool_requested", "data": {"name": "search"}}
+{"t": 1789474219.438056, "run": "b234d0ae", "where": "generator", "what": "yield", "kind": "tool_requested"}
+{"t": 1789474219.4375498, "run": "992bd618", "where": "generator", "what": "yield", "kind": "tool_requested"}
+{"t": 1789474219.4426842, "run": "992daa81", "where": "worker", "what": "emit", "kind": "tool_requested", "data": {"name": "search"}}
+{"t": 1789474219.4436965, "run": "992daa81", "where": "generator", "what": "yield", "kind": "tool_requested"}
+{"t": 1789474219.7729445, "run": "05ddfa4b", "where": "worker", "what": "emit", "kind": "tool_finished", "data": {"name": "search", "summary": "찾기 \"![t](http://127.0.0.1:7999/query-md.png) <img src=\"http://127.0.0.1:7999/query-html.png\" onerror=\"window.__xss_query=1\"> ${window.__xss_tpl_q=1} <script>window.__xss_script=1</script>\" (2023년치) → 0쪽", "ok": true}}
+{"t": 1789474219.7729445, "run": "05ddfa4b", "where": "generator", "what": "yield", "kind": "tool_finished"}
+{"t": 1789474219.798656, "run": "992bd618", "where": "worker", "what": "emit", "kind": "tool_finished", "data": {"name": "search", "summary": "찾기 \"![t](http://127.0.0.1:7999/query-md.png) <img src=\"http://127.0.0.1:7999/query-html.png\" onerror=\"window.__xss_query=1\"> ${window.__xss_tpl_q=1} <script>window.__xss_script=1</script>\" (2023년치) → 0쪽", "ok": true}}
+{"t": 1789474219.7991629, "run": "b234d0ae", "where": "worker", "what": "emit", "kind": "tool_finished", "data": {"name": "search", "summary": "찾기 \"![t](http://127.0.0.1:7999/query-md.png) <img src=\"http://127.0.0.1:7999/query-html.png\" onerror=\"window.__xss_query=1\"> ${window.__xss_tpl_q=1} <script>window.__xss_script=1</script>\" (2023년치) → 0쪽", "ok": true}}
+{"t": 1789474219.7991629, "run": "992bd618", "where": "generator", "what": "yield", "kind": "tool_finished"}
+{"t": 1789474219.800677, "run": "b234d0ae", "where": "generator", "what": "yield", "kind": "tool_finished"}
+{"t": 1789474219.804686, "run": "992daa81", "where": "worker", "what": "emit", "kind": "tool_finished", "data": {"name": "search", "summary": "찾기 \"![t](http://127.0.0.1:7999/query-md.png) <img src=\"http://127.0.0.1:7999/query-html.png\" onerror=\"window.__xss_query=1\"> ${window.__xss_tpl_q=1} <script>window.__xss_script=1</script>\" (2023년치) → 0쪽", "ok": true}}
+{"t": 1789474219.8062005, "run": "992daa81", "where": "generator", "what": "yield", "kind": "tool_finished"}
+{"t": 1789474220.1346369, "run": "05ddfa4b", "where": "worker", "what": "emit", "kind": "thinking", "data": {}}
+{"t": 1789474220.135146, "run": "05ddfa4b", "where": "generator", "what": "yield", "kind": "thinking"}
+{"t": 1789474220.160257, "run": "992bd618", "where": "worker", "what": "emit", "kind": "thinking", "data": {}}
+{"t": 1789474220.1607928, "run": "992bd618", "where": "generator", "what": "yield", "kind": "thinking"}
+{"t": 1789474220.1613226, "run": "b234d0ae", "where": "worker", "what": "emit", "kind": "thinking", "data": {}}
+{"t": 1789474220.1633315, "run": "b234d0ae", "where": "generator", "what": "yield", "kind": "thinking"}
+{"t": 1789474220.1673362, "run": "992daa81", "where": "worker", "what": "emit", "kind": "thinking", "data": {}}
+{"t": 1789474220.1688607, "run": "992daa81", "where": "generator", "what": "yield", "kind": "thinking"}
+{"t": 1789474220.6160502, "run": "05ddfa4b", "where": "worker", "what": "emit", "kind": "tool_requested", "data": {"name": "search"}}
+{"t": 1789474220.6160502, "run": "05ddfa4b", "where": "generator", "what": "yield", "kind": "tool_requested"}
+{"t": 1789474220.641211, "run": "992bd618", "where": "worker", "what": "emit", "kind": "tool_requested", "data": {"name": "search"}}
+{"t": 1789474220.6422203, "run": "992bd618", "where": "generator", "what": "yield", "kind": "tool_requested"}
+{"t": 1789474220.643694, "run": "b234d0ae", "where": "worker", "what": "emit", "kind": "tool_requested", "data": {"name": "search"}}
+{"t": 1789474220.6449673, "run": "b234d0ae", "where": "generator", "what": "yield", "kind": "tool_requested"}
+{"t": 1789474220.649967, "run": "992daa81", "where": "worker", "what": "emit", "kind": "tool_requested", "data": {"name": "search"}}
+{"t": 1789474220.649967, "run": "992daa81", "where": "generator", "what": "yield", "kind": "tool_requested"}
+{"t": 1789474220.9773355, "run": "05ddfa4b", "where": "worker", "what": "emit", "kind": "tool_finished", "data": {"name": "search", "summary": "찾기 \"한미 정상회담\" (2023년치) → 4쪽", "ok": true}}
+{"t": 1789474220.978873, "run": "05ddfa4b", "where": "generator", "what": "yield", "kind": "tool_finished"}
+{"t": 1789474221.0031104, "run": "992bd618", "where": "worker", "what": "emit", "kind": "tool_finished", "data": {"name": "search", "summary": "찾기 \"한미 정상회담\" (2023년치) → 4쪽", "ok": true}}
+{"t": 1789474221.0031104, "run": "992bd618", "where": "generator", "what": "yield", "kind": "tool_finished"}
+{"t": 1789474221.0056334, "run": "b234d0ae", "where": "worker", "what": "emit", "kind": "tool_finished", "data": {"name": "search", "summary": "찾기 \"한미 정상회담\" (2023년치) → 4쪽", "ok": true}}
+{"t": 1789474221.0066392, "run": "b234d0ae", "where": "generator", "what": "yield", "kind": "tool_finished"}
+{"t": 1789474221.011211, "run": "992daa81", "where": "worker", "what": "emit", "kind": "tool_finished", "data": {"name": "search", "summary": "찾기 \"한미 정상회담\" (2023년치) → 4쪽", "ok": true}}
+{"t": 1789474221.0122194, "run": "992daa81", "where": "generator", "what": "yield", "kind": "tool_finished"}
+{"t": 1789474221.339276, "run": "05ddfa4b", "where": "worker", "what": "emit", "kind": "thinking", "data": {}}
+{"t": 1789474221.339811, "run": "05ddfa4b", "where": "generator", "what": "yield", "kind": "thinking"}
+{"t": 1789474221.3641646, "run": "992bd618", "where": "worker", "what": "emit", "kind": "thinking", "data": {}}
+{"t": 1789474221.3641646, "run": "992bd618", "where": "generator", "what": "yield", "kind": "thinking"}
+{"t": 1789474221.3674254, "run": "b234d0ae", "where": "worker", "what": "emit", "kind": "thinking", "data": {}}
+{"t": 1789474221.3685768, "run": "b234d0ae", "where": "generator", "what": "yield", "kind": "thinking"}
+{"t": 1789474221.373103, "run": "992daa81", "where": "worker", "what": "emit", "kind": "thinking", "data": {}}
+{"t": 1789474221.3741138, "run": "992daa81", "where": "generator", "what": "yield", "kind": "thinking"}
+{"t": 1789474221.8212516, "run": "05ddfa4b", "where": "worker", "what": "emit", "kind": "tool_requested", "data": {"name": "read_pages"}}
+{"t": 1789474221.8212516, "run": "05ddfa4b", "where": "generator", "what": "yield", "kind": "tool_requested"}
+{"t": 1789474221.8453178, "run": "992bd618", "where": "worker", "what": "emit", "kind": "tool_requested", "data": {"name": "read_pages"}}
+{"t": 1789474221.8453178, "run": "992bd618", "where": "generator", "what": "yield", "kind": "tool_requested"}
+{"t": 1789474221.8493261, "run": "b234d0ae", "where": "worker", "what": "emit", "kind": "tool_requested", "data": {"name": "read_pages"}}
+{"t": 1789474221.8498325, "run": "b234d0ae", "where": "generator", "what": "yield", "kind": "tool_requested"}
+{"t": 1789474221.8545136, "run": "992daa81", "where": "worker", "what": "emit", "kind": "tool_requested", "data": {"name": "read_pages"}}
+{"t": 1789474221.8545136, "run": "992daa81", "where": "generator", "what": "yield", "kind": "tool_requested"}
+{"t": 1789474222.1825938, "run": "05ddfa4b", "where": "worker", "what": "emit", "kind": "tool_finished", "data": {"name": "read_pages", "summary": "쪽 읽기 2023년치 38쪽, 2023년치 39쪽", "ok": true}}
+{"t": 1789474222.1836069, "run": "05ddfa4b", "where": "generator", "what": "yield", "kind": "tool_finished"}
+{"t": 1789474222.206261, "run": "992bd618", "where": "worker", "what": "emit", "kind": "tool_finished", "data": {"name": "read_pages", "summary": "쪽 읽기 2023년치 38쪽, 2023년치 39쪽", "ok": true}}
+{"t": 1789474222.206261, "run": "992bd618", "where": "generator", "what": "yield", "kind": "tool_finished"}
+{"t": 1789474222.210617, "run": "b234d0ae", "where": "worker", "what": "emit", "kind": "tool_finished", "data": {"name": "read_pages", "summary": "쪽 읽기 2023년치 38쪽, 2023년치 39쪽", "ok": true}}
+{"t": 1789474222.2126317, "run": "b234d0ae", "where": "generator", "what": "yield", "kind": "tool_finished"}
+{"t": 1789474222.2156262, "run": "992daa81", "where": "worker", "what": "emit", "kind": "tool_finished", "data": {"name": "read_pages", "summary": "쪽 읽기 2023년치 38쪽, 2023년치 39쪽", "ok": true}}
+{"t": 1789474222.2161357, "run": "992daa81", "where": "generator", "what": "yield", "kind": "tool_finished"}
+{"t": 1789474222.5442357, "run": "05ddfa4b", "where": "worker", "what": "emit", "kind": "thinking", "data": {}}
+{"t": 1789474222.5442357, "run": "05ddfa4b", "where": "generator", "what": "yield", "kind": "thinking"}
+{"t": 1789474222.5677342, "run": "992bd618", "where": "worker", "what": "emit", "kind": "thinking", "data": {}}
+{"t": 1789474222.568743, "run": "992bd618", "where": "generator", "what": "yield", "kind": "thinking"}
+{"t": 1789474222.5729868, "run": "b234d0ae", "where": "worker", "what": "emit", "kind": "thinking", "data": {}}
+{"t": 1789474222.5739968, "run": "b234d0ae", "where": "generator", "what": "yield", "kind": "thinking"}
+{"t": 1789474222.5772507, "run": "992daa81", "where": "worker", "what": "emit", "kind": "thinking", "data": {}}
+{"t": 1789474222.5772507, "run": "992daa81", "where": "generator", "what": "yield", "kind": "thinking"}
+{"t": 1789474223.0253758, "run": "05ddfa4b", "where": "worker", "what": "emit", "kind": "answer_started", "data": {}}
+{"t": 1789474223.026385, "run": "05ddfa4b", "where": "generator", "what": "yield", "kind": "answer_started"}
+{"t": 1789474223.0490847, "run": "992bd618", "where": "worker", "what": "emit", "kind": "answer_started", "data": {}}
+{"t": 1789474223.0490847, "run": "992bd618", "where": "generator", "what": "yield", "kind": "answer_started"}
+{"t": 1789474223.0549088, "run": "b234d0ae", "where": "worker", "what": "emit", "kind": "answer_started", "data": {}}
+{"t": 1789474223.0549088, "run": "b234d0ae", "where": "generator", "what": "yield", "kind": "answer_started"}
+{"t": 1789474223.058094, "run": "992daa81", "where": "worker", "what": "emit", "kind": "answer_started", "data": {}}
+{"t": 1789474223.058602, "run": "992daa81", "where": "generator", "what": "yield", "kind": "answer_started"}
+{"t": 1789474223.3866358, "run": "05ddfa4b", "where": "worker", "what": "emit", "kind": "done", "data": {"status": "answered"}}
+{"t": 1789474223.3876472, "run": "05ddfa4b", "where": "worker", "what": "run_returned", "status": "answered", "notice": null, "reason": null}
+{"t": 1789474223.3901603, "run": "05ddfa4b", "where": "generator", "what": "yield", "kind": "result"}
+{"t": 1789474223.40987, "run": "992bd618", "where": "worker", "what": "emit", "kind": "done", "data": {"status": "answered"}}
+{"t": 1789474223.410999, "run": "992bd618", "where": "worker", "what": "run_returned", "status": "answered", "notice": null, "reason": null}
+{"t": 1789474223.4137762, "run": "992bd618", "where": "generator", "what": "yield", "kind": "result"}
+{"t": 1789474223.4157763, "run": "b234d0ae", "where": "worker", "what": "emit", "kind": "done", "data": {"status": "answered"}}
+{"t": 1789474223.4162867, "run": "b234d0ae", "where": "worker", "what": "run_returned", "status": "answered", "notice": null, "reason": null}
+{"t": 1789474223.4198027, "run": "992daa81", "where": "worker", "what": "emit", "kind": "done", "data": {"status": "answered"}}
+{"t": 1789474223.4208107, "run": "992daa81", "where": "worker", "what": "run_returned", "status": "answered", "notice": null, "reason": null}
+{"t": 1789474223.4208107, "run": "b234d0ae", "where": "generator", "what": "yield", "kind": "result"}
+{"t": 1789474223.423862, "run": "992daa81", "where": "generator", "what": "yield", "kind": "result"}
+{"t": 1789474223.4567575, "where": "handler", "what": "request", "session_hash": "58d023d19fed", "client_host": "127.0.0.1", "xff_chain": [], "visitor_key": "7a8f11d82661", "headers": ["accept", "accept-encoding", "connection", "content-length", "content-type", "host", "user-agent"]}
+{"t": 1789474223.4648073, "where": "handler", "what": "request", "session_hash": "4091b4de5193", "client_host": "127.0.0.1", "xff_chain": [], "visitor_key": "0e803ed72d40", "headers": ["accept", "accept-encoding", "connection", "content-length", "content-type", "host", "user-agent"]}
+{"t": 1789474223.8382072, "run": "90011c49", "where": "worker", "what": "emit", "kind": "thinking", "data": {}}
+{"t": 1789474223.8382072, "run": "90011c49", "where": "generator", "what": "yield", "kind": "thinking"}
+{"t": 1789474223.8447304, "run": "2ecf54a3", "where": "worker", "what": "emit", "kind": "thinking", "data": {}}
+{"t": 1789474223.845237, "run": "2ecf54a3", "where": "generator", "what": "yield", "kind": "thinking"}
+{"t": 1789474224.3193905, "run": "90011c49", "where": "worker", "what": "emit", "kind": "tool_requested", "data": {"name": "get_toc"}}
+{"t": 1789474224.3199074, "run": "90011c49", "where": "generator", "what": "yield", "kind": "tool_requested"}
+{"t": 1789474224.3259354, "run": "2ecf54a3", "where": "worker", "what": "emit", "kind": "tool_requested", "data": {"name": "get_toc"}}
+{"t": 1789474224.3269422, "run": "2ecf54a3", "where": "generator", "what": "yield", "kind": "tool_requested"}
+{"t": 1789474224.68059, "run": "90011c49", "where": "worker", "what": "emit", "kind": "tool_finished", "data": {"name": "get_toc", "summary": "목차 보기 2023년치", "ok": true}}
+{"t": 1789474224.6811082, "run": "90011c49", "where": "generator", "what": "yield", "kind": "tool_finished"}
+{"t": 1789474224.6871169, "run": "2ecf54a3", "where": "worker", "what": "emit", "kind": "tool_finished", "data": {"name": "get_toc", "summary": "목차 보기 2023년치", "ok": true}}
+{"t": 1789474224.6886327, "run": "2ecf54a3", "where": "generator", "what": "yield", "kind": "tool_finished"}
+{"t": 1789474225.0423484, "run": "90011c49", "where": "worker", "what": "emit", "kind": "thinking", "data": {}}
+{"t": 1789474225.0423484, "run": "90011c49", "where": "generator", "what": "yield", "kind": "thinking"}
+{"t": 1789474225.0488582, "run": "2ecf54a3", "where": "worker", "what": "emit", "kind": "thinking", "data": {}}
+{"t": 1789474225.0488582, "run": "2ecf54a3", "where": "generator", "what": "yield", "kind": "thinking"}
+{"t": 1789474225.5231426, "run": "90011c49", "where": "worker", "what": "emit", "kind": "tool_requested", "data": {"name": "search"}}
+{"t": 1789474225.5231426, "run": "90011c49", "where": "generator", "what": "yield", "kind": "tool_requested"}
+{"t": 1789474225.5296745, "run": "2ecf54a3", "where": "worker", "what": "emit", "kind": "tool_requested", "data": {"name": "search"}}
+{"t": 1789474225.5296745, "run": "2ecf54a3", "where": "generator", "what": "yield", "kind": "tool_requested"}
+{"t": 1789474225.8839104, "run": "90011c49", "where": "worker", "what": "emit", "kind": "tool_finished", "data": {"name": "search", "summary": "찾기 \"![t](http://127.0.0.1:7999/query-md.png) <img src=\"http://127.0.0.1:7999/query-html.png\" onerror=\"window.__xss_query=1\"> ${window.__xss_tpl_q=1} <script>window.__xss_script=1</script>\" (2023년치) → 0쪽", "ok": true}}
+{"t": 1789474225.8844156, "run": "90011c49", "where": "generator", "what": "yield", "kind": "tool_finished"}
+{"t": 1789474225.8904605, "run": "2ecf54a3", "where": "worker", "what": "emit", "kind": "tool_finished", "data": {"name": "search", "summary": "찾기 \"![t](http://127.0.0.1:7999/query-md.png) <img src=\"http://127.0.0.1:7999/query-html.png\" onerror=\"window.__xss_query=1\"> ${window.__xss_tpl_q=1} <script>window.__xss_script=1</script>\" (2023년치) → 0쪽", "ok": true}}
+{"t": 1789474225.890976, "run": "2ecf54a3", "where": "generator", "what": "yield", "kind": "tool_finished"}
+{"t": 1789474226.24494, "run": "90011c49", "where": "worker", "what": "emit", "kind": "thinking", "data": {}}
+{"t": 1789474226.24494, "run": "90011c49", "where": "generator", "what": "yield", "kind": "thinking"}
+{"t": 1789474226.2516904, "run": "2ecf54a3", "where": "worker", "what": "emit", "kind": "thinking", "data": {}}
+{"t": 1789474226.252197, "run": "2ecf54a3", "where": "generator", "what": "yield", "kind": "thinking"}
+{"t": 1789474226.726549, "run": "90011c49", "where": "worker", "what": "emit", "kind": "tool_requested", "data": {"name": "search"}}
+{"t": 1789474226.7275567, "run": "90011c49", "where": "generator", "what": "yield", "kind": "tool_requested"}
+{"t": 1789474226.7330947, "run": "2ecf54a3", "where": "worker", "what": "emit", "kind": "tool_requested", "data": {"name": "search"}}
+{"t": 1789474226.7330947, "run": "2ecf54a3", "where": "generator", "what": "yield", "kind": "tool_requested"}
+{"t": 1789474227.087904, "run": "90011c49", "where": "worker", "what": "emit", "kind": "tool_finished", "data": {"name": "search", "summary": "찾기 \"한미 정상회담\" (2023년치) → 4쪽", "ok": true}}
+{"t": 1789474227.08895, "run": "90011c49", "where": "generator", "what": "yield", "kind": "tool_finished"}
+{"t": 1789474227.0941038, "run": "2ecf54a3", "where": "worker", "what": "emit", "kind": "tool_finished", "data": {"name": "search", "summary": "찾기 \"한미 정상회담\" (2023년치) → 4쪽", "ok": true}}
+{"t": 1789474227.0951695, "run": "2ecf54a3", "where": "generator", "what": "yield", "kind": "tool_finished"}
+{"t": 1789474227.449735, "run": "90011c49", "where": "worker", "what": "emit", "kind": "thinking", "data": {}}
+{"t": 1789474227.45024, "run": "90011c49", "where": "generator", "what": "yield", "kind": "thinking"}
+{"t": 1789474227.4562812, "run": "2ecf54a3", "where": "worker", "what": "emit", "kind": "thinking", "data": {}}
+{"t": 1789474227.45729, "run": "2ecf54a3", "where": "generator", "what": "yield", "kind": "thinking"}
+{"t": 1789474227.9313707, "run": "90011c49", "where": "worker", "what": "emit", "kind": "tool_requested", "data": {"name": "read_pages"}}
+{"t": 1789474227.9313707, "run": "90011c49", "where": "generator", "what": "yield", "kind": "tool_requested"}
+{"t": 1789474227.9377267, "run": "2ecf54a3", "where": "worker", "what": "emit", "kind": "tool_requested", "data": {"name": "read_pages"}}
+{"t": 1789474227.9389699, "run": "2ecf54a3", "where": "generator", "what": "yield", "kind": "tool_requested"}
+{"t": 1789474228.292737, "run": "90011c49", "where": "worker", "what": "emit", "kind": "tool_finished", "data": {"name": "read_pages", "summary": "쪽 읽기 2023년치 38쪽, 2023년치 39쪽", "ok": true}}
+{"t": 1789474228.2937455, "run": "90011c49", "where": "generator", "what": "yield", "kind": "tool_finished"}
+{"t": 1789474228.2992535, "run": "2ecf54a3", "where": "worker", "what": "emit", "kind": "tool_finished", "data": {"name": "read_pages", "summary": "쪽 읽기 2023년치 38쪽, 2023년치 39쪽", "ok": true}}
+{"t": 1789474228.3007662, "run": "2ecf54a3", "where": "generator", "what": "yield", "kind": "tool_finished"}
+{"t": 1789474228.6542442, "run": "90011c49", "where": "worker", "what": "emit", "kind": "thinking", "data": {}}
+{"t": 1789474228.655257, "run": "90011c49", "where": "generator", "what": "yield", "kind": "thinking"}
+{"t": 1789474228.661266, "run": "2ecf54a3", "where": "worker", "what": "emit", "kind": "thinking", "data": {}}
+{"t": 1789474228.6622784, "run": "2ecf54a3", "where": "generator", "what": "yield", "kind": "thinking"}
+{"t": 1789474229.1352947, "run": "90011c49", "where": "worker", "what": "emit", "kind": "answer_started", "data": {}}
+{"t": 1789474229.1352947, "run": "90011c49", "where": "generator", "what": "yield", "kind": "answer_started"}
+{"t": 1789474229.1427314, "run": "2ecf54a3", "where": "worker", "what": "emit", "kind": "answer_started", "data": {}}
+{"t": 1789474229.1427314, "run": "2ecf54a3", "where": "generator", "what": "yield", "kind": "answer_started"}
+{"t": 1789474229.4966702, "run": "90011c49", "where": "worker", "what": "emit", "kind": "done", "data": {"status": "answered"}}
+{"t": 1789474229.4976804, "run": "90011c49", "where": "worker", "what": "run_returned", "status": "answered", "notice": null, "reason": null}
+{"t": 1789474229.4986794, "run": "90011c49", "where": "generator", "what": "yield", "kind": "result"}
+{"t": 1789474229.50373, "run": "2ecf54a3", "where": "worker", "what": "emit", "kind": "done", "data": {"status": "answered"}}
+{"t": 1789474229.5042422, "run": "2ecf54a3", "where": "worker", "what": "run_returned", "status": "answered", "notice": null, "reason": null}
+{"t": 1789474229.5073147, "run": "2ecf54a3", "where": "generator", "what": "yield", "kind": "result"}
+{"t": 1789474260.8930573, "where": "handler", "what": "request", "session_hash": "1409a55e42fe", "client_host": "127.0.0.1", "xff_chain": [], "visitor_key": "ca2e548d0564", "headers": ["accept", "accept-encoding", "connection", "content-length", "content-type", "host", "user-agent"]}
+{"t": 1789474261.9022799, "run": "359340da", "where": "worker", "what": "emit", "kind": "thinking", "data": {}}
+{"t": 1789474261.9022799, "run": "359340da", "where": "generator", "what": "yield", "kind": "thinking"}
+{"t": 1789474263.103413, "run": "359340da", "where": "worker", "what": "emit", "kind": "tool_requested", "data": {"name": "get_toc"}}
+{"t": 1789474263.103413, "run": "359340da", "where": "generator", "what": "yield", "kind": "tool_requested"}
+{"t": 1789474264.0046778, "run": "359340da", "where": "worker", "what": "emit", "kind": "tool_finished", "data": {"name": "get_toc", "summary": "목차 보기 2023년치", "ok": true}}
+{"t": 1789474264.0056903, "run": "359340da", "where": "generator", "what": "yield", "kind": "tool_finished"}
+{"t": 1789474264.014762, "run": "359340da", "where": "generator", "what": "closed"}
+{"t": 1789474264.9062963, "run": "359340da", "where": "worker", "what": "cancel_raised", "kind": "thinking", "reason": "generator_closed"}
+{"t": 1789474264.907306, "run": "359340da", "where": "worker", "what": "emit", "kind": "notice", "data": {"notice": "unknown", "message": "알 수 없는 문제가 생겼어요. 잠시 뒤 다시 해 주세요."}}
+{"t": 1789474264.907306, "run": "359340da", "where": "worker", "what": "emit", "kind": "done", "data": {"status": "error"}}
+{"t": 1789474264.9083047, "run": "359340da", "where": "worker", "what": "run_returned", "status": "error", "notice": {"kind": "unknown", "message": "알 수 없는 문제가 생겼어요. 잠시 뒤 다시 해 주세요."}, "reason": "generator_closed"}
+{"t": 1789474308.2047906, "where": "handler", "what": "request", "session_hash": "b33b1c7e06f4", "client_host": "127.0.0.1", "xff_chain": [], "visitor_key": "81908a018b0f", "headers": ["accept", "accept-encoding", "connection", "content-length", "content-type", "host", "user-agent"]}
+{"t": 1789474309.1166563, "run": "dfc9c160", "where": "worker", "what": "emit", "kind": "thinking", "data": {}}
+{"t": 1789474309.1166563, "run": "dfc9c160", "where": "generator", "what": "yield", "kind": "thinking"}
+{"t": 1789474310.317941, "run": "dfc9c160", "where": "worker", "what": "emit", "kind": "tool_requested", "data": {"name": "get_toc"}}
+{"t": 1789474310.317941, "run": "dfc9c160", "where": "generator", "what": "yield", "kind": "tool_requested"}
+{"t": 1789474310.6779456, "where": "handler", "what": "stop_clicked", "session_hash": "b33b1c7e06f4", "found": true}
+{"t": 1789474311.219014, "run": "dfc9c160", "where": "worker", "what": "cancel_raised", "kind": "tool_finished", "reason": "stop_button"}
+{"t": 1789474311.2200217, "run": "dfc9c160", "where": "worker", "what": "emit", "kind": "notice", "data": {"notice": "unknown", "message": "알 수 없는 문제가 생겼어요. 잠시 뒤 다시 해 주세요."}}
+{"t": 1789474311.2200217, "run": "dfc9c160", "where": "worker", "what": "emit", "kind": "done", "data": {"status": "error"}}
+{"t": 1789474311.221024, "run": "dfc9c160", "where": "worker", "what": "run_returned", "status": "error", "notice": {"kind": "unknown", "message": "알 수 없는 문제가 생겼어요. 잠시 뒤 다시 해 주세요."}, "reason": "stop_button"}
+{"t": 1789474311.222024, "run": "dfc9c160", "where": "generator", "what": "yield", "kind": "result"}
+{"t": 1789474311.2235324, "run": "dfc9c160", "where": "generator", "what": "closed"}
+{"t": 1789474321.8600645, "where": "handler", "what": "request", "session_hash": "a1bd3509469c", "client_host": "127.0.0.1", "xff_chain": [], "visitor_key": "2cbc7a715cea", "headers": ["accept", "accept-encoding", "connection", "content-length", "content-type", "host", "user-agent"]}
+{"t": 1789474322.769686, "run": "c8651dc4", "where": "worker", "what": "emit", "kind": "thinking", "data": {}}
+{"t": 1789474322.769686, "run": "c8651dc4", "where": "generator", "what": "yield", "kind": "thinking"}
+{"t": 1789474323.9706674, "run": "c8651dc4", "where": "worker", "what": "emit", "kind": "tool_requested", "data": {"name": "get_toc"}}
+{"t": 1789474323.9711752, "run": "c8651dc4", "where": "generator", "what": "yield", "kind": "tool_requested"}
+{"t": 1789474324.8719027, "run": "c8651dc4", "where": "worker", "what": "emit", "kind": "tool_finished", "data": {"name": "get_toc", "summary": "목차 보기 2023년치", "ok": true}}
+{"t": 1789474324.872915, "run": "c8651dc4", "where": "generator", "what": "yield", "kind": "tool_finished"}
+{"t": 1789474324.9152188, "run": "c8651dc4", "where": "generator", "what": "closed"}
+{"t": 1789474325.773465, "run": "c8651dc4", "where": "worker", "what": "cancel_raised", "kind": "thinking", "reason": "generator_closed"}
+{"t": 1789474325.7739706, "run": "c8651dc4", "where": "worker", "what": "emit", "kind": "notice", "data": {"notice": "unknown", "message": "알 수 없는 문제가 생겼어요. 잠시 뒤 다시 해 주세요."}}
+{"t": 1789474325.7739706, "run": "c8651dc4", "where": "worker", "what": "emit", "kind": "done", "data": {"status": "error"}}
+{"t": 1789474325.7749784, "run": "c8651dc4", "where": "worker", "what": "run_returned", "status": "error", "notice": {"kind": "unknown", "message": "알 수 없는 문제가 생겼어요. 잠시 뒤 다시 해 주세요."}, "reason": "generator_closed"}
+{"t": 1789474354.3131351, "where": "handler", "what": "request", "session_hash": "1e904a0acace", "client_host": "127.0.0.1", "xff_chain": [], "visitor_key": "db1527392e74", "headers": ["accept", "accept-encoding", "connection", "content-length", "content-type", "host", "user-agent"]}
+{"t": 1789474355.267804, "run": "022c19bf", "where": "worker", "what": "emit", "kind": "thinking", "data": {}}
+{"t": 1789474355.267804, "run": "022c19bf", "where": "generator", "what": "yield", "kind": "thinking"}
+{"t": 1789474356.4687567, "run": "022c19bf", "where": "worker", "what": "emit", "kind": "tool_requested", "data": {"name": "get_toc"}}
+{"t": 1789474356.4687567, "run": "022c19bf", "where": "generator", "what": "yield", "kind": "tool_requested"}
+{"t": 1789474357.3698618, "run": "022c19bf", "where": "worker", "what": "emit", "kind": "tool_finished", "data": {"name": "get_toc", "summary": "목차 보기 2023년치", "ok": true}}
+{"t": 1789474357.3698618, "run": "022c19bf", "where": "generator", "what": "yield", "kind": "tool_finished"}
+{"t": 1789474357.3783445, "run": "022c19bf", "where": "generator", "what": "closed"}
+{"t": 1789474358.270968, "run": "022c19bf", "where": "worker", "what": "emit", "kind": "thinking", "data": {}}
+{"t": 1789474359.4721205, "run": "022c19bf", "where": "worker", "what": "emit", "kind": "tool_requested", "data": {"name": "search"}}
+{"t": 1789474360.3734882, "run": "022c19bf", "where": "worker", "what": "emit", "kind": "tool_finished", "data": {"name": "search", "summary": "찾기 \"![t](http://127.0.0.1:7999/query-md.png) <img src=\"http://127.0.0.1:7999/query-html.png\" onerror=\"window.__xss_query=1\"> ${window.__xss_tpl_q=1} <script>window.__xss_script=1</script>\" (2023년치) → 0쪽", "ok": true}}
+{"t": 1789474361.275002, "run": "022c19bf", "where": "worker", "what": "emit", "kind": "thinking", "data": {}}
+{"t": 1789474362.4762447, "run": "022c19bf", "where": "worker", "what": "emit", "kind": "tool_requested", "data": {"name": "search"}}
+{"t": 1789474363.3771698, "run": "022c19bf", "where": "worker", "what": "emit", "kind": "tool_finished", "data": {"name": "search", "summary": "찾기 \"한미 정상회담\" (2023년치) → 4쪽", "ok": true}}
+{"t": 1789474364.279299, "run": "022c19bf", "where": "worker", "what": "emit", "kind": "thinking", "data": {}}
+{"t": 1789474365.4809687, "run": "022c19bf", "where": "worker", "what": "emit", "kind": "tool_requested", "data": {"name": "read_pages"}}
+{"t": 1789474366.3825374, "run": "022c19bf", "where": "worker", "what": "emit", "kind": "tool_finished", "data": {"name": "read_pages", "summary": "쪽 읽기 2023년치 38쪽, 2023년치 39쪽", "ok": true}}
+{"t": 1789474367.2840106, "run": "022c19bf", "where": "worker", "what": "emit", "kind": "thinking", "data": {}}
+{"t": 1789474368.4850738, "run": "022c19bf", "where": "worker", "what": "emit", "kind": "answer_started", "data": {}}
+{"t": 1789474369.3864937, "run": "022c19bf", "where": "worker", "what": "emit", "kind": "done", "data": {"status": "answered"}}
+{"t": 1789474369.3875048, "run": "022c19bf", "where": "worker", "what": "run_returned", "status": "answered", "notice": null, "reason": null}
+{"t": 1789474371.4350164, "where": "handler", "what": "request", "session_hash": "b41638f9c215", "client_host": "127.0.0.1", "xff_chain": [], "visitor_key": "dbd6e7e8e253", "headers": ["accept", "accept-encoding", "connection", "content-length", "content-type", "host", "user-agent"]}
+{"t": 1789474372.3444195, "run": "a4d08211", "where": "worker", "what": "emit", "kind": "thinking", "data": {}}
+{"t": 1789474372.3444195, "run": "a4d08211", "where": "generator", "what": "yield", "kind": "thinking"}
+{"t": 1789474373.5456474, "run": "a4d08211", "where": "worker", "what": "emit", "kind": "tool_requested", "data": {"name": "get_toc"}}
+{"t": 1789474373.5461545, "run": "a4d08211", "where": "generator", "what": "yield", "kind": "tool_requested"}
+{"t": 1789474374.4464455, "run": "a4d08211", "where": "worker", "what": "emit", "kind": "tool_finished", "data": {"name": "get_toc", "summary": "목차 보기 2023년치", "ok": true}}
+{"t": 1789474374.4464455, "run": "a4d08211", "where": "generator", "what": "yield", "kind": "tool_finished"}
+{"t": 1789474375.3477173, "run": "a4d08211", "where": "worker", "what": "emit", "kind": "thinking", "data": {}}
+{"t": 1789474375.3477173, "run": "a4d08211", "where": "generator", "what": "yield", "kind": "thinking"}
+{"t": 1789474376.548829, "run": "a4d08211", "where": "worker", "what": "emit", "kind": "tool_requested", "data": {"name": "search"}}
+{"t": 1789474376.5493376, "run": "a4d08211", "where": "generator", "what": "yield", "kind": "tool_requested"}
+{"t": 1789474377.4494722, "run": "a4d08211", "where": "worker", "what": "emit", "kind": "tool_finished", "data": {"name": "search", "summary": "찾기 \"![t](http://127.0.0.1:7999/query-md.png) <img src=\"http://127.0.0.1:7999/query-html.png\" onerror=\"window.__xss_query=1\"> ${window.__xss_tpl_q=1} <script>window.__xss_script=1</script>\" (2023년치) → 0쪽", "ok": true}}
+{"t": 1789474377.4494722, "run": "a4d08211", "where": "generator", "what": "yield", "kind": "tool_finished"}
+{"t": 1789474378.3506863, "run": "a4d08211", "where": "worker", "what": "emit", "kind": "thinking", "data": {}}
+{"t": 1789474378.3506863, "run": "a4d08211", "where": "generator", "what": "yield", "kind": "thinking"}
+{"t": 1789474379.5517843, "run": "a4d08211", "where": "worker", "what": "emit", "kind": "tool_requested", "data": {"name": "search"}}
+{"t": 1789474379.5517843, "run": "a4d08211", "where": "generator", "what": "yield", "kind": "tool_requested"}
+{"t": 1789474380.4530227, "run": "a4d08211", "where": "worker", "what": "emit", "kind": "tool_finished", "data": {"name": "search", "summary": "찾기 \"한미 정상회담\" (2023년치) → 4쪽", "ok": true}}
+{"t": 1789474380.4540305, "run": "a4d08211", "where": "generator", "what": "yield", "kind": "tool_finished"}
+{"t": 1789474381.3550603, "run": "a4d08211", "where": "worker", "what": "emit", "kind": "thinking", "data": {}}
+{"t": 1789474381.3550603, "run": "a4d08211", "where": "generator", "what": "yield", "kind": "thinking"}
+{"t": 1789474382.5562007, "run": "a4d08211", "where": "worker", "what": "emit", "kind": "tool_requested", "data": {"name": "read_pages"}}
+{"t": 1789474382.5562007, "run": "a4d08211", "where": "generator", "what": "yield", "kind": "tool_requested"}
+{"t": 1789474383.4573538, "run": "a4d08211", "where": "worker", "what": "emit", "kind": "tool_finished", "data": {"name": "read_pages", "summary": "쪽 읽기 2023년치 38쪽, 2023년치 39쪽", "ok": true}}
+{"t": 1789474383.4578605, "run": "a4d08211", "where": "generator", "what": "yield", "kind": "tool_finished"}
+{"t": 1789474384.3587794, "run": "a4d08211", "where": "worker", "what": "emit", "kind": "thinking", "data": {}}
+{"t": 1789474384.3587794, "run": "a4d08211", "where": "generator", "what": "yield", "kind": "thinking"}
+{"t": 1789474385.5597866, "run": "a4d08211", "where": "worker", "what": "emit", "kind": "answer_started", "data": {}}
+{"t": 1789474385.5597866, "run": "a4d08211", "where": "generator", "what": "yield", "kind": "answer_started"}
+{"t": 1789474386.4604874, "run": "a4d08211", "where": "worker", "what": "emit", "kind": "done", "data": {"status": "answered"}}
+{"t": 1789474386.4614937, "run": "a4d08211", "where": "worker", "what": "run_returned", "status": "answered", "notice": null, "reason": null}
+{"t": 1789474386.462495, "run": "a4d08211", "where": "generator", "what": "yield", "kind": "result"}
+{"t": 1789474556.3493366, "where": "handler", "what": "request", "session_hash": "1ov21b9kv9y", "client_host": "127.0.0.1", "xff_chain": [], "visitor_key": "6787113de4f3", "headers": ["accept", "accept-encoding", "accept-language", "connection", "content-length", "content-type", "host", "origin", "referer", "sec-ch-ua", "sec-ch-ua-mobile", "sec-ch-ua-platform", "sec-fetch-dest", "sec-fetch-mode", "sec-fetch-site", "user-agent", "x-gradio-user"]}
+{"t": 1789474557.0632668, "run": "95be926e", "where": "worker", "what": "emit", "kind": "thinking", "data": {}}
+{"t": 1789474557.0632668, "run": "95be926e", "where": "generator", "what": "yield", "kind": "thinking"}
+{"t": 1789474557.5440557, "run": "95be926e", "where": "worker", "what": "emit", "kind": "tool_requested", "data": {"name": "get_toc"}}
+{"t": 1789474557.5445619, "run": "95be926e", "where": "generator", "what": "yield", "kind": "tool_requested"}
+{"t": 1789474557.9051392, "run": "95be926e", "where": "worker", "what": "emit", "kind": "tool_finished", "data": {"name": "get_toc", "summary": "목차 보기 2023년치", "ok": true}}
+{"t": 1789474557.9056501, "run": "95be926e", "where": "generator", "what": "yield", "kind": "tool_finished"}
+{"t": 1789474558.2667742, "run": "95be926e", "where": "worker", "what": "emit", "kind": "thinking", "data": {}}
+{"t": 1789474558.2667742, "run": "95be926e", "where": "generator", "what": "yield", "kind": "thinking"}
+{"t": 1789474558.7479026, "run": "95be926e", "where": "worker", "what": "emit", "kind": "tool_requested", "data": {"name": "search"}}
+{"t": 1789474558.7484086, "run": "95be926e", "where": "generator", "what": "yield", "kind": "tool_requested"}
+{"t": 1789474559.1096983, "run": "95be926e", "where": "worker", "what": "emit", "kind": "tool_finished", "data": {"name": "search", "summary": "찾기 \"![t](http://127.0.0.1:7999/query-md.png) <img src=\"http://127.0.0.1:7999/query-html.png\" onerror=\"window.__xss_query=1\"> ${window.__xss_tpl_q=1} <script>window.__xss_script=1</script>\" (2023년치) → 0쪽", "ok": true}}
+{"t": 1789474559.1107006, "run": "95be926e", "where": "generator", "what": "yield", "kind": "tool_finished"}
+{"t": 1789474559.4709282, "run": "95be926e", "where": "worker", "what": "emit", "kind": "thinking", "data": {}}
+{"t": 1789474559.4719384, "run": "95be926e", "where": "generator", "what": "yield", "kind": "thinking"}
+{"t": 1789474559.952262, "run": "95be926e", "where": "worker", "what": "emit", "kind": "tool_requested", "data": {"name": "search"}}
+{"t": 1789474559.952262, "run": "95be926e", "where": "generator", "what": "yield", "kind": "tool_requested"}
+{"t": 1789474560.31339, "run": "95be926e", "where": "worker", "what": "emit", "kind": "tool_finished", "data": {"name": "search", "summary": "찾기 \"한미 정상회담\" (2023년치) → 4쪽", "ok": true}}
+{"t": 1789474560.3143947, "run": "95be926e", "where": "generator", "what": "yield", "kind": "tool_finished"}
+{"t": 1789474560.6747549, "run": "95be926e", "where": "worker", "what": "emit", "kind": "thinking", "data": {}}
+{"t": 1789474560.6752694, "run": "95be926e", "where": "generator", "what": "yield", "kind": "thinking"}
+{"t": 1789474561.1559908, "run": "95be926e", "where": "worker", "what": "emit", "kind": "tool_requested", "data": {"name": "read_pages"}}
+{"t": 1789474561.1572468, "run": "95be926e", "where": "generator", "what": "yield", "kind": "tool_requested"}
+{"t": 1789474561.5178244, "run": "95be926e", "where": "worker", "what": "emit", "kind": "tool_finished", "data": {"name": "read_pages", "summary": "쪽 읽기 2023년치 38쪽, 2023년치 39쪽", "ok": true}}
+{"t": 1789474561.5188324, "run": "95be926e", "where": "generator", "what": "yield", "kind": "tool_finished"}
+{"t": 1789474561.879061, "run": "95be926e", "where": "worker", "what": "emit", "kind": "thinking", "data": {}}
+{"t": 1789474561.880076, "run": "95be926e", "where": "generator", "what": "yield", "kind": "thinking"}
+{"t": 1789474562.360255, "run": "95be926e", "where": "worker", "what": "emit", "kind": "answer_started", "data": {}}
+{"t": 1789474562.3607588, "run": "95be926e", "where": "generator", "what": "yield", "kind": "answer_started"}
+{"t": 1789474562.721749, "run": "95be926e", "where": "worker", "what": "emit", "kind": "done", "data": {"status": "answered"}}
+{"t": 1789474562.7227557, "run": "95be926e", "where": "worker", "what": "run_returned", "status": "answered", "notice": null, "reason": null}
+{"t": 1789474562.7247527, "run": "95be926e", "where": "generator", "what": "yield", "kind": "result"}
+{"t": 1789474618.3243778, "where": "handler", "what": "request", "session_hash": "1ov21b9kv9y", "client_host": "127.0.0.1", "xff_chain": [], "visitor_key": "6787113de4f3", "headers": ["accept", "accept-encoding", "accept-language", "connection", "content-length", "content-type", "host", "origin", "referer", "sec-ch-ua", "sec-ch-ua-mobile", "sec-ch-ua-platform", "sec-fetch-dest", "sec-fetch-mode", "sec-fetch-site", "user-agent", "x-gradio-user"]}
+{"t": 1789474618.6928723, "run": "211107d7", "where": "worker", "what": "emit", "kind": "thinking", "data": {}}
+{"t": 1789474618.6933796, "run": "211107d7", "where": "generator", "what": "yield", "kind": "thinking"}
+{"t": 1789474619.1739633, "run": "211107d7", "where": "worker", "what": "emit", "kind": "tool_requested", "data": {"name": "get_toc"}}
+{"t": 1789474619.1739633, "run": "211107d7", "where": "generator", "what": "yield", "kind": "tool_requested"}
+{"t": 1789474619.5352244, "run": "211107d7", "where": "worker", "what": "emit", "kind": "tool_finished", "data": {"name": "get_toc", "summary": "목차 보기 2023년치", "ok": true}}
+{"t": 1789474619.5357301, "run": "211107d7", "where": "generator", "what": "yield", "kind": "tool_finished"}
+{"t": 1789474619.8966374, "run": "211107d7", "where": "worker", "what": "emit", "kind": "thinking", "data": {}}
+{"t": 1789474619.8966374, "run": "211107d7", "where": "generator", "what": "yield", "kind": "thinking"}
+{"t": 1789474620.3779206, "run": "211107d7", "where": "worker", "what": "emit", "kind": "tool_requested", "data": {"name": "search"}}
+{"t": 1789474620.3779206, "run": "211107d7", "where": "generator", "what": "yield", "kind": "tool_requested"}
+{"t": 1789474620.739033, "run": "211107d7", "where": "worker", "what": "emit", "kind": "tool_finished", "data": {"name": "search", "summary": "찾기 \"![t](http://127.0.0.1:7999/query-md.png) <img src=\"http://127.0.0.1:7999/query-html.png\" onerror=\"window.__xss_query=1\"> ${window.__xss_tpl_q=1} <script>window.__xss_script=1</script>\" (2023년치) → 0쪽", "ok": true}}
+{"t": 1789474620.7395403, "run": "211107d7", "where": "generator", "what": "yield", "kind": "tool_finished"}
+{"t": 1789474621.1004891, "run": "211107d7", "where": "worker", "what": "emit", "kind": "thinking", "data": {}}
+{"t": 1789474621.1004891, "run": "211107d7", "where": "generator", "what": "yield", "kind": "thinking"}
+{"t": 1789474621.581467, "run": "211107d7", "where": "worker", "what": "emit", "kind": "tool_requested", "data": {"name": "search"}}
+{"t": 1789474621.581467, "run": "211107d7", "where": "generator", "what": "yield", "kind": "tool_requested"}
+{"t": 1789474621.9423537, "run": "211107d7", "where": "worker", "what": "emit", "kind": "tool_finished", "data": {"name": "search", "summary": "찾기 \"한미 정상회담\" (2023년치) → 4쪽", "ok": true}}
+{"t": 1789474621.9433594, "run": "211107d7", "where": "generator", "what": "yield", "kind": "tool_finished"}
+{"t": 1789474622.3041863, "run": "211107d7", "where": "worker", "what": "emit", "kind": "thinking", "data": {}}
+{"t": 1789474622.3041863, "run": "211107d7", "where": "generator", "what": "yield", "kind": "thinking"}
+{"t": 1789474622.7852185, "run": "211107d7", "where": "worker", "what": "emit", "kind": "tool_requested", "data": {"name": "read_pages"}}
+{"t": 1789474622.7852185, "run": "211107d7", "where": "generator", "what": "yield", "kind": "tool_requested"}
+{"t": 1789474623.146279, "run": "211107d7", "where": "worker", "what": "emit", "kind": "tool_finished", "data": {"name": "read_pages", "summary": "쪽 읽기 2023년치 38쪽, 2023년치 39쪽", "ok": true}}
+{"t": 1789474623.1472943, "run": "211107d7", "where": "generator", "what": "yield", "kind": "tool_finished"}
+{"t": 1789474623.507632, "run": "211107d7", "where": "worker", "what": "emit", "kind": "thinking", "data": {}}
+{"t": 1789474623.507632, "run": "211107d7", "where": "generator", "what": "yield", "kind": "thinking"}
+{"t": 1789474623.9885504, "run": "211107d7", "where": "worker", "what": "emit", "kind": "answer_started", "data": {}}
+{"t": 1789474623.9885504, "run": "211107d7", "where": "generator", "what": "yield", "kind": "answer_started"}
+{"t": 1789474624.349659, "run": "211107d7", "where": "worker", "what": "emit", "kind": "done", "data": {"status": "answered"}}
+{"t": 1789474624.349659, "run": "211107d7", "where": "worker", "what": "run_returned", "status": "answered", "notice": null, "reason": null}
+{"t": 1789474624.3521435, "run": "211107d7", "where": "generator", "what": "yield", "kind": "result"}
+{"t": 1789474665.6289923, "where": "handler", "what": "request", "session_hash": "xhiyxnkim", "client_host": "127.0.0.1", "xff_chain": [], "visitor_key": "6787113de4f3", "headers": ["accept", "accept-encoding", "accept-language", "connection", "content-length", "content-type", "host", "origin", "referer", "sec-ch-ua", "sec-ch-ua-mobile", "sec-ch-ua-platform", "sec-fetch-dest", "sec-fetch-mode", "sec-fetch-site", "user-agent", "x-gradio-user"]}
+{"t": 1789474665.6349866, "run": "beeca06e", "where": "worker", "what": "emit", "kind": "notice", "data": {"notice": "empty_question", "message": "질문을 입력해 주세요."}}
+{"t": 1789474665.6364915, "run": "beeca06e", "where": "worker", "what": "emit", "kind": "done", "data": {"status": "error"}}
+{"t": 1789474665.6364915, "run": "beeca06e", "where": "worker", "what": "run_returned", "status": "error", "notice": {"kind": "empty_question", "message": "질문을 입력해 주세요."}, "reason": null}
+{"t": 1789474665.6384976, "run": "beeca06e", "where": "generator", "what": "yield", "kind": "result"}
+{"t": 1789474726.337677, "where": "handler", "what": "request", "session_hash": "qsx67fe89rp", "client_host": "127.0.0.1", "xff_chain": [], "visitor_key": "31d930d2e8c0", "headers": ["accept", "accept-encoding", "accept-language", "connection", "content-length", "content-type", "host", "origin", "referer", "sec-ch-ua", "sec-ch-ua-mobile", "sec-ch-ua-platform", "sec-fetch-dest", "sec-fetch-mode", "sec-fetch-site", "user-agent", "x-gradio-user"]}
+{"t": 1789474727.0504274, "run": "3493d5bc", "where": "worker", "what": "emit", "kind": "thinking", "data": {}}
+{"t": 1789474727.0504274, "run": "3493d5bc", "where": "generator", "what": "yield", "kind": "thinking"}
+{"t": 1789474727.8512826, "run": "3493d5bc", "where": "worker", "what": "emit", "kind": "tool_requested", "data": {"name": "get_toc"}}
+{"t": 1789474727.8517902, "run": "3493d5bc", "where": "generator", "what": "yield", "kind": "tool_requested"}
+{"t": 1789474728.4520364, "run": "3493d5bc", "where": "worker", "what": "emit", "kind": "tool_finished", "data": {"name": "get_toc", "summary": "목차 보기 2023년치", "ok": true}}
+{"t": 1789474728.4520364, "run": "3493d5bc", "where": "generator", "what": "yield", "kind": "tool_finished"}
+{"t": 1789474729.0531263, "run": "3493d5bc", "where": "worker", "what": "emit", "kind": "thinking", "data": {}}
+{"t": 1789474729.053632, "run": "3493d5bc", "where": "generator", "what": "yield", "kind": "thinking"}
+{"t": 1789474729.8237884, "where": "handler", "what": "unload", "session_hash": "qsx67fe89rp", "found": true}
+{"t": 1789474729.8542945, "run": "3493d5bc", "where": "worker", "what": "cancel_raised", "kind": "tool_requested", "reason": "unload"}
+{"t": 1789474729.8542945, "run": "3493d5bc", "where": "worker", "what": "emit", "kind": "notice", "data": {"notice": "unknown", "message": "알 수 없는 문제가 생겼어요. 잠시 뒤 다시 해 주세요."}}
+{"t": 1789474729.855301, "run": "3493d5bc", "where": "worker", "what": "emit", "kind": "done", "data": {"status": "error"}}
+{"t": 1789474729.856309, "run": "3493d5bc", "where": "worker", "what": "run_returned", "status": "error", "notice": {"kind": "unknown", "message": "알 수 없는 문제가 생겼어요. 잠시 뒤 다시 해 주세요."}, "reason": "unload"}
+{"t": 1789474729.857308, "run": "3493d5bc", "where": "generator", "what": "yield", "kind": "result"}
+{"t": 1789474729.8623075, "run": "3493d5bc", "where": "generator", "what": "closed"}
+{"t": 1789474797.5199096, "where": "handler", "what": "unlock_ok", "session_hash": "14b6fbf99d68"}
+{"t": 1789474798.1015887, "where": "handler", "what": "request", "session_hash": "14b6fbf99d68", "client_host": "127.0.0.1", "xff_chain": [], "visitor_key": "c26470e09734", "headers": ["accept", "accept-encoding", "connection", "content-length", "content-type", "host", "user-agent"]}
+{"t": 1789474798.7057228, "run": "cc6ff5e8", "where": "worker", "what": "emit", "kind": "thinking", "data": {}}
+{"t": 1789474798.7057228, "run": "cc6ff5e8", "where": "generator", "what": "yield", "kind": "thinking"}
+{"t": 1789474799.5067136, "run": "cc6ff5e8", "where": "worker", "what": "emit", "kind": "tool_requested", "data": {"name": "get_toc"}}
+{"t": 1789474799.5067136, "run": "cc6ff5e8", "where": "generator", "what": "yield", "kind": "tool_requested"}
+{"t": 1789474800.1080594, "run": "cc6ff5e8", "where": "worker", "what": "emit", "kind": "tool_finished", "data": {"name": "get_toc", "summary": "목차 보기 2023년치", "ok": true}}
+{"t": 1789474800.1085653, "run": "cc6ff5e8", "where": "generator", "what": "yield", "kind": "tool_finished"}
+{"t": 1789474800.709771, "run": "cc6ff5e8", "where": "worker", "what": "emit", "kind": "thinking", "data": {}}
+{"t": 1789474800.709771, "run": "cc6ff5e8", "where": "generator", "what": "yield", "kind": "thinking"}
+{"t": 1789474801.510499, "run": "cc6ff5e8", "where": "worker", "what": "emit", "kind": "tool_requested", "data": {"name": "search"}}
+{"t": 1789474801.510499, "run": "cc6ff5e8", "where": "generator", "what": "yield", "kind": "tool_requested"}
+{"t": 1789474802.1120198, "run": "cc6ff5e8", "where": "worker", "what": "emit", "kind": "tool_finished", "data": {"name": "search", "summary": "찾기 \"![t](http://127.0.0.1:7999/query-md.png) <img src=\"http://127.0.0.1:7999/query-html.png\" onerror=\"window.__xss_query=1\"> ${window.__xss_tpl_q=1} <script>window.__xss_script=1</script>\" (2023년치) → 0쪽", "ok": true}}
+{"t": 1789474802.1130338, "run": "cc6ff5e8", "where": "generator", "what": "yield", "kind": "tool_finished"}
+{"t": 1789474802.7139523, "run": "cc6ff5e8", "where": "worker", "what": "emit", "kind": "thinking", "data": {}}
+{"t": 1789474802.71496, "run": "cc6ff5e8", "where": "generator", "what": "yield", "kind": "thinking"}
+{"t": 1789474803.515644, "run": "cc6ff5e8", "where": "worker", "what": "emit", "kind": "tool_requested", "data": {"name": "search"}}
+{"t": 1789474803.515644, "run": "cc6ff5e8", "where": "generator", "what": "yield", "kind": "tool_requested"}
+{"t": 1789474804.1177387, "run": "cc6ff5e8", "where": "worker", "what": "emit", "kind": "tool_finished", "data": {"name": "search", "summary": "찾기 \"한미 정상회담\" (2023년치) → 4쪽", "ok": true}}
+{"t": 1789474804.1177387, "run": "cc6ff5e8", "where": "generator", "what": "yield", "kind": "tool_finished"}
+{"t": 1789474804.7186751, "run": "cc6ff5e8", "where": "worker", "what": "emit", "kind": "thinking", "data": {}}
+{"t": 1789474804.7196853, "run": "cc6ff5e8", "where": "generator", "what": "yield", "kind": "thinking"}
+{"t": 1789474805.52, "run": "cc6ff5e8", "where": "worker", "what": "emit", "kind": "tool_requested", "data": {"name": "read_pages"}}
+{"t": 1789474805.52, "run": "cc6ff5e8", "where": "generator", "what": "yield", "kind": "tool_requested"}
+{"t": 1789474806.121041, "run": "cc6ff5e8", "where": "worker", "what": "emit", "kind": "tool_finished", "data": {"name": "read_pages", "summary": "쪽 읽기 2023년치 38쪽, 2023년치 39쪽", "ok": true}}
+{"t": 1789474806.1220493, "run": "cc6ff5e8", "where": "generator", "what": "yield", "kind": "tool_finished"}
+{"t": 1789474806.722892, "run": "cc6ff5e8", "where": "worker", "what": "emit", "kind": "thinking", "data": {}}
+{"t": 1789474806.7234015, "run": "cc6ff5e8", "where": "generator", "what": "yield", "kind": "thinking"}
+{"t": 1789474807.524285, "run": "cc6ff5e8", "where": "worker", "what": "emit", "kind": "answer_started", "data": {}}
+{"t": 1789474807.524285, "run": "cc6ff5e8", "where": "generator", "what": "yield", "kind": "answer_started"}
+{"t": 1789474808.1255686, "run": "cc6ff5e8", "where": "worker", "what": "emit", "kind": "done", "data": {"status": "answered"}}
+{"t": 1789474808.1265805, "run": "cc6ff5e8", "where": "worker", "what": "run_returned", "status": "answered", "notice": null, "reason": null}
+{"t": 1789474808.1295764, "run": "cc6ff5e8", "where": "generator", "what": "yield", "kind": "result"}
+{"t": 1789474808.7775273, "where": "handler", "what": "request", "session_hash": "c082708af497", "client_host": "127.0.0.1", "xff_chain": [], "visitor_key": "c26470e09734", "headers": ["accept", "accept-encoding", "connection", "content-length", "content-type", "host", "user-agent"]}
+{"t": 1789474809.3831546, "run": "ecdd759a", "where": "worker", "what": "emit", "kind": "thinking", "data": {}}
+{"t": 1789474809.3831546, "run": "ecdd759a", "where": "generator", "what": "yield", "kind": "thinking"}
+{"t": 1789474810.184353, "run": "ecdd759a", "where": "worker", "what": "emit", "kind": "tool_requested", "data": {"name": "get_toc"}}
+{"t": 1789474810.1848674, "run": "ecdd759a", "where": "generator", "what": "yield", "kind": "tool_requested"}
+{"t": 1789474810.785265, "run": "ecdd759a", "where": "worker", "what": "emit", "kind": "tool_finished", "data": {"name": "get_toc", "summary": "목차 보기 2023년치", "ok": true}}
+{"t": 1789474810.7862732, "run": "ecdd759a", "where": "generator", "what": "yield", "kind": "tool_finished"}
+{"t": 1789474811.3872676, "run": "ecdd759a", "where": "worker", "what": "emit", "kind": "thinking", "data": {}}
+{"t": 1789474811.3872676, "run": "ecdd759a", "where": "generator", "what": "yield", "kind": "thinking"}
+{"t": 1789474812.188572, "run": "ecdd759a", "where": "worker", "what": "emit", "kind": "tool_requested", "data": {"name": "search"}}
+{"t": 1789474812.1896992, "run": "ecdd759a", "where": "generator", "what": "yield", "kind": "tool_requested"}
+{"t": 1789474812.7901149, "run": "ecdd759a", "where": "worker", "what": "emit", "kind": "tool_finished", "data": {"name": "search", "summary": "찾기 \"![t](http://127.0.0.1:7999/query-md.png) <img src=\"http://127.0.0.1:7999/query-html.png\" onerror=\"window.__xss_query=1\"> ${window.__xss_tpl_q=1} <script>window.__xss_script=1</script>\" (2023년치) → 0쪽", "ok": true}}
+{"t": 1789474812.7911286, "run": "ecdd759a", "where": "generator", "what": "yield", "kind": "tool_finished"}
+{"t": 1789474813.3918986, "run": "ecdd759a", "where": "worker", "what": "emit", "kind": "thinking", "data": {}}
+{"t": 1789474813.3918986, "run": "ecdd759a", "where": "generator", "what": "yield", "kind": "thinking"}
+{"t": 1789474814.1928635, "run": "ecdd759a", "where": "worker", "what": "emit", "kind": "tool_requested", "data": {"name": "search"}}
+{"t": 1789474814.1933742, "run": "ecdd759a", "where": "generator", "what": "yield", "kind": "tool_requested"}
+{"t": 1789474814.7940443, "run": "ecdd759a", "where": "worker", "what": "emit", "kind": "tool_finished", "data": {"name": "search", "summary": "찾기 \"한미 정상회담\" (2023년치) → 4쪽", "ok": true}}
+{"t": 1789474814.7940443, "run": "ecdd759a", "where": "generator", "what": "yield", "kind": "tool_finished"}
+{"t": 1789474815.3956022, "run": "ecdd759a", "where": "worker", "what": "emit", "kind": "thinking", "data": {}}
+{"t": 1789474815.3961241, "run": "ecdd759a", "where": "generator", "what": "yield", "kind": "thinking"}
+{"t": 1789474816.1970327, "run": "ecdd759a", "where": "worker", "what": "emit", "kind": "tool_requested", "data": {"name": "read_pages"}}
+{"t": 1789474816.198043, "run": "ecdd759a", "where": "generator", "what": "yield", "kind": "tool_requested"}
+{"t": 1789474816.7986712, "run": "ecdd759a", "where": "worker", "what": "emit", "kind": "tool_finished", "data": {"name": "read_pages", "summary": "쪽 읽기 2023년치 38쪽, 2023년치 39쪽", "ok": true}}
+{"t": 1789474816.799191, "run": "ecdd759a", "where": "generator", "what": "yield", "kind": "tool_finished"}
+{"t": 1789474817.4005156, "run": "ecdd759a", "where": "worker", "what": "emit", "kind": "thinking", "data": {}}
+{"t": 1789474817.4005156, "run": "ecdd759a", "where": "generator", "what": "yield", "kind": "thinking"}
+{"t": 1789474818.201638, "run": "ecdd759a", "where": "worker", "what": "emit", "kind": "answer_started", "data": {}}
+{"t": 1789474818.20297, "run": "ecdd759a", "where": "generator", "what": "yield", "kind": "answer_started"}
+{"t": 1789474818.802958, "run": "ecdd759a", "where": "worker", "what": "emit", "kind": "done", "data": {"status": "answered"}}
+{"t": 1789474818.8039677, "run": "ecdd759a", "where": "worker", "what": "run_returned", "status": "answered", "notice": null, "reason": null}
+{"t": 1789474818.81801, "run": "ecdd759a", "where": "generator", "what": "yield", "kind": "result"}
+{"t": 1789474819.4465723, "where": "handler", "what": "request", "session_hash": "c082708af497", "client_host": "127.0.0.1", "xff_chain": [], "visitor_key": "c26470e09734", "headers": ["accept", "accept-encoding", "connection", "content-length", "content-type", "host", "user-agent"]}
+{"t": 1789474820.0521235, "run": "94a429d4", "where": "worker", "what": "emit", "kind": "thinking", "data": {}}
+{"t": 1789474820.0531318, "run": "94a429d4", "where": "generator", "what": "yield", "kind": "thinking"}
+{"t": 1789474820.8534472, "run": "94a429d4", "where": "worker", "what": "emit", "kind": "tool_requested", "data": {"name": "get_toc"}}
+{"t": 1789474820.8544576, "run": "94a429d4", "where": "generator", "what": "yield", "kind": "tool_requested"}
+{"t": 1789474821.4546926, "run": "94a429d4", "where": "worker", "what": "emit", "kind": "tool_finished", "data": {"name": "get_toc", "summary": "목차 보기 2023년치", "ok": true}}
+{"t": 1789474821.4557073, "run": "94a429d4", "where": "generator", "what": "yield", "kind": "tool_finished"}
+{"t": 1789474822.056291, "run": "94a429d4", "where": "worker", "what": "emit", "kind": "thinking", "data": {}}
+{"t": 1789474822.0573025, "run": "94a429d4", "where": "generator", "what": "yield", "kind": "thinking"}
+{"t": 1789474822.8580499, "run": "94a429d4", "where": "worker", "what": "emit", "kind": "tool_requested", "data": {"name": "search"}}
+{"t": 1789474822.8585541, "run": "94a429d4", "where": "generator", "what": "yield", "kind": "tool_requested"}
+{"t": 1789474823.4592783, "run": "94a429d4", "where": "worker", "what": "emit", "kind": "tool_finished", "data": {"name": "search", "summary": "찾기 \"![t](http://127.0.0.1:7999/query-md.png) <img src=\"http://127.0.0.1:7999/query-html.png\" onerror=\"window.__xss_query=1\"> ${window.__xss_tpl_q=1} <script>window.__xss_script=1</script>\" (2023년치) → 0쪽", "ok": true}}
+{"t": 1789474823.4602914, "run": "94a429d4", "where": "generator", "what": "yield", "kind": "tool_finished"}
+{"t": 1789474824.060731, "run": "94a429d4", "where": "worker", "what": "emit", "kind": "thinking", "data": {}}
+{"t": 1789474824.060731, "run": "94a429d4", "where": "generator", "what": "yield", "kind": "thinking"}
+{"t": 1789474824.8621051, "run": "94a429d4", "where": "worker", "what": "emit", "kind": "tool_requested", "data": {"name": "search"}}
+{"t": 1789474824.8632386, "run": "94a429d4", "where": "generator", "what": "yield", "kind": "tool_requested"}
+{"t": 1789474825.4641547, "run": "94a429d4", "where": "worker", "what": "emit", "kind": "tool_finished", "data": {"name": "search", "summary": "찾기 \"한미 정상회담\" (2023년치) → 4쪽", "ok": true}}
+{"t": 1789474825.4651668, "run": "94a429d4", "where": "generator", "what": "yield", "kind": "tool_finished"}
+{"t": 1789474826.0660932, "run": "94a429d4", "where": "worker", "what": "emit", "kind": "thinking", "data": {}}
+{"t": 1789474826.0660932, "run": "94a429d4", "where": "generator", "what": "yield", "kind": "thinking"}
+{"t": 1789474826.867049, "run": "94a429d4", "where": "worker", "what": "emit", "kind": "tool_requested", "data": {"name": "read_pages"}}
+{"t": 1789474826.867049, "run": "94a429d4", "where": "generator", "what": "yield", "kind": "tool_requested"}
+{"t": 1789474827.4681094, "run": "94a429d4", "where": "worker", "what": "emit", "kind": "tool_finished", "data": {"name": "read_pages", "summary": "쪽 읽기 2023년치 38쪽, 2023년치 39쪽", "ok": true}}
+{"t": 1789474827.4691172, "run": "94a429d4", "where": "generator", "what": "yield", "kind": "tool_finished"}
+{"t": 1789474828.07021, "run": "94a429d4", "where": "worker", "what": "emit", "kind": "thinking", "data": {}}
+{"t": 1789474828.0707178, "run": "94a429d4", "where": "generator", "what": "yield", "kind": "thinking"}
+{"t": 1789474828.8716085, "run": "94a429d4", "where": "worker", "what": "emit", "kind": "answer_started", "data": {}}
+{"t": 1789474828.8716085, "run": "94a429d4", "where": "generator", "what": "yield", "kind": "answer_started"}
+{"t": 1789474829.4726686, "run": "94a429d4", "where": "worker", "what": "emit", "kind": "done", "data": {"status": "answered"}}
+{"t": 1789474829.4736829, "run": "94a429d4", "where": "worker", "what": "run_returned", "status": "answered", "notice": null, "reason": null}
+{"t": 1789474829.4756775, "run": "94a429d4", "where": "generator", "what": "yield", "kind": "result"}
+{"t": 1789474829.9540195, "where": "handler", "what": "request", "session_hash": "c082708af497", "client_host": "127.0.0.1", "xff_chain": [], "visitor_key": "c26470e09734", "headers": ["accept", "accept-encoding", "connection", "content-length", "content-type", "host", "user-agent"]}
+{"t": 1789474830.558606, "run": "ea0d6f47", "where": "worker", "what": "emit", "kind": "thinking", "data": {}}
+{"t": 1789474830.559121, "run": "ea0d6f47", "where": "generator", "what": "yield", "kind": "thinking"}
+{"t": 1789474831.3598535, "run": "ea0d6f47", "where": "worker", "what": "emit", "kind": "tool_requested", "data": {"name": "get_toc"}}
+{"t": 1789474831.3608618, "run": "ea0d6f47", "where": "generator", "what": "yield", "kind": "tool_requested"}
+{"t": 1789474831.9612782, "run": "ea0d6f47", "where": "worker", "what": "emit", "kind": "tool_finished", "data": {"name": "get_toc", "summary": "목차 보기 2023년치", "ok": true}}
+{"t": 1789474831.9617915, "run": "ea0d6f47", "where": "generator", "what": "yield", "kind": "tool_finished"}
+{"t": 1789474832.562282, "run": "ea0d6f47", "where": "worker", "what": "emit", "kind": "thinking", "data": {}}
+{"t": 1789474832.562282, "run": "ea0d6f47", "where": "generator", "what": "yield", "kind": "thinking"}
+{"t": 1789474833.36364, "run": "ea0d6f47", "where": "worker", "what": "emit", "kind": "tool_requested", "data": {"name": "search"}}
+{"t": 1789474833.364147, "run": "ea0d6f47", "where": "generator", "what": "yield", "kind": "tool_requested"}
+{"t": 1789474833.9650025, "run": "ea0d6f47", "where": "worker", "what": "emit", "kind": "tool_finished", "data": {"name": "search", "summary": "찾기 \"![t](http://127.0.0.1:7999/query-md.png) <img src=\"http://127.0.0.1:7999/query-html.png\" onerror=\"window.__xss_query=1\"> ${window.__xss_tpl_q=1} <script>window.__xss_script=1</script>\" (2023년치) → 0쪽", "ok": true}}
+{"t": 1789474833.9660156, "run": "ea0d6f47", "where": "generator", "what": "yield", "kind": "tool_finished"}
+{"t": 1789474834.5670848, "run": "ea0d6f47", "where": "worker", "what": "emit", "kind": "thinking", "data": {}}
+{"t": 1789474834.567593, "run": "ea0d6f47", "where": "generator", "what": "yield", "kind": "thinking"}
+{"t": 1789474835.3684971, "run": "ea0d6f47", "where": "worker", "what": "emit", "kind": "tool_requested", "data": {"name": "search"}}
+{"t": 1789474835.3695061, "run": "ea0d6f47", "where": "generator", "what": "yield", "kind": "tool_requested"}
+{"t": 1789474835.970099, "run": "ea0d6f47", "where": "worker", "what": "emit", "kind": "tool_finished", "data": {"name": "search", "summary": "찾기 \"한미 정상회담\" (2023년치) → 4쪽", "ok": true}}
+{"t": 1789474835.9721727, "run": "ea0d6f47", "where": "generator", "what": "yield", "kind": "tool_finished"}
+{"t": 1789474836.5723822, "run": "ea0d6f47", "where": "worker", "what": "emit", "kind": "thinking", "data": {}}
+{"t": 1789474836.5733912, "run": "ea0d6f47", "where": "generator", "what": "yield", "kind": "thinking"}
+{"t": 1789474837.3739448, "run": "ea0d6f47", "where": "worker", "what": "emit", "kind": "tool_requested", "data": {"name": "read_pages"}}
+{"t": 1789474837.3744595, "run": "ea0d6f47", "where": "generator", "what": "yield", "kind": "tool_requested"}
+{"t": 1789474837.9751449, "run": "ea0d6f47", "where": "worker", "what": "emit", "kind": "tool_finished", "data": {"name": "read_pages", "summary": "쪽 읽기 2023년치 38쪽, 2023년치 39쪽", "ok": true}}
+{"t": 1789474837.976156, "run": "ea0d6f47", "where": "generator", "what": "yield", "kind": "tool_finished"}
+{"t": 1789474838.5765991, "run": "ea0d6f47", "where": "worker", "what": "emit", "kind": "thinking", "data": {}}
+{"t": 1789474838.5776114, "run": "ea0d6f47", "where": "generator", "what": "yield", "kind": "thinking"}
+{"t": 1789474839.3782058, "run": "ea0d6f47", "where": "worker", "what": "emit", "kind": "answer_started", "data": {}}
+{"t": 1789474839.379215, "run": "ea0d6f47", "where": "generator", "what": "yield", "kind": "answer_started"}
+{"t": 1789474839.9794128, "run": "ea0d6f47", "where": "worker", "what": "emit", "kind": "done", "data": {"status": "answered"}}
+{"t": 1789474839.9804225, "run": "ea0d6f47", "where": "worker", "what": "run_returned", "status": "answered", "notice": null, "reason": null}
+{"t": 1789474839.9834218, "run": "ea0d6f47", "where": "generator", "what": "yield", "kind": "result"}
+{"t": 1789474840.7238097, "where": "handler", "what": "request", "session_hash": "c082708af497", "client_host": "127.0.0.1", "xff_chain": [], "visitor_key": "c26470e09734", "headers": ["accept", "accept-encoding", "connection", "content-length", "content-type", "host", "user-agent"]}
+{"t": 1789474873.6457512, "where": "handler", "what": "request", "session_hash": "txgy3b3d7rk", "client_host": "127.0.0.1", "xff_chain": [], "visitor_key": "649597c8555b", "headers": ["accept", "accept-encoding", "accept-language", "connection", "content-length", "content-type", "host", "origin", "referer", "sec-ch-ua", "sec-ch-ua-mobile", "sec-ch-ua-platform", "sec-fetch-dest", "sec-fetch-mode", "sec-fetch-site", "user-agent", "x-gradio-user"]}
+{"t": 1789474874.25245, "run": "ed6e7bf6", "where": "worker", "what": "emit", "kind": "thinking", "data": {}}
+{"t": 1789474874.2534614, "run": "ed6e7bf6", "where": "generator", "what": "yield", "kind": "thinking"}
+{"t": 1789474875.0536754, "run": "ed6e7bf6", "where": "worker", "what": "emit", "kind": "tool_requested", "data": {"name": "get_toc"}}
+{"t": 1789474875.0536754, "run": "ed6e7bf6", "where": "generator", "what": "yield", "kind": "tool_requested"}
+{"t": 1789474875.6551657, "run": "ed6e7bf6", "where": "worker", "what": "emit", "kind": "tool_finished", "data": {"name": "get_toc", "summary": "목차 보기 2023년치", "ok": true}}
+{"t": 1789474875.6551657, "run": "ed6e7bf6", "where": "generator", "what": "yield", "kind": "tool_finished"}
+{"t": 1789474876.2562168, "run": "ed6e7bf6", "where": "worker", "what": "emit", "kind": "thinking", "data": {}}
+{"t": 1789474876.2562168, "run": "ed6e7bf6", "where": "generator", "what": "yield", "kind": "thinking"}
+{"t": 1789474877.0574496, "run": "ed6e7bf6", "where": "worker", "what": "emit", "kind": "tool_requested", "data": {"name": "search"}}
+{"t": 1789474877.0574496, "run": "ed6e7bf6", "where": "generator", "what": "yield", "kind": "tool_requested"}
+{"t": 1789474877.6589143, "run": "ed6e7bf6", "where": "worker", "what": "emit", "kind": "tool_finished", "data": {"name": "search", "summary": "찾기 \"![t](http://127.0.0.1:7999/query-md.png) <img src=\"http://127.0.0.1:7999/query-html.png\" onerror=\"window.__xss_query=1\"> ${window.__xss_tpl_q=1} <script>window.__xss_script=1</script>\" (2023년치) → 0쪽", "ok": true}}
+{"t": 1789474877.6594188, "run": "ed6e7bf6", "where": "generator", "what": "yield", "kind": "tool_finished"}
+{"t": 1789474878.2602985, "run": "ed6e7bf6", "where": "worker", "what": "emit", "kind": "thinking", "data": {}}
+{"t": 1789474878.2613082, "run": "ed6e7bf6", "where": "generator", "what": "yield", "kind": "thinking"}
+{"t": 1789474879.0617788, "run": "ed6e7bf6", "where": "worker", "what": "emit", "kind": "tool_requested", "data": {"name": "search"}}
+{"t": 1789474879.0622654, "run": "ed6e7bf6", "where": "generator", "what": "yield", "kind": "tool_requested"}
+{"t": 1789474879.6630177, "run": "ed6e7bf6", "where": "worker", "what": "emit", "kind": "tool_finished", "data": {"name": "search", "summary": "찾기 \"한미 정상회담\" (2023년치) → 4쪽", "ok": true}}
+{"t": 1789474879.664024, "run": "ed6e7bf6", "where": "generator", "what": "yield", "kind": "tool_finished"}
+{"t": 1789474880.2647455, "run": "ed6e7bf6", "where": "worker", "what": "emit", "kind": "thinking", "data": {}}
+{"t": 1789474880.2652862, "run": "ed6e7bf6", "where": "generator", "what": "yield", "kind": "thinking"}
+{"t": 1789474881.0659475, "run": "ed6e7bf6", "where": "worker", "what": "emit", "kind": "tool_requested", "data": {"name": "read_pages"}}
+{"t": 1789474881.0664742, "run": "ed6e7bf6", "where": "generator", "what": "yield", "kind": "tool_requested"}
+{"t": 1789474881.6673183, "run": "ed6e7bf6", "where": "worker", "what": "emit", "kind": "tool_finished", "data": {"name": "read_pages", "summary": "쪽 읽기 2023년치 38쪽, 2023년치 39쪽", "ok": true}}
+{"t": 1789474881.6683335, "run": "ed6e7bf6", "where": "generator", "what": "yield", "kind": "tool_finished"}
+{"t": 1789474882.2689543, "run": "ed6e7bf6", "where": "worker", "what": "emit", "kind": "thinking", "data": {}}
+{"t": 1789474882.2699678, "run": "ed6e7bf6", "where": "generator", "what": "yield", "kind": "thinking"}
+{"t": 1789474883.070614, "run": "ed6e7bf6", "where": "worker", "what": "emit", "kind": "answer_started", "data": {}}
+{"t": 1789474883.070614, "run": "ed6e7bf6", "where": "generator", "what": "yield", "kind": "answer_started"}
+{"t": 1789474883.671831, "run": "ed6e7bf6", "where": "worker", "what": "emit", "kind": "done", "data": {"status": "answered"}}
+{"t": 1789474883.672838, "run": "ed6e7bf6", "where": "worker", "what": "run_returned", "status": "answered", "notice": null, "reason": null}
+{"t": 1789474883.6748376, "run": "ed6e7bf6", "where": "generator", "what": "yield", "kind": "result"}
+{"t": 1789475028.589274, "where": "handler", "what": "unload", "session_hash": "txgy3b3d7rk", "found": false}
+{"t": 1789475058.7260962, "where": "handler", "what": "request", "session_hash": "b264d3ba91a4", "client_host": "127.0.0.1", "xff_chain": [], "visitor_key": "03da140ee988", "headers": ["accept", "accept-encoding", "connection", "content-length", "content-type", "host", "user-agent"]}
+{"t": 1789475058.9466555, "where": "handler", "what": "request", "session_hash": "220fa65c403d", "client_host": "127.0.0.1", "xff_chain": [], "visitor_key": "1b4cfafc7a4c", "headers": ["accept", "accept-encoding", "connection", "content-length", "content-type", "host", "user-agent"]}
+{"t": 1789475059.1826942, "where": "handler", "what": "request", "session_hash": "a920f5cf6eaa", "client_host": "127.0.0.1", "xff_chain": [], "visitor_key": "780e3e5f197e", "headers": ["accept", "accept-encoding", "connection", "content-length", "content-type", "host", "user-agent"]}
+{"t": 1789475059.3303452, "run": "0fa85069", "where": "worker", "what": "emit", "kind": "thinking", "data": {}}
+{"t": 1789475059.3308475, "run": "0fa85069", "where": "generator", "what": "yield", "kind": "thinking"}
+{"t": 1789475059.4509606, "where": "handler", "what": "request", "session_hash": "6d16771143ed", "client_host": "127.0.0.1", "xff_chain": [], "visitor_key": "58f795a6ed66", "headers": ["accept", "accept-encoding", "connection", "content-length", "content-type", "host", "user-agent"]}
+{"t": 1789475059.5523324, "run": "df45341c", "where": "worker", "what": "emit", "kind": "thinking", "data": {}}
+{"t": 1789475059.5523324, "run": "df45341c", "where": "generator", "what": "yield", "kind": "thinking"}
+{"t": 1789475059.7895095, "run": "a77284fa", "where": "worker", "what": "emit", "kind": "thinking", "data": {}}
+{"t": 1789475059.7895095, "run": "a77284fa", "where": "generator", "what": "yield", "kind": "thinking"}
+{"t": 1789475060.0564017, "run": "e846919f", "where": "worker", "what": "emit", "kind": "thinking", "data": {}}
+{"t": 1789475060.0564017, "run": "e846919f", "where": "generator", "what": "yield", "kind": "thinking"}
+{"t": 1789475060.131427, "run": "0fa85069", "where": "worker", "what": "emit", "kind": "tool_requested", "data": {"name": "get_toc"}}
+{"t": 1789475060.131427, "run": "0fa85069", "where": "generator", "what": "yield", "kind": "tool_requested"}
+{"t": 1789475060.3532956, "run": "df45341c", "where": "worker", "what": "emit", "kind": "tool_requested", "data": {"name": "get_toc"}}
+{"t": 1789475060.3532956, "run": "df45341c", "where": "generator", "what": "yield", "kind": "tool_requested"}
+{"t": 1789475060.5907748, "run": "a77284fa", "where": "worker", "what": "emit", "kind": "tool_requested", "data": {"name": "get_toc"}}
+{"t": 1789475060.5917814, "run": "a77284fa", "where": "generator", "what": "yield", "kind": "tool_requested"}
+{"t": 1789475060.7324915, "run": "0fa85069", "where": "worker", "what": "emit", "kind": "tool_finished", "data": {"name": "get_toc", "summary": "목차 보기 2023년치", "ok": true}}
+{"t": 1789475060.7329974, "run": "0fa85069", "where": "generator", "what": "yield", "kind": "tool_finished"}
+{"t": 1789475060.857763, "run": "e846919f", "where": "worker", "what": "emit", "kind": "tool_requested", "data": {"name": "get_toc"}}
+{"t": 1789475060.857763, "run": "e846919f", "where": "generator", "what": "yield", "kind": "tool_requested"}
+{"t": 1789475060.954403, "run": "df45341c", "where": "worker", "what": "emit", "kind": "tool_finished", "data": {"name": "get_toc", "summary": "목차 보기 2023년치", "ok": true}}
+{"t": 1789475060.954403, "run": "df45341c", "where": "generator", "what": "yield", "kind": "tool_finished"}
+{"t": 1789475061.1921513, "run": "a77284fa", "where": "worker", "what": "emit", "kind": "tool_finished", "data": {"name": "get_toc", "summary": "목차 보기 2023년치", "ok": true}}
+{"t": 1789475061.192654, "run": "a77284fa", "where": "generator", "what": "yield", "kind": "tool_finished"}
+{"t": 1789475061.333492, "run": "0fa85069", "where": "worker", "what": "emit", "kind": "thinking", "data": {}}
+{"t": 1789475061.333995, "run": "0fa85069", "where": "generator", "what": "yield", "kind": "thinking"}
+{"t": 1789475061.459085, "run": "e846919f", "where": "worker", "what": "emit", "kind": "tool_finished", "data": {"name": "get_toc", "summary": "목차 보기 2023년치", "ok": true}}
+{"t": 1789475061.4595876, "run": "e846919f", "where": "generator", "what": "yield", "kind": "tool_finished"}
+{"t": 1789475061.5554466, "run": "df45341c", "where": "worker", "what": "emit", "kind": "thinking", "data": {}}
+{"t": 1789475061.555949, "run": "df45341c", "where": "generator", "what": "yield", "kind": "thinking"}
+{"t": 1789475061.793181, "run": "a77284fa", "where": "worker", "what": "emit", "kind": "thinking", "data": {}}
+{"t": 1789475061.7936833, "run": "a77284fa", "where": "generator", "what": "yield", "kind": "thinking"}
+{"t": 1789475062.0600612, "run": "e846919f", "where": "worker", "what": "emit", "kind": "thinking", "data": {}}
+{"t": 1789475062.0605638, "run": "e846919f", "where": "generator", "what": "yield", "kind": "thinking"}
+{"t": 1789475062.1345956, "run": "0fa85069", "where": "worker", "what": "emit", "kind": "tool_requested", "data": {"name": "search"}}
+{"t": 1789475062.1350982, "run": "0fa85069", "where": "generator", "what": "yield", "kind": "tool_requested"}
+{"t": 1789475062.356319, "run": "df45341c", "where": "worker", "what": "emit", "kind": "tool_requested", "data": {"name": "search"}}
+{"t": 1789475062.356822, "run": "df45341c", "where": "generator", "what": "yield", "kind": "tool_requested"}
+{"t": 1789475062.5943081, "run": "a77284fa", "where": "worker", "what": "emit", "kind": "tool_requested", "data": {"name": "search"}}
+{"t": 1789475062.59481, "run": "a77284fa", "where": "generator", "what": "yield", "kind": "tool_requested"}
+{"t": 1789475062.7354307, "run": "0fa85069", "where": "worker", "what": "emit", "kind": "tool_finished", "data": {"name": "search", "summary": "찾기 \"![t](http://127.0.0.1:7999/query-md.png) <img src=\"http://127.0.0.1:7999/query-html.png\" onerror=\"window.__xss_query=1\"> ${window.__xss_tpl_q=1} <script>window.__xss_script=1</script>\" (2023년치) → 0쪽", "ok": true}}
+{"t": 1789475062.7359347, "run": "0fa85069", "where": "generator", "what": "yield", "kind": "tool_finished"}
+{"t": 1789475062.861478, "run": "e846919f", "where": "worker", "what": "emit", "kind": "tool_requested", "data": {"name": "search"}}
+{"t": 1789475062.861478, "run": "e846919f", "where": "generator", "what": "yield", "kind": "tool_requested"}
+{"t": 1789475062.9574735, "run": "df45341c", "where": "worker", "what": "emit", "kind": "tool_finished", "data": {"name": "search", "summary": "찾기 \"![t](http://127.0.0.1:7999/query-md.png) <img src=\"http://127.0.0.1:7999/query-html.png\" onerror=\"window.__xss_query=1\"> ${window.__xss_tpl_q=1} <script>window.__xss_script=1</script>\" (2023년치) → 0쪽", "ok": true}}
+{"t": 1789475062.9574735, "run": "df45341c", "where": "generator", "what": "yield", "kind": "tool_finished"}
+{"t": 1789475063.195271, "run": "a77284fa", "where": "worker", "what": "emit", "kind": "tool_finished", "data": {"name": "search", "summary": "찾기 \"![t](http://127.0.0.1:7999/query-md.png) <img src=\"http://127.0.0.1:7999/query-html.png\" onerror=\"window.__xss_query=1\"> ${window.__xss_tpl_q=1} <script>window.__xss_script=1</script>\" (2023년치) → 0쪽", "ok": true}}
+{"t": 1789475063.195271, "run": "a77284fa", "where": "generator", "what": "yield", "kind": "tool_finished"}
+{"t": 1789475063.3365178, "run": "0fa85069", "where": "worker", "what": "emit", "kind": "thinking", "data": {}}
+{"t": 1789475063.3365178, "run": "0fa85069", "where": "generator", "what": "yield", "kind": "thinking"}
+{"t": 1789475063.4622505, "run": "e846919f", "where": "worker", "what": "emit", "kind": "tool_finished", "data": {"name": "search", "summary": "찾기 \"![t](http://127.0.0.1:7999/query-md.png) <img src=\"http://127.0.0.1:7999/query-html.png\" onerror=\"window.__xss_query=1\"> ${window.__xss_tpl_q=1} <script>window.__xss_script=1</script>\" (2023년치) → 0쪽", "ok": true}}
+{"t": 1789475063.4632578, "run": "e846919f", "where": "generator", "what": "yield", "kind": "tool_finished"}
+{"t": 1789475063.5584621, "run": "df45341c", "where": "worker", "what": "emit", "kind": "thinking", "data": {}}
+{"t": 1789475063.5584621, "run": "df45341c", "where": "generator", "what": "yield", "kind": "thinking"}
+{"t": 1789475063.7965963, "run": "a77284fa", "where": "worker", "what": "emit", "kind": "thinking", "data": {}}
+{"t": 1789475063.7965963, "run": "a77284fa", "where": "generator", "what": "yield", "kind": "thinking"}
+{"t": 1789475064.0640652, "run": "e846919f", "where": "worker", "what": "emit", "kind": "thinking", "data": {}}
+{"t": 1789475064.0640652, "run": "e846919f", "where": "generator", "what": "yield", "kind": "thinking"}
+{"t": 1789475064.1379278, "run": "0fa85069", "where": "worker", "what": "emit", "kind": "tool_requested", "data": {"name": "search"}}
+{"t": 1789475064.1379278, "run": "0fa85069", "where": "generator", "what": "yield", "kind": "tool_requested"}
+{"t": 1789475064.3593075, "run": "df45341c", "where": "worker", "what": "emit", "kind": "tool_requested", "data": {"name": "search"}}
+{"t": 1789475064.3598123, "run": "df45341c", "where": "generator", "what": "yield", "kind": "tool_requested"}
+{"t": 1789475064.5976238, "run": "a77284fa", "where": "worker", "what": "emit", "kind": "tool_requested", "data": {"name": "search"}}
+{"t": 1789475064.5981271, "run": "a77284fa", "where": "generator", "what": "yield", "kind": "tool_requested"}
+{"t": 1789475064.7391963, "run": "0fa85069", "where": "worker", "what": "emit", "kind": "tool_finished", "data": {"name": "search", "summary": "찾기 \"한미 정상회담\" (2023년치) → 4쪽", "ok": true}}
+{"t": 1789475064.739699, "run": "0fa85069", "where": "generator", "what": "yield", "kind": "tool_finished"}
+{"t": 1789475064.865167, "run": "e846919f", "where": "worker", "what": "emit", "kind": "tool_requested", "data": {"name": "search"}}
+{"t": 1789475064.865167, "run": "e846919f", "where": "generator", "what": "yield", "kind": "tool_requested"}
+{"t": 1789475064.9603717, "run": "df45341c", "where": "worker", "what": "emit", "kind": "tool_finished", "data": {"name": "search", "summary": "찾기 \"한미 정상회담\" (2023년치) → 4쪽", "ok": true}}
+{"t": 1789475064.9608755, "run": "df45341c", "where": "generator", "what": "yield", "kind": "tool_finished"}
+{"t": 1789475065.1984878, "run": "a77284fa", "where": "worker", "what": "emit", "kind": "tool_finished", "data": {"name": "search", "summary": "찾기 \"한미 정상회담\" (2023년치) → 4쪽", "ok": true}}
+{"t": 1789475065.1984878, "run": "a77284fa", "where": "generator", "what": "yield", "kind": "tool_finished"}
+{"t": 1789475065.3405523, "run": "0fa85069", "where": "worker", "what": "emit", "kind": "thinking", "data": {}}
+{"t": 1789475065.3415573, "run": "0fa85069", "where": "generator", "what": "yield", "kind": "thinking"}
+{"t": 1789475065.4659114, "run": "e846919f", "where": "worker", "what": "emit", "kind": "tool_finished", "data": {"name": "search", "summary": "찾기 \"한미 정상회담\" (2023년치) → 4쪽", "ok": true}}
+{"t": 1789475065.4664156, "run": "e846919f", "where": "generator", "what": "yield", "kind": "tool_finished"}
+{"t": 1789475065.561641, "run": "df45341c", "where": "worker", "what": "emit", "kind": "thinking", "data": {}}
+{"t": 1789475065.562144, "run": "df45341c", "where": "generator", "what": "yield", "kind": "thinking"}
+{"t": 1789475065.7996755, "run": "a77284fa", "where": "worker", "what": "emit", "kind": "thinking", "data": {}}
+{"t": 1789475065.7996755, "run": "a77284fa", "where": "generator", "what": "yield", "kind": "thinking"}
+{"t": 1789476265.6802976, "where": "handler", "what": "request", "session_hash": "sunebbeaqb", "client_host": "127.0.0.1", "xff_chain": [], "visitor_key": "9365d0708c0c", "headers": ["accept", "accept-encoding", "accept-language", "connection", "content-length", "content-type", "host", "origin", "referer", "sec-ch-ua", "sec-ch-ua-mobile", "sec-ch-ua-platform", "sec-fetch-dest", "sec-fetch-mode", "sec-fetch-site", "user-agent", "x-gradio-user"]}
+{"t": 1789476266.207347, "run": "cf0a1ccb", "where": "worker", "what": "emit", "kind": "thinking", "data": {}}
+{"t": 1789476266.207347, "run": "cf0a1ccb", "where": "generator", "what": "yield", "kind": "thinking"}
+{"t": 1789476266.8085952, "run": "cf0a1ccb", "where": "worker", "what": "emit", "kind": "tool_requested", "data": {"name": "get_toc"}}
+{"t": 1789476266.8085952, "run": "cf0a1ccb", "where": "generator", "what": "yield", "kind": "tool_requested"}
+{"t": 1789476267.2594953, "run": "cf0a1ccb", "where": "worker", "what": "emit", "kind": "tool_finished", "data": {"name": "get_toc", "summary": "목차 보기 2023년치", "ok": true}}
+{"t": 1789476267.260502, "run": "cf0a1ccb", "where": "generator", "what": "yield", "kind": "tool_finished"}
+{"t": 1789476267.711032, "run": "cf0a1ccb", "where": "worker", "what": "emit", "kind": "thinking", "data": {}}
+{"t": 1789476267.7120426, "run": "cf0a1ccb", "where": "generator", "what": "yield", "kind": "thinking"}
+{"t": 1789476268.3125644, "run": "cf0a1ccb", "where": "worker", "what": "emit", "kind": "tool_requested", "data": {"name": "search"}}
+{"t": 1789476268.3125644, "run": "cf0a1ccb", "where": "generator", "what": "yield", "kind": "tool_requested"}
+{"t": 1789476268.7636395, "run": "cf0a1ccb", "where": "worker", "what": "emit", "kind": "tool_finished", "data": {"name": "search", "summary": "찾기 \"![t](http://127.0.0.1:7999/query-md.png) <img src=\"http://127.0.0.1:7999/query-html.png\" onerror=\"window.__xss_query=1\"> ${window.__xss_tpl_q=1} <script>window.__xss_script=1</script>\" (2023년치) → 0쪽", "ok": true}}
+{"t": 1789476268.7636395, "run": "cf0a1ccb", "where": "generator", "what": "yield", "kind": "tool_finished"}
+{"t": 1789476269.214875, "run": "cf0a1ccb", "where": "worker", "what": "emit", "kind": "thinking", "data": {}}
+{"t": 1789476269.215392, "run": "cf0a1ccb", "where": "generator", "what": "yield", "kind": "thinking"}
+{"t": 1789476269.815658, "run": "cf0a1ccb", "where": "worker", "what": "emit", "kind": "tool_requested", "data": {"name": "search"}}
+{"t": 1789476269.815658, "run": "cf0a1ccb", "where": "generator", "what": "yield", "kind": "tool_requested"}
+{"t": 1789476270.2668889, "run": "cf0a1ccb", "where": "worker", "what": "emit", "kind": "tool_finished", "data": {"name": "search", "summary": "찾기 \"한미 정상회담\" (2023년치) → 4쪽", "ok": true}}
+{"t": 1789476270.2668889, "run": "cf0a1ccb", "where": "generator", "what": "yield", "kind": "tool_finished"}
+{"t": 1789476270.717918, "run": "cf0a1ccb", "where": "worker", "what": "emit", "kind": "thinking", "data": {}}
+{"t": 1789476270.717918, "run": "cf0a1ccb", "where": "generator", "what": "yield", "kind": "thinking"}
+{"t": 1789476271.3189244, "run": "cf0a1ccb", "where": "worker", "what": "emit", "kind": "tool_requested", "data": {"name": "read_pages"}}
+{"t": 1789476271.3199298, "run": "cf0a1ccb", "where": "generator", "what": "yield", "kind": "tool_requested"}
+{"t": 1789476271.7703266, "run": "cf0a1ccb", "where": "worker", "what": "emit", "kind": "tool_finished", "data": {"name": "read_pages", "summary": "쪽 읽기 2023년치 38쪽, 2023년치 39쪽", "ok": true}}
+{"t": 1789476271.7703266, "run": "cf0a1ccb", "where": "generator", "what": "yield", "kind": "tool_finished"}
+{"t": 1789476272.2216332, "run": "cf0a1ccb", "where": "worker", "what": "emit", "kind": "thinking", "data": {}}
+{"t": 1789476272.2216332, "run": "cf0a1ccb", "where": "generator", "what": "yield", "kind": "thinking"}
+{"t": 1789476272.8222675, "run": "cf0a1ccb", "where": "worker", "what": "emit", "kind": "answer_started", "data": {}}
+{"t": 1789476272.8222675, "run": "cf0a1ccb", "where": "generator", "what": "yield", "kind": "answer_started"}
+{"t": 1789476273.2743082, "run": "cf0a1ccb", "where": "worker", "what": "emit", "kind": "done", "data": {"status": "answered"}}
+{"t": 1789476273.2753088, "run": "cf0a1ccb", "where": "worker", "what": "run_returned", "status": "answered", "notice": null, "reason": null}
+{"t": 1789476273.2788162, "run": "cf0a1ccb", "where": "generator", "what": "yield", "kind": "result"}
+{"t": 1789476299.1595125, "where": "handler", "what": "unload", "session_hash": "sunebbeaqb", "found": false}
+{"t": 1789476520.3306465, "where": "handler", "what": "unload", "session_hash": "ekmje13ioud", "found": false}

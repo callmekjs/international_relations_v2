@@ -1,0 +1,38 @@
+{
+ "fixed_absent n=1": {
+  "median_s": 0.048,
+  "grades": {
+   "paragraph_only": 1
+  }
+ },
+ "fixed_absent n=25": {
+  "median_s": 0.806,
+  "grades": {
+   "paragraph_only": 25
+  }
+ },
+ "fixed_absent n=54": {
+  "median_s": 3.367,
+  "grades": {
+   "paragraph_only": 54
+  }
+ },
+ "reversed_plus_suffix n=1": {
+  "median_s": 0.061,
+  "grades": {
+   "paragraph_only": 1
+  }
+ },
+ "reversed_plus_suffix n=25": {
+  "median_s": 1.277,
+  "grades": {
+   "paragraph_only": 25
+  }
+ },
+ "reversed_plus_suffix n=54": {
+  "median_s": 2.845,
+  "grades": {
+   "paragraph_only": 54
+  }
+ }
+}

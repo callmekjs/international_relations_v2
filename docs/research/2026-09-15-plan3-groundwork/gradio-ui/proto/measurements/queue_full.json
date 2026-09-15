@@ -1,0 +1,10 @@
+{
+ "max_size": 20,
+ "concurrency_limit": 4,
+ "joins": 30,
+ "status_counts": {
+  "200": 24,
+  "503": 6
+ },
+ "first_rejection": "{\"detail\":\"Queue is full. Max size is 20 and size is 20.\"}"
+}

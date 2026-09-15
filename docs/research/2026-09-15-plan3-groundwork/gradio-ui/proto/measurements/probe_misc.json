@@ -1,0 +1,61 @@
+{
+ "unlock_messages": {
+  "wrong": [
+   "비밀번호가 맞지 않아요.",
+   "비밀번호가 맞지 않아요."
+  ],
+  "right": "발표 모드: 방문자·하루 한도를 건너뜁니다."
+ },
+ "remaining_after_unlock_same_session": "발표 모드",
+ "remaining_other_session_same_visitor": [
+  "오늘 남은 질문 2번",
+  "오늘 남은 질문 1번",
+  "오늘 남은 질문 0번",
+  "오늘 남은 질문 0번"
+ ],
+ "after_5_fails_right_password": "시도 횟수를 넘었어요. 내일 다시 해 주세요.",
+ "csv_output": {
+  "path": "C:\\Users\\anyca\\AppData\\Local\\Temp\\gradio\\4977ffd02352ad60bc31552c9b6d44eb568dade524e30ae8198a3466987d5a5d\\table-20260915-212045.csv",
+  "url": "http://127.0.0.1:7861/gradio_api/file=C%3A%5CUsers%5Canyca%5CAppData%5CLocal%5CTemp%5Cgradio%5C4977ffd02352ad60bc31552c9b6d44eb568dade524e30ae8198a3466987d5a5d%5Ctable-20260915-212045.csv",
+  "orig_name": "table-20260915-212045.csv",
+  "mime_type": null,
+  "size": null
+ },
+ "csv_download": {
+  "status": 200,
+  "first_bytes_hex": "efbbbf",
+  "content_type": "application/octet-stream",
+  "content_disposition": "attachment; filename=\"table-20260915-212045.csv\"",
+  "text": "항목,내용,근거\r\n정상회담,워싱턴,2023년치 38쪽\r\n"
+ },
+ "routes": {
+  "/gradio_api/info": {
+   "status": 200,
+   "body": "{\"named_endpoints\":{},\"unnamed_endpoints\":{}}"
+  },
+  "/gradio_api/monitoring": {
+   "status": 404,
+   "body": "{\"detail\":\"Not Found\"}"
+  },
+  "/monitoring/summary": {
+   "status": 403,
+   "body": "{\"detail\":\"Monitoring is not enabled.\"}"
+  },
+  "/gradio_api/monitoring/summary": {
+   "status": 404,
+   "body": "{\"detail\":\"Not Found\"}"
+  },
+  "/gradio_api/runs": {
+   "status": 404,
+   "body": "{\"detail\":\"Not found\"}"
+  },
+  "/gradio_api/openapi.json": {
+   "status": 200,
+   "body": "{\"openapi\":\"3.0.2\",\"info\":{\"title\":\"외교백서 AI 조수 (시제품)\",\"description\":\"\",\"version\":\"6.27.0\"},\"paths\":{\"/gradio_api/upload\""
+  },
+  "/gradio_api/mcp/schema": {
+   "status": 404,
+   "body": "{\"detail\":\"Not Found\"}"
+  }
+ }
+}

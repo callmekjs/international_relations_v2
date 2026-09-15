@@ -1,0 +1,36 @@
+{
+ "scenario": "parallel",
+ "k": 6,
+ "sessions": {
+  "0": {
+   "start_s": 1.08,
+   "done_s": 6.73,
+   "estimation_msgs": 1
+  },
+  "1": {
+   "start_s": 1.11,
+   "done_s": 6.72,
+   "estimation_msgs": 4
+  },
+  "2": {
+   "start_s": 6.7,
+   "done_s": 12.78,
+   "estimation_msgs": 5
+  },
+  "3": {
+   "start_s": 1.11,
+   "done_s": 6.66,
+   "estimation_msgs": 2
+  },
+  "4": {
+   "start_s": 6.7,
+   "done_s": 12.77,
+   "estimation_msgs": 6
+  },
+  "5": {
+   "start_s": 1.11,
+   "done_s": 6.69,
+   "estimation_msgs": 3
+  }
+ }
+}

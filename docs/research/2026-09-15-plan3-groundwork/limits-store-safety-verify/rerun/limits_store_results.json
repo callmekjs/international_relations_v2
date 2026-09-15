@@ -1,0 +1,32 @@
+{
+ "ip_rules": "IPv6 -> /64, mapped IPv4 unwrapped, XFF last public entry, safety id 64 hex stable, visitor key rotates",
+ "visitor_cap_rollover": "4th question refused until 2026-09-21T00:00+09:00; allowed at 00:00:01 KST",
+ "inflight_interval": "second start while running -> busy_visitor; start 3 s after -> too_soon",
+ "refund": "3 x busy errors (0 KRW) refunded; a cut stream that cost 25 KRW is counted",
+ "global_stop": "13 visitor runs of 300 KRW admitted (spent 3900 KRW), next refused; presenter still allowed; restart restored spend=3900 presenter=500",
+ "concurrency": "64 simultaneous starts by one visitor -> 1 admitted; 200 simultaneous visitors -> 25 admitted, reserved 3900 KRW <= 4000 (one earlier visitor still in flight)",
+ "ip_cap_password": "30 runs from one IP with fresh browser ids, the next refused (ip_cap); 5 wrong passwords then locked for the day",
+ "ledger_row_example": {
+  "v": 1,
+  "id": "0880572d",
+  "day": "2026-09-22",
+  "started_kst": "2026-09-22T09:00:00+09:00",
+  "task": "qa",
+  "visitor": "afa284f9fa5bb062",
+  "ip": "049f573e4b24ec60",
+  "presenter": false,
+  "status": "answered",
+  "notice": null,
+  "refunded": false,
+  "cost_krw": 300,
+  "cost_usd": 0.214286,
+  "elapsed_s": 12.0
+ },
+ "ledger_row_bytes": 270,
+ "rebuild_2000_files_local_disk_s": 18.268,
+ "month_rebuild": {
+  "files": 4350,
+  "first_start_s": 41.42,
+  "second_start_with_day_summaries_s": 0.287
+ }
+}

@@ -1,0 +1,1087 @@
+{
+ "page_ids_not_matching_pattern": 0,
+ "page_ids_total": 2136,
+ "single_page_rows": 2,
+ "main_chapters": 44,
+ "totals_2025": {
+  "citable": 248,
+  "chars": 225537,
+  "x064": 144343,
+  "text_tokens": 136919,
+  "payload_B_tokens": 146720,
+  "targets": 89
+ },
+ "totals_all": {
+  "citable": 1566,
+  "chars": 1429113,
+  "x064": 914631,
+  "text_tokens": 870608,
+  "payload_B_tokens": 932840,
+  "targets": 557
+ },
+ "largest": {
+  "year": 2023,
+  "label": "제3장",
+  "printed": [
+   66,
+   175
+  ],
+  "pages_all": 110,
+  "citable": 108,
+  "noncitable_kinds": {
+   "text": 2
+  },
+  "noncitable_text_chars": 158,
+  "gaps": [],
+  "no_section_label": 0,
+  "sections_pages": 6,
+  "sections_toc": 6,
+  "noncontiguous_sections": [],
+  "chars": 97674,
+  "x064": 62511,
+  "text_tokens": 61452,
+  "payload_B_chars": 111101,
+  "payload_B_tokens": 65946,
+  "targets": 24,
+  "paragraphs": 1340,
+  "max_paragraphs_on_a_page": 108,
+  "longest_paragraph_chars": 509
+ },
+ "smallest": {
+  "year": 2022,
+  "label": "제7장",
+  "printed": [
+   260,
+   269
+  ],
+  "pages_all": 10,
+  "citable": 7,
+  "noncitable_kinds": {
+   "little_text": 1,
+   "text": 1,
+   "blank": 1
+  },
+  "noncitable_text_chars": 34,
+  "gaps": [],
+  "no_section_label": 0,
+  "sections_pages": 2,
+  "sections_toc": 2,
+  "noncontiguous_sections": [],
+  "chars": 6310,
+  "x064": 4038,
+  "text_tokens": 4015,
+  "payload_B_chars": 7594,
+  "payload_B_tokens": 4475,
+  "targets": 5,
+  "paragraphs": 121,
+  "max_paragraphs_on_a_page": 78,
+  "longest_paragraph_chars": 454
+ },
+ "median_index_22": {
+  "year": 2023,
+  "label": "제2장",
+  "printed": [
+   32,
+   65
+  ],
+  "pages_all": 34,
+  "citable": 31,
+  "noncitable_kinds": {
+   "text": 2,
+   "blank": 1
+  },
+  "noncitable_text_chars": 145,
+  "gaps": [],
+  "no_section_label": 0,
+  "sections_pages": 4,
+  "sections_toc": 4,
+  "noncontiguous_sections": [],
+  "chars": 28384,
+  "x064": 18166,
+  "text_tokens": 18146,
+  "payload_B_chars": 32512,
+  "payload_B_tokens": 19527,
+  "targets": 13,
+  "paragraphs": 385,
+  "max_paragraphs_on_a_page": 46,
+  "longest_paragraph_chars": 702
+ },
+ "median_index_21": {
+  "year": 2021,
+  "label": "제5장",
+  "printed": [
+   112,
+   143
+  ],
+  "pages_all": 32,
+  "citable": 29,
+  "noncitable_kinds": {
+   "text": 1,
+   "image_only": 1,
+   "blank": 1
+  },
+  "noncitable_text_chars": 111,
+  "gaps": [],
+  "no_section_label": 0,
+  "sections_pages": 4,
+  "sections_toc": 4,
+  "noncontiguous_sections": [],
+  "chars": 29320,
+  "x064": 18765,
+  "text_tokens": 17533,
+  "payload_B_chars": 32173,
+  "payload_B_tokens": 18510,
+  "targets": 13,
+  "paragraphs": 219,
+  "max_paragraphs_on_a_page": 17,
+  "longest_paragraph_chars": 458
+ },
+ "chapters_with_gaps": [],
+ "chapters_with_noncitable_pages": [
+  [
+   2020,
+   "제1장",
+   {
+    "image_only": 1,
+    "text": 1
+   },
+   54
+  ],
+  [
+   2020,
+   "제2장",
+   {
+    "image_only": 1,
+    "text": 1
+   },
+   89
+  ],
+  [
+   2020,
+   "제3장",
+   {
+    "image_only": 1,
+    "text": 1
+   },
+   109
+  ],
+  [
+   2020,
+   "제4장",
+   {
+    "image_only": 1,
+    "text": 1,
+    "blank": 1
+   },
+   130
+  ],
+  [
+   2020,
+   "제5장",
+   {
+    "image_only": 1,
+    "text": 1
+   },
+   122
+  ],
+  [
+   2020,
+   "제6장",
+   {
+    "image_only": 1,
+    "text": 1,
+    "blank": 1
+   },
+   129
+  ],
+  [
+   2020,
+   "제7장",
+   {
+    "image_only": 1,
+    "text": 1
+   },
+   141
+  ],
+  [
+   2020,
+   "제8장",
+   {
+    "image_only": 1,
+    "text": 1
+   },
+   104
+  ],
+  [
+   2021,
+   "제1장",
+   {
+    "text": 1,
+    "image_only": 1
+   },
+   28
+  ],
+  [
+   2021,
+   "제2장",
+   {
+    "text": 1,
+    "image_only": 1
+   },
+   87
+  ],
+  [
+   2021,
+   "제3장",
+   {
+    "text": 1,
+    "image_only": 1
+   },
+   111
+  ],
+  [
+   2021,
+   "제4장",
+   {
+    "text": 1,
+    "image_only": 1
+   },
+   119
+  ],
+  [
+   2021,
+   "제5장",
+   {
+    "text": 1,
+    "image_only": 1,
+    "blank": 1
+   },
+   111
+  ],
+  [
+   2021,
+   "제6장",
+   {
+    "text": 1,
+    "image_only": 1,
+    "blank": 1
+   },
+   109
+  ],
+  [
+   2021,
+   "제7장",
+   {
+    "text": 1,
+    "image_only": 1,
+    "blank": 1
+   },
+   147
+  ],
+  [
+   2021,
+   "제8장",
+   {
+    "text": 1,
+    "image_only": 1
+   },
+   52
+  ],
+  [
+   2022,
+   "제1장",
+   {
+    "little_text": 1,
+    "text": 1
+   },
+   31
+  ],
+  [
+   2022,
+   "제2장",
+   {
+    "little_text": 1,
+    "text": 1,
+    "blank": 1
+   },
+   101
+  ],
+  [
+   2022,
+   "제3장",
+   {
+    "little_text": 1,
+    "text": 1,
+    "blank": 1
+   },
+   126
+  ],
+  [
+   2022,
+   "제4장",
+   {
+    "little_text": 1,
+    "text": 1
+   },
+   102
+  ],
+  [
+   2022,
+   "제5장",
+   {
+    "little_text": 1,
+    "text": 1,
+    "blank": 1
+   },
+   154
+  ],
+  [
+   2022,
+   "제6장",
+   {
+    "little_text": 1,
+    "text": 1
+   },
+   109
+  ],
+  [
+   2022,
+   "제7장",
+   {
+    "little_text": 1,
+    "text": 1,
+    "blank": 1
+   },
+   34
+  ],
+  [
+   2023,
+   "제1장",
+   {
+    "text": 2,
+    "blank": 1
+   },
+   60
+  ],
+  [
+   2023,
+   "제2장",
+   {
+    "text": 2,
+    "blank": 1
+   },
+   145
+  ],
+  [
+   2023,
+   "제3장",
+   {
+    "text": 2
+   },
+   158
+  ],
+  [
+   2023,
+   "제4장",
+   {
+    "little_text": 1,
+    "text": 1,
+    "blank": 1
+   },
+   104
+  ],
+  [
+   2023,
+   "제5장",
+   {
+    "text": 2,
+    "blank": 1
+   },
+   166
+  ],
+  [
+   2023,
+   "제6장",
+   {
+    "little_text": 1,
+    "text": 1
+   },
+   91
+  ],
+  [
+   2023,
+   "제7장",
+   {
+    "little_text": 1,
+    "text": 1
+   },
+   35
+  ],
+  [
+   2024,
+   "제1장",
+   {
+    "text": 1,
+    "little_text": 1,
+    "blank": 1
+   },
+   40
+  ],
+  [
+   2024,
+   "제2장",
+   {
+    "text": 1,
+    "little_text": 1
+   },
+   105
+  ],
+  [
+   2024,
+   "제3장",
+   {
+    "text": 1,
+    "little_text": 1
+   },
+   152
+  ],
+  [
+   2024,
+   "제4장",
+   {
+    "text": 1,
+    "little_text": 1,
+    "blank": 1
+   },
+   107
+  ],
+  [
+   2024,
+   "제5장",
+   {
+    "text": 1,
+    "little_text": 1,
+    "blank": 1
+   },
+   161
+  ],
+  [
+   2024,
+   "제6장",
+   {
+    "text": 1,
+    "little_text": 1,
+    "blank": 1
+   },
+   96
+  ],
+  [
+   2024,
+   "제7장",
+   {
+    "text": 1,
+    "little_text": 1,
+    "blank": 1
+   },
+   43
+  ],
+  [
+   2025,
+   "제1장",
+   {
+    "image_only": 2,
+    "blank": 1
+   },
+   0
+  ],
+  [
+   2025,
+   "제2장",
+   {
+    "image_only": 2,
+    "blank": 1
+   },
+   0
+  ],
+  [
+   2025,
+   "제3장",
+   {
+    "image_only": 2
+   },
+   0
+  ],
+  [
+   2025,
+   "제4장",
+   {
+    "image_only": 2
+   },
+   0
+  ],
+  [
+   2025,
+   "제5장",
+   {
+    "image_only": 2,
+    "blank": 1
+   },
+   0
+  ],
+  [
+   2025,
+   "제6장",
+   {
+    "image_only": 2
+   },
+   0
+  ],
+  [
+   2025,
+   "제7장",
+   {
+    "image_only": 2,
+    "blank": 1
+   },
+   0
+  ]
+ ],
+ "chapters_section_count_mismatch_vs_toc": [],
+ "chapters_noncontiguous_sections": [],
+ "citable_pages_without_section": 0,
+ "payload_tokens_per_payload_char_range": [
+  0.548,
+  0.601
+ ],
+ "max_paragraphs_on_a_page": 165,
+ "per_chapter": [
+  {
+   "year": 2020,
+   "label": "제1장",
+   "citable": 18,
+   "chars": 17791,
+   "x064": 11386,
+   "text_tokens": 10581,
+   "payload_B_tokens": 11105,
+   "payload_B_chars": 19320,
+   "sections_pages": 2,
+   "targets": 7
+  },
+  {
+   "year": 2020,
+   "label": "제2장",
+   "citable": 26,
+   "chars": 23183,
+   "x064": 14837,
+   "text_tokens": 14298,
+   "payload_B_tokens": 15652,
+   "payload_B_chars": 26918,
+   "sections_pages": 3,
+   "targets": 9
+  },
+  {
+   "year": 2020,
+   "label": "제3장",
+   "citable": 38,
+   "chars": 37154,
+   "x064": 23779,
+   "text_tokens": 22167,
+   "payload_B_tokens": 23574,
+   "payload_B_chars": 41351,
+   "sections_pages": 4,
+   "targets": 14
+  },
+  {
+   "year": 2020,
+   "label": "제4장",
+   "citable": 93,
+   "chars": 82127,
+   "x064": 52561,
+   "text_tokens": 49755,
+   "payload_B_tokens": 53711,
+   "payload_B_chars": 94072,
+   "sections_pages": 6,
+   "targets": 24
+  },
+  {
+   "year": 2020,
+   "label": "제5장",
+   "citable": 30,
+   "chars": 27781,
+   "x064": 17780,
+   "text_tokens": 16052,
+   "payload_B_tokens": 17013,
+   "payload_B_chars": 30593,
+   "sections_pages": 4,
+   "targets": 12
+  },
+  {
+   "year": 2020,
+   "label": "제6장",
+   "citable": 35,
+   "chars": 31376,
+   "x064": 20081,
+   "text_tokens": 18201,
+   "payload_B_tokens": 19718,
+   "payload_B_chars": 35987,
+   "sections_pages": 4,
+   "targets": 14
+  },
+  {
+   "year": 2020,
+   "label": "제7장",
+   "citable": 46,
+   "chars": 36944,
+   "x064": 23644,
+   "text_tokens": 22400,
+   "payload_B_tokens": 24148,
+   "payload_B_chars": 42114,
+   "sections_pages": 5,
+   "targets": 17
+  },
+  {
+   "year": 2020,
+   "label": "제8장",
+   "citable": 10,
+   "chars": 8358,
+   "x064": 5349,
+   "text_tokens": 5314,
+   "payload_B_tokens": 5900,
+   "payload_B_chars": 9994,
+   "sections_pages": 3,
+   "targets": 7
+  },
+  {
+   "year": 2021,
+   "label": "제1장",
+   "citable": 14,
+   "chars": 15973,
+   "x064": 10223,
+   "text_tokens": 9679,
+   "payload_B_tokens": 10127,
+   "payload_B_chars": 17273,
+   "sections_pages": 1,
+   "targets": 4
+  },
+  {
+   "year": 2021,
+   "label": "제2장",
+   "citable": 10,
+   "chars": 8552,
+   "x064": 5473,
+   "text_tokens": 5170,
+   "payload_B_tokens": 5594,
+   "payload_B_chars": 9769,
+   "sections_pages": 3,
+   "targets": 7
+  },
+  {
+   "year": 2021,
+   "label": "제3장",
+   "citable": 24,
+   "chars": 22381,
+   "x064": 14324,
+   "text_tokens": 14313,
+   "payload_B_tokens": 15563,
+   "payload_B_chars": 26196,
+   "sections_pages": 4,
+   "targets": 11
+  },
+  {
+   "year": 2021,
+   "label": "제4장",
+   "citable": 52,
+   "chars": 47641,
+   "x064": 30490,
+   "text_tokens": 29781,
+   "payload_B_tokens": 31765,
+   "payload_B_chars": 53539,
+   "sections_pages": 5,
+   "targets": 17
+  },
+  {
+   "year": 2021,
+   "label": "제5장",
+   "citable": 29,
+   "chars": 29320,
+   "x064": 18765,
+   "text_tokens": 17533,
+   "payload_B_tokens": 18510,
+   "payload_B_chars": 32173,
+   "sections_pages": 4,
+   "targets": 13
+  },
+  {
+   "year": 2021,
+   "label": "제6장",
+   "citable": 31,
+   "chars": 31494,
+   "x064": 20156,
+   "text_tokens": 18313,
+   "payload_B_tokens": 19653,
+   "payload_B_chars": 35551,
+   "sections_pages": 3,
+   "targets": 11
+  },
+  {
+   "year": 2021,
+   "label": "제7장",
+   "citable": 35,
+   "chars": 32650,
+   "x064": 20896,
+   "text_tokens": 20115,
+   "payload_B_tokens": 21435,
+   "payload_B_chars": 36579,
+   "sections_pages": 5,
+   "targets": 16
+  },
+  {
+   "year": 2021,
+   "label": "제8장",
+   "citable": 8,
+   "chars": 7184,
+   "x064": 4598,
+   "text_tokens": 4460,
+   "payload_B_tokens": 4976,
+   "payload_B_chars": 8653,
+   "sections_pages": 2,
+   "targets": 5
+  },
+  {
+   "year": 2022,
+   "label": "제1장",
+   "citable": 22,
+   "chars": 22194,
+   "x064": 14204,
+   "text_tokens": 13625,
+   "payload_B_tokens": 14303,
+   "payload_B_chars": 24175,
+   "sections_pages": 2,
+   "targets": 7
+  },
+  {
+   "year": 2022,
+   "label": "제2장",
+   "citable": 31,
+   "chars": 28685,
+   "x064": 18358,
+   "text_tokens": 18234,
+   "payload_B_tokens": 19665,
+   "payload_B_chars": 32999,
+   "sections_pages": 4,
+   "targets": 13
+  },
+  {
+   "year": 2022,
+   "label": "제3장",
+   "citable": 73,
+   "chars": 65754,
+   "x064": 42083,
+   "text_tokens": 41085,
+   "payload_B_tokens": 44093,
+   "payload_B_chars": 74761,
+   "sections_pages": 6,
+   "targets": 21
+  },
+  {
+   "year": 2022,
+   "label": "제4장",
+   "citable": 36,
+   "chars": 34197,
+   "x064": 21886,
+   "text_tokens": 20455,
+   "payload_B_tokens": 21614,
+   "payload_B_chars": 37574,
+   "sections_pages": 4,
+   "targets": 14
+  },
+  {
+   "year": 2022,
+   "label": "제5장",
+   "citable": 51,
+   "chars": 45299,
+   "x064": 28991,
+   "text_tokens": 26081,
+   "payload_B_tokens": 28127,
+   "payload_B_chars": 51322,
+   "sections_pages": 5,
+   "targets": 18
+  },
+  {
+   "year": 2022,
+   "label": "제6장",
+   "citable": 26,
+   "chars": 21675,
+   "x064": 13872,
+   "text_tokens": 13346,
+   "payload_B_tokens": 14403,
+   "payload_B_chars": 24797,
+   "sections_pages": 5,
+   "targets": 14
+  },
+  {
+   "year": 2022,
+   "label": "제7장",
+   "citable": 7,
+   "chars": 6310,
+   "x064": 4038,
+   "text_tokens": 4015,
+   "payload_B_tokens": 4475,
+   "payload_B_chars": 7594,
+   "sections_pages": 2,
+   "targets": 5
+  },
+  {
+   "year": 2023,
+   "label": "제1장",
+   "citable": 23,
+   "chars": 25600,
+   "x064": 16384,
+   "text_tokens": 15903,
+   "payload_B_tokens": 16591,
+   "payload_B_chars": 27631,
+   "sections_pages": 2,
+   "targets": 7
+  },
+  {
+   "year": 2023,
+   "label": "제2장",
+   "citable": 31,
+   "chars": 28384,
+   "x064": 18166,
+   "text_tokens": 18146,
+   "payload_B_tokens": 19527,
+   "payload_B_chars": 32512,
+   "sections_pages": 4,
+   "targets": 13
+  },
+  {
+   "year": 2023,
+   "label": "제3장",
+   "citable": 108,
+   "chars": 97674,
+   "x064": 62511,
+   "text_tokens": 61452,
+   "payload_B_tokens": 65946,
+   "payload_B_chars": 111101,
+   "sections_pages": 6,
+   "targets": 24
+  },
+  {
+   "year": 2023,
+   "label": "제4장",
+   "citable": 41,
+   "chars": 39796,
+   "x064": 25469,
+   "text_tokens": 23848,
+   "payload_B_tokens": 25132,
+   "payload_B_chars": 43534,
+   "sections_pages": 4,
+   "targets": 14
+  },
+  {
+   "year": 2023,
+   "label": "제5장",
+   "citable": 57,
+   "chars": 50152,
+   "x064": 32097,
+   "text_tokens": 28947,
+   "payload_B_tokens": 31108,
+   "payload_B_chars": 56465,
+   "sections_pages": 5,
+   "targets": 19
+  },
+  {
+   "year": 2023,
+   "label": "제6장",
+   "citable": 24,
+   "chars": 19517,
+   "x064": 12491,
+   "text_tokens": 12152,
+   "payload_B_tokens": 13069,
+   "payload_B_chars": 22198,
+   "sections_pages": 4,
+   "targets": 11
+  },
+  {
+   "year": 2023,
+   "label": "제7장",
+   "citable": 8,
+   "chars": 6571,
+   "x064": 4205,
+   "text_tokens": 4152,
+   "payload_B_tokens": 4605,
+   "payload_B_chars": 7841,
+   "sections_pages": 2,
+   "targets": 5
+  },
+  {
+   "year": 2024,
+   "label": "제1장",
+   "citable": 19,
+   "chars": 19326,
+   "x064": 12369,
+   "text_tokens": 11934,
+   "payload_B_tokens": 12535,
+   "payload_B_chars": 21096,
+   "sections_pages": 2,
+   "targets": 7
+  },
+  {
+   "year": 2024,
+   "label": "제2장",
+   "citable": 30,
+   "chars": 28444,
+   "x064": 18204,
+   "text_tokens": 18237,
+   "payload_B_tokens": 19641,
+   "payload_B_chars": 32660,
+   "sections_pages": 4,
+   "targets": 13
+  },
+  {
+   "year": 2024,
+   "label": "제3장",
+   "citable": 102,
+   "chars": 83704,
+   "x064": 53571,
+   "text_tokens": 52619,
+   "payload_B_tokens": 56612,
+   "payload_B_chars": 95470,
+   "sections_pages": 7,
+   "targets": 26
+  },
+  {
+   "year": 2024,
+   "label": "제4장",
+   "citable": 39,
+   "chars": 38026,
+   "x064": 24337,
+   "text_tokens": 22438,
+   "payload_B_tokens": 23685,
+   "payload_B_chars": 41619,
+   "sections_pages": 4,
+   "targets": 13
+  },
+  {
+   "year": 2024,
+   "label": "제5장",
+   "citable": 59,
+   "chars": 56148,
+   "x064": 35935,
+   "text_tokens": 32488,
+   "payload_B_tokens": 34737,
+   "payload_B_chars": 62796,
+   "sections_pages": 5,
+   "targets": 19
+  },
+  {
+   "year": 2024,
+   "label": "제6장",
+   "citable": 23,
+   "chars": 19024,
+   "x064": 12175,
+   "text_tokens": 11805,
+   "payload_B_tokens": 12718,
+   "payload_B_chars": 21686,
+   "sections_pages": 4,
+   "targets": 11
+  },
+  {
+   "year": 2024,
+   "label": "제7장",
+   "citable": 9,
+   "chars": 7187,
+   "x064": 4600,
+   "text_tokens": 4595,
+   "payload_B_tokens": 5090,
+   "payload_B_chars": 8583,
+   "sections_pages": 2,
+   "targets": 6
+  },
+  {
+   "year": 2025,
+   "label": "제1장",
+   "citable": 21,
+   "chars": 22687,
+   "x064": 14520,
+   "text_tokens": 13929,
+   "payload_B_tokens": 14569,
+   "payload_B_chars": 24568,
+   "sections_pages": 2,
+   "targets": 7
+  },
+  {
+   "year": 2025,
+   "label": "제2장",
+   "citable": 25,
+   "chars": 23221,
+   "x064": 14861,
+   "text_tokens": 14743,
+   "payload_B_tokens": 15860,
+   "payload_B_chars": 26578,
+   "sections_pages": 3,
+   "targets": 9
+  },
+  {
+   "year": 2025,
+   "label": "제3장",
+   "citable": 72,
+   "chars": 62391,
+   "x064": 39930,
+   "text_tokens": 39067,
+   "payload_B_tokens": 42319,
+   "payload_B_chars": 72058,
+   "sections_pages": 7,
+   "targets": 24
+  },
+  {
+   "year": 2025,
+   "label": "제4장",
+   "citable": 40,
+   "chars": 39575,
+   "x064": 25328,
+   "text_tokens": 22907,
+   "payload_B_tokens": 24178,
+   "payload_B_chars": 43250,
+   "sections_pages": 4,
+   "targets": 14
+  },
+  {
+   "year": 2025,
+   "label": "제5장",
+   "citable": 59,
+   "chars": 51466,
+   "x064": 32938,
+   "text_tokens": 29885,
+   "payload_B_tokens": 32138,
+   "payload_B_chars": 58112,
+   "sections_pages": 5,
+   "targets": 19
+  },
+  {
+   "year": 2025,
+   "label": "제6장",
+   "citable": 24,
+   "chars": 19200,
+   "x064": 12288,
+   "text_tokens": 11934,
+   "payload_B_tokens": 12769,
+   "payload_B_chars": 21619,
+   "sections_pages": 4,
+   "targets": 11
+  },
+  {
+   "year": 2025,
+   "label": "제7장",
+   "citable": 7,
+   "chars": 6997,
+   "x064": 4478,
+   "text_tokens": 4454,
+   "payload_B_tokens": 4887,
+   "payload_B_chars": 8269,
+   "sections_pages": 2,
+   "targets": 5
+  }
+ ]
+}

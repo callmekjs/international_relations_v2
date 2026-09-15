@@ -1,0 +1,102 @@
+{
+ "2025 제7장": {
+  "pages": 7,
+  "sections": 2,
+  "target_sentences": 5,
+  "payload_utf8_bytes": 17610,
+  "request_body_utf8_bytes": 21868,
+  "mixed": {
+   "verify_seconds": 0.004,
+   "sentence_counts": {
+    "verified": 3,
+    "paragraph_only": 3
+   },
+   "references": 5,
+   "by_kind": {
+    "exact -> verified/exact/None": 1,
+    "wrong_paragraph -> verified/moved_paragraph/paragraph": 1,
+    "wrong_paragraph -> paragraph_only/quote_not_in_paragraph/None": 1,
+    "wrong_page -> paragraph_only/quote_too_short/None": 1,
+    "paraphrase -> paragraph_only/quote_not_in_paragraph/None": 1,
+    "exact_overview -> verified/exact/None": 1
+   },
+   "sections_regrouped": [
+    2,
+    3
+   ],
+   "overview_sentences": 1
+  },
+  "all_miss": {
+   "verify_seconds": 0.008,
+   "sentence_counts": {
+    "paragraph_only": 6
+   },
+   "references": 5,
+   "by_kind": {
+    "all_miss -> paragraph_only/quote_not_in_paragraph/None": 4,
+    "all_miss -> paragraph_only/quote_too_short/None": 1,
+    "exact_overview -> paragraph_only/quote_not_in_paragraph/None": 1
+   },
+   "sections_regrouped": [
+    2,
+    3
+   ],
+   "overview_sentences": 1
+  }
+ },
+ "2023 제3장": {
+  "pages": 108,
+  "sections": 6,
+  "target_sentences": 24,
+  "payload_utf8_bytes": 233636,
+  "request_body_utf8_bytes": 243416,
+  "mixed": {
+   "verify_seconds": 0.137,
+   "sentence_counts": {
+    "paragraph_only": 9,
+    "verified": 12,
+    "unsupported": 4
+   },
+   "references": 20,
+   "by_kind": {
+    "exact -> paragraph_only/quote_not_in_paragraph/None": 1,
+    "wrong_paragraph -> verified/moved_paragraph/paragraph": 5,
+    "wrong_page -> verified/moved_page/page": 3,
+    "paraphrase -> paragraph_only/quote_not_in_paragraph/None": 3,
+    "unread_page -> unsupported/page_not_read/None": 4,
+    "short -> paragraph_only/quote_too_short/None": 4,
+    "exact -> verified/exact/None": 4,
+    "exact_overview -> paragraph_only/quote_not_in_paragraph/None": 1
+   },
+   "sections_regrouped": [
+    2,
+    4,
+    5,
+    5,
+    5,
+    3
+   ],
+   "overview_sentences": 1
+  },
+  "all_miss": {
+   "verify_seconds": 0.553,
+   "sentence_counts": {
+    "paragraph_only": 25
+   },
+   "references": 24,
+   "by_kind": {
+    "all_miss -> paragraph_only/quote_not_in_paragraph/None": 24,
+    "exact_overview -> paragraph_only/quote_not_in_paragraph/None": 1
+   },
+   "sections_regrouped": [
+    2,
+    4,
+    5,
+    5,
+    5,
+    3
+   ],
+   "overview_sentences": 1
+  }
+ }
+}

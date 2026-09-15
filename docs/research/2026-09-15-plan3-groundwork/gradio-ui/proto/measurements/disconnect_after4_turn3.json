@@ -1,0 +1,82 @@
+{
+ "scenario": "disconnect",
+ "after_progress_msgs": 4,
+ "cut_s": 2.436,
+ "run": "359340da",
+ "ended": {
+  "s": 4.231,
+  "status": "error",
+  "notice": {
+   "kind": "unknown",
+   "message": "알 수 없는 문제가 생겼어요. 잠시 뒤 다시 해 주세요."
+  },
+  "reason": "generator_closed"
+ },
+ "emits_after_cut": 3,
+ "timeline": [
+  {
+   "s": 1.225,
+   "where": "worker",
+   "what": "emit",
+   "kind": "thinking",
+   "reason": null,
+   "status": null
+  },
+  {
+   "s": 2.427,
+   "where": "worker",
+   "what": "emit",
+   "kind": "tool_requested",
+   "reason": null,
+   "status": null
+  },
+  {
+   "s": 3.328,
+   "where": "worker",
+   "what": "emit",
+   "kind": "tool_finished",
+   "reason": null,
+   "status": null
+  },
+  {
+   "s": 3.338,
+   "where": "generator",
+   "what": "closed",
+   "kind": null,
+   "reason": null,
+   "status": null
+  },
+  {
+   "s": 4.229,
+   "where": "worker",
+   "what": "cancel_raised",
+   "kind": "thinking",
+   "reason": "generator_closed",
+   "status": null
+  },
+  {
+   "s": 4.23,
+   "where": "worker",
+   "what": "emit",
+   "kind": "notice",
+   "reason": null,
+   "status": null
+  },
+  {
+   "s": 4.23,
+   "where": "worker",
+   "what": "emit",
+   "kind": "done",
+   "reason": null,
+   "status": null
+  },
+  {
+   "s": 4.231,
+   "where": "worker",
+   "what": "run_returned",
+   "kind": null,
+   "reason": "generator_closed",
+   "status": "error"
+  }
+ ]
+}

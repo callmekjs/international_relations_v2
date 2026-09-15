@@ -1,0 +1,45 @@
+{
+ "version": 1,
+ "task": "qa",
+ "created_at": "2026-09-15T12:17:45+00:00",
+ "prompt_version": "qa-2026-09-16",
+ "inputs": {
+  "question": "",
+  "years": null
+ },
+ "model": null,
+ "status": "error",
+ "notice": {
+  "kind": "empty_question",
+  "message": "질문을 입력해 주세요."
+ },
+ "events": [
+  {
+   "event": "notice",
+   "notice": "empty_question",
+   "message": "질문을 입력해 주세요."
+  },
+  {
+   "event": "done",
+   "status": "error"
+  }
+ ],
+ "turns": [],
+ "answer_raw": null,
+ "answer": null,
+ "usage": {
+  "turns": 0,
+  "tool_calls": 0,
+  "tokens": {
+   "input": 0,
+   "cached": 0,
+   "cache_write": 0,
+   "output": 0,
+   "reasoning": 0
+  },
+  "cost_usd": 0,
+  "cost_krw": 0
+ },
+ "elapsed_s": 0.0,
+ "error": null
+}

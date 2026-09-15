@@ -1,0 +1,535 @@
+{
+ "model": "gpt-5.6-sol",
+ "usd_to_krw": 1400,
+ "live_ratio_reasoning_per_visible": 1.78,
+ "groups": {
+  "(a) all 7 chapters of 2025": {
+   "requests": 7,
+   "input_tokens": 152845,
+   "visible_output_tokens": 14026,
+   "scenarios": {
+    "low": {
+     "output_tokens": 21040,
+     "standard": 1445,
+     "flex": 723,
+     "batch": 723
+    },
+    "measured": {
+     "output_tokens": 38942,
+     "standard": 1946,
+     "flex": 973,
+     "batch": 973
+    },
+    "high": {
+     "output_tokens": 91104,
+     "standard": 3407,
+     "flex": 1703,
+     "batch": 1703
+    },
+    "ceiling_32k_output": {
+     "output_tokens": 224000,
+     "standard": 7128,
+     "flex": 3564,
+     "batch": 3564
+    }
+   },
+   "implicit_cache_default_extra_krw_standard": 214
+  },
+  "(b) largest: 2023 제3장 (108 pp)": {
+   "requests": 1,
+   "input_tokens": 66821,
+   "visible_output_tokens": 3413,
+   "scenarios": {
+    "low": {
+     "output_tokens": 5119,
+     "standard": 518,
+     "flex": 259,
+     "batch": 259
+    },
+    "measured": {
+     "output_tokens": 9476,
+     "standard": 640,
+     "flex": 320,
+     "batch": 320
+    },
+    "high": {
+     "output_tokens": 18652,
+     "standard": 896,
+     "flex": 448,
+     "batch": 448
+    },
+    "ceiling_32k_output": {
+     "output_tokens": 32000,
+     "standard": 1270,
+     "flex": 635,
+     "batch": 635
+    }
+   },
+   "implicit_cache_default_extra_krw_standard": 94
+  },
+  "(c) typical (median): 2023 제2장 (31 pp)": {
+   "requests": 1,
+   "input_tokens": 20402,
+   "visible_output_tokens": 2042,
+   "scenarios": {
+    "low": {
+     "output_tokens": 3063,
+     "standard": 200,
+     "flex": 100,
+     "batch": 100
+    },
+    "measured": {
+     "output_tokens": 5669,
+     "standard": 273,
+     "flex": 136,
+     "batch": 136
+    },
+    "high": {
+     "output_tokens": 13168,
+     "standard": 483,
+     "flex": 241,
+     "batch": 241
+    },
+    "ceiling_32k_output": {
+     "output_tokens": 32000,
+     "standard": 1010,
+     "flex": 505,
+     "batch": 505
+    }
+   },
+   "implicit_cache_default_extra_krw_standard": 29
+  },
+  "(d) smallest: 2022 제7장 (7 pp)": {
+   "requests": 1,
+   "input_tokens": 5350,
+   "visible_output_tokens": 1031,
+   "scenarios": {
+    "low": {
+     "output_tokens": 1547,
+     "standard": 73,
+     "flex": 37,
+     "batch": 37
+    },
+    "measured": {
+     "output_tokens": 2862,
+     "standard": 110,
+     "flex": 55,
+     "batch": 55
+    },
+    "high": {
+     "output_tokens": 9124,
+     "standard": 285,
+     "flex": 143,
+     "batch": 143
+    },
+    "ceiling_32k_output": {
+     "output_tokens": 32000,
+     "standard": 926,
+     "flex": 463,
+     "batch": 463
+    }
+   },
+   "implicit_cache_default_extra_krw_standard": 7
+  },
+  "(e) all 44 main chapters, 2020-2025": {
+   "requests": 44,
+   "input_tokens": 971340,
+   "visible_output_tokens": 87832,
+   "scenarios": {
+    "low": {
+     "output_tokens": 131754,
+     "standard": 9129,
+     "flex": 4564,
+     "batch": 4564
+    },
+    "measured": {
+     "output_tokens": 243856,
+     "standard": 12267,
+     "flex": 6134,
+     "batch": 6134
+    },
+    "high": {
+     "output_tokens": 571328,
+     "standard": 21437,
+     "flex": 10718,
+     "batch": 10718
+    },
+    "ceiling_32k_output": {
+     "output_tokens": 1408000,
+     "standard": 44864,
+     "flex": 22432,
+     "batch": 22432
+    }
+   },
+   "implicit_cache_default_extra_krw_standard": 1360
+  }
+ },
+ "summaries_per_20000_krw_typical_chapter": {
+  "low": {
+   "standard": 100,
+   "flex": 200
+  },
+  "measured": {
+   "standard": 73,
+   "flex": 147
+  },
+  "high": {
+   "standard": 41,
+   "flex": 82
+  }
+ },
+ "per_chapter_measured": [
+  {
+   "year": 2020,
+   "label": "제1장",
+   "input": 11980,
+   "output_measured": 3529,
+   "standard_krw": 166,
+   "flex_krw": 83
+  },
+  {
+   "year": 2020,
+   "label": "제2장",
+   "input": 16527,
+   "output_measured": 4265,
+   "standard_krw": 212,
+   "flex_krw": 106
+  },
+  {
+   "year": 2020,
+   "label": "제3장",
+   "input": 24449,
+   "output_measured": 6003,
+   "standard_krw": 305,
+   "flex_krw": 152
+  },
+  {
+   "year": 2020,
+   "label": "제4장",
+   "input": 54586,
+   "output_measured": 9476,
+   "standard_krw": 571,
+   "flex_krw": 286
+  },
+  {
+   "year": 2020,
+   "label": "제5장",
+   "input": 17888,
+   "output_measured": 5336,
+   "standard_krw": 250,
+   "flex_krw": 125
+  },
+  {
+   "year": 2020,
+   "label": "제6장",
+   "input": 20593,
+   "output_measured": 6003,
+   "standard_krw": 283,
+   "flex_krw": 142
+  },
+  {
+   "year": 2020,
+   "label": "제7장",
+   "input": 25023,
+   "output_measured": 7071,
+   "standard_krw": 338,
+   "flex_krw": 169
+  },
+  {
+   "year": 2020,
+   "label": "제8장",
+   "input": 6775,
+   "output_measured": 3598,
+   "standard_krw": 139,
+   "flex_krw": 69
+  },
+  {
+   "year": 2021,
+   "label": "제1장",
+   "input": 11002,
+   "output_measured": 2460,
+   "standard_krw": 130,
+   "flex_krw": 65
+  },
+  {
+   "year": 2021,
+   "label": "제2장",
+   "input": 6469,
+   "output_measured": 3598,
+   "standard_krw": 137,
+   "flex_krw": 68
+  },
+  {
+   "year": 2021,
+   "label": "제3장",
+   "input": 16438,
+   "output_measured": 5000,
+   "standard_krw": 232,
+   "flex_krw": 116
+  },
+  {
+   "year": 2021,
+   "label": "제4장",
+   "input": 32640,
+   "output_measured": 7071,
+   "standard_krw": 381,
+   "flex_krw": 190
+  },
+  {
+   "year": 2021,
+   "label": "제5장",
+   "input": 19385,
+   "output_measured": 5669,
+   "standard_krw": 267,
+   "flex_krw": 134
+  },
+  {
+   "year": 2021,
+   "label": "제6장",
+   "input": 20528,
+   "output_measured": 4931,
+   "standard_krw": 253,
+   "flex_krw": 127
+  },
+  {
+   "year": 2021,
+   "label": "제7장",
+   "input": 22310,
+   "output_measured": 6738,
+   "standard_krw": 314,
+   "flex_krw": 157
+  },
+  {
+   "year": 2021,
+   "label": "제8장",
+   "input": 5851,
+   "output_measured": 2862,
+   "standard_krw": 113,
+   "flex_krw": 56
+  },
+  {
+   "year": 2022,
+   "label": "제1장",
+   "input": 15178,
+   "output_measured": 3529,
+   "standard_krw": 184,
+   "flex_krw": 92
+  },
+  {
+   "year": 2022,
+   "label": "제2장",
+   "input": 20540,
+   "output_measured": 5669,
+   "standard_krw": 274,
+   "flex_krw": 137
+  },
+  {
+   "year": 2022,
+   "label": "제3장",
+   "input": 44968,
+   "output_measured": 8474,
+   "standard_krw": 489,
+   "flex_krw": 245
+  },
+  {
+   "year": 2022,
+   "label": "제4장",
+   "input": 22489,
+   "output_measured": 6003,
+   "standard_krw": 294,
+   "flex_krw": 147
+  },
+  {
+   "year": 2022,
+   "label": "제5장",
+   "input": 29002,
+   "output_measured": 7405,
+   "standard_krw": 370,
+   "flex_krw": 185
+  },
+  {
+   "year": 2022,
+   "label": "제6장",
+   "input": 15278,
+   "output_measured": 6072,
+   "standard_krw": 256,
+   "flex_krw": 128
+  },
+  {
+   "year": 2022,
+   "label": "제7장",
+   "input": 5350,
+   "output_measured": 2862,
+   "standard_krw": 110,
+   "flex_krw": 55
+  },
+  {
+   "year": 2023,
+   "label": "제1장",
+   "input": 17466,
+   "output_measured": 3529,
+   "standard_krw": 197,
+   "flex_krw": 98
+  },
+  {
+   "year": 2023,
+   "label": "제2장",
+   "input": 20402,
+   "output_measured": 5669,
+   "standard_krw": 273,
+   "flex_krw": 136
+  },
+  {
+   "year": 2023,
+   "label": "제3장",
+   "input": 66821,
+   "output_measured": 9476,
+   "standard_krw": 640,
+   "flex_krw": 320
+  },
+  {
+   "year": 2023,
+   "label": "제4장",
+   "input": 26007,
+   "output_measured": 6003,
+   "standard_krw": 314,
+   "flex_krw": 157
+  },
+  {
+   "year": 2023,
+   "label": "제5장",
+   "input": 31983,
+   "output_measured": 7738,
+   "standard_krw": 396,
+   "flex_krw": 198
+  },
+  {
+   "year": 2023,
+   "label": "제6장",
+   "input": 13944,
+   "output_measured": 5000,
+   "standard_krw": 218,
+   "flex_krw": 109
+  },
+  {
+   "year": 2023,
+   "label": "제7장",
+   "input": 5480,
+   "output_measured": 2862,
+   "standard_krw": 111,
+   "flex_krw": 55
+  },
+  {
+   "year": 2024,
+   "label": "제1장",
+   "input": 13410,
+   "output_measured": 3529,
+   "standard_krw": 174,
+   "flex_krw": 87
+  },
+  {
+   "year": 2024,
+   "label": "제2장",
+   "input": 20516,
+   "output_measured": 5669,
+   "standard_krw": 274,
+   "flex_krw": 137
+  },
+  {
+   "year": 2024,
+   "label": "제3장",
+   "input": 57487,
+   "output_measured": 10212,
+   "standard_krw": 608,
+   "flex_krw": 304
+  },
+  {
+   "year": 2024,
+   "label": "제4장",
+   "input": 24560,
+   "output_measured": 5669,
+   "standard_krw": 296,
+   "flex_krw": 148
+  },
+  {
+   "year": 2024,
+   "label": "제5장",
+   "input": 35612,
+   "output_measured": 7738,
+   "standard_krw": 416,
+   "flex_krw": 208
+  },
+  {
+   "year": 2024,
+   "label": "제6장",
+   "input": 13593,
+   "output_measured": 5000,
+   "standard_krw": 216,
+   "flex_krw": 108
+  },
+  {
+   "year": 2024,
+   "label": "제7장",
+   "input": 5965,
+   "output_measured": 3196,
+   "standard_krw": 123,
+   "flex_krw": 61
+  },
+  {
+   "year": 2025,
+   "label": "제1장",
+   "input": 15444,
+   "output_measured": 3529,
+   "standard_krw": 185,
+   "flex_krw": 93
+  },
+  {
+   "year": 2025,
+   "label": "제2장",
+   "input": 16735,
+   "output_measured": 4265,
+   "standard_krw": 213,
+   "flex_krw": 107
+  },
+  {
+   "year": 2025,
+   "label": "제3장",
+   "input": 43194,
+   "output_measured": 9545,
+   "standard_krw": 509,
+   "flex_krw": 255
+  },
+  {
+   "year": 2025,
+   "label": "제4장",
+   "input": 25053,
+   "output_measured": 6003,
+   "standard_krw": 308,
+   "flex_krw": 154
+  },
+  {
+   "year": 2025,
+   "label": "제5장",
+   "input": 33013,
+   "output_measured": 7738,
+   "standard_krw": 402,
+   "flex_krw": 201
+  },
+  {
+   "year": 2025,
+   "label": "제6장",
+   "input": 13644,
+   "output_measured": 5000,
+   "standard_krw": 216,
+   "flex_krw": 108
+  },
+  {
+   "year": 2025,
+   "label": "제7장",
+   "input": 5762,
+   "output_measured": 2862,
+   "standard_krw": 112,
+   "flex_krw": 56
+  }
+ ]
+}

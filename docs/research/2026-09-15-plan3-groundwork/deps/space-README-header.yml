@@ -1,0 +1,11 @@
+---
+title: 외교백서 AI 조수
+colorFrom: blue
+colorTo: gray
+sdk: gradio
+sdk_version: 6.27.0
+python_version: "3.12"
+app_file: app.py
+pinned: false
+short_description: 외교백서 2020~2025 질문답변 · 요약 (AI 생성)
+---

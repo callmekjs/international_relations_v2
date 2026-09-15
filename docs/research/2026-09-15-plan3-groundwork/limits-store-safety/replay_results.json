@@ -1,0 +1,71 @@
+{
+ "runs": [
+  {
+   "file": "20260915-201835-qa.json",
+   "record_version": 1,
+   "elapsed_s": 20.48,
+   "events": [
+    "tool_requested",
+    "tool_finished",
+    "tool_requested",
+    "tool_finished",
+    "thinking",
+    "answer_started",
+    "done"
+   ],
+   "synthetic_t": true,
+   "waits_s_speed1": [
+    4.5,
+    0.68,
+    4.5,
+    0.67,
+    2.25,
+    4.5,
+    3.38
+   ],
+   "replay_total_s_speed1": 20.48,
+   "replay_total_s_speed2": 10.24,
+   "final_state_has_answer": true,
+   "item_bytes": 2459
+  },
+  {
+   "file": "20260915-201852-qa.json",
+   "record_version": 1,
+   "elapsed_s": 8.36,
+   "events": [
+    "thinking",
+    "tool_requested",
+    "tool_finished",
+    "answer_started",
+    "done"
+   ],
+   "synthetic_t": true,
+   "waits_s_speed1": [
+    1.23,
+    2.46,
+    0.37,
+    2.46,
+    1.84
+   ],
+   "replay_total_s_speed1": 8.36,
+   "replay_total_s_speed2": 4.18,
+   "final_state_has_answer": true,
+   "item_bytes": 891
+  },
+  {
+   "file": "synthetic-v2",
+   "waits_s_speed1": [
+    3.1,
+    0.2,
+    4.6,
+    0.3,
+    4.2,
+    1.6,
+    6.0
+   ],
+   "replay_total_s_speed1": 20.0
+  }
+ ],
+ "provider_modules_imported": [],
+ "network_blocked": true
+}

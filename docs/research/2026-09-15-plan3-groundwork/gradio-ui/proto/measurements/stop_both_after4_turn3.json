@@ -1,0 +1,108 @@
+{
+ "scenario": "stop",
+ "how": "both",
+ "after_progress_msgs": 4,
+ "client_completed_s": 3.332,
+ "cut_s": 2.431,
+ "run": "dfc9c160",
+ "ended": {
+  "s": 3.325,
+  "status": "error",
+  "notice": {
+   "kind": "unknown",
+   "message": "알 수 없는 문제가 생겼어요. 잠시 뒤 다시 해 주세요."
+  },
+  "reason": "stop_button"
+ },
+ "emits_after_cut": 2,
+ "timeline": [
+  {
+   "s": 1.221,
+   "where": "worker",
+   "what": "emit",
+   "kind": "thinking",
+   "reason": null,
+   "status": null
+  },
+  {
+   "s": 1.221,
+   "where": "generator",
+   "what": "yield",
+   "kind": "thinking",
+   "reason": null,
+   "status": null
+  },
+  {
+   "s": 2.422,
+   "where": "worker",
+   "what": "emit",
+   "kind": "tool_requested",
+   "reason": null,
+   "status": null
+  },
+  {
+   "s": 2.422,
+   "where": "generator",
+   "what": "yield",
+   "kind": "tool_requested",
+   "reason": null,
+   "status": null
+  },
+  {
+   "s": 2.782,
+   "where": "handler",
+   "what": "stop_clicked",
+   "kind": null,
+   "reason": null,
+   "status": null
+  },
+  {
+   "s": 3.323,
+   "where": "worker",
+   "what": "cancel_raised",
+   "kind": "tool_finished",
+   "reason": "stop_button",
+   "status": null
+  },
+  {
+   "s": 3.324,
+   "where": "worker",
+   "what": "emit",
+   "kind": "notice",
+   "reason": null,
+   "status": null
+  },
+  {
+   "s": 3.324,
+   "where": "worker",
+   "what": "emit",
+   "kind": "done",
+   "reason": null,
+   "status": null
+  },
+  {
+   "s": 3.325,
+   "where": "worker",
+   "what": "run_returned",
+   "kind": null,
+   "reason": "stop_button",
+   "status": "error"
+  },
+  {
+   "s": 3.326,
+   "where": "generator",
+   "what": "yield",
+   "kind": "result",
+   "reason": null,
+   "status": null
+  },
+  {
+   "s": 3.328,
+   "where": "generator",
+   "what": "closed",
+   "kind": null,
+   "reason": null,
+   "status": null
+  }
+ ]
+}

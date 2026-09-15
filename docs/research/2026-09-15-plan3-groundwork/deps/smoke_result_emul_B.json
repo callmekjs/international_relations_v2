@@ -1,0 +1,44 @@
+{
+ "first_200_after_s": 8.87,
+ "GET /": {
+  "status": 200,
+  "bytes": 14657,
+  "has_gradio": true
+ },
+ "GET /config": {
+  "status": 200,
+  "version": "6.27.0"
+ },
+ "GET /gradio_api/info": {
+  "status": 200,
+  "endpoints": [
+   "/ask",
+   "/info",
+   "/lambda"
+  ]
+ },
+ "client /ask": {
+  "final": [
+   "- 생각 중\n- 목차 보기 2023년치\n- 찾기 \"한미 정상회담\"\n- 답 정리 중",
+   "{\"answer\": \"(가짜 답) 2023년 한미 정상회담은?\", \"client_host_seen\": true}"
+  ],
+  "streamed_updates": 5,
+  "seconds": 1.61
+ },
+ "client /info": {
+  "python": "3.12.10",
+  "gradio": "6.27.0",
+  "gradio_client": "2.7.0",
+  "openai": "3.14.0",
+  "httpx": "0.28.1",
+  "httpx2": "2.13.0",
+  "openai_http_client": "openai._base_client.SyncHttpxClientWrapper",
+  "import_s": 6.9,
+  "mem_mb": {
+   "working_set": 196.3,
+   "peak_working_set": 196.3,
+   "private": 903.5
+  }
+ },
+ "port": 65514
+}

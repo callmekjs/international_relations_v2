@@ -1,0 +1,1 @@
+READY_TO_LAUNCH {"python": "3.12.10", "gradio": "6.27.0", "gradio_client": "2.7.0", "openai": "3.14.0", "httpx": "0.28.1", "httpx2": "2.13.0", "openai_http_client": "openai._base_client.SyncHttpxClientWrapper", "import_s": 5.07, "mem_mb_before_launch": {"working_set": 154.7, "peak_working_set": 154.7, "private": 867.9}}

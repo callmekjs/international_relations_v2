@@ -1,0 +1,4 @@
+default ${value}: "답변 ${(function(){globalThis.pwned++; return String.fromCharCode(88)})()} 끝" pwned = 0
+custom <p>{{value}}</p>: "<p>답변 X 끝</p>" pwned = 1
+python html.escape then {{{value}}}: "<p>답변 X 끝</p>" pwned = 2
+escape + $->&#36; then {{{value}}}: "<p>답변 &#36;{(function(){globalThis.pwned++; return String.fromCharCode(88)})()} 끝</p>" pwned = 2

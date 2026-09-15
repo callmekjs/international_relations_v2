@@ -1,0 +1,126 @@
+{
+ "click_to_request_handler_ms": 44.4,
+ "pairs": [
+  {
+   "kind": "thinking",
+   "emit_s": 0.413,
+   "painted_s": 0.429,
+   "lag_ms": 16.1,
+   "line": "… 생각 중"
+  },
+  {
+   "kind": "tool_requested",
+   "emit_s": 0.894,
+   "painted_s": 0.912,
+   "lag_ms": 18.0,
+   "line": "… 도구 요청: get_toc"
+  },
+  {
+   "kind": "tool_finished",
+   "emit_s": 1.255,
+   "painted_s": 1.271,
+   "lag_ms": 15.8,
+   "line": "✓ 목차 보기 2023년치"
+  },
+  {
+   "kind": "thinking",
+   "emit_s": 1.617,
+   "painted_s": 1.634,
+   "lag_ms": 17.4,
+   "line": "… 생각 중"
+  },
+  {
+   "kind": "tool_requested",
+   "emit_s": 2.098,
+   "painted_s": 2.11,
+   "lag_ms": 12.1,
+   "line": "… 도구 요청: search"
+  },
+  {
+   "kind": "tool_finished",
+   "emit_s": 2.459,
+   "painted_s": 2.472,
+   "lag_ms": 13.0,
+   "line": "✓ 찾기 \"![t](http://127.0.0.1:7999/query-m"
+  },
+  {
+   "kind": "thinking",
+   "emit_s": 2.82,
+   "painted_s": 2.836,
+   "lag_ms": 15.5,
+   "line": "… 생각 중"
+  },
+  {
+   "kind": "tool_requested",
+   "emit_s": 3.301,
+   "painted_s": 3.31,
+   "lag_ms": 8.5,
+   "line": "… 도구 요청: search"
+  },
+  {
+   "kind": "tool_finished",
+   "emit_s": 3.662,
+   "painted_s": 3.675,
+   "lag_ms": 12.6,
+   "line": "✓ 찾기 \"한미 정상회담\" (2023년치) → 4쪽"
+  },
+  {
+   "kind": "thinking",
+   "emit_s": 4.024,
+   "painted_s": 4.038,
+   "lag_ms": 13.8,
+   "line": "… 생각 중"
+  },
+  {
+   "kind": "tool_requested",
+   "emit_s": 4.505,
+   "painted_s": 4.518,
+   "lag_ms": 12.8,
+   "line": "… 도구 요청: read_pages"
+  },
+  {
+   "kind": "tool_finished",
+   "emit_s": 4.866,
+   "painted_s": 4.88,
+   "lag_ms": 13.7,
+   "line": "✓ 쪽 읽기 2023년치 38쪽, 2023년치 39쪽"
+  },
+  {
+   "kind": "thinking",
+   "emit_s": 5.228,
+   "painted_s": 5.24,
+   "lag_ms": 12.4,
+   "line": "… 생각 중"
+  },
+  {
+   "kind": "answer_started",
+   "emit_s": 5.709,
+   "painted_s": 5.727,
+   "lag_ms": 18.4,
+   "line": "… 답 정리 중"
+  }
+ ],
+ "max_lag_ms": 18.4,
+ "min_lag_ms": 8.5,
+ "browser_headers_seen_by_server": [
+  "accept",
+  "accept-encoding",
+  "accept-language",
+  "connection",
+  "content-length",
+  "content-type",
+  "host",
+  "origin",
+  "referer",
+  "sec-ch-ua",
+  "sec-ch-ua-mobile",
+  "sec-ch-ua-platform",
+  "sec-fetch-dest",
+  "sec-fetch-mode",
+  "sec-fetch-site",
+  "user-agent",
+  "x-gradio-user"
+ ],
+ "client_host": "127.0.0.1",
+ "xff_chain": []
+}

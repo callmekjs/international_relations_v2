@@ -1,0 +1,82 @@
+{
+ "openai_version": "3.14.0",
+ "httpx2_version": "2.13.0",
+ "adapter_tools_empty": {
+  "wire": {
+   "path": "/v1/responses",
+   "body_keys": [
+    "input",
+    "instructions",
+    "max_output_tokens",
+    "model",
+    "reasoning",
+    "safety_identifier",
+    "store",
+    "stream",
+    "text",
+    "tool_choice",
+    "tools"
+   ],
+   "tools": [],
+   "tool_choice": "none",
+   "service_tier": "<absent>",
+   "prompt_cache_options": "<absent>"
+  },
+  "turn_status": "completed",
+  "service_tier_seen": "flex",
+  "usage": {
+   "input": 71000,
+   "cached": 0,
+   "cache_write": 0,
+   "output": 6000,
+   "reasoning": 1500
+  },
+  "answer_text": "{\"status\": \"answered\", \"sections\": []}",
+  "events": [
+   "answer_started"
+  ]
+ },
+ "omitted_tools_flex": {
+  "wire": {
+   "path": "/v1/responses",
+   "body_keys": [
+    "input",
+    "instructions",
+    "max_output_tokens",
+    "model",
+    "prompt_cache_options",
+    "reasoning",
+    "safety_identifier",
+    "service_tier",
+    "store",
+    "stream",
+    "text"
+   ],
+   "tools": "<absent>",
+   "tool_choice": "<absent>",
+   "service_tier": "flex",
+   "prompt_cache_options": {
+    "mode": "explicit"
+   }
+  },
+  "event_types": [
+   "response.created",
+   "response.queued",
+   "response.output_item.added",
+   "response.completed"
+  ]
+ },
+ "flex_429": {
+  "exception": "RateLimitError",
+  "status": 429,
+  "code": "resource_unavailable",
+  "notice_kind": "busy",
+  "is_BUSY": true,
+  "app_retry": true,
+  "retry_delays_s": [
+   0.40573395230338916,
+   0.9494714629095968,
+   null
+  ]
+ }
+}

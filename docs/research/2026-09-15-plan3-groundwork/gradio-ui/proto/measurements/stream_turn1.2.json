@@ -1,0 +1,146 @@
+{
+ "scenario": "stream",
+ "session": "0ac90df40d22",
+ "run": "6d379f88",
+ "events_emitted": [
+  "thinking",
+  "tool_requested",
+  "tool_finished",
+  "thinking",
+  "tool_requested",
+  "tool_finished",
+  "thinking",
+  "tool_requested",
+  "tool_finished",
+  "thinking",
+  "tool_requested",
+  "tool_finished",
+  "thinking",
+  "answer_started",
+  "done"
+ ],
+ "shown_events": 14,
+ "client_line_changes": 14,
+ "pairs": [
+  {
+   "kind": "thinking",
+   "emit_s": 0.566,
+   "arrive_s": 0.578,
+   "lag_ms": 12.1,
+   "client_last_line": "… 생각 중"
+  },
+  {
+   "kind": "tool_requested",
+   "emit_s": 1.048,
+   "arrive_s": 1.061,
+   "lag_ms": 13.2,
+   "client_last_line": "… 도구 요청: get_toc"
+  },
+  {
+   "kind": "tool_finished",
+   "emit_s": 1.409,
+   "arrive_s": 1.422,
+   "lag_ms": 12.7,
+   "client_last_line": "✓ 목차 보기 2023년치"
+  },
+  {
+   "kind": "thinking",
+   "emit_s": 1.771,
+   "arrive_s": 1.782,
+   "lag_ms": 10.8,
+   "client_last_line": "… 생각 중"
+  },
+  {
+   "kind": "tool_requested",
+   "emit_s": 2.252,
+   "arrive_s": 2.261,
+   "lag_ms": 9.1,
+   "client_last_line": "… 도구 요청: search"
+  },
+  {
+   "kind": "tool_finished",
+   "emit_s": 2.614,
+   "arrive_s": 2.626,
+   "lag_ms": 11.5,
+   "client_last_line": "✓ 찾기 &quot;![t](http://127.0.0.1:7999/query-md.png) &lt;img "
+  },
+  {
+   "kind": "thinking",
+   "emit_s": 2.975,
+   "arrive_s": 2.985,
+   "lag_ms": 10.3,
+   "client_last_line": "… 생각 중"
+  },
+  {
+   "kind": "tool_requested",
+   "emit_s": 3.456,
+   "arrive_s": 3.467,
+   "lag_ms": 11.1,
+   "client_last_line": "… 도구 요청: search"
+  },
+  {
+   "kind": "tool_finished",
+   "emit_s": 3.818,
+   "arrive_s": 3.827,
+   "lag_ms": 9.5,
+   "client_last_line": "✓ 찾기 &quot;한미 정상회담&quot; (2023년치) → 4쪽"
+  },
+  {
+   "kind": "thinking",
+   "emit_s": 4.179,
+   "arrive_s": 4.195,
+   "lag_ms": 15.3,
+   "client_last_line": "… 생각 중"
+  },
+  {
+   "kind": "tool_requested",
+   "emit_s": 4.661,
+   "arrive_s": 4.673,
+   "lag_ms": 12.0,
+   "client_last_line": "… 도구 요청: read_pages"
+  },
+  {
+   "kind": "tool_finished",
+   "emit_s": 5.022,
+   "arrive_s": 5.034,
+   "lag_ms": 12.1,
+   "client_last_line": "✓ 쪽 읽기 2023년치 38쪽, 2023년치 39쪽"
+  },
+  {
+   "kind": "thinking",
+   "emit_s": 5.384,
+   "arrive_s": 5.397,
+   "lag_ms": 13.5,
+   "client_last_line": "… 생각 중"
+  },
+  {
+   "kind": "answer_started",
+   "emit_s": 5.865,
+   "arrive_s": 5.875,
+   "lag_ms": 9.7,
+   "client_last_line": "… 답 정리 중"
+  }
+ ],
+ "max_lag_ms": 15.3,
+ "in_order": true,
+ "total_messages": 19,
+ "tick_messages": 2,
+ "completed_s": 6.242,
+ "server_saw": {
+  "client_host": "198.51.100.2",
+  "xff_chain": [
+   "203.0.113.7",
+   "198.51.100.2"
+  ],
+  "headers": [
+   "accept",
+   "accept-encoding",
+   "connection",
+   "content-length",
+   "content-type",
+   "host",
+   "user-agent",
+   "x-forwarded-for"
+  ]
+ }
+}

@@ -1,0 +1,18 @@
+..................................................................ssss.. [ 40%]
+........................................................................ [ 80%]
+..................................s                                      [100%]
+=========================== short test summary info ===========================
+SKIPPED [1] tests\test_build.py:5: could not import 'pymupdf': No module named 'pymupdf'
+SKIPPED [1] tests\test_halves.py:6: could not import 'pymupdf': No module named 'pymupdf'
+SKIPPED [1] tests\test_pages.py:3: could not import 'pymupdf': No module named 'pymupdf'
+SKIPPED [1] tests\test_toc_build.py:5: could not import 'pymupdf': No module named 'pymupdf'
+SKIPPED [1] tests\test_gold.py:39: corpus/가 없음: python -m prep.build 로 먼저 만든다
+SKIPPED [1] tests\test_gold.py:53: corpus/가 없음: python -m prep.build 로 먼저 만든다
+SKIPPED [1] tests\test_gold.py:65: corpus/가 없음: python -m prep.build 로 먼저 만든다
+SKIPPED [1] tests\test_gold.py:89: corpus/가 없음: python -m prep.build 로 먼저 만든다
+SKIPPED [1] tests\test_volumes.py:23: data/ 폴더에 백서 PDF가 없음
+174 passed, 9 skipped, 2 deselected in 18.23s
+
+real	0m19.761s
+user	0m0.030s
+sys	0m0.124s

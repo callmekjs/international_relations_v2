@@ -1,0 +1,16 @@
+{
+ "leak": {
+  "same_visitor_6h_later": "busy_visitor",
+  "reserved_krw_after_27_leaks": 3900,
+  "visitor_spend_krw": 0,
+  "new_visitor": "daily_stop"
+ },
+ "password_tries_from_one_ip_with_40_browser_ids": 200,
+ "midnight_crossing_900_krw": {
+  "today_visitor_spend_krw": 0,
+  "month_visitor_krw": 900,
+  "row_written_under_day": "2026-09-22"
+ },
+ "qa_runs_one_ip_one_ua_rotating_browser_id": 30,
+ "loop_llmerror_branch": "except LLMError as exc: |                 return LoopOutcome(None, exc.notice, for"
+}

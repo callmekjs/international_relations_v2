@@ -1,0 +1,20 @@
+{
+ "queries": 42,
+ "reps": 3,
+ "all_years": {
+  "median_ms": 0.28,
+  "p95_ms": 0.43,
+  "max_ms": 0.71
+ },
+ "one_year": {
+  "median_ms": 0.22,
+  "p95_ms": 0.35,
+  "max_ms": 0.63
+ },
+ "six_years_balanced": {
+  "median_ms": 0.27,
+  "p95_ms": 0.35,
+  "max_ms": 0.52
+ },
+ "read_pages_5_ms": 0.013
+}

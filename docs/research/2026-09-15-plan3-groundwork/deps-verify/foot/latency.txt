@@ -1,0 +1,2 @@
+question 42 {"all": {"n": 126, "median_ms": 0.31, "p95_ms": 0.468, "max_ms": 0.935}, "one": {"n": 126, "median_ms": 0.263, "p95_ms": 0.381, "max_ms": 0.601}, "six": {"n": 126, "median_ms": 0.275, "p95_ms": 0.405, "max_ms": 0.572}}
+keywords 42 {"all": {"n": 126, "median_ms": 0.455, "p95_ms": 0.655, "max_ms": 0.895}, "one": {"n": 126, "median_ms": 0.347, "p95_ms": 0.534, "max_ms": 0.883}, "six": {"n": 126, "median_ms": 0.363, "p95_ms": 0.507, "max_ms": 0.706}}

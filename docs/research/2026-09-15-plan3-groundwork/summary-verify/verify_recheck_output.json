@@ -1,0 +1,84 @@
+{
+ "2023 제3장": {
+  "pages": 108,
+  "long_paragraphs": 345,
+  "exact_word_quotes": {
+   "n": 200,
+   "reasons": {
+    "exact": 200
+   },
+   "seconds": 0.031
+  },
+  "moved_page": {
+   "n": 50,
+   "grades": {
+    "verified/moved_page": 50
+   }
+  },
+  "quote_across_two_paragraphs": {
+   "n": 50,
+   "grades": {
+    "paragraph_only/quote_not_in_paragraph": 50
+   }
+  },
+  "schema_worst_case_297_absent_citations_seconds": 14.559,
+  "regroup_lengths": [
+   8,
+   8,
+   8,
+   8,
+   8,
+   8,
+   8,
+   8,
+   8,
+   8,
+   8,
+   8
+  ],
+  "overview": 3,
+  "realistic_miss_54_absent_citations_seconds": 2.738,
+  "duplicate_long_paragraph_keys_in_chapter": 0
+ },
+ "2025 제7장": {
+  "pages": 7,
+  "long_paragraphs": 21,
+  "exact_word_quotes": {
+   "n": 21,
+   "reasons": {
+    "exact": 21
+   },
+   "seconds": 0.003
+  },
+  "moved_page": {
+   "n": 21,
+   "grades": {
+    "verified/moved_page": 21
+   }
+  },
+  "quote_across_two_paragraphs": {
+   "n": 6,
+   "grades": {
+    "paragraph_only/quote_not_in_paragraph": 6
+   }
+  },
+  "schema_worst_case_297_absent_citations_seconds": 1.189,
+  "regroup_lengths": [
+   8,
+   8,
+   8,
+   8,
+   8,
+   8,
+   8,
+   8,
+   8,
+   8,
+   8,
+   8
+  ],
+  "overview": 3,
+  "realistic_miss_54_absent_citations_seconds": 0.18,
+  "duplicate_long_paragraph_keys_in_chapter": 0
+ }
+}

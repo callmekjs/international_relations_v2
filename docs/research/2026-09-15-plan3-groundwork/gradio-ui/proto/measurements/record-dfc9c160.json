@@ -1,0 +1,83 @@
+{
+ "version": 1,
+ "task": "qa",
+ "created_at": "2026-09-15T12:11:48+00:00",
+ "prompt_version": "qa-2026-09-16",
+ "inputs": {
+  "question": "2023년 한미 정상회담은 어디서 열렸어?",
+  "years": [
+   2023
+  ]
+ },
+ "model": "gpt-5.6-sol",
+ "status": "error",
+ "notice": {
+  "kind": "unknown",
+  "message": "알 수 없는 문제가 생겼어요. 잠시 뒤 다시 해 주세요."
+ },
+ "events": [
+  {
+   "event": "thinking"
+  },
+  {
+   "event": "tool_requested",
+   "name": "get_toc"
+  },
+  {
+   "event": "tool_finished",
+   "name": "get_toc",
+   "summary": "목차 보기 2023년치",
+   "ok": true
+  },
+  {
+   "event": "notice",
+   "notice": "unknown",
+   "message": "알 수 없는 문제가 생겼어요. 잠시 뒤 다시 해 주세요."
+  },
+  {
+   "event": "done",
+   "status": "error"
+  }
+ ],
+ "turns": [
+  {
+   "n": 1,
+   "tool_choice": "auto",
+   "max_output_tokens": 8000,
+   "status": "completed",
+   "items": [
+    "reasoning",
+    "function_call"
+   ],
+   "usage": {
+    "input": 2000,
+    "cached": 0,
+    "cache_write": 0,
+    "output": 300,
+    "reasoning": 200
+   },
+   "model": "gpt-5.6-sol",
+   "service_tier": null,
+   "cost_usd": 0.014,
+   "tool_calls": [],
+   "price_model": "gpt-5.6-sol"
+  }
+ ],
+ "answer_raw": null,
+ "answer": null,
+ "usage": {
+  "turns": 1,
+  "tool_calls": 0,
+  "tokens": {
+   "input": 2000,
+   "cached": 0,
+   "cache_write": 0,
+   "output": 300,
+   "reasoning": 200
+  },
+  "cost_usd": 0.014,
+  "cost_krw": 20
+ },
+ "elapsed_s": 3.01,
+ "error": "RunCancelled: stop_button"
+}

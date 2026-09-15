@@ -1,0 +1,54 @@
+{
+ "tag": "v1_ssr",
+ "mode": "ssr",
+ "port": 63591,
+ "GET /": 200,
+ "first_200_s": 8.55,
+ "root_bytes": 14968,
+ "config_version": "6.27.0",
+ "stream_updates": 6,
+ "ask_s": 2.3,
+ "final": [
+  "생각 중\n목차 보기\n찾기 끝\n답 정리 중\n끝",
+  "{\"answer\": \"(fake) 2023년 질문\", \"host\": true}"
+ ],
+ "info": {
+  "pid": 31040,
+  "ws_mb": 0.0,
+  "import_s": 6.99,
+  "versions": {
+   "gradio": "6.27.0",
+   "gradio_client": "2.7.0",
+   "openai": "3.14.0",
+   "httpx": "0.28.1",
+   "httpx2": "2.13.0",
+   "pydantic": "2.13.5"
+  },
+  "openai_client_base": "httpx2.Client",
+  "mcp_loaded": false,
+  "ssr": true
+ },
+ "process_tree": [
+  {
+   "ProcessId": 26328,
+   "ParentProcessId": 39072,
+   "Name": "python.exe",
+   "WorkingSetSize": 9601024,
+   "PrivatePageCount": 2134016
+  },
+  {
+   "ProcessId": 31040,
+   "ParentProcessId": 26328,
+   "Name": "python.exe",
+   "WorkingSetSize": 171610112,
+   "PrivatePageCount": 918552576
+  },
+  {
+   "ProcessId": 7192,
+   "ParentProcessId": 31040,
+   "Name": "node.exe",
+   "WorkingSetSize": 98664448,
+   "PrivatePageCount": 69021696
+  }
+ ]
+}

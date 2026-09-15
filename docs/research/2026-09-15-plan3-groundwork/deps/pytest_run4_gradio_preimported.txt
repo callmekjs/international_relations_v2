@@ -1,0 +1,15 @@
+preimported gradio 6.27.0 openai 3.14.0
+..................................................................ssss.. [ 40%]
+........................................................................ [ 80%]
+..................................s                                      [100%]
+============================== warnings summary ===============================
+..\venv\Lib\site-packages\_pytest\config\__init__.py:1345
+  C:\Users\anyca\AppData\Local\Temp\claude\C--international-relations\64b21452-a5cf-4692-b024-1a1f58b7e291\scratchpad\plan3\deps\venv\Lib\site-packages\_pytest\config\__init__.py:1345: PytestAssertRewriteWarning: Module already imported so cannot be rewritten; anyio
+    self._mark_plugins_for_rewrite(hook, disable_autoload)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+174 passed, 9 skipped, 2 deselected, 1 warning in 17.50s
+
+real	0m24.320s
+user	0m0.015s
+sys	0m0.077s

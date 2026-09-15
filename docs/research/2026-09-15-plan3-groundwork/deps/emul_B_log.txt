@@ -1,0 +1,294 @@
+== step1 21:08:03
+exit=0
+== step3 21:09:37
+Collecting annotated-doc==0.0.5 (from -r C:/Users/anyca/AppData/Local/Temp/claude/C--international-relations/64b21452-a5cf-4692-b024-1a1f58b7e291/scratchpad/plan3/deps/reqB-body.txt (line 1))
+  Downloading annotated_doc-0.0.5-py3-none-any.whl.metadata (6.5 kB)
+Collecting annotated-types==0.8.0 (from -r C:/Users/anyca/AppData/Local/Temp/claude/C--international-relations/64b21452-a5cf-4692-b024-1a1f58b7e291/scratchpad/plan3/deps/reqB-body.txt (line 2))
+  Downloading annotated_types-0.8.0-py3-none-any.whl.metadata (15 kB)
+Requirement already satisfied: anyio==4.15.1 in .\emul_B\Lib\site-packages (from -r C:/Users/anyca/AppData/Local/Temp/claude/C--international-relations/64b21452-a5cf-4692-b024-1a1f58b7e291/scratchpad/plan3/deps/reqB-body.txt (line 3)) (4.15.1)
+Collecting bm25s==0.3.11 (from -r C:/Users/anyca/AppData/Local/Temp/claude/C--international-relations/64b21452-a5cf-4692-b024-1a1f58b7e291/scratchpad/plan3/deps/reqB-body.txt (line 4))
+  Downloading bm25s-0.3.11-py3-none-any.whl.metadata (29 kB)
+Collecting brotli==1.2.0 (from -r C:/Users/anyca/AppData/Local/Temp/claude/C--international-relations/64b21452-a5cf-4692-b024-1a1f58b7e291/scratchpad/plan3/deps/reqB-body.txt (line 5))
+  Downloading brotli-1.2.0-cp312-cp312-win_amd64.whl.metadata (6.3 kB)
+Requirement already satisfied: certifi==2026.7.22 in .\emul_B\Lib\site-packages (from -r C:/Users/anyca/AppData/Local/Temp/claude/C--international-relations/64b21452-a5cf-4692-b024-1a1f58b7e291/scratchpad/plan3/deps/reqB-body.txt (line 6)) (2026.7.22)
+Requirement already satisfied: click==8.5.0 in .\emul_B\Lib\site-packages (from -r C:/Users/anyca/AppData/Local/Temp/claude/C--international-relations/64b21452-a5cf-4692-b024-1a1f58b7e291/scratchpad/plan3/deps/reqB-body.txt (line 7)) (8.5.0)
+Collecting fastapi==0.141.1 (from -r C:/Users/anyca/AppData/Local/Temp/claude/C--international-relations/64b21452-a5cf-4692-b024-1a1f58b7e291/scratchpad/plan3/deps/reqB-body.txt (line 8))
+  Downloading fastapi-0.141.1-py3-none-any.whl.metadata (27 kB)
+Requirement already satisfied: filelock==3.32.6 in .\emul_B\Lib\site-packages (from -r C:/Users/anyca/AppData/Local/Temp/claude/C--international-relations/64b21452-a5cf-4692-b024-1a1f58b7e291/scratchpad/plan3/deps/reqB-body.txt (line 9)) (3.32.6)
+Requirement already satisfied: fsspec==2026.6.0 in .\emul_B\Lib\site-packages (from -r C:/Users/anyca/AppData/Local/Temp/claude/C--international-relations/64b21452-a5cf-4692-b024-1a1f58b7e291/scratchpad/plan3/deps/reqB-body.txt (line 10)) (2026.6.0)
+Collecting gradio==6.27.0 (from -r C:/Users/anyca/AppData/Local/Temp/claude/C--international-relations/64b21452-a5cf-4692-b024-1a1f58b7e291/scratchpad/plan3/deps/reqB-body.txt (line 11))
+  Downloading gradio-6.27.0-py3-none-any.whl.metadata (17 kB)
+Collecting gradio-client==2.7.0 (from -r C:/Users/anyca/AppData/Local/Temp/claude/C--international-relations/64b21452-a5cf-4692-b024-1a1f58b7e291/scratchpad/plan3/deps/reqB-body.txt (line 12))
+  Downloading gradio_client-2.7.0-py3-none-any.whl.metadata (7.1 kB)
+Collecting groovy==0.1.2 (from -r C:/Users/anyca/AppData/Local/Temp/claude/C--international-relations/64b21452-a5cf-4692-b024-1a1f58b7e291/scratchpad/plan3/deps/reqB-body.txt (line 13))
+  Downloading groovy-0.1.2-py3-none-any.whl.metadata (6.1 kB)
+Requirement already satisfied: h11==0.16.0 in .\emul_B\Lib\site-packages (from -r C:/Users/anyca/AppData/Local/Temp/claude/C--international-relations/64b21452-a5cf-4692-b024-1a1f58b7e291/scratchpad/plan3/deps/reqB-body.txt (line 14)) (0.16.0)
+Collecting hf-gradio==0.4.1 (from -r C:/Users/anyca/AppData/Local/Temp/claude/C--international-relations/64b21452-a5cf-4692-b024-1a1f58b7e291/scratchpad/plan3/deps/reqB-body.txt (line 15))
+  Downloading hf_gradio-0.4.1-py3-none-any.whl.metadata (428 bytes)
+Requirement already satisfied: hf-xet==1.6.0 in .\emul_B\Lib\site-packages (from -r C:/Users/anyca/AppData/Local/Temp/claude/C--international-relations/64b21452-a5cf-4692-b024-1a1f58b7e291/scratchpad/plan3/deps/reqB-body.txt (line 16)) (1.6.0)
+Requirement already satisfied: httpcore==1.0.9 in .\emul_B\Lib\site-packages (from -r C:/Users/anyca/AppData/Local/Temp/claude/C--international-relations/64b21452-a5cf-4692-b024-1a1f58b7e291/scratchpad/plan3/deps/reqB-body.txt (line 17)) (1.0.9)
+Collecting httpcore2==2.13.0 (from -r C:/Users/anyca/AppData/Local/Temp/claude/C--international-relations/64b21452-a5cf-4692-b024-1a1f58b7e291/scratchpad/plan3/deps/reqB-body.txt (line 18))
+  Downloading httpcore2-2.13.0-py3-none-any.whl.metadata (26 kB)
+Requirement already satisfied: httpx==0.28.1 in .\emul_B\Lib\site-packages (from -r C:/Users/anyca/AppData/Local/Temp/claude/C--international-relations/64b21452-a5cf-4692-b024-1a1f58b7e291/scratchpad/plan3/deps/reqB-body.txt (line 19)) (0.28.1)
+Collecting httpx2==2.13.0 (from -r C:/Users/anyca/AppData/Local/Temp/claude/C--international-relations/64b21452-a5cf-4692-b024-1a1f58b7e291/scratchpad/plan3/deps/reqB-body.txt (line 20))
+  Downloading httpx2-2.13.0-py3-none-any.whl.metadata (10 kB)
+Requirement already satisfied: huggingface-hub==1.31.0 in .\emul_B\Lib\site-packages (from -r C:/Users/anyca/AppData/Local/Temp/claude/C--international-relations/64b21452-a5cf-4692-b024-1a1f58b7e291/scratchpad/plan3/deps/reqB-body.txt (line 21)) (1.31.0)
+Requirement already satisfied: idna==3.19 in .\emul_B\Lib\site-packages (from -r C:/Users/anyca/AppData/Local/Temp/claude/C--international-relations/64b21452-a5cf-4692-b024-1a1f58b7e291/scratchpad/plan3/deps/reqB-body.txt (line 22)) (3.19)
+Collecting jinja2==3.1.6 (from -r C:/Users/anyca/AppData/Local/Temp/claude/C--international-relations/64b21452-a5cf-4692-b024-1a1f58b7e291/scratchpad/plan3/deps/reqB-body.txt (line 23))
+  Downloading jinja2-3.1.6-py3-none-any.whl.metadata (2.9 kB)
+Collecting jiter==0.17.0 (from -r C:/Users/anyca/AppData/Local/Temp/claude/C--international-relations/64b21452-a5cf-4692-b024-1a1f58b7e291/scratchpad/plan3/deps/reqB-body.txt (line 24))
+  Downloading jiter-0.17.0-cp312-cp312-win_amd64.whl.metadata (5.3 kB)
+Collecting markdown-it-py==4.2.0 (from -r C:/Users/anyca/AppData/Local/Temp/claude/C--international-relations/64b21452-a5cf-4692-b024-1a1f58b7e291/scratchpad/plan3/deps/reqB-body.txt (line 25))
+  Downloading markdown_it_py-4.2.0-py3-none-any.whl.metadata (7.4 kB)
+Collecting markupsafe==3.0.3 (from -r C:/Users/anyca/AppData/Local/Temp/claude/C--international-relations/64b21452-a5cf-4692-b024-1a1f58b7e291/scratchpad/plan3/deps/reqB-body.txt (line 26))
+  Downloading markupsafe-3.0.3-cp312-cp312-win_amd64.whl.metadata (2.8 kB)
+Collecting mdurl==0.1.2 (from -r C:/Users/anyca/AppData/Local/Temp/claude/C--international-relations/64b21452-a5cf-4692-b024-1a1f58b7e291/scratchpad/plan3/deps/reqB-body.txt (line 27))
+  Downloading mdurl-0.1.2-py3-none-any.whl.metadata (1.6 kB)
+Requirement already satisfied: numpy==2.5.3 in .\emul_B\Lib\site-packages (from -r C:/Users/anyca/AppData/Local/Temp/claude/C--international-relations/64b21452-a5cf-4692-b024-1a1f58b7e291/scratchpad/plan3/deps/reqB-body.txt (line 28)) (2.5.3)
+Collecting openai==3.14.0 (from -r C:/Users/anyca/AppData/Local/Temp/claude/C--international-relations/64b21452-a5cf-4692-b024-1a1f58b7e291/scratchpad/plan3/deps/reqB-body.txt (line 29))
+  Downloading openai-3.14.0-py3-none-any.whl.metadata (42 kB)
+Collecting orjson==3.12.0 (from -r C:/Users/anyca/AppData/Local/Temp/claude/C--international-relations/64b21452-a5cf-4692-b024-1a1f58b7e291/scratchpad/plan3/deps/reqB-body.txt (line 30))
+  Downloading orjson-3.12.0-cp312-cp312-win_amd64.whl.metadata (43 kB)
+Requirement already satisfied: packaging==26.3 in .\emul_B\Lib\site-packages (from -r C:/Users/anyca/AppData/Local/Temp/claude/C--international-relations/64b21452-a5cf-4692-b024-1a1f58b7e291/scratchpad/plan3/deps/reqB-body.txt (line 31)) (26.3)
+Requirement already satisfied: pandas==3.0.5 in .\emul_B\Lib\site-packages (from -r C:/Users/anyca/AppData/Local/Temp/claude/C--international-relations/64b21452-a5cf-4692-b024-1a1f58b7e291/scratchpad/plan3/deps/reqB-body.txt (line 32)) (3.0.5)
+Collecting pillow==12.3.0 (from -r C:/Users/anyca/AppData/Local/Temp/claude/C--international-relations/64b21452-a5cf-4692-b024-1a1f58b7e291/scratchpad/plan3/deps/reqB-body.txt (line 33))
+  Downloading pillow-12.3.0-cp312-cp312-win_amd64.whl.metadata (9.3 kB)
+Collecting pydantic==2.12.5 (from -r C:/Users/anyca/AppData/Local/Temp/claude/C--international-relations/64b21452-a5cf-4692-b024-1a1f58b7e291/scratchpad/plan3/deps/reqB-body.txt (line 34))
+  Downloading pydantic-2.12.5-py3-none-any.whl.metadata (90 kB)
+Collecting pydantic-core==2.41.5 (from -r C:/Users/anyca/AppData/Local/Temp/claude/C--international-relations/64b21452-a5cf-4692-b024-1a1f58b7e291/scratchpad/plan3/deps/reqB-body.txt (line 35))
+  Downloading pydantic_core-2.41.5-cp312-cp312-win_amd64.whl.metadata (7.4 kB)
+Collecting pydub==0.25.1 (from -r C:/Users/anyca/AppData/Local/Temp/claude/C--international-relations/64b21452-a5cf-4692-b024-1a1f58b7e291/scratchpad/plan3/deps/reqB-body.txt (line 36))
+  Downloading pydub-0.25.1-py2.py3-none-any.whl.metadata (1.4 kB)
+Collecting pygments==2.21.0 (from -r C:/Users/anyca/AppData/Local/Temp/claude/C--international-relations/64b21452-a5cf-4692-b024-1a1f58b7e291/scratchpad/plan3/deps/reqB-body.txt (line 37))
+  Downloading pygments-2.21.0-py3-none-any.whl.metadata (2.5 kB)
+Requirement already satisfied: python-dateutil==2.9.0.post0 in .\emul_B\Lib\site-packages (from -r C:/Users/anyca/AppData/Local/Temp/claude/C--international-relations/64b21452-a5cf-4692-b024-1a1f58b7e291/scratchpad/plan3/deps/reqB-body.txt (line 38)) (2.9.0.post0)
+Collecting python-multipart==0.0.32 (from -r C:/Users/anyca/AppData/Local/Temp/claude/C--international-relations/64b21452-a5cf-4692-b024-1a1f58b7e291/scratchpad/plan3/deps/reqB-body.txt (line 39))
+  Downloading python_multipart-0.0.32-py3-none-any.whl.metadata (2.1 kB)
+Collecting pytz==2026.3.post1 (from -r C:/Users/anyca/AppData/Local/Temp/claude/C--international-relations/64b21452-a5cf-4692-b024-1a1f58b7e291/scratchpad/plan3/deps/reqB-body.txt (line 40))
+  Downloading pytz-2026.3.post1-py2.py3-none-any.whl.metadata (22 kB)
+Requirement already satisfied: pyyaml==6.0.3 in .\emul_B\Lib\site-packages (from -r C:/Users/anyca/AppData/Local/Temp/claude/C--international-relations/64b21452-a5cf-4692-b024-1a1f58b7e291/scratchpad/plan3/deps/reqB-body.txt (line 41)) (6.0.3)
+Collecting rich==15.0.0 (from -r C:/Users/anyca/AppData/Local/Temp/claude/C--international-relations/64b21452-a5cf-4692-b024-1a1f58b7e291/scratchpad/plan3/deps/reqB-body.txt (line 42))
+  Downloading rich-15.0.0-py3-none-any.whl.metadata (18 kB)
+Collecting safehttpx==0.1.7 (from -r C:/Users/anyca/AppData/Local/Temp/claude/C--international-relations/64b21452-a5cf-4692-b024-1a1f58b7e291/scratchpad/plan3/deps/reqB-body.txt (line 43))
+  Downloading safehttpx-0.1.7-py3-none-any.whl.metadata (4.2 kB)
+Collecting semantic-version==2.10.0 (from -r C:/Users/anyca/AppData/Local/Temp/claude/C--international-relations/64b21452-a5cf-4692-b024-1a1f58b7e291/scratchpad/plan3/deps/reqB-body.txt (line 44))
+  Downloading semantic_version-2.10.0-py2.py3-none-any.whl.metadata (9.7 kB)
+Collecting shellingham==1.5.4 (from -r C:/Users/anyca/AppData/Local/Temp/claude/C--international-relations/64b21452-a5cf-4692-b024-1a1f58b7e291/scratchpad/plan3/deps/reqB-body.txt (line 45))
+  Downloading shellingham-1.5.4-py2.py3-none-any.whl.metadata (3.5 kB)
+Requirement already satisfied: six==1.17.0 in .\emul_B\Lib\site-packages (from -r C:/Users/anyca/AppData/Local/Temp/claude/C--international-relations/64b21452-a5cf-4692-b024-1a1f58b7e291/scratchpad/plan3/deps/reqB-body.txt (line 46)) (1.17.0)
+Collecting sniffio==1.3.1 (from -r C:/Users/anyca/AppData/Local/Temp/claude/C--international-relations/64b21452-a5cf-4692-b024-1a1f58b7e291/scratchpad/plan3/deps/reqB-body.txt (line 47))
+  Downloading sniffio-1.3.1-py3-none-any.whl.metadata (3.9 kB)
+Collecting starlette==1.6.0 (from -r C:/Users/anyca/AppData/Local/Temp/claude/C--international-relations/64b21452-a5cf-4692-b024-1a1f58b7e291/scratchpad/plan3/deps/reqB-body.txt (line 48))
+  Downloading starlette-1.6.0-py3-none-any.whl.metadata (6.4 kB)
+Collecting tomlkit==0.14.0 (from -r C:/Users/anyca/AppData/Local/Temp/claude/C--international-relations/64b21452-a5cf-4692-b024-1a1f58b7e291/scratchpad/plan3/deps/reqB-body.txt (line 49))
+  Downloading tomlkit-0.14.0-py3-none-any.whl.metadata (2.8 kB)
+Requirement already satisfied: tqdm==4.70.1 in .\emul_B\Lib\site-packages (from -r C:/Users/anyca/AppData/Local/Temp/claude/C--international-relations/64b21452-a5cf-4692-b024-1a1f58b7e291/scratchpad/plan3/deps/reqB-body.txt (line 50)) (4.70.1)
+Collecting truststore==0.10.4 (from -r C:/Users/anyca/AppData/Local/Temp/claude/C--international-relations/64b21452-a5cf-4692-b024-1a1f58b7e291/scratchpad/plan3/deps/reqB-body.txt (line 51))
+  Downloading truststore-0.10.4-py3-none-any.whl.metadata (4.4 kB)
+Collecting typer==0.27.2 (from -r C:/Users/anyca/AppData/Local/Temp/claude/C--international-relations/64b21452-a5cf-4692-b024-1a1f58b7e291/scratchpad/plan3/deps/reqB-body.txt (line 52))
+  Downloading typer-0.27.2-py3-none-any.whl.metadata (16 kB)
+Requirement already satisfied: typing-extensions==4.16.0 in .\emul_B\Lib\site-packages (from -r C:/Users/anyca/AppData/Local/Temp/claude/C--international-relations/64b21452-a5cf-4692-b024-1a1f58b7e291/scratchpad/plan3/deps/reqB-body.txt (line 53)) (4.16.0)
+Collecting typing-inspection==0.4.4 (from -r C:/Users/anyca/AppData/Local/Temp/claude/C--international-relations/64b21452-a5cf-4692-b024-1a1f58b7e291/scratchpad/plan3/deps/reqB-body.txt (line 54))
+  Downloading typing_inspection-0.4.4-py3-none-any.whl.metadata (2.6 kB)
+Collecting uvicorn==0.53.0 (from -r C:/Users/anyca/AppData/Local/Temp/claude/C--international-relations/64b21452-a5cf-4692-b024-1a1f58b7e291/scratchpad/plan3/deps/reqB-body.txt (line 55))
+  Downloading uvicorn-0.53.0-py3-none-any.whl.metadata (6.6 kB)
+Requirement already satisfied: tzdata in .\emul_B\Lib\site-packages (from pandas==3.0.5->-r C:/Users/anyca/AppData/Local/Temp/claude/C--international-relations/64b21452-a5cf-4692-b024-1a1f58b7e291/scratchpad/plan3/deps/reqB-body.txt (line 32)) (2026.4)
+Requirement already satisfied: colorama in .\emul_B\Lib\site-packages (from typer==0.27.2->-r C:/Users/anyca/AppData/Local/Temp/claude/C--international-relations/64b21452-a5cf-4692-b024-1a1f58b7e291/scratchpad/plan3/deps/reqB-body.txt (line 52)) (0.4.6)
+Downloading annotated_doc-0.0.5-py3-none-any.whl (5.3 kB)
+Downloading annotated_types-0.8.0-py3-none-any.whl (13 kB)
+Downloading bm25s-0.3.11-py3-none-any.whl (74 kB)
+Downloading brotli-1.2.0-cp312-cp312-win_amd64.whl (369 kB)
+Downloading fastapi-0.141.1-py3-none-any.whl (131 kB)
+Downloading gradio-6.27.0-py3-none-any.whl (31.3 MB)
+   ---------------------------------------- 31.3/31.3 MB 11.1 MB/s  0:00:02
+Downloading groovy-0.1.2-py3-none-any.whl (14 kB)
+Downloading hf_gradio-0.4.1-py3-none-any.whl (4.5 kB)
+Downloading gradio_client-2.7.0-py3-none-any.whl (63 kB)
+Downloading jinja2-3.1.6-py3-none-any.whl (134 kB)
+Downloading markupsafe-3.0.3-cp312-cp312-win_amd64.whl (15 kB)
+Downloading orjson-3.12.0-cp312-cp312-win_amd64.whl (122 kB)
+Downloading pillow-12.3.0-cp312-cp312-win_amd64.whl (7.2 MB)
+   ---------------------------------------- 7.2/7.2 MB 13.5 MB/s  0:00:00
+Downloading pydantic-2.12.5-py3-none-any.whl (463 kB)
+Downloading pydub-0.25.1-py2.py3-none-any.whl (32 kB)
+Downloading python_multipart-0.0.32-py3-none-any.whl (30 kB)
+Downloading safehttpx-0.1.7-py3-none-any.whl (9.0 kB)
+Downloading semantic_version-2.10.0-py2.py3-none-any.whl (15 kB)
+Downloading starlette-1.6.0-py3-none-any.whl (75 kB)
+Downloading tomlkit-0.14.0-py3-none-any.whl (39 kB)
+Downloading typer-0.27.2-py3-none-any.whl (123 kB)
+Downloading httpcore2-2.13.0-py3-none-any.whl (83 kB)
+Downloading httpx2-2.13.0-py3-none-any.whl (95 kB)
+Downloading jiter-0.17.0-cp312-cp312-win_amd64.whl (227 kB)
+Downloading markdown_it_py-4.2.0-py3-none-any.whl (91 kB)
+Downloading mdurl-0.1.2-py3-none-any.whl (10.0 kB)
+Downloading openai-3.14.0-py3-none-any.whl (2.0 MB)
+   ---------------------------------------- 2.0/2.0 MB 14.0 MB/s  0:00:00
+Downloading pydantic_core-2.41.5-cp312-cp312-win_amd64.whl (2.0 MB)
+   ---------------------------------------- 2.0/2.0 MB 11.2 MB/s  0:00:00
+Downloading pygments-2.21.0-py3-none-any.whl (1.3 MB)
+   ---------------------------------------- 1.3/1.3 MB 15.9 MB/s  0:00:00
+Downloading pytz-2026.3.post1-py2.py3-none-any.whl (508 kB)
+Downloading rich-15.0.0-py3-none-any.whl (310 kB)
+Downloading shellingham-1.5.4-py2.py3-none-any.whl (9.8 kB)
+Downloading sniffio-1.3.1-py3-none-any.whl (10 kB)
+Downloading truststore-0.10.4-py3-none-any.whl (18 kB)
+Downloading typing_inspection-0.4.4-py3-none-any.whl (14 kB)
+Downloading uvicorn-0.53.0-py3-none-any.whl (87 kB)
+Installing collected packages: pytz, pydub, brotli, uvicorn, typing-inspection, truststore, tomlkit, sniffio, shellingham, semantic-version, python-multipart, pygments, pydantic-core, pillow, orjson, mdurl, markupsafe, jiter, groovy, bm25s, annotated-types, annotated-doc, starlette, pydantic, markdown-it-py, jinja2, httpcore2, safehttpx, rich, httpx2, fastapi, typer, openai, gradio-client, hf-gradio, gradio
+
+Successfully installed annotated-doc-0.0.5 annotated-types-0.8.0 bm25s-0.3.11 brotli-1.2.0 fastapi-0.141.1 gradio-6.27.0 gradio-client-2.7.0 groovy-0.1.2 hf-gradio-0.4.1 httpcore2-2.13.0 httpx2-2.13.0 jinja2-3.1.6 jiter-0.17.0 markdown-it-py-4.2.0 markupsafe-3.0.3 mdurl-0.1.2 openai-3.14.0 orjson-3.12.0 pillow-12.3.0 pydantic-2.12.5 pydantic-core-2.41.5 pydub-0.25.1 pygments-2.21.0 python-multipart-0.0.32 pytz-2026.3.post1 rich-15.0.0 safehttpx-0.1.7 semantic-version-2.10.0 shellingham-1.5.4 sniffio-1.3.1 starlette-1.6.0 tomlkit-0.14.0 truststore-0.10.4 typer-0.27.2 typing-inspection-0.4.4 uvicorn-0.53.0
+exit=0
+== step4 21:10:51
+Requirement already satisfied: gradio==6.27.0 in .\emul_B\Lib\site-packages (from gradio[mcp,oauth]==6.27.0) (6.27.0)
+Requirement already satisfied: uvicorn in .\emul_B\Lib\site-packages (0.53.0)
+Collecting spaces
+  Downloading spaces-0.51.3-py3-none-any.whl.metadata (633 bytes)
+Requirement already satisfied: anyio<5.0,>=3.0 in .\emul_B\Lib\site-packages (from gradio==6.27.0->gradio[mcp,oauth]==6.27.0) (4.15.1)
+Requirement already satisfied: brotli>=1.1.0 in .\emul_B\Lib\site-packages (from gradio==6.27.0->gradio[mcp,oauth]==6.27.0) (1.2.0)
+Requirement already satisfied: fastapi<1.0,>=0.115.2 in .\emul_B\Lib\site-packages (from gradio==6.27.0->gradio[mcp,oauth]==6.27.0) (0.141.1)
+Requirement already satisfied: gradio-client==2.7.0 in .\emul_B\Lib\site-packages (from gradio==6.27.0->gradio[mcp,oauth]==6.27.0) (2.7.0)
+Requirement already satisfied: groovy~=0.1 in .\emul_B\Lib\site-packages (from gradio==6.27.0->gradio[mcp,oauth]==6.27.0) (0.1.2)
+Requirement already satisfied: hf-gradio<1.0,>=0.4.1 in .\emul_B\Lib\site-packages (from gradio==6.27.0->gradio[mcp,oauth]==6.27.0) (0.4.1)
+Requirement already satisfied: httpx<1.0,>=0.24.1 in .\emul_B\Lib\site-packages (from gradio==6.27.0->gradio[mcp,oauth]==6.27.0) (0.28.1)
+Requirement already satisfied: huggingface-hub<2.0,>=1.16.0 in .\emul_B\Lib\site-packages (from gradio==6.27.0->gradio[mcp,oauth]==6.27.0) (1.31.0)
+Requirement already satisfied: jinja2<4.0 in .\emul_B\Lib\site-packages (from gradio==6.27.0->gradio[mcp,oauth]==6.27.0) (3.1.6)
+Requirement already satisfied: markupsafe<4.0,>=2.0 in .\emul_B\Lib\site-packages (from gradio==6.27.0->gradio[mcp,oauth]==6.27.0) (3.0.3)
+Requirement already satisfied: numpy<3.0,>=1.0 in .\emul_B\Lib\site-packages (from gradio==6.27.0->gradio[mcp,oauth]==6.27.0) (2.5.3)
+Requirement already satisfied: orjson~=3.0 in .\emul_B\Lib\site-packages (from gradio==6.27.0->gradio[mcp,oauth]==6.27.0) (3.12.0)
+Requirement already satisfied: packaging in .\emul_B\Lib\site-packages (from gradio==6.27.0->gradio[mcp,oauth]==6.27.0) (26.3)
+Requirement already satisfied: pandas<4.0,>=1.0 in .\emul_B\Lib\site-packages (from gradio==6.27.0->gradio[mcp,oauth]==6.27.0) (3.0.5)
+Requirement already satisfied: pillow<13.0,>=8.0 in .\emul_B\Lib\site-packages (from gradio==6.27.0->gradio[mcp,oauth]==6.27.0) (12.3.0)
+Requirement already satisfied: pydantic<=3.0,>=2.0 in .\emul_B\Lib\site-packages (from gradio==6.27.0->gradio[mcp,oauth]==6.27.0) (2.12.5)
+Requirement already satisfied: pydub<1.0 in .\emul_B\Lib\site-packages (from gradio==6.27.0->gradio[mcp,oauth]==6.27.0) (0.25.1)
+Requirement already satisfied: python-multipart<1.0,>=0.0.18 in .\emul_B\Lib\site-packages (from gradio==6.27.0->gradio[mcp,oauth]==6.27.0) (0.0.32)
+Requirement already satisfied: pytz>=2017.2 in .\emul_B\Lib\site-packages (from gradio==6.27.0->gradio[mcp,oauth]==6.27.0) (2026.3.post1)
+Requirement already satisfied: pyyaml<7.0,>=5.0 in .\emul_B\Lib\site-packages (from gradio==6.27.0->gradio[mcp,oauth]==6.27.0) (6.0.3)
+Requirement already satisfied: safehttpx<0.2.0,>=0.1.7 in .\emul_B\Lib\site-packages (from gradio==6.27.0->gradio[mcp,oauth]==6.27.0) (0.1.7)
+Requirement already satisfied: semantic-version~=2.0 in .\emul_B\Lib\site-packages (from gradio==6.27.0->gradio[mcp,oauth]==6.27.0) (2.10.0)
+Requirement already satisfied: starlette<2.0,>=1.0.1 in .\emul_B\Lib\site-packages (from gradio==6.27.0->gradio[mcp,oauth]==6.27.0) (1.6.0)
+Requirement already satisfied: tomlkit<0.15.0,>=0.12.0 in .\emul_B\Lib\site-packages (from gradio==6.27.0->gradio[mcp,oauth]==6.27.0) (0.14.0)
+Requirement already satisfied: typer<1.0,>=0.12 in .\emul_B\Lib\site-packages (from gradio==6.27.0->gradio[mcp,oauth]==6.27.0) (0.27.2)
+Requirement already satisfied: typing-extensions~=4.0 in .\emul_B\Lib\site-packages (from gradio==6.27.0->gradio[mcp,oauth]==6.27.0) (4.16.0)
+Requirement already satisfied: fsspec in .\emul_B\Lib\site-packages (from gradio-client==2.7.0->gradio==6.27.0->gradio[mcp,oauth]==6.27.0) (2026.6.0)
+Collecting mcp<2.0.0,>=1.21.0 (from gradio[mcp,oauth]==6.27.0)
+  Downloading mcp-1.30.0-py3-none-any.whl.metadata (9.3 kB)
+Collecting authlib (from gradio[mcp,oauth]==6.27.0)
+  Downloading authlib-1.8.0-py2.py3-none-any.whl.metadata (10 kB)
+Collecting itsdangerous (from gradio[mcp,oauth]==6.27.0)
+  Downloading itsdangerous-2.2.0-py3-none-any.whl.metadata (1.9 kB)
+Requirement already satisfied: idna>=2.8 in .\emul_B\Lib\site-packages (from anyio<5.0,>=3.0->gradio==6.27.0->gradio[mcp,oauth]==6.27.0) (3.19)
+Requirement already satisfied: typing-inspection>=0.4.2 in .\emul_B\Lib\site-packages (from fastapi<1.0,>=0.115.2->gradio==6.27.0->gradio[mcp,oauth]==6.27.0) (0.4.4)
+Requirement already satisfied: annotated-doc>=0.0.2 in .\emul_B\Lib\site-packages (from fastapi<1.0,>=0.115.2->gradio==6.27.0->gradio[mcp,oauth]==6.27.0) (0.0.5)
+Requirement already satisfied: certifi in .\emul_B\Lib\site-packages (from httpx<1.0,>=0.24.1->gradio==6.27.0->gradio[mcp,oauth]==6.27.0) (2026.7.22)
+Requirement already satisfied: httpcore==1.* in .\emul_B\Lib\site-packages (from httpx<1.0,>=0.24.1->gradio==6.27.0->gradio[mcp,oauth]==6.27.0) (1.0.9)
+Requirement already satisfied: h11>=0.16 in .\emul_B\Lib\site-packages (from httpcore==1.*->httpx<1.0,>=0.24.1->gradio==6.27.0->gradio[mcp,oauth]==6.27.0) (0.16.0)
+Requirement already satisfied: click<9.0.0,>=8.4.2 in .\emul_B\Lib\site-packages (from huggingface-hub<2.0,>=1.16.0->gradio==6.27.0->gradio[mcp,oauth]==6.27.0) (8.5.0)
+Requirement already satisfied: filelock>=3.10.0 in .\emul_B\Lib\site-packages (from huggingface-hub<2.0,>=1.16.0->gradio==6.27.0->gradio[mcp,oauth]==6.27.0) (3.32.6)
+Requirement already satisfied: hf-xet<2.0.0,>=1.5.2 in .\emul_B\Lib\site-packages (from huggingface-hub<2.0,>=1.16.0->gradio==6.27.0->gradio[mcp,oauth]==6.27.0) (1.6.0)
+Requirement already satisfied: tqdm>=4.42.1 in .\emul_B\Lib\site-packages (from huggingface-hub<2.0,>=1.16.0->gradio==6.27.0->gradio[mcp,oauth]==6.27.0) (4.70.1)
+Collecting httpx-sse>=0.4 (from mcp<2.0.0,>=1.21.0->gradio[mcp,oauth]==6.27.0)
+  Downloading httpx_sse-0.4.3-py3-none-any.whl.metadata (9.7 kB)
+Collecting jsonschema>=4.20.0 (from mcp<2.0.0,>=1.21.0->gradio[mcp,oauth]==6.27.0)
+  Downloading jsonschema-4.26.0-py3-none-any.whl.metadata (7.6 kB)
+Collecting pydantic-settings>=2.5.2 (from mcp<2.0.0,>=1.21.0->gradio[mcp,oauth]==6.27.0)
+  Downloading pydantic_settings-2.15.0-py3-none-any.whl.metadata (3.9 kB)
+Collecting pyjwt>=2.10.1 (from pyjwt[crypto]>=2.10.1->mcp<2.0.0,>=1.21.0->gradio[mcp,oauth]==6.27.0)
+  Downloading pyjwt-2.14.0-py3-none-any.whl.metadata (3.4 kB)
+Collecting pywin32>=310 (from mcp<2.0.0,>=1.21.0->gradio[mcp,oauth]==6.27.0)
+  Downloading pywin32-312-cp312-cp312-win_amd64.whl.metadata (11 kB)
+Collecting sse-starlette>=1.6.1 (from mcp<2.0.0,>=1.21.0->gradio[mcp,oauth]==6.27.0)
+  Downloading sse_starlette-3.4.11-py3-none-any.whl.metadata (15 kB)
+Requirement already satisfied: python-dateutil>=2.8.2 in .\emul_B\Lib\site-packages (from pandas<4.0,>=1.0->gradio==6.27.0->gradio[mcp,oauth]==6.27.0) (2.9.0.post0)
+Requirement already satisfied: tzdata in .\emul_B\Lib\site-packages (from pandas<4.0,>=1.0->gradio==6.27.0->gradio[mcp,oauth]==6.27.0) (2026.4)
+Requirement already satisfied: annotated-types>=0.6.0 in .\emul_B\Lib\site-packages (from pydantic<=3.0,>=2.0->gradio==6.27.0->gradio[mcp,oauth]==6.27.0) (0.8.0)
+Requirement already satisfied: pydantic-core==2.41.5 in .\emul_B\Lib\site-packages (from pydantic<=3.0,>=2.0->gradio==6.27.0->gradio[mcp,oauth]==6.27.0) (2.41.5)
+Requirement already satisfied: shellingham>=1.3.0 in .\emul_B\Lib\site-packages (from typer<1.0,>=0.12->gradio==6.27.0->gradio[mcp,oauth]==6.27.0) (1.5.4)
+Requirement already satisfied: rich>=13.8.0 in .\emul_B\Lib\site-packages (from typer<1.0,>=0.12->gradio==6.27.0->gradio[mcp,oauth]==6.27.0) (15.0.0)
+Requirement already satisfied: colorama in .\emul_B\Lib\site-packages (from typer<1.0,>=0.12->gradio==6.27.0->gradio[mcp,oauth]==6.27.0) (0.4.6)
+Requirement already satisfied: requests<3,>=2.19 in .\emul_B\Lib\site-packages (from spaces) (2.34.2)
+Requirement already satisfied: charset_normalizer<4,>=2 in .\emul_B\Lib\site-packages (from requests<3,>=2.19->spaces) (3.5.1)
+Requirement already satisfied: urllib3<3,>=1.26 in .\emul_B\Lib\site-packages (from requests<3,>=2.19->spaces) (2.7.0)
+Requirement already satisfied: attrs>=22.2.0 in .\emul_B\Lib\site-packages (from jsonschema>=4.20.0->mcp<2.0.0,>=1.21.0->gradio[mcp,oauth]==6.27.0) (26.1.0)
+Collecting jsonschema-specifications>=2023.03.6 (from jsonschema>=4.20.0->mcp<2.0.0,>=1.21.0->gradio[mcp,oauth]==6.27.0)
+  Downloading jsonschema_specifications-2025.9.1-py3-none-any.whl.metadata (2.9 kB)
+Collecting referencing>=0.28.4 (from jsonschema>=4.20.0->mcp<2.0.0,>=1.21.0->gradio[mcp,oauth]==6.27.0)
+  Downloading referencing-0.37.0-py3-none-any.whl.metadata (2.8 kB)
+Collecting rpds-py>=0.25.0 (from jsonschema>=4.20.0->mcp<2.0.0,>=1.21.0->gradio[mcp,oauth]==6.27.0)
+  Downloading rpds_py-2026.6.3-cp312-cp312-win_amd64.whl.metadata (4.2 kB)
+Collecting python-dotenv>=0.21.0 (from pydantic-settings>=2.5.2->mcp<2.0.0,>=1.21.0->gradio[mcp,oauth]==6.27.0)
+  Downloading python_dotenv-1.2.3-py3-none-any.whl.metadata (29 kB)
+Collecting cryptography>=3.4.0 (from pyjwt[crypto]>=2.10.1->mcp<2.0.0,>=1.21.0->gradio[mcp,oauth]==6.27.0)
+  Downloading cryptography-50.0.1-cp311-abi3-win_amd64.whl.metadata (4.3 kB)
+Collecting cffi>=2.0.0 (from cryptography>=3.4.0->pyjwt[crypto]>=2.10.1->mcp<2.0.0,>=1.21.0->gradio[mcp,oauth]==6.27.0)
+  Downloading cffi-2.1.1-cp312-cp312-win_amd64.whl.metadata (2.6 kB)
+Collecting pycparser (from cffi>=2.0.0->cryptography>=3.4.0->pyjwt[crypto]>=2.10.1->mcp<2.0.0,>=1.21.0->gradio[mcp,oauth]==6.27.0)
+  Downloading pycparser-3.0-py3-none-any.whl.metadata (8.2 kB)
+Requirement already satisfied: six>=1.5 in .\emul_B\Lib\site-packages (from python-dateutil>=2.8.2->pandas<4.0,>=1.0->gradio==6.27.0->gradio[mcp,oauth]==6.27.0) (1.17.0)
+Requirement already satisfied: markdown-it-py>=2.2.0 in .\emul_B\Lib\site-packages (from rich>=13.8.0->typer<1.0,>=0.12->gradio==6.27.0->gradio[mcp,oauth]==6.27.0) (4.2.0)
+Requirement already satisfied: pygments<3.0.0,>=2.13.0 in .\emul_B\Lib\site-packages (from rich>=13.8.0->typer<1.0,>=0.12->gradio==6.27.0->gradio[mcp,oauth]==6.27.0) (2.21.0)
+Requirement already satisfied: mdurl~=0.1 in .\emul_B\Lib\site-packages (from markdown-it-py>=2.2.0->rich>=13.8.0->typer<1.0,>=0.12->gradio==6.27.0->gradio[mcp,oauth]==6.27.0) (0.1.2)
+Collecting joserfc>=1.6.1 (from authlib->gradio[mcp,oauth]==6.27.0)
+  Downloading joserfc-1.7.5-py3-none-any.whl.metadata (3.1 kB)
+Downloading mcp-1.30.0-py3-none-any.whl (234 kB)
+Downloading spaces-0.51.3-py3-none-any.whl (111 kB)
+Downloading httpx_sse-0.4.3-py3-none-any.whl (9.0 kB)
+Downloading jsonschema-4.26.0-py3-none-any.whl (90 kB)
+Downloading jsonschema_specifications-2025.9.1-py3-none-any.whl (18 kB)
+Downloading pydantic_settings-2.15.0-py3-none-any.whl (69 kB)
+Downloading pyjwt-2.14.0-py3-none-any.whl (32 kB)
+Downloading cryptography-50.0.1-cp311-abi3-win_amd64.whl (3.8 MB)
+   ---------------------------------------- 3.8/3.8 MB 10.9 MB/s  0:00:00
+Downloading cffi-2.1.1-cp312-cp312-win_amd64.whl (185 kB)
+Downloading python_dotenv-1.2.3-py3-none-any.whl (22 kB)
+Downloading pywin32-312-cp312-cp312-win_amd64.whl (6.9 MB)
+   ---------------------------------------- 6.9/6.9 MB 12.5 MB/s  0:00:00
+Downloading referencing-0.37.0-py3-none-any.whl (26 kB)
+Downloading rpds_py-2026.6.3-cp312-cp312-win_amd64.whl (220 kB)
+Downloading sse_starlette-3.4.11-py3-none-any.whl (17 kB)
+Downloading authlib-1.8.0-py2.py3-none-any.whl (260 kB)
+Downloading joserfc-1.7.5-py3-none-any.whl (71 kB)
+Downloading itsdangerous-2.2.0-py3-none-any.whl (16 kB)
+Downloading pycparser-3.0-py3-none-any.whl (48 kB)
+Installing collected packages: rpds-py, pywin32, python-dotenv, pyjwt, pycparser, itsdangerous, httpx-sse, referencing, cffi, sse-starlette, pydantic-settings, jsonschema-specifications, cryptography, jsonschema, joserfc, mcp, authlib, spaces
+
+Successfully installed authlib-1.8.0 cffi-2.1.1 cryptography-50.0.1 httpx-sse-0.4.3 itsdangerous-2.2.0 joserfc-1.7.5 jsonschema-4.26.0 jsonschema-specifications-2025.9.1 mcp-1.30.0 pycparser-3.0 pydantic-settings-2.15.0 pyjwt-2.14.0 python-dotenv-1.2.3 pywin32-312 referencing-0.37.0 rpds-py-2026.6.3 spaces-0.51.3 sse-starlette-3.4.11
+exit=0
+== pip check 21:11:19
+No broken requirements found.
+exit=0
+== diff after3 -> after4
+7a8
+> Authlib==1.8.0
+10a12
+> cffi==2.1.1
+13a16
+> cryptography==50.0.1
+28a32
+> httpx-sse==0.4.3
+31a36
+> itsdangerous==2.2.0
+33a39,41
+> joserfc==1.7.5
+> jsonschema==4.26.0
+> jsonschema-specifications==2025.9.1
+35a44
+> mcp==1.30.0
+46a56
+> pycparser==3.0
+47a58
+> pydantic-settings==2.15.0
+50a62
+> PyJWT==2.14.0
+51a64
+> python-dotenv==1.2.3
+53a67
+> pywin32==312
+54a69
+> referencing==0.37.0
+56a72
+> rpds-py==2026.6.3
+61a78,79
+> spaces==0.51.3
+> sse-starlette==3.4.11
+== END 21:11:21

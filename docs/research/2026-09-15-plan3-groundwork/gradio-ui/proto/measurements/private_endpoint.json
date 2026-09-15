@@ -1,0 +1,9 @@
+{
+ "scenario": "private",
+ "api_visibility": "private",
+ "join_status": 200,
+ "join_body": "{\"event_id\":\"bd5c37d7ce684e439e4ff6e2fcfc1a97\"}",
+ "completed": true,
+ "listed_in_api_info": false,
+ "gradio_client_predict": "ValueError: Cannot find a function with `api_name`: /ask."
+}

@@ -1,0 +1,104 @@
+{
+ "click_s_before_close": 3.516,
+ "timeline": [
+  {
+   "s_from_close": -3.435,
+   "where": "handler",
+   "what": "request",
+   "kind": null,
+   "reason": null,
+   "status": null,
+   "found": null
+  },
+  {
+   "s_from_close": -2.723,
+   "where": "worker",
+   "what": "emit",
+   "kind": "thinking",
+   "reason": null,
+   "status": null,
+   "found": null
+  },
+  {
+   "s_from_close": -1.922,
+   "where": "worker",
+   "what": "emit",
+   "kind": "tool_requested",
+   "reason": null,
+   "status": null,
+   "found": null
+  },
+  {
+   "s_from_close": -1.321,
+   "where": "worker",
+   "what": "emit",
+   "kind": "tool_finished",
+   "reason": null,
+   "status": null,
+   "found": null
+  },
+  {
+   "s_from_close": -0.72,
+   "where": "worker",
+   "what": "emit",
+   "kind": "thinking",
+   "reason": null,
+   "status": null,
+   "found": null
+  },
+  {
+   "s_from_close": 0.051,
+   "where": "handler",
+   "what": "unload",
+   "kind": null,
+   "reason": null,
+   "status": null,
+   "found": true
+  },
+  {
+   "s_from_close": 0.081,
+   "where": "worker",
+   "what": "cancel_raised",
+   "kind": "tool_requested",
+   "reason": "unload",
+   "status": null,
+   "found": null
+  },
+  {
+   "s_from_close": 0.081,
+   "where": "worker",
+   "what": "emit",
+   "kind": "notice",
+   "reason": null,
+   "status": null,
+   "found": null
+  },
+  {
+   "s_from_close": 0.082,
+   "where": "worker",
+   "what": "emit",
+   "kind": "done",
+   "reason": null,
+   "status": null,
+   "found": null
+  },
+  {
+   "s_from_close": 0.083,
+   "where": "worker",
+   "what": "run_returned",
+   "kind": null,
+   "reason": "unload",
+   "status": "error",
+   "found": null
+  },
+  {
+   "s_from_close": 0.089,
+   "where": "generator",
+   "what": "closed",
+   "kind": null,
+   "reason": null,
+   "status": null,
+   "found": null
+  }
+ ]
+}

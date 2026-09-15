@@ -1,0 +1,4 @@
+['openai._base_client.SyncHttpxClientWrapper', 'openai._DefaultHttpxClient', 'httpx2.Client', 'httpx2._client.BaseClient', 'builtins.object']
+is httpx2.Client: True | is httpx.Client: False
+timeout 180.0 max_retries 0 base_url https://api.openai.com/v1/
+openai.APIError base (<class 'openai.APIConnectionError'>, <class 'openai.APIError'>, <class 'openai.OpenAIError'>)

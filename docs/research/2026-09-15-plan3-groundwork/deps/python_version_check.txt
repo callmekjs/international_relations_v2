@@ -1,0 +1,24 @@
+== python 3.10
+exit=1
+  ╰─▶ Because numpy==2.5.3 has no usable wheels and you require numpy==2.5.3,
+      we can conclude that your requirements are unsatisfiable.
+      hint: Wheels are required for `numpy` because building from source is
+== python 3.11
+exit=1
+  ╰─▶ Because numpy==2.5.3 has no usable wheels and you require numpy==2.5.3,
+      we can conclude that your requirements are unsatisfiable.
+      hint: Wheels are required for `numpy` because building from source is
+== python 3.12
+exit=0
+numpy==2.5.3
+== python 3.13
+exit=0
+numpy==2.5.3
+diff 3.12 vs 3.13:
+13a14,15
+> audioop-lts==0.2.2
+>     # via gradio
+158d159
+<     #   httpx2
+163d163
+<     #   starlette

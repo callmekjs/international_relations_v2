@@ -1,0 +1,92 @@
+{
+ "chars": 2837,
+ "events": [
+  [
+   "section_started",
+   {
+    "n": 1,
+    "of": 6,
+    "title": "제1절 시험 \"따옴표\" 제목"
+   }
+  ],
+  [
+   "section_started",
+   {
+    "n": 2,
+    "of": 6,
+    "title": "제2절 시험 \"따옴표\" 제목"
+   }
+  ],
+  [
+   "sentences_written",
+   {
+    "count": 5,
+    "of": 25
+   }
+  ],
+  [
+   "section_started",
+   {
+    "n": 3,
+    "of": 6,
+    "title": "제3절 시험 \"따옴표\" 제목"
+   }
+  ],
+  [
+   "sentences_written",
+   {
+    "count": 10,
+    "of": 25
+   }
+  ],
+  [
+   "section_started",
+   {
+    "n": 4,
+    "of": 6,
+    "title": "제4절 시험 \"따옴표\" 제목"
+   }
+  ],
+  [
+   "sentences_written",
+   {
+    "count": 15,
+    "of": 25
+   }
+  ],
+  [
+   "section_started",
+   {
+    "n": 5,
+    "of": 6,
+    "title": "제5절 시험 \"따옴표\" 제목"
+   }
+  ],
+  [
+   "sentences_written",
+   {
+    "count": 20,
+    "of": 25
+   }
+  ],
+  [
+   "section_started",
+   {
+    "n": 6,
+    "of": 6,
+    "title": "제6절 시험 \"따옴표\" 제목"
+   }
+  ],
+  [
+   "overview_started",
+   {}
+  ],
+  [
+   "sentences_written",
+   {
+    "count": 25,
+    "of": 25
+   }
+  ]
+ ]
+}

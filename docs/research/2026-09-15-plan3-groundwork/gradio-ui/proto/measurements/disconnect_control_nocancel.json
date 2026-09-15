@@ -1,0 +1,177 @@
+{
+ "scenario": "disconnect",
+ "how": null,
+ "after_progress_msgs": 4,
+ "client_completed_s": null,
+ "cut_s": 2.368,
+ "run": "022c19bf",
+ "ended": {
+  "s": 15.278,
+  "status": "answered",
+  "notice": null,
+  "reason": null
+ },
+ "emits_after_cut": 13,
+ "timeline": [
+  {
+   "s": 1.158,
+   "where": "worker",
+   "what": "emit",
+   "kind": "thinking",
+   "reason": null,
+   "status": null
+  },
+  {
+   "s": 1.158,
+   "where": "generator",
+   "what": "yield",
+   "kind": "thinking",
+   "reason": null,
+   "status": null
+  },
+  {
+   "s": 2.359,
+   "where": "worker",
+   "what": "emit",
+   "kind": "tool_requested",
+   "reason": null,
+   "status": null
+  },
+  {
+   "s": 2.359,
+   "where": "generator",
+   "what": "yield",
+   "kind": "tool_requested",
+   "reason": null,
+   "status": null
+  },
+  {
+   "s": 3.26,
+   "where": "worker",
+   "what": "emit",
+   "kind": "tool_finished",
+   "reason": null,
+   "status": null
+  },
+  {
+   "s": 3.26,
+   "where": "generator",
+   "what": "yield",
+   "kind": "tool_finished",
+   "reason": null,
+   "status": null
+  },
+  {
+   "s": 3.268,
+   "where": "generator",
+   "what": "closed",
+   "kind": null,
+   "reason": null,
+   "status": null
+  },
+  {
+   "s": 4.161,
+   "where": "worker",
+   "what": "emit",
+   "kind": "thinking",
+   "reason": null,
+   "status": null
+  },
+  {
+   "s": 5.362,
+   "where": "worker",
+   "what": "emit",
+   "kind": "tool_requested",
+   "reason": null,
+   "status": null
+  },
+  {
+   "s": 6.264,
+   "where": "worker",
+   "what": "emit",
+   "kind": "tool_finished",
+   "reason": null,
+   "status": null
+  },
+  {
+   "s": 7.165,
+   "where": "worker",
+   "what": "emit",
+   "kind": "thinking",
+   "reason": null,
+   "status": null
+  },
+  {
+   "s": 8.366,
+   "where": "worker",
+   "what": "emit",
+   "kind": "tool_requested",
+   "reason": null,
+   "status": null
+  },
+  {
+   "s": 9.267,
+   "where": "worker",
+   "what": "emit",
+   "kind": "tool_finished",
+   "reason": null,
+   "status": null
+  },
+  {
+   "s": 10.169,
+   "where": "worker",
+   "what": "emit",
+   "kind": "thinking",
+   "reason": null,
+   "status": null
+  },
+  {
+   "s": 11.371,
+   "where": "worker",
+   "what": "emit",
+   "kind": "tool_requested",
+   "reason": null,
+   "status": null
+  },
+  {
+   "s": 12.273,
+   "where": "worker",
+   "what": "emit",
+   "kind": "tool_finished",
+   "reason": null,
+   "status": null
+  },
+  {
+   "s": 13.174,
+   "where": "worker",
+   "what": "emit",
+   "kind": "thinking",
+   "reason": null,
+   "status": null
+  },
+  {
+   "s": 14.375,
+   "where": "worker",
+   "what": "emit",
+   "kind": "answer_started",
+   "reason": null,
+   "status": null
+  },
+  {
+   "s": 15.277,
+   "where": "worker",
+   "what": "emit",
+   "kind": "done",
+   "reason": null,
+   "status": null
+  },
+  {
+   "s": 15.278,
+   "where": "worker",
+   "what": "run_returned",
+   "kind": null,
+   "reason": null,
+   "status": "answered"
+  }
+ ]
+}

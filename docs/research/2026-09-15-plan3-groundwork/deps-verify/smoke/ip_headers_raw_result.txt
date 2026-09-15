@@ -1,0 +1,2 @@
+{"mode": "nossr", "sse": "event: complete\ndata: [\"{\\\"client_host\\\": \\\"203.0.113.7\\\", \\\"headers\\\": {\\\"user-agent\\\": \\\"Mozilla/5.0 verify-browser\\\", \\\"x-forwarded-for\\\": \\\"203.0.113.7\\\"}}\"]"}
+{"mode": "ssr", "sse": "event: complete\ndata: [\"{\\\"client_host\\\": \\\"203.0.113.7\\\", \\\"headers\\\": {\\\"x-forwarded-for\\\": \\\"203.0.113.7\\\", \\\"user-agent\\\": \\\"Mozilla/5.0 verify-browser\\\"}}\"]"}
