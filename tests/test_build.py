@@ -2,8 +2,10 @@ import json
 
 import pytest
 
-from assistant.search_index import load_index, search
-from prep.build import build
+pytest.importorskip("pymupdf", exc_type=ImportError)
+
+from assistant.search_index import load_index, search  # noqa: E402
+from prep.build import build  # noqa: E402
 
 pytestmark = pytest.mark.pdf
 

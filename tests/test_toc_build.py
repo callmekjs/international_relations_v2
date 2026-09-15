@@ -2,8 +2,10 @@ import json
 
 import pytest
 
-from prep import toc as toc_mod
-from prep.toc_build import MANUAL_TOC_2025, build_toc
+pytest.importorskip("pymupdf", exc_type=ImportError)
+
+from prep import toc as toc_mod  # noqa: E402
+from prep.toc_build import MANUAL_TOC_2025, build_toc  # noqa: E402
 
 pytestmark = pytest.mark.pdf
 

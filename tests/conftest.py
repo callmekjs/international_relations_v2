@@ -18,6 +18,7 @@ def pytest_collection_modifyitems(config, items):
 
 @pytest.fixture(scope="session")
 def full_corpus_dir(tmp_path_factory):
+    pytest.importorskip("pymupdf", exc_type=ImportError)
     from prep.build import build
 
     out = tmp_path_factory.mktemp("corpus")

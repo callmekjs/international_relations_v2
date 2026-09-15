@@ -1,7 +1,9 @@
 import pytest
 
-from prep.pages import build_records
-from prep.toc_build import build_toc
+pytest.importorskip("pymupdf", exc_type=ImportError)
+
+from prep.pages import build_records  # noqa: E402
+from prep.toc_build import build_toc  # noqa: E402
 
 pytestmark = pytest.mark.pdf
 

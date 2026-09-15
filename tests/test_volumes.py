@@ -1,3 +1,5 @@
+import pytest
+
 from prep.volumes import CORPUS_YEARS, MISSING, VOLUMES
 
 
@@ -18,6 +20,7 @@ def test_missing_entries_are_the_2025_images():
     assert [m["pdf_pages"] for m in MISSING] == [[2], [3], [138]]
 
 
+@pytest.mark.pdf
 def test_pdf_files_exist():
     for vol in VOLUMES.values():
         assert vol.pdf_path.is_file(), vol.pdf_path
