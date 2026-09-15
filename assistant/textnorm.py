@@ -29,6 +29,19 @@ def match_key(text: str) -> str:
     return _WS.sub("", _HANGUL_GAP.sub("", normalize(text).lower()))
 
 
+def utf8_safe(value):
+    """Every lone surrogate in a string, or in the strings of a JSON-like list or dict, becomes '?'.
+    json.loads turns a surrogate escape in model-written JSON into one, and records and the terminal
+    are written as UTF-8, which cannot hold it."""
+    if isinstance(value, str):
+        return value.encode("utf-8", "replace").decode("utf-8")
+    if isinstance(value, list):
+        return [utf8_safe(item) for item in value]
+    if isinstance(value, dict):
+        return {utf8_safe(key): utf8_safe(item) for key, item in value.items()}
+    return value
+
+
 def bigram_tokens(text: str) -> list[str]:
     """Hangul/Hanja runs become character bigrams (a one-character run stays whole); Latin words
     and numbers stay whole. Spaces and '·' between Hangul are removed first, so '한·미 정상'

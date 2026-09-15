@@ -87,3 +87,20 @@ def test_run_gold_keeps_going_when_one_question_crashes(qa_corpus, tmp_path, cap
     report = (out_dir / "report.md").read_text(encoding="utf-8")
     assert "| g99 | multi_year | X | error | 0 | 0 | 0 | 0 | 실행 오류: RuntimeError |" in report
     assert "g99 X error" in capsys.readouterr().out
+
+
+def test_run_gold_keeps_the_paid_cost_when_a_record_cannot_be_saved(qa_corpus, tmp_path):
+    results = []
+
+    def unsavable(task, inputs, **options):
+        results.append(run(task, inputs, **options))
+        results[-1].record["answer_raw"] = {"text": chr(0xDC00)}  # cannot be written as UTF-8
+        return results[-1]
+
+    refusal = {"status": "refused", "sentences": [{"text": "외교백서에 관한 질문만 답할 수 있어요.", "citations": []}]}
+    out_dir = tmp_path / "gold"
+    summary = run_gold([REFUSE], llm=FakeLLM(answer_turn(refusal)), corpus=qa_corpus, out_dir=out_dir, ask=unsavable)
+    cost = results[0].usage["cost_krw"]
+    assert cost > 0 and summary["cost_krw"] == cost and summary["passed"] == 0
+    report = (out_dir / "report.md").read_text(encoding="utf-8")
+    assert f"| {cost} | 4,000 | 500 | 실행 오류: UnicodeEncodeError |" in report

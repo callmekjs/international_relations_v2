@@ -14,6 +14,7 @@ from dataclasses import dataclass
 
 from assistant.citations import ShownPage
 from assistant.corpus import MAX_READ_PAGES, Corpus
+from assistant.textnorm import utf8_safe
 
 MAX_K = 10
 FRONT_MATTER_SLACK = 6  # extra hits fetched so greeting and contents pages can move to the end
@@ -104,14 +105,14 @@ class ToolRunner:
             outcome = handler(args)
         except ToolInputError as exc:
             outcome = ToolOutcome(_dumps({"error": str(exc)}), f"{TOOL_NAMES.get(name, name)} 입력 오류", False)
-        return ToolOutcome(outcome.output, _utf8_safe(outcome.summary), outcome.ok)  # records are written as UTF-8
+        return ToolOutcome(outcome.output, utf8_safe(outcome.summary), outcome.ok)  # records are written as UTF-8
 
     # --- search ---------------------------------------------------------------------------------
     def _search(self, args: dict) -> ToolOutcome:
         query = args.get("query")
         if not isinstance(query, str) or not query.strip():
             raise ToolInputError("query(찾을 말)가 비어 있습니다")
-        query = _utf8_safe(query.strip())
+        query = utf8_safe(query.strip())
         years = _years(args.get("years"))
         k = max(1, min(MAX_K, _integer(args.get("k"), "k"))) if args.get("k") is not None else MAX_K
         corpus_years = self.corpus.corpus_years
@@ -195,11 +196,6 @@ class ToolRunner:
 
 def _dumps(payload) -> str:
     return json.dumps(payload, ensure_ascii=False, separators=(",", ":"))
-
-
-def _utf8_safe(text: str) -> str:
-    """Lone surrogates (possible after json.loads of model text) become '?', so the text encodes as UTF-8."""
-    return text.encode("utf-8", "replace").decode("utf-8")
 
 
 def _integer(value, what: str) -> int:

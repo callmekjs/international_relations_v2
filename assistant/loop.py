@@ -11,6 +11,7 @@ from assistant.limits import Budget, Caps
 from assistant.llm import LLM, EventSink, Usage
 from assistant.pricing import cost_usd
 from assistant.prompts import STATUSES
+from assistant.textnorm import utf8_safe
 from assistant.tools import TOOLS, ToolRunner
 
 SKIPPED_OUTPUT = json.dumps({"error": "도구 사용 한도에 닿아 실행하지 않았습니다. 이미 읽은 내용으로 답하세요."},
@@ -116,9 +117,10 @@ def turn_cost(usage: Usage, models: tuple[str, ...], service_tier: str | None) -
 
 
 def parse_answer(text: str) -> dict | None:
-    """The final JSON answer, or None when it is not the agreed shape."""
+    """The final JSON answer, or None when it is not the agreed shape. Lone surrogates become '?' so the
+    answer can be printed and kept in a UTF-8 record."""
     try:
-        answer = json.loads(text)
+        answer = utf8_safe(json.loads(text))
     except (json.JSONDecodeError, TypeError, RecursionError):
         return None
     if (not isinstance(answer, dict) or answer.get("status") not in STATUSES

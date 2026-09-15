@@ -7,6 +7,7 @@ import pytest
 
 from assistant.ask import format_event, main, turn_table
 from assistant.errors import BILLING, LLMError
+from assistant.llm import ToolCall
 from assistant.runner import ROOT
 from tests.fake_llm import FakeLLM, answer_turn, call, tool_turn
 
@@ -30,6 +31,19 @@ def test_cli_prints_progress_answer_and_saves_the_record(qa_corpus, tmp_path, ca
     table = capsys.readouterr().out
     assert code == 0 and "| 1 | auto | reasoning, function_call |" in table
     assert turn_table(json.loads(saved[0].read_text(encoding="utf-8"))).count("\n") == 3
+
+
+def test_lone_surrogates_in_the_model_json_cannot_make_a_record_unwritable(qa_corpus, tmp_path, capsys):
+    escape = chr(92) + "ud800"  # the model may write this escape; json.loads turns it into a lone surrogate
+    search = ToolCall("call_s1", "search", json.dumps({"query": chr(0xD800) + "정상회담", "years": None, "k": None}))
+    answer = json.dumps(ANSWER, ensure_ascii=False).replace("워싱턴에서", "워싱턴" + escape + "에서", 1)  # text, not quote
+    llm = FakeLLM(tool_turn(search, call("read_pages", page_ids=["2023-p020L"])), answer_turn(answer))
+    code = main(["2023년 한미 정상회담은 어디서 열렸어?"], llm=llm, corpus=qa_corpus, out_dir=tmp_path)
+    assert code == 0
+    assert "워싱턴?에서 열렸습니다. [1] (확인됨)" in capsys.readouterr().out
+    record = json.loads(next(tmp_path.glob("*-qa.json")).read_text(encoding="utf-8"))
+    assert record["answer_raw"]["sentences"][0]["text"] == "워싱턴?에서 열렸습니다."
+    assert record["answer"]["sentences"][0]["text"] == "워싱턴?에서 열렸습니다."
 
 
 def test_events_without_a_line_are_silent():

@@ -106,7 +106,7 @@ def test_get_toc_accepts_a_year_string(qa_corpus):
     assert missing["not_in_corpus"] is True
 
 
-def test_lone_surrogates_cannot_make_a_record_unwritable(qa_corpus):
+def test_lone_surrogates_in_tool_calls_leave_encodable_summaries(qa_corpus):
     runner = ToolRunner(qa_corpus)
     outcome = runner.execute("search", json.dumps({"query": chr(0xD800) + "정상회담", "years": None, "k": None}))
     assert outcome.ok and "정상회담" in outcome.summary
