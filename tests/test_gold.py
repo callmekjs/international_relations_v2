@@ -19,6 +19,15 @@ def test_gold_file_is_well_formed():
     assert {item["id"]: problems(item) for item in items if problems(item)} == {}
 
 
+def test_questions_about_a_repeated_event_name_the_one_meant():
+    # 2021 had three Korea-Australia summits: Cornwall (6.12), Rome (10.30) and Canberra (12.13).
+    # The gold answer is Canberra, so a question about that summit must say December.
+    vague = [item["id"] for item in load_gold()
+             if "2021년" in item["question"] and "호주 정상회담" in item["question"]
+             and "2021년 12월" not in item["question"]]
+    assert vague == []
+
+
 @pytest.fixture(scope="module")
 def page_keys():
     rows = [json.loads(line) for line in PAGES.read_text(encoding="utf-8").splitlines() if line.strip()]
