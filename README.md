@@ -52,3 +52,12 @@ PYTHONUTF8=1 .venv/Scripts/python.exe -m assistant.ask "2023년 한미 정상회
 일하는 과정, 근거 대조 결과(확인됨 / 문단만 확인 / 근거 없음), 토큰과 요금이 나오고, 실행 기록이 `runs/`에 저장된다.
 보통 질문 1번에 약 190~250원, 한도 안에서 최대 약 1,500원이다.
 `--table runs/파일.json`으로 요청별 토큰 표를 볼 수 있다.
+
+## 정답지 시험 (실제 요금 발생)
+
+```bash
+PYTHONUTF8=1 .venv/Scripts/python.exe -m evals.run_gold --confirm
+```
+
+`evals/gold.jsonl`의 18문항을 돌려 자동으로 채점하고, 기록과 성적표(`report.md`)를 `evals/runs/<시각>/`에 저장한다.
+보통 문항당 약 250원이다. `--confirm` 없이 실행하면 돌리지 않고 안내만 한다.
