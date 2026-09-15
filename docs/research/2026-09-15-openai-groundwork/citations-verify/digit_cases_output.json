@@ -1,0 +1,79 @@
+[
+ {
+  "page": "2023-p147L",
+  "quote": "제1·2차 출장단은 미",
+  "why": "true quote with 1·2",
+  "orig": "확인됨 / exact / evidence='제1·2차 출장단은 미'",
+  "patched": "근거 없음 / too_short / evidence=None"
+ },
+ {
+  "page": "2023-p147L",
+  "quote": "제12차 출장단은 미",
+  "why": "dot between digits dropped -> different number",
+  "orig": "확인됨 / exact / evidence='제1·2차 출장단은 미'",
+  "patched": "근거 없음 / too_short / evidence=None"
+ },
+ {
+  "page": "2024-p171R",
+  "quote": "카이로 메트로 2·3호선 전동차",
+  "why": "true quote",
+  "orig": "확인됨 / exact / evidence='카이로 메트로 2·3호선 전동차'",
+  "patched": "확인됨 / exact / evidence='카이로 메트로 2·3호선 전동차'"
+ },
+ {
+  "page": "2024-p171R",
+  "quote": "카이로 메트로 23호선 전동차",
+  "why": "dot dropped -> '23호선'",
+  "orig": "확인됨 / exact / evidence='카이로 메트로 2·3호선 전동차'",
+  "patched": "근거 없음 / not_found / evidence='카이로 메트로 2·3호선 전동차'"
+ },
+ {
+  "page": "2020-p039L",
+  "quote": "5·18민주화운동 관련 비밀문서",
+  "why": "true quote",
+  "orig": "확인됨 / exact / evidence='5·18민주화운동 관련 비밀문서'",
+  "patched": "확인됨 / exact / evidence='5·18민주화운동 관련 비밀문서'"
+ },
+ {
+  "page": "2020-p039L",
+  "quote": "518민주화운동 관련 비밀문서",
+  "why": "dot dropped (harmless variant, now stricter)",
+  "orig": "확인됨 / exact / evidence='5·18민주화운동 관련 비밀문서'",
+  "patched": "근거 없음 / not_found / evidence='5·18민주화운동 관련 비밀문서'"
+ },
+ {
+  "page": "2021-p112R",
+  "quote": "7명(일반 외교 44명, 지역 외교 3명)",
+  "why": "leading digit of 47 dropped",
+  "orig": "확인됨 / exact / evidence='7명(일반 외교 44명, 지역 외교 3명)'",
+  "patched": "원문과 조금 다름 / near / evidence='7명(일반 외교 44명, 지역 외교 3명)'"
+ },
+ {
+  "page": "2021-p112R",
+  "quote": "6주 동안 운영했다. 외교관후보자",
+  "why": "leading digit of 46 dropped",
+  "orig": "확인됨 / exact / evidence='6주 동안 운영했다. 외교관후보자'",
+  "patched": "원문과 조금 다름 / near / evidence='6주 동안 운영했다. 외교관후보자'"
+ },
+ {
+  "page": "2021-p112R",
+  "quote": "총 47명(일반 외교 44명, 지역 외교 3명)",
+  "why": "control: true quote",
+  "orig": "확인됨 / exact / evidence='총 47명(일반 외교 44명, 지역 외교 3명)'",
+  "patched": "확인됨 / exact / evidence='총 47명(일반 외교 44명, 지역 외교 3명)'"
+ },
+ {
+  "page": "2024-p153R",
+  "quote": "2024 서울국제법아카데미 7.1-12, 국립외교원",
+  "why": "control: true range quote",
+  "orig": "확인됨 / exact / evidence='2024 서울국제법아카데미 7.1-12, 국립외교원'",
+  "patched": "확인됨 / exact / evidence='2024 서울국제법아카데미 7.1-12, 국립외교원'"
+ },
+ {
+  "page": "2024-p153R",
+  "quote": "2024 서울국제법아카데미 7.112, 국립외교원",
+  "why": "range dash dropped -> '7.112'",
+  "orig": "확인됨 / exact / evidence='2024 서울국제법아카데미 7.1-12, 국립외교원'",
+  "patched": "근거 없음 / not_found / evidence='2024 서울국제법아카데미 7.1-12, 국립외교원'"
+ }
+]

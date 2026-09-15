@@ -1,0 +1,109 @@
+{
+ "baseline_typical_sol": {
+  "none": 243.4,
+  "implicit_cold": 191.0,
+  "implicit_warm": 180.5
+ },
+ "typical_sol_with_observed_tail_and_format": {
+  "none": 244.2,
+  "implicit_cold": 191.7,
+  "implicit_warm": 181.3
+ },
+ "worst_case_cap_true_max_read": {
+  "gpt-5.6-sol": {
+   "none": {
+    "requests": 8,
+    "cumulative_input": 257184,
+    "last_input": 62500,
+    "usd": 1.3437359999999998,
+    "krw": 1881.2303999999997
+   },
+   "implicit_cold": {
+    "requests": 8,
+    "cumulative_input": 257184,
+    "last_input": 62500,
+    "usd": 0.7053736,
+    "krw": 987.52304
+   }
+  }
+ },
+ "worst_10_tools_no_input_cap_sol": {
+  "none": {
+   "requests": 11,
+   "cumulative_input": 324621,
+   "last_input": 57226,
+   "usd": 1.7061840000000001,
+   "krw": 2388.6576
+  },
+  "implicit_cold": {
+   "requests": 11,
+   "cumulative_input": 324621,
+   "last_input": 57226,
+   "usd": 0.800788,
+   "krw": 1121.1032
+  }
+ },
+ "summary_largest_chapter_krw": {
+  "gpt-5.6-sol": {
+   "low": 467.0,
+   "typical": 565.0,
+   "high": 817.0
+  },
+  "gpt-5.6-sol-flex": {
+   "low": 234.0,
+   "typical": 283.0,
+   "high": 409.0
+  }
+ },
+ "typical_qa_sol_flex_krw": 95.5,
+ "typical_qa_sol_postpromo_guess_krw": {
+  "none": 331.2,
+  "implicit_cold": 265.6
+ },
+ "sol_reasoning_sweep": [
+  {
+   "reasoning_tool": 20,
+   "reasoning_final": 300,
+   "krw_cached": 106.0,
+   "krw_none": 153.0
+  },
+  {
+   "reasoning_tool": 20,
+   "reasoning_final": 1500,
+   "krw_cached": 140.0,
+   "krw_none": 187.0
+  },
+  {
+   "reasoning_tool": 200,
+   "reasoning_final": 1500,
+   "krw_cached": 159.0,
+   "krw_none": 208.0
+  },
+  {
+   "reasoning_tool": 500,
+   "reasoning_final": 1500,
+   "krw_cached": 191.0,
+   "krw_none": 243.0
+  },
+  {
+   "reasoning_tool": 500,
+   "reasoning_final": 4000,
+   "krw_cached": 261.0,
+   "krw_none": 313.0
+  },
+  {
+   "reasoning_tool": 1500,
+   "reasoning_final": 8000,
+   "krw_cached": 480.0,
+   "krw_none": 543.0
+  }
+ ],
+ "not_in_corpus_question_sol_krw": {
+  "none": 48.1,
+  "implicit_cold": 42.6
+ },
+ "refused_question_sol_krw": {
+  "none": 17.5,
+  "implicit_cold": 19.8
+ }
+}

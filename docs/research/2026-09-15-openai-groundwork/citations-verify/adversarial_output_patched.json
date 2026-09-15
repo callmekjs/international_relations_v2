@@ -1,0 +1,408 @@
+{
+ "P1_random_verbatim": {
+  "counts": {
+   "exact|one-line": 892,
+   "exact|multi-line": 601,
+   "too_short|multi-line": 2,
+   "too_short|one-line": 5
+  },
+  "non_exact_examples": [
+   [
+    "2023-p119L",
+    "체제 강화 노력 참여\n정부는",
+    "too_short",
+    null
+   ],
+   [
+    "2021-p086R",
+    "역량 강화를 위해 노력했다.",
+    "too_short",
+    null
+   ],
+   [
+    "2021-p059R",
+    "‘경제안보 TF’를 출범하고,",
+    "too_short",
+    null
+   ],
+   [
+    "2023-p073R",
+    "면담하고 양국 관계 전반 및",
+    "too_short",
+    null
+   ],
+   [
+    "2023-p064R",
+    "과학기술 협력 등\n4.17,",
+    "too_short",
+    null
+   ],
+   [
+    "2025-p020R",
+    "곳으로 갈 수 있도록 적절한",
+    "too_short",
+    null
+   ],
+   [
+    "2020-p040L",
+    "한·미 동맹 강화를 위한 공조",
+    "too_short",
+    null
+   ]
+  ]
+ },
+ "P1b_random_char_slices": {
+  "counts": {
+   "near": 151,
+   "exact": 1330,
+   "too_short": 18,
+   "not_found": 1
+  },
+  "non_exact_examples": [
+   [
+    "2021-p066L",
+    "5)에도 기여했다. 한편 WTO 외연 확장 노",
+    "near",
+    1.0
+   ],
+   [
+    "2021-p071R",
+    "4~25, 화상)를 개최해 물 산업 해외 진출을 희망하는 국내 기업",
+    "near",
+    1.0
+   ],
+   [
+    "2024-p166R",
+    "역기구 설립을 위한 마라케쉬 협정 부속서 1나의 양허표 개정\n2024.05",
+    "near",
+    1.0
+   ],
+   [
+    "2021-p124R",
+    "2021.11.27\n34\n한·파키스탄 채무재조정협정\n2021.12.6\n2021.12",
+    "near",
+    1.0
+   ],
+   [
+    "2020-p142R",
+    "019년 외교부는 국민외교 UCC 공모전 대",
+    "near",
+    1.0
+   ],
+   [
+    "2021-p106R",
+    "1년 한 해 동안 전 세계 약 1,470개 한글학교의 운영비 등을 지원했다. 또한 코로나19에 따른 대면 ",
+    "near",
+    1.0
+   ],
+   [
+    "2022-p141R",
+    "정기구(EROPA)\n1962\n-\n마닐라\n24\n국제전기기술위원회(IEC)\n1963\n20",
+    "near",
+    1.0
+   ],
+   [
+    "2021-p095R",
+    "전을 치렀다. 국내 예선전에는 65개 국적의 참가자 577여 명이 지원해 그중 1",
+    "near",
+    1.0
+   ]
+  ]
+ },
+ "P2_model_habits": {
+  "leading_ellipsis": {
+   "확인됨/exact": 291
+  },
+  "trailing_ellipsis": {
+   "확인됨/exact": 291
+  },
+  "leading_dots": {
+   "확인됨/exact": 291
+  },
+  "curly_quotes_wrap": {
+   "확인됨/exact": 291
+  },
+  "trailing_period_added": {
+   "확인됨/exact": 291
+  },
+  "line_break_removed_no_space": {
+   "확인됨/exact": 290,
+   "근거 없음/not_found": 1
+  }
+ },
+ "P3_meaning_flips": {
+  "per_swap": {
+   "증가->감소": {
+    "원문과 조금 다름": 25
+   },
+   "확대->축소": {
+    "원문과 조금 다름": 25
+   },
+   "강화->약화": {
+    "원문과 조금 다름": 25
+   },
+   "상승->하락": {
+    "원문과 조금 다름": 25
+   },
+   "찬성->반대": {
+    "원문과 조금 다름": 6
+   },
+   "지지->반대": {
+    "원문과 조금 다름": 25
+   },
+   "체결->파기": {
+    "원문과 조금 다름": 25
+   },
+   "개최->취소": {
+    "원문과 조금 다름": 25
+   },
+   "참석->불참": {
+    "원문과 조금 다름": 25
+   },
+   "흑자->적자": {
+    "원문과 조금 다름": 8
+   },
+   "미국->중국": {
+    "원문과 조금 다름": 25
+   },
+   "일본->중국": {
+    "원문과 조금 다름": 25
+   },
+   "남한->북한": {},
+   "최초->최후": {
+    "원문과 조금 다름": 25
+   },
+   "두 차례->세 차례": {
+    "원문과 조금 다름": 25
+   },
+   "첫->두 번째": {
+    "원문과 조금 다름": 25
+   },
+   "승인->거부": {
+    "원문과 조금 다름": 25
+   },
+   "동의->거부": {
+    "원문과 조금 다름": 25
+   },
+   "했다->하지 않았다": {
+    "원문과 조금 다름": 58,
+    "근거 없음": 2
+   }
+  },
+  "total": {
+   "원문과 조금 다름": 447,
+   "근거 없음": 2
+  }
+ },
+ "P4_cross_year": {
+  "line_pairs_shared_across_years": 95,
+  "wrong_year_citation_results": {
+   "('exact_on_other_page', True, True)": 33,
+   "('not_found', False, None)": 1,
+   "('exact', False, False)": 3
+  },
+  "examples": [
+   {
+    "cited": "2021-p060R",
+    "shown_as": "2020년치 · 「2021 외교백서」 193쪽",
+    "quote": "중국은 우리의 제1 교역국으로 매우 중요한 교역 상대일 뿐만 아니라 다양한 분야에서 협력 잠재력이 매우 큰 "
+   },
+   {
+    "cited": "2021-p062L",
+    "shown_as": "2020년치 · 「2021 외교백서」 197쪽",
+    "quote": "종료, 캐나다 후판·유정용 강관 반덤핑 관세 재검토 관련 일부 우리 기업에 대한 미소 마진 인정, EU 철강"
+   },
+   {
+    "cited": "2021-p078L",
+    "shown_as": "2020년치 · 「2021 외교백서」 234쪽",
+    "quote": "5년째 UNHCR에 2,000만 달러 이상을 공여한 국가 모임인 ‘UNHCR 2,000만 달러 공여국 클럽’"
+   }
+  ]
+ },
+ "P5_short_quote_specificity": {
+  "8_key_chars": "70/400 also on another page of the same year",
+  "10_key_chars": "50/400 also on another page of the same year",
+  "12_key_chars": "26/400 also on another page of the same year",
+  "15_key_chars": "21/400 also on another page of the same year",
+  "20_key_chars": "9/400 also on another page of the same year"
+ },
+ "P6_digit_folding": [
+  {
+   "page": "2023-p147L",
+   "quote": "제12차 출장단은",
+   "why": "middle dot between digits deleted: '제1·2차' read as '제12차'",
+   "badge": "근거 없음",
+   "quote_status": "too_short",
+   "evidence_shown": null
+  },
+  {
+   "page": "2024-p171R",
+   "quote": "카이로 메트로 23호선",
+   "why": "'2·3호선' read as '23호선'",
+   "badge": "근거 없음",
+   "quote_status": "too_short",
+   "evidence_shown": null
+  },
+  {
+   "page": "2021-p112R",
+   "quote": "7명(일반 외교 44명, 지역 외교 3명)",
+   "why": "leading digit dropped from '47명'",
+   "badge": "원문과 조금 다름",
+   "quote_status": "near",
+   "evidence_shown": "7명(일반 외교 44명, 지역 외교 3명)"
+  },
+  {
+   "page": "2021-p112R",
+   "quote": "6주 동안 운영했다",
+   "why": "leading digit dropped from '46주'",
+   "badge": "근거 없음",
+   "quote_status": "too_short",
+   "evidence_shown": null
+  },
+  {
+   "page": "2020-p006R",
+   "quote": "경제성장률은 미국 3.5%, 유로존 6.6%를 기록하는 등",
+   "why": "minus signs dropped (control)",
+   "badge": "근거 없음",
+   "quote_status": "not_found",
+   "evidence_shown": "경제성장률은 미국 –3.5%, 유로존 –6.6%를 기록하는 등"
+  }
+ ],
+ "P7_page_break": {
+  "counts": {
+   "R->nextL|joined": 88,
+   "L->R|joined": 78,
+   "L->R|not_found": 10,
+   "R->nextL|not_found": 4
+  },
+  "non_joined_examples": [
+   [
+    "2020-p129L",
+    "2020-p129R",
+    "2020-p129R",
+    "리 전문가의 국제법률기구 진출을 지원했다.\n2020 해양법 국제학술회의(2020",
+    "not_found"
+   ],
+   [
+    "2024-p179L",
+    "2024-p179R",
+    "2024-p179R",
+    "상회의 계기 한·탄자니아 정상회담 (서울)\n양자관계\n다자관계\n기간\n행사\n기간\n행사\n6",
+    "not_found"
+   ],
+   [
+    "2024-p051L",
+    "2024-p051R",
+    "2024-p051R",
+    "기스스탄 외교차관 면담(11.4, 서울)\n장원삼 한국국제협력단 이사장은 202",
+    "not_found"
+   ],
+   [
+    "2024-p170L",
+    "2024-p170R",
+    "2024-p170L",
+    "7\n아랍에미리트\n2019.11.12\n약정\n10\n여권 발급 및 우리국민 해외관광객 현황\n",
+    "not_found"
+   ]
+  ]
+ },
+ "P8_cross_year_near": {
+  "counts": {
+   "근거 없음/not_found": 405,
+   "원문과 조금 다름/near": 18,
+   "확인됨/exact": 27
+  },
+  "examples": [
+   {
+    "quote_from": "2023-p028L",
+    "cited": "2022-p027R",
+    "quote": "글로벌 어젠다에서 공동 이익을 추구하는 가장 가까운 이웃이자 협력 파트너이다. 양국은 과거사 현안 등으로 관계가 경색되었으나,",
+    "badge": "원문과 조금 다름",
+    "evidence": "글로벌 어젠다에서 공동 이익을 추구하는 가장 가까운 이웃이자 협력 파트너이다. 그간 과거사 현안 등으로 관계가 경색되었으나",
+    "diff": [
+     [
+      "그간",
+      "양국은"
+     ]
+    ]
+   },
+   {
+    "quote_from": "2023-p028L",
+    "cited": "2022-p027R",
+    "quote": "이익을 추구하는 가장 가까운 이웃이자 협력 파트너이다. 양국은 과거사 현안 등으로 관계가 경색되었으나,",
+    "badge": "원문과 조금 다름",
+    "evidence": "이익을 추구하는 가장 가까운 이웃이자 협력 파트너이다. 그간 과거사 현안 등으로 관계가 경색되었으나",
+    "diff": [
+     [
+      "그간",
+      "양국은"
+     ]
+    ]
+   },
+   {
+    "quote_from": "2023-p028L",
+    "cited": "2022-p027R",
+    "quote": "가까운 이웃이자 협력 파트너이다. 양국은 과거사 현안 등으로 관계가 경색되었으나, 엄중한 안보환경",
+    "badge": "원문과 조금 다름",
+    "evidence": "가까운 이웃이자 협력 파트너이다. 그간 과거사 현안 등으로 관계가 경색되었으나, 엄중한 안보 환경",
+    "diff": [
+     [
+      "그간",
+      "양국은"
+     ]
+    ]
+   },
+   {
+    "quote_from": "2021-p015L",
+    "cited": "2020-p027R",
+    "quote": "긴급지원 프로그램’을 진행했다. 이 프로그램에서는 정부·시민사회·국제기구의 협업을 바탕으로 ①코로나19 대응 의료시설 확충",
+    "badge": "원문과 조금 다름",
+    "evidence": "긴급지원 프로그램’을 추진했다. 이 프로그램에서는 정부·시민사회·국제기구의 협업 체계를 바탕으로 코로나19 대응 의료 시설 확충",
+    "diff": [
+     [
+      "추",
+      ""
+     ],
+     [
+      "",
+      "행"
+     ],
+     [
+      "체계를",
+      "을"
+     ],
+     [
+      "",
+      "①"
+     ]
+    ]
+   },
+   {
+    "quote_from": "2022-p077R",
+    "cited": "2021-p063L",
+    "quote": "지원 활동을 지속하였다. 유엔 조달시장에 진출하고자 하는 우리 기업의 이해를 높이고 해외시장에 진출할 기회를",
+    "badge": "원문과 조금 다름",
+    "evidence": "지원 활동을 지속했다. 유엔 조달시장에 진출하고자 하는 우리 기업의 이해를 높이고 해외시장에 진출할 기회를",
+    "diff": [
+     [
+      "했",
+      "하였"
+     ]
+    ]
+   },
+   {
+    "quote_from": "2022-p077R",
+    "cited": "2021-p063L",
+    "quote": "우리나라 재외공관에서 매년 재외공관 연계 농식품 수출 홍보사업을",
+    "badge": "확인됨",
+    "evidence": "우리나라 재외공관에서 매년 재외공관 연계 농식품 수출 홍보사업을",
+    "diff": []
+   }
+  ]
+ },
+ "P9_metadata_title_quotes": {
+  "not_found": 92,
+  "too_short": 57,
+  "exact": 6
+ }
+}

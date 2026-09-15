@@ -1,0 +1,42 @@
+429 project spend [RateLimitError code=project_spend_limit_exceeded type=insufficient_quota] | budget_project | OK
+429 org usage [RateLimitError code=organization_usage_limit_exceeded type=insufficient_quota] | usage_limit_openai | OK
+429 credit exhausted [RateLimitError code=credit_balance_exhausted type=insufficient_quota] | credit_exhausted | OK
+429 legacy insufficient_quota code [RateLimitError code=insufficient_quota type=insufficient_quota] | billing_other | OK
+429 rpm [RateLimitError code=rate_limit_exceeded type=requests] | busy | OK
+429 slow_down [RateLimitError code=slow_down type=rate_limit_error] | busy | OK
+503 overloaded [InternalServerError code=server_is_overloaded type=service_unavailable_error] | overloaded | OK
+403 misalignment [PermissionDeniedError code=misalignment_policy_violation type=invalid_request_error] | safety_stop | OK
+403 cyber_policy (shape guessed) [PermissionDeniedError code=cyber_policy type=invalid_request_error] | safety_stop | OK
+403 region [PermissionDeniedError code=unsupported_country_region_territory type=request_forbidden] | region_not_supported | OK
+401 bad key [AuthenticationError code=invalid_api_key type=invalid_request_error] | config_error | OK
+401 ip allowlist [AuthenticationError code=ip_not_authorized type=invalid_request_error] | config_error | OK
+403 model not allowed in project (shape guessed) [PermissionDeniedError code=model_not_found type=invalid_request_error] | config_error | OK
+400 context too long [BadRequestError code=context_length_exceeded type=invalid_request_error] | bad_request | OK
+400 service_tier [BadRequestError code=None type=invalid_request_error] | config_error | OK
+404 model not found [NotFoundError code=model_not_found type=invalid_request_error] | bad_request | OK
+500 non-JSON body [InternalServerError code=None type=None] | server_error | OK
+APITimeoutError real | timeout | OK
+APIConnectionError real | connection | OK
+SDK _should_retry billing 429, no header | True | info (True = SDK would retry)
+SDK _should_retry billing 429, x-should-retry:false | False | info
+SDK _should_retry Retry-After 121 | False | info
+retry_delay_s Retry-After='3' | 3.1683626512864134 | ok
+retry_delay_s Retry-After='0' | 0.25432475862547654 | ok
+retry_delay_s Retry-After='-5' | -4.8416465742620645 | BUG: invalid sleep value
+retry_delay_s Retry-After='nan' | nan | BUG: invalid sleep value
+retry_delay_s Retry-After='inf' | None | ok
+retry_delay_s Retry-After='Wed, 21 Oct 2015 07:28:00 GMT' | 0.4213531606287664 | ok
+retry_delay_s Retry-After='20' | 20.47138621385613 | ok
+retry_delay_s Retry-After='20.4' | None | ok
+retry_delay_s retry-after-ms=1500 | 1.8888033716533865 | ok
+retry_delay_s misalignment | None | ok
+stream flat error event cyber_policy | ['safety_stop'] | OK
+stream nested error event misalignment (SDK raises) | ['RAISED:safety_stop(code=misalignment_policy_violation)'] | OK
+stream response.failed rate_limit_exceeded AFTER text delta | ['busy'] | DESIGN: returns busy with app_retry=True although output was shown (L5 says don't replay)
+stream incomplete max_output_tokens mid function_call | ['incomplete_max_output_tokens_empty'] | OK
+stream refusal done + completed | ['model_refusal', 'model_refusal'] | OK
+response incomplete content_filter with text | incomplete_content_filter | OK
+completed function_call turn | None | OK
+moderation violence only (war question) | None | OK
+moderation sexual/minors | moderation_flagged | OK
+safety_identifier length | 64 | ok

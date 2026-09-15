@@ -1,0 +1,2060 @@
+{
+ "generated": "2026-09-15",
+ "method": "tiktoken o200k_base locally + POST /v1/responses/input_tokens",
+ "derived": {
+  "tokenizer_matches_o200k_base": true,
+  "api_minus_tiktoken_bare_string": [
+   6
+  ],
+  "api_minus_tiktoken_[user,function_call,function_call_output]": [
+   58
+  ],
+  "api_minus_tiktoken_[developer,user]_chapter": [
+   10
+  ],
+  "same_count_sol_terra_luna": true,
+  "reasoning_effort_changes_count": false,
+  "tools_tokens": 419,
+  "developer_message_tokens_draft": 1188,
+  "developer_message_text_tokens_draft": 1184,
+  "developer_message_overhead": 4,
+  "question_message_tokens": 23,
+  "request1_tokens": 1630,
+  "loop_requests_measured": [
+   1630,
+   3596,
+   6881,
+   9568
+  ],
+  "function_call_args_tokens": {
+   "search": 18,
+   "read5": 35,
+   "read4": 29,
+   "get_toc": 6
+  },
+  "round_overhead_tokens": [
+   22,
+   24,
+   24
+  ],
+  "round_overhead_mean": 23.3,
+  "search_k10_tokens": {
+   "n": 8,
+   "mean": 1820.9,
+   "median": 1815.5,
+   "p90": 1891.0,
+   "min": 1727,
+   "max": 1926,
+   "sum": 14567
+  },
+  "read_pages5_tokens": {
+   "n": 8,
+   "mean": 3191.2,
+   "median": 3124.0,
+   "p90": 3652.5,
+   "min": 2730,
+   "max": 3985,
+   "sum": 25530
+  },
+  "read_pages4_tokens": {
+   "n": 8,
+   "mean": 2510.6,
+   "median": 2537.0,
+   "p90": 2839.4,
+   "min": 1972,
+   "max": 3111,
+   "sum": 20085
+  },
+  "get_toc_tokens": {
+   "mean": 1618.3,
+   "max": 1718
+  },
+  "largest_chapter_api_tokens": {
+   "2020": {
+    "chapter": "제4장 외교지평 확대",
+    "pages": 93,
+    "chars": 82127,
+    "api_total_with_prompt": 56381
+   },
+   "2021": {
+    "chapter": "제4장 지역 외교",
+    "pages": 52,
+    "chars": 47641,
+    "api_total_with_prompt": 33759
+   },
+   "2022": {
+    "chapter": "제3장 인도-태평양 전략과 지역별 협력 네트워크",
+    "pages": 73,
+    "chars": 65754,
+    "api_total_with_prompt": 47515
+   },
+   "2023": {
+    "chapter": "제3장 인도-태평양 전략과 지역별 협력 네트워크",
+    "pages": 108,
+    "chars": 97674,
+    "api_total_with_prompt": 70914
+   },
+   "2024": {
+    "chapter": "제3장 인도-태평양 전략 및 지역별 협력 네트워크",
+    "pages": 102,
+    "chars": 83704,
+    "api_total_with_prompt": 61457
+   },
+   "2025": {
+    "chapter": "제3장 외교다변화를 통한 전략적 지평 확장",
+    "pages": 72,
+    "chars": 62391,
+    "api_total_with_prompt": 45231
+   }
+  },
+  "main_chapters_payload_tokens_by_year": {
+   "2020": 180883,
+   "2021": 135424,
+   "2022": 157724,
+   "2023": 189445,
+   "2024": 177640,
+   "2025": 157691
+  },
+  "chapters_2025": [
+   {
+    "chapter": "제1장",
+    "pages": 21,
+    "payload_tokens": 15609
+   },
+   {
+    "chapter": "제2장",
+    "pages": 25,
+    "payload_tokens": 16979
+   },
+   {
+    "chapter": "제3장",
+    "pages": 72,
+    "payload_tokens": 45058
+   },
+   {
+    "chapter": "제4장",
+    "pages": 40,
+    "payload_tokens": 26283
+   },
+   {
+    "chapter": "제5장",
+    "pages": 59,
+    "payload_tokens": 34992
+   },
+   {
+    "chapter": "제6장",
+    "pages": 24,
+    "payload_tokens": 13768
+   },
+   {
+    "chapter": "제7장",
+    "pages": 7,
+    "payload_tokens": 5002
+   }
+  ]
+ },
+ "local": {
+  "tokenizer": {
+   "library": "tiktoken 0.14.0",
+   "encoding_for_model(gpt-5.6-sol)": "o200k_base",
+   "terra": "o200k_base",
+   "luna": "o200k_base",
+   "note": "tiktoken has no explicit gpt-5.6 entry; it resolves via MODEL_PREFIX_TO_ENCODING['gpt-5']"
+  },
+  "sample50": {
+   "page_ids": [
+    "2024-p006R",
+    "2023-p134L",
+    "2024-p070R",
+    "2020-p115R",
+    "2024-p104L",
+    "2021-p041L",
+    "2020-p114R",
+    "2025-p073L",
+    "2022-p041R",
+    "2024-p090L",
+    "2020-p022L",
+    "2025-p045R",
+    "2022-p118L",
+    "2024-p152R",
+    "2021-p137R",
+    "2020-p144R",
+    "2023-p115L",
+    "2022-p165R",
+    "2024-p085R",
+    "2025-p158R",
+    "2020-p176L",
+    "2020-p046R",
+    "2020-p070R",
+    "2020-p126L",
+    "2020-p170L",
+    "2021-p028R",
+    "2021-p089R",
+    "2024-p014R",
+    "2020-p018L",
+    "2021-p122L",
+    "2024-p101R",
+    "2023-p047L",
+    "2023-p003R",
+    "2024-p019L",
+    "2024-p091R",
+    "2020-p181R",
+    "2023-p042L",
+    "2020-p133L",
+    "2022-p141L",
+    "2022-p008R",
+    "2025-p035R",
+    "2021-p038R",
+    "2022-p020L",
+    "2023-p112R",
+    "2021-p093L",
+    "2020-p147R",
+    "2021-p141L",
+    "2020-p121R",
+    "2024-p160R",
+    "2024-p187L"
+   ],
+   "rows": [
+    {
+     "page_id": "2024-p006R",
+     "chars": 1004,
+     "chars_no_ws": 773,
+     "hangul": 688,
+     "tokens": 644
+    },
+    {
+     "page_id": "2023-p134L",
+     "chars": 726,
+     "chars_no_ws": 570,
+     "hangul": 477,
+     "tokens": 485
+    },
+    {
+     "page_id": "2024-p070R",
+     "chars": 769,
+     "chars_no_ws": 599,
+     "hangul": 479,
+     "tokens": 467
+    },
+    {
+     "page_id": "2020-p115R",
+     "chars": 34,
+     "chars_no_ws": 26,
+     "hangul": 25,
+     "tokens": 20
+    },
+    {
+     "page_id": "2024-p104L",
+     "chars": 1048,
+     "chars_no_ws": 828,
+     "hangul": 589,
+     "tokens": 565
+    },
+    {
+     "page_id": "2021-p041L",
+     "chars": 550,
+     "chars_no_ws": 428,
+     "hangul": 329,
+     "tokens": 365
+    },
+    {
+     "page_id": "2020-p114R",
+     "chars": 1063,
+     "chars_no_ws": 812,
+     "hangul": 707,
+     "tokens": 696
+    },
+    {
+     "page_id": "2025-p073L",
+     "chars": 815,
+     "chars_no_ws": 607,
+     "hangul": 565,
+     "tokens": 494
+    },
+    {
+     "page_id": "2022-p041R",
+     "chars": 956,
+     "chars_no_ws": 739,
+     "hangul": 613,
+     "tokens": 608
+    },
+    {
+     "page_id": "2024-p090L",
+     "chars": 838,
+     "chars_no_ws": 673,
+     "hangul": 486,
+     "tokens": 499
+    },
+    {
+     "page_id": "2020-p022L",
+     "chars": 1045,
+     "chars_no_ws": 793,
+     "hangul": 704,
+     "tokens": 646
+    },
+    {
+     "page_id": "2025-p045R",
+     "chars": 1167,
+     "chars_no_ws": 889,
+     "hangul": 746,
+     "tokens": 710
+    },
+    {
+     "page_id": "2022-p118L",
+     "chars": 716,
+     "chars_no_ws": 557,
+     "hangul": 469,
+     "tokens": 403
+    },
+    {
+     "page_id": "2024-p152R",
+     "chars": 1206,
+     "chars_no_ws": 950,
+     "hangul": 804,
+     "tokens": 761
+    },
+    {
+     "page_id": "2021-p137R",
+     "chars": 1019,
+     "chars_no_ws": 818,
+     "hangul": 525,
+     "tokens": 747
+    },
+    {
+     "page_id": "2020-p144R",
+     "chars": 368,
+     "chars_no_ws": 282,
+     "hangul": 244,
+     "tokens": 195
+    },
+    {
+     "page_id": "2023-p115L",
+     "chars": 811,
+     "chars_no_ws": 635,
+     "hangul": 485,
+     "tokens": 483
+    },
+    {
+     "page_id": "2022-p165R",
+     "chars": 865,
+     "chars_no_ws": 740,
+     "hangul": 455,
+     "tokens": 654
+    },
+    {
+     "page_id": "2024-p085R",
+     "chars": 1255,
+     "chars_no_ws": 968,
+     "hangul": 856,
+     "tokens": 761
+    },
+    {
+     "page_id": "2025-p158R",
+     "chars": 711,
+     "chars_no_ws": 570,
+     "hangul": 381,
+     "tokens": 513
+    },
+    {
+     "page_id": "2020-p176L",
+     "chars": 862,
+     "chars_no_ws": 702,
+     "hangul": 469,
+     "tokens": 649
+    },
+    {
+     "page_id": "2020-p046R",
+     "chars": 1207,
+     "chars_no_ws": 944,
+     "hangul": 767,
+     "tokens": 786
+    },
+    {
+     "page_id": "2020-p070R",
+     "chars": 981,
+     "chars_no_ws": 747,
+     "hangul": 661,
+     "tokens": 600
+    },
+    {
+     "page_id": "2020-p126L",
+     "chars": 1380,
+     "chars_no_ws": 1123,
+     "hangul": 571,
+     "tokens": 925
+    },
+    {
+     "page_id": "2020-p170L",
+     "chars": 947,
+     "chars_no_ws": 748,
+     "hangul": 222,
+     "tokens": 640
+    },
+    {
+     "page_id": "2021-p028R",
+     "chars": 997,
+     "chars_no_ws": 811,
+     "hangul": 484,
+     "tokens": 697
+    },
+    {
+     "page_id": "2021-p089R",
+     "chars": 955,
+     "chars_no_ws": 750,
+     "hangul": 581,
+     "tokens": 532
+    },
+    {
+     "page_id": "2024-p014R",
+     "chars": 942,
+     "chars_no_ws": 725,
+     "hangul": 648,
+     "tokens": 536
+    },
+    {
+     "page_id": "2020-p018L",
+     "chars": 992,
+     "chars_no_ws": 758,
+     "hangul": 710,
+     "tokens": 605
+    },
+    {
+     "page_id": "2021-p122L",
+     "chars": 736,
+     "chars_no_ws": 593,
+     "hangul": 167,
+     "tokens": 517
+    },
+    {
+     "page_id": "2024-p101R",
+     "chars": 727,
+     "chars_no_ws": 589,
+     "hangul": 490,
+     "tokens": 476
+    },
+    {
+     "page_id": "2023-p047L",
+     "chars": 1176,
+     "chars_no_ws": 901,
+     "hangul": 797,
+     "tokens": 704
+    },
+    {
+     "page_id": "2023-p003R",
+     "chars": 398,
+     "chars_no_ws": 289,
+     "hangul": 192,
+     "tokens": 261
+    },
+    {
+     "page_id": "2024-p019L",
+     "chars": 1123,
+     "chars_no_ws": 894,
+     "hangul": 701,
+     "tokens": 683
+    },
+    {
+     "page_id": "2024-p091R",
+     "chars": 1010,
+     "chars_no_ws": 818,
+     "hangul": 621,
+     "tokens": 650
+    },
+    {
+     "page_id": "2020-p181R",
+     "chars": 860,
+     "chars_no_ws": 704,
+     "hangul": 447,
+     "tokens": 639
+    },
+    {
+     "page_id": "2023-p042L",
+     "chars": 992,
+     "chars_no_ws": 793,
+     "hangul": 582,
+     "tokens": 623
+    },
+    {
+     "page_id": "2020-p133L",
+     "chars": 535,
+     "chars_no_ws": 413,
+     "hangul": 383,
+     "tokens": 299
+    },
+    {
+     "page_id": "2022-p141L",
+     "chars": 985,
+     "chars_no_ws": 812,
+     "hangul": 386,
+     "tokens": 697
+    },
+    {
+     "page_id": "2022-p008R",
+     "chars": 1331,
+     "chars_no_ws": 1052,
+     "hangul": 796,
+     "tokens": 860
+    },
+    {
+     "page_id": "2025-p035R",
+     "chars": 701,
+     "chars_no_ws": 545,
+     "hangul": 439,
+     "tokens": 445
+    },
+    {
+     "page_id": "2021-p038R",
+     "chars": 786,
+     "chars_no_ws": 601,
+     "hangul": 513,
+     "tokens": 496
+    },
+    {
+     "page_id": "2022-p020L",
+     "chars": 759,
+     "chars_no_ws": 596,
+     "hangul": 509,
+     "tokens": 443
+    },
+    {
+     "page_id": "2023-p112R",
+     "chars": 1036,
+     "chars_no_ws": 816,
+     "hangul": 572,
+     "tokens": 636
+    },
+    {
+     "page_id": "2021-p093L",
+     "chars": 821,
+     "chars_no_ws": 647,
+     "hangul": 499,
+     "tokens": 524
+    },
+    {
+     "page_id": "2020-p147R",
+     "chars": 290,
+     "chars_no_ws": 235,
+     "hangul": 64,
+     "tokens": 152
+    },
+    {
+     "page_id": "2021-p141L",
+     "chars": 198,
+     "chars_no_ws": 152,
+     "hangul": 100,
+     "tokens": 147
+    },
+    {
+     "page_id": "2020-p121R",
+     "chars": 957,
+     "chars_no_ws": 748,
+     "hangul": 601,
+     "tokens": 582
+    },
+    {
+     "page_id": "2024-p160R",
+     "chars": 391,
+     "chars_no_ws": 325,
+     "hangul": 180,
+     "tokens": 269
+    },
+    {
+     "page_id": "2024-p187L",
+     "chars": 890,
+     "chars_no_ws": 728,
+     "hangul": 459,
+     "tokens": 612
+    }
+   ],
+   "tokens": {
+    "n": 50,
+    "mean": 548.0,
+    "median": 591.0,
+    "p90": 748.4,
+    "min": 20,
+    "max": 925,
+    "sum": 27401
+   },
+   "chars": {
+    "n": 50,
+    "mean": 858.6,
+    "median": 916.0,
+    "p90": 1179.0,
+    "min": 34,
+    "max": 1380,
+    "sum": 42931
+   },
+   "tokens_per_char": 0.6383,
+   "tokens_per_char_no_ws": 0.8103,
+   "chars_per_token": 1.567,
+   "hangul_share": 0.588
+  },
+  "all_citable": {
+   "tokens": {
+    "n": 1979,
+    "mean": 570.0,
+    "median": 584,
+    "p90": 759.2,
+    "min": 20,
+    "max": 1738,
+    "sum": 1128110
+   },
+   "chars": {
+    "n": 1979,
+    "mean": 899.8,
+    "median": 923,
+    "p90": 1224.0,
+    "min": 34,
+    "max": 2392,
+    "sum": 1780680
+   },
+   "tokens_per_char": 0.6335,
+   "tokens_per_char_no_ws": 0.7999,
+   "chars_per_token": 1.578,
+   "hangul_share": 0.593
+  },
+  "hangul_only_tokens_per_syllable": 0.8914,
+  "searches": [
+   {
+    "query": "한미 정상회담",
+    "years": [
+     2023
+    ],
+    "n_hits": 10,
+    "chars_compact": 3514,
+    "tokens_compact": 1926,
+    "tokens_default_json": 2081,
+    "tokens_ascii_escaped": 5550,
+    "tokens_no_score_no_corpus_years": 1859
+   },
+   {
+    "query": "북한 비핵화 협상",
+    "years": null,
+    "n_hits": 10,
+    "chars_compact": 3461,
+    "tokens_compact": 1809,
+    "tokens_default_json": 1962,
+    "tokens_ascii_escaped": 5814,
+    "tokens_no_score_no_corpus_years": 1740
+   },
+   {
+    "query": "강제징용 해법 한일 관계",
+    "years": [
+     2023,
+     2024
+    ],
+    "n_hits": 10,
+    "chars_compact": 3499,
+    "tokens_compact": 1876,
+    "tokens_default_json": 2029,
+    "tokens_ascii_escaped": 5781,
+    "tokens_no_score_no_corpus_years": 1809
+   },
+   {
+    "query": "기후변화 탄소중립 협력",
+    "years": null,
+    "n_hits": 10,
+    "chars_compact": 3543,
+    "tokens_compact": 1822,
+    "tokens_default_json": 1978,
+    "tokens_ascii_escaped": 5655,
+    "tokens_no_score_no_corpus_years": 1754
+   },
+   {
+    "query": "재외국민 보호 영사 서비스",
+    "years": [
+     2022
+    ],
+    "n_hits": 10,
+    "chars_compact": 3428,
+    "tokens_compact": 1785,
+    "tokens_default_json": 1937,
+    "tokens_ascii_escaped": 5695,
+    "tokens_no_score_no_corpus_years": 1724
+   },
+   {
+    "query": "공적개발원조 ODA 규모",
+    "years": [
+     2020,
+     2021,
+     2022,
+     2023,
+     2024,
+     2025
+    ],
+    "n_hits": 10,
+    "chars_compact": 3558,
+    "tokens_compact": 1727,
+    "tokens_default_json": 1883,
+    "tokens_ascii_escaped": 5073,
+    "tokens_no_score_no_corpus_years": 1659
+   },
+   {
+    "query": "인도태평양 전략",
+    "years": [
+     2022,
+     2023
+    ],
+    "n_hits": 10,
+    "chars_compact": 3461,
+    "tokens_compact": 1836,
+    "tokens_default_json": 1986,
+    "tokens_ascii_escaped": 5605,
+    "tokens_no_score_no_corpus_years": 1768
+   },
+   {
+    "query": "우크라이나 인도적 지원",
+    "years": [
+     2024
+    ],
+    "n_hits": 10,
+    "chars_compact": 3489,
+    "tokens_compact": 1786,
+    "tokens_default_json": 1942,
+    "tokens_ascii_escaped": 5598,
+    "tokens_no_score_no_corpus_years": 1718
+   }
+  ],
+  "search_tokens_compact": {
+   "n": 8,
+   "mean": 1820.9,
+   "median": 1815.5,
+   "p90": 1891.0,
+   "min": 1727,
+   "max": 1926,
+   "sum": 14567
+  },
+  "reads": [
+   {
+    "query": "한미 정상회담",
+    "n_pages": 5,
+    "chars_compact": 5308,
+    "tokens_compact": 3226,
+    "tokens_ascii_escaped": 10236,
+    "text_tokens_only": 2770
+   },
+   {
+    "query": "한미 정상회담",
+    "n_pages": 4,
+    "chars_compact": 4430,
+    "tokens_compact": 2634,
+    "tokens_ascii_escaped": 9072,
+    "text_tokens_only": 2264
+   },
+   {
+    "query": "북한 비핵화 협상",
+    "n_pages": 5,
+    "chars_compact": 5165,
+    "tokens_compact": 3022,
+    "tokens_ascii_escaped": 11282,
+    "text_tokens_only": 2607
+   },
+   {
+    "query": "북한 비핵화 협상",
+    "n_pages": 4,
+    "chars_compact": 4323,
+    "tokens_compact": 2480,
+    "tokens_ascii_escaped": 9611,
+    "text_tokens_only": 2150
+   },
+   {
+    "query": "강제징용 해법 한일 관계",
+    "n_pages": 5,
+    "chars_compact": 6779,
+    "tokens_compact": 3985,
+    "tokens_ascii_escaped": 15302,
+    "text_tokens_only": 3526
+   },
+   {
+    "query": "강제징용 해법 한일 관계",
+    "n_pages": 4,
+    "chars_compact": 4577,
+    "tokens_compact": 2723,
+    "tokens_ascii_escaped": 9466,
+    "text_tokens_only": 2386
+   },
+   {
+    "query": "기후변화 탄소중립 협력",
+    "n_pages": 5,
+    "chars_compact": 5117,
+    "tokens_compact": 2797,
+    "tokens_ascii_escaped": 10002,
+    "text_tokens_only": 2357
+   },
+   {
+    "query": "기후변화 탄소중립 협력",
+    "n_pages": 4,
+    "chars_compact": 5308,
+    "tokens_compact": 3111,
+    "tokens_ascii_escaped": 11262,
+    "text_tokens_only": 2754
+   },
+   {
+    "query": "재외국민 보호 영사 서비스",
+    "n_pages": 5,
+    "chars_compact": 4755,
+    "tokens_compact": 2784,
+    "tokens_ascii_escaped": 10153,
+    "text_tokens_only": 2397
+   },
+   {
+    "query": "재외국민 보호 영사 서비스",
+    "n_pages": 4,
+    "chars_compact": 4109,
+    "tokens_compact": 2377,
+    "tokens_ascii_escaped": 8693,
+    "text_tokens_only": 2071
+   },
+   {
+    "query": "공적개발원조 ODA 규모",
+    "n_pages": 5,
+    "chars_compact": 6579,
+    "tokens_compact": 3510,
+    "tokens_ascii_escaped": 10540,
+    "text_tokens_only": 3078
+   },
+   {
+    "query": "공적개발원조 ODA 규모",
+    "n_pages": 4,
+    "chars_compact": 4313,
+    "tokens_compact": 2194,
+    "tokens_ascii_escaped": 7958,
+    "text_tokens_only": 1855
+   },
+   {
+    "query": "인도태평양 전략",
+    "n_pages": 5,
+    "chars_compact": 4751,
+    "tokens_compact": 2730,
+    "tokens_ascii_escaped": 9655,
+    "text_tokens_only": 2318
+   },
+   {
+    "query": "인도태평양 전략",
+    "n_pages": 4,
+    "chars_compact": 3594,
+    "tokens_compact": 1972,
+    "tokens_ascii_escaped": 6424,
+    "text_tokens_only": 1636
+   },
+   {
+    "query": "우크라이나 인도적 지원",
+    "n_pages": 5,
+    "chars_compact": 6064,
+    "tokens_compact": 3476,
+    "tokens_ascii_escaped": 13035,
+    "text_tokens_only": 3065
+   },
+   {
+    "query": "우크라이나 인도적 지원",
+    "n_pages": 4,
+    "chars_compact": 4673,
+    "tokens_compact": 2594,
+    "tokens_ascii_escaped": 9472,
+    "text_tokens_only": 2253
+   }
+  ],
+  "read5_tokens_compact": {
+   "n": 8,
+   "mean": 3191.2,
+   "median": 3124.0,
+   "p90": 3652.5,
+   "min": 2730,
+   "max": 3985,
+   "sum": 25530
+  },
+  "read4_tokens_compact": {
+   "n": 8,
+   "mean": 2510.6,
+   "median": 2537.0,
+   "p90": 2839.4,
+   "min": 1972,
+   "max": 3111,
+   "sum": 20085
+  },
+  "tocs": [
+   {
+    "year": 2020,
+    "tokens_compact": 1718
+   },
+   {
+    "year": 2021,
+    "tokens_compact": 1591
+   },
+   {
+    "year": 2022,
+    "tokens_compact": 1616
+   },
+   {
+    "year": 2023,
+    "tokens_compact": 1554
+   },
+   {
+    "year": 2024,
+    "tokens_compact": 1564
+   },
+   {
+    "year": 2025,
+    "tokens_compact": 1667
+   }
+  ],
+  "chapters": [
+   {
+    "year": 2020,
+    "chapter": "제4장 외교지평 확대",
+    "n_pages": 93,
+    "chars": 82127,
+    "chars_no_ws": 64015,
+    "tokens_payload_compact": 56208,
+    "tokens_text_only": 49706,
+    "appendix_pages": 54,
+    "appendix_chars": 45599
+   },
+   {
+    "year": 2021,
+    "chapter": "제4장 지역 외교",
+    "n_pages": 52,
+    "chars": 47641,
+    "chars_no_ws": 37089,
+    "tokens_payload_compact": 33586,
+    "tokens_text_only": 29762,
+    "appendix_pages": 51,
+    "appendix_chars": 48876
+   },
+   {
+    "year": 2022,
+    "chapter": "제3장 인도-태평양 전략과 지역별 협력 네트워크",
+    "n_pages": 73,
+    "chars": 65754,
+    "chars_no_ws": 51217,
+    "tokens_payload_compact": 47342,
+    "tokens_text_only": 41058,
+    "appendix_pages": 72,
+    "appendix_chars": 59042
+   },
+   {
+    "year": 2023,
+    "chapter": "제3장 인도-태평양 전략과 지역별 협력 네트워크",
+    "n_pages": 108,
+    "chars": 97674,
+    "chars_no_ws": 76669,
+    "tokens_payload_compact": 70741,
+    "tokens_text_only": 61406,
+    "appendix_pages": 78,
+    "appendix_chars": 66787
+   },
+   {
+    "year": 2024,
+    "chapter": "제3장 인도-태평양 전략 및 지역별 협력 네트워크",
+    "n_pages": 102,
+    "chars": 83704,
+    "chars_no_ws": 65670,
+    "tokens_payload_compact": 61284,
+    "tokens_text_only": 52584,
+    "appendix_pages": 74,
+    "appendix_chars": 65516
+   },
+   {
+    "year": 2025,
+    "chapter": "제3장 외교다변화를 통한 전략적 지평 확장",
+    "n_pages": 72,
+    "chars": 62391,
+    "chars_no_ws": 48795,
+    "tokens_payload_compact": 45058,
+    "tokens_text_only": 39048,
+    "appendix_pages": 64,
+    "appendix_chars": 50331
+   }
+  ],
+  "assets": {
+   "system_prompt_tokens_text": 1184,
+   "system_prompt_chars": 2103,
+   "tools_json_tokens_text": 551,
+   "question_tokens_text": 17,
+   "summary_prompt_tokens_text": 163
+  }
+ },
+ "api": {
+  "calls_made": 42,
+  "call_cap": 60,
+  "generation_calls": 0,
+  "endpoint": "POST /v1/responses/input_tokens",
+  "results": {
+   "base_str_ga": 7,
+   "pages10": [
+    {
+     "page_id": "2020-p115R",
+     "chars": 34,
+     "tiktoken": 20,
+     "api": 26
+    },
+    {
+     "page_id": "2024-p160R",
+     "chars": 391,
+     "tiktoken": 269,
+     "api": 275
+    },
+    {
+     "page_id": "2025-p035R",
+     "chars": 701,
+     "tiktoken": 445,
+     "api": 451
+    },
+    {
+     "page_id": "2025-p073L",
+     "chars": 815,
+     "tiktoken": 494,
+     "api": 500
+    },
+    {
+     "page_id": "2021-p093L",
+     "chars": 821,
+     "tiktoken": 524,
+     "api": 530
+    },
+    {
+     "page_id": "2020-p070R",
+     "chars": 981,
+     "tiktoken": 600,
+     "api": 606
+    },
+    {
+     "page_id": "2023-p112R",
+     "chars": 1036,
+     "tiktoken": 636,
+     "api": 642
+    },
+    {
+     "page_id": "2020-p176L",
+     "chars": 862,
+     "tiktoken": 649,
+     "api": 655
+    },
+    {
+     "page_id": "2023-p047L",
+     "chars": 1176,
+     "tiktoken": 704,
+     "api": 710
+    },
+    {
+     "page_id": "2020-p126L",
+     "chars": 1380,
+     "tiktoken": 925,
+     "api": 931
+    }
+   ],
+   "joined50": {
+    "tiktoken": 27428,
+    "chars": 43029,
+    "gpt-5.6-sol": 27434,
+    "gpt-5.6-terra": 27434,
+    "gpt-5.6-luna": 27434
+   },
+   "q_only": 23,
+   "q_as_msg": 23,
+   "instr_plus_q": 1211,
+   "dev_plus_q": 1211,
+   "tools_plus_q": 442,
+   "req1": 1630,
+   "req1_effort_low": 1630,
+   "req1_effort_high": 1630,
+   "req2": 3596,
+   "req3": 6881,
+   "req4": 9568,
+   "loop_payload_tiktoken": {
+    "search": 1926,
+    "read5": 3226,
+    "read4": 2634
+   },
+   "fc_base": null,
+   "search_outputs": [
+    {
+     "query": "한미 정상회담",
+     "tiktoken": 1926,
+     "api_total": 1984
+    },
+    {
+     "query": "북한 비핵화 협상",
+     "tiktoken": 1809,
+     "api_total": 1867
+    },
+    {
+     "query": "강제징용 해법 한일 관계",
+     "tiktoken": 1876,
+     "api_total": 1934
+    },
+    {
+     "query": "기후변화 탄소중립 협력",
+     "tiktoken": 1822,
+     "api_total": 1880
+    }
+   ],
+   "search_output_ascii_escaped": {
+    "tiktoken": 5550,
+    "api_total": 5608
+   },
+   "read_outputs": [
+    {
+     "query": "한미 정상회담",
+     "n_pages": 5,
+     "tiktoken": 3226,
+     "api_total": 3284
+    },
+    {
+     "query": "북한 비핵화 협상",
+     "n_pages": 5,
+     "tiktoken": 3022,
+     "api_total": 3080
+    },
+    {
+     "query": "강제징용 해법 한일 관계",
+     "n_pages": 5,
+     "tiktoken": 3985,
+     "api_total": 4043
+    },
+    {
+     "query": "한미 정상회담",
+     "n_pages": 4,
+     "tiktoken": 2634,
+     "api_total": 2692
+    }
+   ],
+   "toc2023_output": {
+    "tiktoken": 1554,
+    "api_total": 1612
+   },
+   "chapters": [
+    {
+     "year": 2020,
+     "chapter": "제4장 외교지평 확대",
+     "n_pages": 93,
+     "chars": 82127,
+     "tiktoken_body": 56208,
+     "tiktoken_prompt": 163,
+     "api_total": 56381
+    },
+    {
+     "year": 2021,
+     "chapter": "제4장 지역 외교",
+     "n_pages": 52,
+     "chars": 47641,
+     "tiktoken_body": 33586,
+     "tiktoken_prompt": 163,
+     "api_total": 33759
+    },
+    {
+     "year": 2022,
+     "chapter": "제3장 인도-태평양 전략과 지역별 협력 네트워크",
+     "n_pages": 73,
+     "chars": 65754,
+     "tiktoken_body": 47342,
+     "tiktoken_prompt": 163,
+     "api_total": 47515
+    },
+    {
+     "year": 2023,
+     "chapter": "제3장 인도-태평양 전략과 지역별 협력 네트워크",
+     "n_pages": 108,
+     "chars": 97674,
+     "tiktoken_body": 70741,
+     "tiktoken_prompt": 163,
+     "api_total": 70914
+    },
+    {
+     "year": 2024,
+     "chapter": "제3장 인도-태평양 전략 및 지역별 협력 네트워크",
+     "n_pages": 102,
+     "chars": 83704,
+     "tiktoken_body": 61284,
+     "tiktoken_prompt": 163,
+     "api_total": 61457
+    },
+    {
+     "year": 2025,
+     "chapter": "제3장 외교다변화를 통한 전략적 지평 확장",
+     "n_pages": 72,
+     "chars": 62391,
+     "tiktoken_body": 45058,
+     "tiktoken_prompt": 163,
+     "api_total": 45231
+    }
+   ]
+  },
+  "log": [
+   {
+    "i": 1,
+    "purpose": "A base: input='가'",
+    "model": "gpt-5.6-sol",
+    "local_text_tokens": 1,
+    "input_tokens": 7,
+    "object": "response.input_tokens",
+    "seconds": 7.71
+   },
+   {
+    "i": 2,
+    "purpose": "B page 2020-p115R",
+    "model": "gpt-5.6-sol",
+    "local_text_tokens": 20,
+    "input_tokens": 26,
+    "object": "response.input_tokens",
+    "seconds": 0.49
+   },
+   {
+    "i": 3,
+    "purpose": "B page 2024-p160R",
+    "model": "gpt-5.6-sol",
+    "local_text_tokens": 269,
+    "input_tokens": 275,
+    "object": "response.input_tokens",
+    "seconds": 0.37
+   },
+   {
+    "i": 4,
+    "purpose": "B page 2025-p035R",
+    "model": "gpt-5.6-sol",
+    "local_text_tokens": 445,
+    "input_tokens": 451,
+    "object": "response.input_tokens",
+    "seconds": 0.51
+   },
+   {
+    "i": 5,
+    "purpose": "B page 2025-p073L",
+    "model": "gpt-5.6-sol",
+    "local_text_tokens": 494,
+    "input_tokens": 500,
+    "object": "response.input_tokens",
+    "seconds": 0.29
+   },
+   {
+    "i": 6,
+    "purpose": "B page 2021-p093L",
+    "model": "gpt-5.6-sol",
+    "local_text_tokens": 524,
+    "input_tokens": 530,
+    "object": "response.input_tokens",
+    "seconds": 0.58
+   },
+   {
+    "i": 7,
+    "purpose": "B page 2020-p070R",
+    "model": "gpt-5.6-sol",
+    "local_text_tokens": 600,
+    "input_tokens": 606,
+    "object": "response.input_tokens",
+    "seconds": 0.34
+   },
+   {
+    "i": 8,
+    "purpose": "B page 2023-p112R",
+    "model": "gpt-5.6-sol",
+    "local_text_tokens": 636,
+    "input_tokens": 642,
+    "object": "response.input_tokens",
+    "seconds": 0.39
+   },
+   {
+    "i": 9,
+    "purpose": "B page 2020-p176L",
+    "model": "gpt-5.6-sol",
+    "local_text_tokens": 649,
+    "input_tokens": 655,
+    "object": "response.input_tokens",
+    "seconds": 0.26
+   },
+   {
+    "i": 10,
+    "purpose": "B page 2023-p047L",
+    "model": "gpt-5.6-sol",
+    "local_text_tokens": 704,
+    "input_tokens": 710,
+    "object": "response.input_tokens",
+    "seconds": 0.29
+   },
+   {
+    "i": 11,
+    "purpose": "B page 2020-p126L",
+    "model": "gpt-5.6-sol",
+    "local_text_tokens": 925,
+    "input_tokens": 931,
+    "object": "response.input_tokens",
+    "seconds": 0.41
+   },
+   {
+    "i": 12,
+    "purpose": "B/C sample50 joined",
+    "model": "gpt-5.6-sol",
+    "local_text_tokens": 27428,
+    "input_tokens": 27434,
+    "object": "response.input_tokens",
+    "seconds": 0.54
+   },
+   {
+    "i": 13,
+    "purpose": "B/C sample50 joined",
+    "model": "gpt-5.6-terra",
+    "local_text_tokens": 27428,
+    "input_tokens": 27434,
+    "object": "response.input_tokens",
+    "seconds": 0.28
+   },
+   {
+    "i": 14,
+    "purpose": "B/C sample50 joined",
+    "model": "gpt-5.6-luna",
+    "local_text_tokens": 27428,
+    "input_tokens": 27434,
+    "object": "response.input_tokens",
+    "seconds": 0.31
+   },
+   {
+    "i": 15,
+    "purpose": "D question only",
+    "model": "gpt-5.6-sol",
+    "local_text_tokens": 17,
+    "input_tokens": 23,
+    "object": "response.input_tokens",
+    "seconds": 0.28
+   },
+   {
+    "i": 16,
+    "purpose": "D question as user message",
+    "model": "gpt-5.6-sol",
+    "local_text_tokens": 17,
+    "input_tokens": 23,
+    "object": "response.input_tokens",
+    "seconds": 0.28
+   },
+   {
+    "i": 17,
+    "purpose": "D instructions=system + question",
+    "model": "gpt-5.6-sol",
+    "local_text_tokens": 1201,
+    "input_tokens": 1211,
+    "object": "response.input_tokens",
+    "seconds": 0.25
+   },
+   {
+    "i": 18,
+    "purpose": "D developer msg + user msg",
+    "model": "gpt-5.6-sol",
+    "local_text_tokens": 1201,
+    "input_tokens": 1211,
+    "object": "response.input_tokens",
+    "seconds": 0.49
+   },
+   {
+    "i": 19,
+    "purpose": "D tools + question",
+    "model": "gpt-5.6-sol",
+    "local_text_tokens": 17,
+    "input_tokens": 442,
+    "object": "response.input_tokens",
+    "seconds": 0.65
+   },
+   {
+    "i": 20,
+    "purpose": "D request1 = tools + dev + user",
+    "model": "gpt-5.6-sol",
+    "local_text_tokens": null,
+    "input_tokens": 1630,
+    "object": "response.input_tokens",
+    "seconds": 0.33
+   },
+   {
+    "i": 21,
+    "purpose": "D request1 reasoning.effort=low",
+    "model": "gpt-5.6-sol",
+    "local_text_tokens": null,
+    "input_tokens": 1630,
+    "object": "response.input_tokens",
+    "seconds": 0.31
+   },
+   {
+    "i": 22,
+    "purpose": "D request1 reasoning.effort=high",
+    "model": "gpt-5.6-sol",
+    "local_text_tokens": null,
+    "input_tokens": 1630,
+    "object": "response.input_tokens",
+    "seconds": 0.59
+   },
+   {
+    "i": 23,
+    "purpose": "E request2 = req1 + search call/output",
+    "model": "gpt-5.6-sol",
+    "local_text_tokens": 1926,
+    "input_tokens": 3596,
+    "object": "response.input_tokens",
+    "seconds": 0.4
+   },
+   {
+    "i": 24,
+    "purpose": "E request3 = req2 + read_pages(5) call/output",
+    "model": "gpt-5.6-sol",
+    "local_text_tokens": 3226,
+    "input_tokens": 6881,
+    "object": "response.input_tokens",
+    "seconds": 0.31
+   },
+   {
+    "i": 25,
+    "purpose": "E request4 = req3 + read_pages(4) call/output",
+    "model": "gpt-5.6-sol",
+    "local_text_tokens": 2634,
+    "input_tokens": 9568,
+    "object": "response.input_tokens",
+    "seconds": 0.4
+   },
+   {
+    "i": 26,
+    "purpose": "F base: user + function_call",
+    "model": "gpt-5.6-sol",
+    "local_text_tokens": null,
+    "error": "BadRequestError: Error code: 400 - {'error': {'message': 'No tool output found for function call c.', 'type': 'invalid_request_error', 'param': 'input', 'code': None}}",
+    "seconds": 0.22
+   },
+   {
+    "i": 27,
+    "purpose": "F search output '한미 정상회담'",
+    "model": "gpt-5.6-sol",
+    "local_text_tokens": 1926,
+    "input_tokens": 1984,
+    "object": "response.input_tokens",
+    "seconds": 0.31
+   },
+   {
+    "i": 28,
+    "purpose": "F search output '북한 비핵화 협상'",
+    "model": "gpt-5.6-sol",
+    "local_text_tokens": 1809,
+    "input_tokens": 1867,
+    "object": "response.input_tokens",
+    "seconds": 0.28
+   },
+   {
+    "i": 29,
+    "purpose": "F search output '강제징용 해법 한일 관계'",
+    "model": "gpt-5.6-sol",
+    "local_text_tokens": 1876,
+    "input_tokens": 1934,
+    "object": "response.input_tokens",
+    "seconds": 0.25
+   },
+   {
+    "i": 30,
+    "purpose": "F search output '기후변화 탄소중립 협력'",
+    "model": "gpt-5.6-sol",
+    "local_text_tokens": 1822,
+    "input_tokens": 1880,
+    "object": "response.input_tokens",
+    "seconds": 0.26
+   },
+   {
+    "i": 31,
+    "purpose": "F search output ASCII-escaped JSON",
+    "model": "gpt-5.6-sol",
+    "local_text_tokens": 5550,
+    "input_tokens": 5608,
+    "object": "response.input_tokens",
+    "seconds": 0.29
+   },
+   {
+    "i": 32,
+    "purpose": "G read_pages(5) output '한미 정상회담'",
+    "model": "gpt-5.6-sol",
+    "local_text_tokens": 3226,
+    "input_tokens": 3284,
+    "object": "response.input_tokens",
+    "seconds": 0.26
+   },
+   {
+    "i": 33,
+    "purpose": "G read_pages(5) output '북한 비핵화 협상'",
+    "model": "gpt-5.6-sol",
+    "local_text_tokens": 3022,
+    "input_tokens": 3080,
+    "object": "response.input_tokens",
+    "seconds": 0.28
+   },
+   {
+    "i": 34,
+    "purpose": "G read_pages(5) output '강제징용 해법 한일 관계'",
+    "model": "gpt-5.6-sol",
+    "local_text_tokens": 3985,
+    "input_tokens": 4043,
+    "object": "response.input_tokens",
+    "seconds": 0.3
+   },
+   {
+    "i": 35,
+    "purpose": "G read_pages(4) output '한미 정상회담'",
+    "model": "gpt-5.6-sol",
+    "local_text_tokens": 2634,
+    "input_tokens": 2692,
+    "object": "response.input_tokens",
+    "seconds": 0.26
+   },
+   {
+    "i": 36,
+    "purpose": "G get_toc(2023) output",
+    "model": "gpt-5.6-sol",
+    "local_text_tokens": 1554,
+    "input_tokens": 1612,
+    "object": "response.input_tokens",
+    "seconds": 0.27
+   },
+   {
+    "i": 37,
+    "purpose": "H chapter 2020 제4장 외교지평 확대",
+    "model": "gpt-5.6-sol",
+    "local_text_tokens": 56208,
+    "input_tokens": 56381,
+    "object": "response.input_tokens",
+    "seconds": 0.3
+   },
+   {
+    "i": 38,
+    "purpose": "H chapter 2021 제4장 지역 외교",
+    "model": "gpt-5.6-sol",
+    "local_text_tokens": 33586,
+    "input_tokens": 33759,
+    "object": "response.input_tokens",
+    "seconds": 0.87
+   },
+   {
+    "i": 39,
+    "purpose": "H chapter 2022 제3장 인도-태평양 전략과 지역별 협력 네트워크",
+    "model": "gpt-5.6-sol",
+    "local_text_tokens": 47342,
+    "input_tokens": 47515,
+    "object": "response.input_tokens",
+    "seconds": 0.3
+   },
+   {
+    "i": 40,
+    "purpose": "H chapter 2023 제3장 인도-태평양 전략과 지역별 협력 네트워크",
+    "model": "gpt-5.6-sol",
+    "local_text_tokens": 70741,
+    "input_tokens": 70914,
+    "object": "response.input_tokens",
+    "seconds": 0.32
+   },
+   {
+    "i": 41,
+    "purpose": "H chapter 2024 제3장 인도-태평양 전략 및 지역별 협력 네트워크",
+    "model": "gpt-5.6-sol",
+    "local_text_tokens": 61284,
+    "input_tokens": 61457,
+    "object": "response.input_tokens",
+    "seconds": 0.29
+   },
+   {
+    "i": 42,
+    "purpose": "H chapter 2025 제3장 외교다변화를 통한 전략적 지평 확장",
+    "model": "gpt-5.6-sol",
+    "local_text_tokens": 45058,
+    "input_tokens": 45231,
+    "object": "response.input_tokens",
+    "seconds": 0.35
+   }
+  ]
+ },
+ "chapters_all": [
+  {
+   "year": 2020,
+   "chapter_label": "(장 없음)",
+   "chapter": null,
+   "is_appendix": false,
+   "n_pages": 4,
+   "chars": 2666,
+   "tokens_payload": 1920
+  },
+  {
+   "year": 2020,
+   "chapter_label": "부록",
+   "chapter": "부록",
+   "is_appendix": true,
+   "n_pages": 54,
+   "chars": 45599,
+   "tokens_payload": 38230
+  },
+  {
+   "year": 2020,
+   "chapter_label": "제1장",
+   "chapter": "제1장 2020년 국제 정세 및 외교정책 기조",
+   "is_appendix": false,
+   "n_pages": 18,
+   "chars": 17791,
+   "tokens_payload": 11934
+  },
+  {
+   "year": 2020,
+   "chapter_label": "제2장",
+   "chapter": "제2장 코로나19 대응을 위한 외교 전개",
+   "is_appendix": false,
+   "n_pages": 26,
+   "chars": 23183,
+   "tokens_payload": 16342
+  },
+  {
+   "year": 2020,
+   "chapter_label": "제3장",
+   "chapter": "제3장 한반도 평화와 역내 협력 증진",
+   "is_appendix": false,
+   "n_pages": 38,
+   "chars": 37154,
+   "tokens_payload": 25118
+  },
+  {
+   "year": 2020,
+   "chapter_label": "제4장",
+   "chapter": "제4장 외교지평 확대",
+   "is_appendix": false,
+   "n_pages": 93,
+   "chars": 82127,
+   "tokens_payload": 56208
+  },
+  {
+   "year": 2020,
+   "chapter_label": "제5장",
+   "chapter": "제5장 경제외교 강화 및 뉴프런티어 외교 추진",
+   "is_appendix": false,
+   "n_pages": 30,
+   "chars": 27781,
+   "tokens_payload": 18421
+  },
+  {
+   "year": 2020,
+   "chapter_label": "제6장",
+   "chapter": "제6장 국제사회 내 역할 확대 및 위상 제고",
+   "is_appendix": false,
+   "n_pages": 35,
+   "chars": 31376,
+   "tokens_payload": 20948
+  },
+  {
+   "year": 2020,
+   "chapter_label": "제7장",
+   "chapter": "제7장 국민과 함께하는 외교",
+   "is_appendix": false,
+   "n_pages": 46,
+   "chars": 36944,
+   "tokens_payload": 25785
+  },
+  {
+   "year": 2020,
+   "chapter_label": "제8장",
+   "chapter": "제8장 혁신을 통한 외교 역량 강화",
+   "is_appendix": false,
+   "n_pages": 10,
+   "chars": 8358,
+   "tokens_payload": 6127
+  },
+  {
+   "year": 2021,
+   "chapter_label": "(장 없음)",
+   "chapter": null,
+   "is_appendix": false,
+   "n_pages": 2,
+   "chars": 1049,
+   "tokens_payload": 840
+  },
+  {
+   "year": 2021,
+   "chapter_label": "부록",
+   "chapter": "부록",
+   "is_appendix": true,
+   "n_pages": 51,
+   "chars": 48876,
+   "tokens_payload": 40878
+  },
+  {
+   "year": 2021,
+   "chapter_label": "제1장",
+   "chapter": "제1장 2021년 국제정세",
+   "is_appendix": false,
+   "n_pages": 14,
+   "chars": 15973,
+   "tokens_payload": 10705
+  },
+  {
+   "year": 2021,
+   "chapter_label": "제2장",
+   "chapter": "제2장 코로나19 극복을 위한 외교",
+   "is_appendix": false,
+   "n_pages": 10,
+   "chars": 8552,
+   "tokens_payload": 5950
+  },
+  {
+   "year": 2021,
+   "chapter_label": "제3장",
+   "chapter": "제3장 한반도 평화와 역내 협력",
+   "is_appendix": false,
+   "n_pages": 24,
+   "chars": 22381,
+   "tokens_payload": 16344
+  },
+  {
+   "year": 2021,
+   "chapter_label": "제4장",
+   "chapter": "제4장 지역 외교",
+   "is_appendix": false,
+   "n_pages": 52,
+   "chars": 47641,
+   "tokens_payload": 33586
+  },
+  {
+   "year": 2021,
+   "chapter_label": "제5장",
+   "chapter": "제5장 경제-안보-기술 융합외교",
+   "is_appendix": false,
+   "n_pages": 29,
+   "chars": 29320,
+   "tokens_payload": 19960
+  },
+  {
+   "year": 2021,
+   "chapter_label": "제6장",
+   "chapter": "제6장 다자외교 및 개발협력",
+   "is_appendix": false,
+   "n_pages": 31,
+   "chars": 31494,
+   "tokens_payload": 20927
+  },
+  {
+   "year": 2021,
+   "chapter_label": "제7장",
+   "chapter": "제7장 국민과 함께하는 외교",
+   "is_appendix": false,
+   "n_pages": 35,
+   "chars": 32650,
+   "tokens_payload": 22854
+  },
+  {
+   "year": 2021,
+   "chapter_label": "제8장",
+   "chapter": "제8장 외교역량 강화 노력",
+   "is_appendix": false,
+   "n_pages": 8,
+   "chars": 7184,
+   "tokens_payload": 5098
+  },
+  {
+   "year": 2022,
+   "chapter_label": "(장 없음)",
+   "chapter": null,
+   "is_appendix": false,
+   "n_pages": 4,
+   "chars": 2931,
+   "tokens_payload": 2083
+  },
+  {
+   "year": 2022,
+   "chapter_label": "부록",
+   "chapter": "부록",
+   "is_appendix": true,
+   "n_pages": 72,
+   "chars": 59042,
+   "tokens_payload": 50350
+  },
+  {
+   "year": 2022,
+   "chapter_label": "제1장",
+   "chapter": "제1장 2022년 국제정세 및 외교정책 기조",
+   "is_appendix": false,
+   "n_pages": 22,
+   "chars": 22194,
+   "tokens_payload": 15388
+  },
+  {
+   "year": 2022,
+   "chapter_label": "제2장",
+   "chapter": "제2장 한반도의 자유·평화·번영과 역내 협력",
+   "is_appendix": false,
+   "n_pages": 31,
+   "chars": 28685,
+   "tokens_payload": 20989
+  },
+  {
+   "year": 2022,
+   "chapter_label": "제3장",
+   "chapter": "제3장 인도-태평양 전략과 지역별 협력 네트워크",
+   "is_appendix": false,
+   "n_pages": 73,
+   "chars": 65754,
+   "tokens_payload": 47342
+  },
+  {
+   "year": 2022,
+   "chapter_label": "제4장",
+   "chapter": "제4장 경제안보 및 과학기술외교",
+   "is_appendix": false,
+   "n_pages": 36,
+   "chars": 34197,
+   "tokens_payload": 23443
+  },
+  {
+   "year": 2022,
+   "chapter_label": "제5장",
+   "chapter": "제5장 국격에 걸맞은 글로벌 중추국가 역할 강화",
+   "is_appendix": false,
+   "n_pages": 51,
+   "chars": 45299,
+   "tokens_payload": 30669
+  },
+  {
+   "year": 2022,
+   "chapter_label": "제6장",
+   "chapter": "제6장 국민과 함께하는 외교",
+   "is_appendix": false,
+   "n_pages": 26,
+   "chars": 21675,
+   "tokens_payload": 15307
+  },
+  {
+   "year": 2022,
+   "chapter_label": "제7장",
+   "chapter": "제7장 외교인프라 및 역량 강화 노력",
+   "is_appendix": false,
+   "n_pages": 7,
+   "chars": 6310,
+   "tokens_payload": 4586
+  },
+  {
+   "year": 2023,
+   "chapter_label": "(장 없음)",
+   "chapter": null,
+   "is_appendix": false,
+   "n_pages": 4,
+   "chars": 3158,
+   "tokens_payload": 2282
+  },
+  {
+   "year": 2023,
+   "chapter_label": "부록",
+   "chapter": "부록",
+   "is_appendix": true,
+   "n_pages": 78,
+   "chars": 66787,
+   "tokens_payload": 56055
+  },
+  {
+   "year": 2023,
+   "chapter_label": "제1장",
+   "chapter": "제1장 2023년 국제정세 및 외교정책 기조",
+   "is_appendix": false,
+   "n_pages": 23,
+   "chars": 25600,
+   "tokens_payload": 17741
+  },
+  {
+   "year": 2023,
+   "chapter_label": "제2장",
+   "chapter": "제2장 한반도의 자유·평화·번영과 역내 협력",
+   "is_appendix": false,
+   "n_pages": 31,
+   "chars": 28384,
+   "tokens_payload": 20984
+  },
+  {
+   "year": 2023,
+   "chapter_label": "제3장",
+   "chapter": "제3장 인도-태평양 전략과 지역별 협력 네트워크",
+   "is_appendix": false,
+   "n_pages": 108,
+   "chars": 97674,
+   "tokens_payload": 70741
+  },
+  {
+   "year": 2023,
+   "chapter_label": "제4장",
+   "chapter": "제4장 경제안보 및 과학기술 외교",
+   "is_appendix": false,
+   "n_pages": 41,
+   "chars": 39796,
+   "tokens_payload": 27258
+  },
+  {
+   "year": 2023,
+   "chapter_label": "제5장",
+   "chapter": "제5장 국격에 걸맞은 글로벌 중추국가 역할 강화",
+   "is_appendix": false,
+   "n_pages": 57,
+   "chars": 50152,
+   "tokens_payload": 33954
+  },
+  {
+   "year": 2023,
+   "chapter_label": "제6장",
+   "chapter": "제6장 국민과 함께하는 외교",
+   "is_appendix": false,
+   "n_pages": 24,
+   "chars": 19517,
+   "tokens_payload": 13976
+  },
+  {
+   "year": 2023,
+   "chapter_label": "제7장",
+   "chapter": "제7장 외교인프라 및 역량 강화 노력",
+   "is_appendix": false,
+   "n_pages": 8,
+   "chars": 6571,
+   "tokens_payload": 4791
+  },
+  {
+   "year": 2024,
+   "chapter_label": "(장 없음)",
+   "chapter": null,
+   "is_appendix": false,
+   "n_pages": 6,
+   "chars": 5612,
+   "tokens_payload": 3943
+  },
+  {
+   "year": 2024,
+   "chapter_label": "부록",
+   "chapter": "부록",
+   "is_appendix": true,
+   "n_pages": 74,
+   "chars": 65516,
+   "tokens_payload": 54025
+  },
+  {
+   "year": 2024,
+   "chapter_label": "제1장",
+   "chapter": "제1장 2024년 국제정세 및 외교정책 기조",
+   "is_appendix": false,
+   "n_pages": 19,
+   "chars": 19326,
+   "tokens_payload": 13453
+  },
+  {
+   "year": 2024,
+   "chapter_label": "제2장",
+   "chapter": "제2장 한반도의 자유·평화·번영과 역내 협력",
+   "is_appendix": false,
+   "n_pages": 30,
+   "chars": 28444,
+   "tokens_payload": 20879
+  },
+  {
+   "year": 2024,
+   "chapter_label": "제3장",
+   "chapter": "제3장 인도-태평양 전략 및 지역별 협력 네트워크",
+   "is_appendix": false,
+   "n_pages": 102,
+   "chars": 83704,
+   "tokens_payload": 61284
+  },
+  {
+   "year": 2024,
+   "chapter_label": "제4장",
+   "chapter": "제4장 경제안보 및 과학기술 외교",
+   "is_appendix": false,
+   "n_pages": 39,
+   "chars": 38026,
+   "tokens_payload": 25708
+  },
+  {
+   "year": 2024,
+   "chapter_label": "제5장",
+   "chapter": "제5장 글로벌 중추국가 외교",
+   "is_appendix": false,
+   "n_pages": 59,
+   "chars": 56148,
+   "tokens_payload": 37456
+  },
+  {
+   "year": 2024,
+   "chapter_label": "제6장",
+   "chapter": "제6장 국민과 함께하는 외교",
+   "is_appendix": false,
+   "n_pages": 23,
+   "chars": 19024,
+   "tokens_payload": 13557
+  },
+  {
+   "year": 2024,
+   "chapter_label": "제7장",
+   "chapter": "제7장 외교인프라 및 역량 강화",
+   "is_appendix": false,
+   "n_pages": 9,
+   "chars": 7187,
+   "tokens_payload": 5303
+  },
+  {
+   "year": 2025,
+   "chapter_label": "부록",
+   "chapter": "부록",
+   "is_appendix": true,
+   "n_pages": 64,
+   "chars": 50331,
+   "tokens_payload": 42483
+  },
+  {
+   "year": 2025,
+   "chapter_label": "제1장",
+   "chapter": "제1장 2025년 국제정세 및 외교정책 기조",
+   "is_appendix": false,
+   "n_pages": 21,
+   "chars": 22687,
+   "tokens_payload": 15609
+  },
+  {
+   "year": 2025,
+   "chapter_label": "제2장",
+   "chapter": "제2장 한반도 평화증진 및 주변국 협력 강화",
+   "is_appendix": false,
+   "n_pages": 25,
+   "chars": 23221,
+   "tokens_payload": 16979
+  },
+  {
+   "year": 2025,
+   "chapter_label": "제3장",
+   "chapter": "제3장 외교다변화를 통한 전략적 지평 확장",
+   "is_appendix": false,
+   "n_pages": 72,
+   "chars": 62391,
+   "tokens_payload": 45058
+  },
+  {
+   "year": 2025,
+   "chapter_label": "제4장",
+   "chapter": "제4장 경제외교 및 과학기술외교 역량 강화",
+   "is_appendix": false,
+   "n_pages": 40,
+   "chars": 39575,
+   "tokens_payload": 26283
+  },
+  {
+   "year": 2025,
+   "chapter_label": "제5장",
+   "chapter": "제5장 글로벌 책임강국 위상 제고",
+   "is_appendix": false,
+   "n_pages": 59,
+   "chars": 51466,
+   "tokens_payload": 34992
+  },
+  {
+   "year": 2025,
+   "chapter_label": "제6장",
+   "chapter": "제6장 국민이 체감하는 외교",
+   "is_appendix": false,
+   "n_pages": 24,
+   "chars": 19200,
+   "tokens_payload": 13768
+  },
+  {
+   "year": 2025,
+   "chapter_label": "제7장",
+   "chapter": "제7장 외교인프라 및 역량 혁신",
+   "is_appendix": false,
+   "n_pages": 7,
+   "chars": 6997,
+   "tokens_payload": 5002
+  }
+ ]
+}

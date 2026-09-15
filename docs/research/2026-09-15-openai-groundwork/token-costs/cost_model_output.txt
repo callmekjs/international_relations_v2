@@ -1,0 +1,99 @@
+KRW/USD=1400; budget 20,000 KRW = $14.29
+Calibration vs counting endpoint (visible input, no reasoning): model [1630, 3597, 6881, 9567] measured [1630, 3596, 6881, 9568] max diff 1 tokens
+Extra request if report_status output is sent back (typical, implicit_cold): gpt-5.6-sol +23 KRW, gpt-5.6-terra +11 KRW, gpt-5.6-luna +1 KRW
+
+## QA scenario: low -- search + 2x read_pages(4 pages, mean size); reasoning.effort low-ish; short answer
+   reasoning/request=150, final reasoning=500, answer=500
+model          cache mode     reqs  in(sum)  cached   write out(sum)      USD     KRW Q/20k KRW
+gpt-5.6-sol    none              4   20,759       0       0    1,591   0.1149     161       124
+gpt-5.6-sol    implicit_cold     4   20,759  11,675   9,084    1,591   0.0819     115       174
+gpt-5.6-sol    implicit_warm     4   20,759  13,298   7,461    1,591   0.0744     104       192
+gpt-5.6-terra  none              4   20,759       0       0    1,591   0.0606      85       236
+gpt-5.6-terra  implicit_cold     4   20,759  11,675   9,084    1,591   0.0441      62       324
+gpt-5.6-terra  implicit_warm     4   20,759  13,298   7,461    1,591   0.0404      57       354
+gpt-5.6-luna   none              4   20,759       0       0    1,591   0.0061       8      2357
+gpt-5.6-luna   implicit_cold     4   20,759  11,675   9,084    1,591   0.0044       6      3237
+gpt-5.6-luna   implicit_warm     4   20,759  13,298   7,461    1,591   0.0040       6      3536
+
+## QA scenario: typical -- search + read_pages(5) + read_pages(4), mean sizes; the 4-request loop whose visible input was measured with the counting endpoint
+   reasoning/request=500, final reasoning=1500, answer=700
+model          cache mode     reqs  in(sum)  cached   write out(sum)      USD     KRW Q/20k KRW
+gpt-5.6-sol    none              4   24,231       0       0    3,847   0.1739     243        82
+gpt-5.6-sol    implicit_cold     4   24,231  13,411  10,820    3,847   0.1364     191       105
+gpt-5.6-sol    implicit_warm     4   24,231  15,034   9,197    3,847   0.1289     181       111
+gpt-5.6-terra  none              4   24,231       0       0    3,847   0.0946     132       151
+gpt-5.6-terra  implicit_cold     4   24,231  13,411  10,820    3,847   0.0759     106       188
+gpt-5.6-terra  implicit_warm     4   24,231  15,034   9,197    3,847   0.0722     101       198
+gpt-5.6-luna   none              4   24,231       0       0    3,847   0.0095      13      1510
+gpt-5.6-luna   implicit_cold     4   24,231  13,411  10,820    3,847   0.0076      11      1882
+gpt-5.6-luna   implicit_warm     4   24,231  15,034   9,197    3,847   0.0072      10      1980
+
+## QA scenario: high -- get_toc + 2 searches + 2x read_pages(5, p90 size); heavy reasoning; long question
+   reasoning/request=1500, final reasoning=4000, answer=900
+model          cache mode     reqs  in(sum)  cached   write out(sum)      USD     KRW Q/20k KRW
+gpt-5.6-sol    none              6   66,910       0       0   12,597   0.5196     727        27
+gpt-5.6-sol    implicit_cold     6   66,910  44,513  22,397   12,597   0.3817     534        37
+gpt-5.6-sol    implicit_warm     6   66,910  46,136  20,774   12,597   0.3743     524        38
+gpt-5.6-terra  none              6   66,910       0       0   12,597   0.2850     399        50
+gpt-5.6-terra  implicit_cold     6   66,910  44,513  22,397   12,597   0.2161     302        66
+gpt-5.6-terra  implicit_warm     6   66,910  46,136  20,774   12,597   0.2123     297        67
+gpt-5.6-luna   none              6   66,910       0       0   12,597   0.0285      40       501
+gpt-5.6-luna   implicit_cold     6   66,910  44,513  22,397   12,597   0.0216      30       661
+gpt-5.6-luna   implicit_warm     6   66,910  46,136  20,774   12,597   0.0212      30       673
+
+## Request trace: typical, gpt-5.6-sol, implicit_cold
+  req1: input=1,646 cached=0 write=1,646 out=528 (reasoning 500) usd=0.0188
+  req2: input=4,008 cached=1,646 write=2,362 out=545 (reasoning 500) usd=0.0234
+  req3: input=7,757 cached=4,008 write=3,749 out=539 (reasoning 500) usd=0.0311
+  req4: input=10,820 cached=7,757 write=3,063 out=2,235 (reasoning 1,500) usd=0.0631
+
+## Sensitivity (typical loop, implicit_cold): KRW per question by reasoning tokens
+model          r/tool r/final carry KRW cached KRW no-cache  Q/20k
+gpt-5.6-sol         0       0   1.0         96          143    209
+gpt-5.6-sol         0       0   0.0         96          143    209
+gpt-5.6-sol       250     500   1.0        136          186    147
+gpt-5.6-sol       250     500   0.0        131          178    153
+gpt-5.6-sol       500    1500   1.0        191          243    105
+gpt-5.6-sol       500    1500   0.0        180          227    111
+gpt-5.6-sol      1000    3000   1.0        286          344     70
+gpt-5.6-sol      1000    3000   0.0        264          311     76
+gpt-5.6-sol      2000    6000   1.0        477          546     42
+gpt-5.6-sol      2000    6000   0.0        432          479     46
+gpt-5.6-sol      4000   12000   1.0        858          949     23
+gpt-5.6-sol      4000   12000   0.0        768          815     26
+gpt-5.6-terra       0       0   1.0         50           74    399
+gpt-5.6-terra       0       0   0.0         50           74    399
+gpt-5.6-terra     250     500   1.0         74           99    270
+gpt-5.6-terra     250     500   0.0         71           95    281
+gpt-5.6-terra     500    1500   1.0        106          132    188
+gpt-5.6-terra     500    1500   0.0        101          124    199
+gpt-5.6-terra    1000    3000   1.0        162          191    123
+gpt-5.6-terra    1000    3000   0.0        151          174    132
+gpt-5.6-terra    2000    6000   1.0        274          309     73
+gpt-5.6-terra    2000    6000   0.0        252          275     79
+gpt-5.6-terra    4000   12000   1.0        499          544     40
+gpt-5.6-terra    4000   12000   0.0        453          477     44
+gpt-5.6-luna        0       0   1.0          5            7   3985
+gpt-5.6-luna        0       0   0.0          5            7   3985
+gpt-5.6-luna      250     500   1.0          7           10   2702
+gpt-5.6-luna      250     500   0.0          7            9   2810
+gpt-5.6-luna      500    1500   1.0         11           13   1882
+gpt-5.6-luna      500    1500   0.0         10           12   1988
+gpt-5.6-luna     1000    3000   1.0         16           19   1232
+gpt-5.6-luna     1000    3000   0.0         15           17   1325
+gpt-5.6-luna     2000    6000   1.0         27           31    729
+gpt-5.6-luna     2000    6000   0.0         25           28    794
+gpt-5.6-luna     4000   12000   1.0         50           54    401
+gpt-5.6-luna     4000   12000   0.0         45           48    441
+
+## Summary of the largest chapter once: 2023 제3장 인도-태평양 전략과 지역별 협력 네트워크 (108 pages, 97,674 chars, 70,914 input tokens)
+   cases: low=1,500 out + 1,000 reasoning; typical=3,000 + 3,000; high=5,000 + 10,000
+  gpt-5.6-sol    low: 467 KRW (implicit write 567) | typical: 565 KRW (implicit write 665) | high: 817 KRW (implicit write 917)
+  gpt-5.6-terra  low: 241 KRW (implicit write 290) | typical: 300 KRW (implicit write 349) | high: 451 KRW (implicit write 500)
+  gpt-5.6-luna   low: 24 KRW (implicit write 29) | typical: 30 KRW (implicit write 35) | high: 45 KRW (implicit write 50)
+  All 7 main chapters of 2025 (158,902 input tokens, typical output each, no cache): gpt-5.6-sol 2068 KRW, gpt-5.6-terra 1152 KRW, gpt-5.6-luna 115 KRW
+
+## Spec 4.4 cap check (10 x read_pages(5, max size), heavy reasoning, 200K cumulative input cap)
+  gpt-5.6-sol    none: 9 reqs, cum input 215,712, 1692 KRW | implicit_cold: 9 reqs, cum input 215,712, 902 KRW
+  gpt-5.6-terra  none: 9 reqs, cum input 215,712, 895 KRW | implicit_cold: 9 reqs, cum input 215,712, 500 KRW
+  gpt-5.6-luna   none: 9 reqs, cum input 215,712, 89 KRW | implicit_cold: 9 reqs, cum input 215,712, 50 KRW

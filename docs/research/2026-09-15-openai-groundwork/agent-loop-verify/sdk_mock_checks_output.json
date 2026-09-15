@@ -1,0 +1,96 @@
+{
+ "1_error_event_top_level": {
+  "raised": false,
+  "events": [
+   "response.created",
+   "error"
+  ]
+ },
+ "1b_error_event_nested": {
+  "raised": "APIError",
+  "msg": "boom"
+ },
+ "1c_demo_stream_one_error_event": "RuntimeError: stream error event: code=server_error message=boom",
+ "2_failed_usage_null": {
+  "status": "failed",
+  "usage_row": {
+   "input": 0,
+   "cached": 0,
+   "cache_write": 0,
+   "output": 0,
+   "reasoning": 0,
+   "total": 0
+  },
+  "error": {
+   "code": "server_error",
+   "message": "failed"
+  }
+ },
+ "3_incomplete_content_filter": {
+  "status": "incomplete",
+  "reason": "content_filter"
+ },
+ "4_truncated_stream": "RuntimeError: stream ended without response.completed/incomplete/failed",
+ "5_get_final_response_incomplete": "RuntimeError: Didn't receive a `response.completed` event.",
+ "6_429_spend_no_header": {
+  "attempts": 3,
+  "exc": "RateLimitError",
+  "code": "project_spend_limit_exceeded",
+  "type": "insufficient_quota"
+ },
+ "6_429_spend_x-should-retry_false": {
+  "attempts": 1,
+  "exc": "RateLimitError",
+  "code": "project_spend_limit_exceeded",
+  "type": "insufficient_quota"
+ },
+ "7_function_call_model_dump_keys": [
+  "arguments",
+  "async_",
+  "call_id",
+  "caller",
+  "id",
+  "name",
+  "namespace",
+  "status",
+  "type"
+ ],
+ "7_function_call_to_dict_keys": [
+  "arguments",
+  "call_id",
+  "id",
+  "name",
+  "status",
+  "type"
+ ],
+ "7_message_to_dict": {
+  "id": "m1",
+  "content": [
+   {
+    "annotations": [],
+    "text": "x",
+    "type": "output_text"
+   }
+  ],
+  "role": "assistant",
+  "status": "completed",
+  "type": "message",
+  "phase": "final_answer"
+ },
+ "8_unknown_event": {
+  "ok": true,
+  "order": [
+   "response.created",
+   "response.some_future_event",
+   "response.completed"
+  ]
+ },
+ "9_output_null": {
+  "output_text": "hi",
+  "recovered": true
+ },
+ "9_output_empty": {
+  "output_text": "hi",
+  "recovered": true
+ }
+}
