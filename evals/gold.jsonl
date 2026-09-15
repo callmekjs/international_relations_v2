@@ -1,5 +1,5 @@
 {"id": "g01", "kind": "single_page", "question": "2021년에 영주귀국한 사할린동포는 몇 명이야?", "years": [2021], "expect_status": "answered", "facts": [["334명"]], "gold_pages": ["2021-p106R"], "absent_terms": []}
-{"id": "g02", "kind": "single_page", "question": "2021년 12월 한\u00b7호주 정상회담은 어느 도시에서 열렸어?", "years": null, "expect_status": "answered", "facts": [["캔버라"]], "gold_pages": ["2021-p139R"], "absent_terms": []}
+{"id": "g02", "kind": "single_page", "question": "34년 만에 방한한 카리브 나라 외교장관은 어느 나라에서 왔어?", "years": null, "expect_status": "answered", "facts": [["바하마"]], "gold_pages": ["2022-p055L"], "absent_terms": []}
 {"id": "g03", "kind": "single_page", "question": "2023년 믹타(MIKTA) 의장국은 어느 나라였어?", "years": [2023], "expect_status": "answered", "facts": [["인도네시아"]], "gold_pages": ["2023-p087L"], "absent_terms": []}
 {"id": "g04", "kind": "single_page", "question": "외교부가 연 세계신안보포럼 2024년 행사에는 몇 명쯤 참여했어?", "years": null, "expect_status": "answered", "facts": [["1,500"]], "gold_pages": ["2024-p112L"], "absent_terms": []}
 {"id": "g05", "kind": "single_page", "question": "2025년 양자 지원액 가운데 아프리카 지원 비율은 몇 퍼센트야?", "years": [2025], "expect_status": "answered", "facts": [["18.5%"]], "gold_pages": ["2025-p103L"], "absent_terms": []}

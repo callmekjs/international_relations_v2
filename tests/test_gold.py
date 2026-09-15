@@ -4,8 +4,10 @@ from pathlib import Path
 
 import pytest
 
-from assistant.citations import cite_key
-from evals.gold import KIND_COUNTS, load_gold, problems
+from assistant.citations import VERIFIED, check_citation, cite_key
+from assistant.corpus import Corpus
+from assistant.tools import ToolRunner
+from evals.gold import FACT_KINDS, KIND_COUNTS, load_gold, problems
 
 ROOT = Path(__file__).resolve().parent.parent
 PAGES = ROOT / "corpus" / "pages.jsonl"
@@ -58,6 +60,30 @@ def test_every_fact_wording_is_used_somewhere_in_the_corpus(page_keys):
                 if not any(cite_key(alternative) in key for key in keys):
                     unused.setdefault(item["id"], []).append(alternative)
     assert unused == {}
+
+
+@needs_corpus
+def test_every_fact_item_has_a_quotable_fact_paragraph_on_a_gold_page():
+    # Grading needs a verified citation on a gold page, and a quote needs MIN_QUOTE_CHARS letters and
+    # digits. A fact that sits only in a short table cell (2021-p139R, 10 characters) can be cited
+    # but never verified, so a correct, honest answer would always fail. Pages are read the way the
+    # model reads them, and the whole fact paragraph is graded as the quote.
+    corpus = Corpus(PAGES.parent)
+    unquotable = []
+    for item in load_gold():
+        if item["kind"] not in FACT_KINDS:
+            continue
+        runner = ToolRunner(corpus)
+        runner.execute("read_pages", json.dumps({"page_ids": item["gold_pages"]}))
+        alternatives = [cite_key(alternative) for group in item["facts"] for alternative in group]
+        quotable = [(page.page_id, n) for page in runner.shown.values()
+                    for n, paragraph in enumerate(page.paragraphs, 1)
+                    if any(alternative in cite_key(paragraph) for alternative in alternatives)
+                    and check_citation({"page_id": page.page_id, "paragraph": n, "quote": paragraph},
+                                       runner.shown)["grade"] == VERIFIED]
+        if not quotable:
+            unquotable.append(item["id"])
+    assert unquotable == []
 
 
 @needs_corpus
