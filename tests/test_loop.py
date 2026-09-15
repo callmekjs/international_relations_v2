@@ -2,10 +2,10 @@ import json
 
 import pytest
 
-from assistant.errors import ANSWER_CUT, BAD_ANSWER, BILLING, CAP_STOPPED, LLMError
+from assistant.errors import ANSWER_CUT, BAD_ANSWER, BILLING, CAP_STOPPED, UNKNOWN, LLMError
 from assistant.limits import QA_CAPS, Caps
 from assistant.llm import TurnResult, Usage
-from assistant.loop import parse_answer, run_agent
+from assistant.loop import TurnRecord, parse_answer, run_agent
 from assistant.prompts import QA_ANSWER_FORMAT, QA_INSTRUCTIONS
 from assistant.tools import ToolRunner
 from tests.fake_llm import FakeLLM, answer_turn, call, tool_turn
@@ -84,12 +84,65 @@ def test_bad_final_json_is_a_notice(qa_corpus):
     assert ask(FakeLLM(answer_turn("{broken")), qa_corpus).notice is BAD_ANSWER
 
 
-@pytest.mark.parametrize("text", ["not json", '{"status": "maybe", "sentences": []}', '{"status": "answered"}', "[]"])
+@pytest.mark.parametrize("text", [
+    "not json", '{"status": "maybe", "sentences": []}', '{"status": "answered"}', "[]",
+    '{"status": "answered", "sentences": ["워싱턴"]}',
+    '{"status": "answered", "sentences": [{"text": 1, "citations": []}]}',
+    '{"status": "answered", "sentences": [{"text": "워싱턴"}]}',
+    '{"status": "answered", "sentences": [{"text": "워싱턴", "citations": "2023-p020L"}]}',
+    '{"status": "answered", "sentences": [{"text": "워싱턴", "citations": ["2023-p020L"]}]}',
+])
 def test_malformed_answers_are_rejected(text):
     assert parse_answer(text) is None
+
+
+def test_deeply_nested_json_is_rejected_instead_of_raising():
+    assert parse_answer("[" * 100_000) is None
+    assert parse_answer('{"status": "answered", "sentences": ' + "[" * 100_000) is None
+
+
+def test_well_formed_answers_pass_the_shape_check():
+    assert parse_answer(json.dumps(ANSWER, ensure_ascii=False)) == ANSWER
+    empty = {"status": "not_found", "sentences": [{"text": "찾지 못했어요.", "citations": []}]}
+    assert parse_answer(json.dumps(empty, ensure_ascii=False)) == empty
 
 
 def test_nothing_is_sent_when_even_the_first_turn_is_over_the_cap(qa_corpus):
     llm = FakeLLM()
     outcome = ask(llm, qa_corpus, limits=caps(input_tokens=1_000))
     assert llm.requests == [] and outcome.notice is CAP_STOPPED
+
+
+def answer_as(model: str) -> TurnResult:
+    return TurnResult("completed", [], [], json.dumps(ANSWER, ensure_ascii=False),
+                      usage=Usage(input=1_000, output=100), model=model)
+
+
+def test_turn_cost_uses_the_returned_model_then_the_requested_one_and_never_raises(qa_corpus):
+    known = ask(FakeLLM(answer_as("gpt-5.6-sol-2026-08-01")), qa_corpus).turns[0]
+    assert (known.price_model, known.cost_usd > 0) == ("gpt-5.6-sol-2026-08-01", True)
+    renamed = ask(FakeLLM(answer_as("gpt-next-preview")), qa_corpus)
+    assert renamed.answer == ANSWER
+    assert (renamed.turns[0].model, renamed.turns[0].price_model) == ("gpt-next-preview", "gpt-5.6-sol")
+    assert renamed.turns[0].cost_usd == known.cost_usd
+    unpriced = FakeLLM(answer_as("mystery-a"))
+    unpriced.model = "mystery-b"
+    turn = ask(unpriced, qa_corpus).turns[0]
+    assert (turn.cost_usd, turn.price_model) == (0, "")
+    assert TurnRecord(1, "auto", 8_000, "completed", [], Usage(), "m", None, 0.0).price_model == ""
+
+
+class CrashingRunner(ToolRunner):
+    def execute(self, name: str, arguments: str):
+        raise OSError("디스크 오류")
+
+
+def test_unexpected_crashes_end_the_run_but_keep_the_paid_turns(qa_corpus):
+    crash = ask(FakeLLM(tool_turn(call("get_toc", year=2023)), RuntimeError("x" * 500)), qa_corpus)
+    assert (crash.answer, crash.notice, len(crash.turns)) == (None, UNKNOWN, 1)
+    assert crash.error == "RuntimeError: " + "x" * 300
+    tool_crash = ask(FakeLLM(tool_turn(call("get_toc", year=2023))), qa_corpus, runner=CrashingRunner(qa_corpus))
+    assert (tool_crash.notice, len(tool_crash.turns), tool_crash.error) == (UNKNOWN, 1, "OSError: 디스크 오류")
+    assert tool_crash.turns[0].cost_usd > 0
+    assert [(c["name"], c["ok"], c["skipped"]) for c in tool_crash.turns[0].tool_calls] == [("get_toc", False, False)]
+    assert ask(FakeLLM(answer_turn(ANSWER)), qa_corpus).error is None

@@ -101,16 +101,17 @@ class ToolRunner:
                 raise ToolInputError("입력이 JSON 형식이 아닙니다") from exc
             if not isinstance(args, dict):
                 raise ToolInputError("입력은 JSON 객체여야 합니다")
-            return handler(args)
+            outcome = handler(args)
         except ToolInputError as exc:
-            return ToolOutcome(_dumps({"error": str(exc)}), f"{TOOL_NAMES.get(name, name)} 입력 오류", False)
+            outcome = ToolOutcome(_dumps({"error": str(exc)}), f"{TOOL_NAMES.get(name, name)} 입력 오류", False)
+        return ToolOutcome(outcome.output, _utf8_safe(outcome.summary), outcome.ok)  # records are written as UTF-8
 
     # --- search ---------------------------------------------------------------------------------
     def _search(self, args: dict) -> ToolOutcome:
         query = args.get("query")
         if not isinstance(query, str) or not query.strip():
             raise ToolInputError("query(찾을 말)가 비어 있습니다")
-        query = query.strip()
+        query = _utf8_safe(query.strip())
         years = _years(args.get("years"))
         k = max(1, min(MAX_K, _integer(args.get("k"), "k"))) if args.get("k") is not None else MAX_K
         corpus_years = self.corpus.corpus_years
@@ -196,10 +197,15 @@ def _dumps(payload) -> str:
     return json.dumps(payload, ensure_ascii=False, separators=(",", ":"))
 
 
+def _utf8_safe(text: str) -> str:
+    """Lone surrogates (possible after json.loads of model text) become '?', so the text encodes as UTF-8."""
+    return text.encode("utf-8", "replace").decode("utf-8")
+
+
 def _integer(value, what: str) -> int:
     if isinstance(value, int) and not isinstance(value, bool):
         return value
-    if isinstance(value, str) and value.strip().isdigit():
+    if isinstance(value, str) and value.strip().isascii() and value.strip().isdigit():  # not other scripts' digits
         return int(value.strip())
     raise ToolInputError(f"{what} 값은 정수여야 합니다: {value!r}")
 

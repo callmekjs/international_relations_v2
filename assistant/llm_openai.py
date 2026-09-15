@@ -36,15 +36,19 @@ class StreamBroken(Exception):
 
 
 def load_api_key(env_file: Path = ENV_FILE) -> str:
-    """OPENAI_API_KEY from the environment (Hugging Face Secrets) or the local .env. The value is never printed."""
+    """OPENAI_API_KEY from the environment (Hugging Face Secrets) or the local .env. The value is never printed.
+    The file may start with a byte order mark, and a line may read: export OPENAI_API_KEY = value"""
     value = os.environ.get("OPENAI_API_KEY", "").strip()
     if value:
         return value
     if Path(env_file).is_file():
-        for raw in Path(env_file).read_text(encoding="utf-8").splitlines():
+        for raw in Path(env_file).read_text(encoding="utf-8-sig").splitlines():
             line = raw.strip()
             name, sep, rest = line.partition("=")
-            if sep and not line.startswith("#") and name.strip() == "OPENAI_API_KEY":
+            words = name.split()
+            if len(words) == 2 and words[0] == "export":
+                words = words[1:]
+            if sep and not line.startswith("#") and words == ["OPENAI_API_KEY"]:
                 rest = rest.strip().strip('"').strip("'")
                 if rest:
                     return rest
@@ -99,17 +103,28 @@ class OpenAIResponses:
     def moderate(self, text: str) -> list[str]:
         """Flagged category names for the visitor's question; [] when the check itself fails (it never blocks)."""
         try:
-            result = self.client.moderations.create(model=MODERATION_MODEL, input=text).results[0]
-        except openai.APIError:
+            results = self.client.moderations.create(model=MODERATION_MODEL, input=text).results
+            if not results:
+                return []
+            return sorted(name for name, flagged in results[0].categories.to_dict().items() if flagged is True)
+        except Exception:
             return []
-        return sorted(name for name, flagged in result.categories.to_dict().items() if flagged is True)
 
     def _stream(self, request: dict, emit: EventSink) -> TurnResult:
         final = None
         finished_items: dict[int, object] = {}
         stream = self.client.responses.create(**request)
         try:
-            for event in stream:
+            events = iter(stream)
+            while True:
+                try:
+                    event = next(events)
+                except StopIteration:
+                    break
+                except openai.APIError:
+                    raise
+                except Exception as exc:  # e.g. json.JSONDecodeError from a garbled SSE line: a cut stream
+                    raise StreamBroken(None) from exc
                 kind = event.type
                 if kind == "response.output_item.added":
                     item = event.item

@@ -24,15 +24,26 @@ def run_gold(items: list[dict], *, llm, corpus, out_dir: Path, ask=run) -> dict:
     out_dir.mkdir(parents=True, exist_ok=True)
     rows = []
     for item in items:
-        result = ask("qa", {"question": item["question"], "years": item["years"]}, llm=llm, corpus=corpus,
-                     safety_identifier=hash_identifier("gold-eval"))
-        (out_dir / f"{item['id']}.json").write_text(json.dumps(result.record, ensure_ascii=False, indent=1),
-                                                    encoding="utf-8")
-        rows.append(grade(item, result.record))
-        print(f"{item['id']} {'O' if rows[-1]['passed'] else 'X'} {result.status} 약 {rows[-1]['cost_krw']}원", flush=True)
+        try:
+            result = ask("qa", {"question": item["question"], "years": item["years"]}, llm=llm, corpus=corpus,
+                         safety_identifier=hash_identifier("gold-eval"))
+            (out_dir / f"{item['id']}.json").write_text(json.dumps(result.record, ensure_ascii=False, indent=1),
+                                                        encoding="utf-8")
+            rows.append(grade(item, result.record))
+        except Exception as exc:  # one broken question must not stop the rest of the paid run
+            rows.append(crashed_row(item, exc))
+        print(f"{item['id']} {'O' if rows[-1]['passed'] else 'X'} {rows[-1]['status']} 약 {rows[-1]['cost_krw']}원",
+              flush=True)
     summary = summarize(rows)
     (out_dir / "report.md").write_text(render_report(summary, rows, f"정답지 시험 {out_dir.name}"), encoding="utf-8")
     return summary
+
+
+def crashed_row(item: dict, exc: BaseException) -> dict:
+    """A failed grade row for a question whose run raised; its cost is unknown and counted as 0."""
+    return {"id": item["id"], "kind": item["kind"], "passed": False, "reasons": [f"실행 오류: {type(exc).__name__}"],
+            "status": "error", "elapsed_s": 0, "cost_krw": 0,
+            "tokens": {"input": 0, "cached": 0, "cache_write": 0, "output": 0, "reasoning": 0}, "grades": {}}
 
 
 def main(argv: list[str] | None = None) -> int:

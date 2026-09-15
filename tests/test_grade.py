@@ -1,3 +1,4 @@
+from assistant.runner import run
 from evals.grade import grade, render_report, summarize
 from evals.run_gold import main, run_gold
 from tests.fake_llm import FakeLLM, answer_turn, call, tool_turn
@@ -70,3 +71,19 @@ def test_run_gold_writes_records_and_a_report(qa_corpus, tmp_path):
 def test_run_gold_needs_confirmation(capsys):
     assert main([]) == 2
     assert "--confirm" in capsys.readouterr().out
+
+
+def test_run_gold_keeps_going_when_one_question_crashes(qa_corpus, tmp_path, capsys):
+    def flaky(task, inputs, **options):
+        if inputs["question"] == FACT["question"]:
+            raise RuntimeError("boom")
+        return run(task, inputs, **options)
+
+    refusal = {"status": "refused", "sentences": [{"text": "외교백서에 관한 질문만 답할 수 있어요.", "citations": []}]}
+    out_dir = tmp_path / "gold"
+    summary = run_gold([FACT, REFUSE], llm=FakeLLM(answer_turn(refusal)), corpus=qa_corpus, out_dir=out_dir, ask=flaky)
+    assert (summary["passed"], summary["total"]) == (1, 2)
+    assert summary["by_kind"]["multi_year"] == {"passed": 0, "total": 1}
+    report = (out_dir / "report.md").read_text(encoding="utf-8")
+    assert "| g99 | multi_year | X | error | 0 | 0 | 0 | 0 | 실행 오류: RuntimeError |" in report
+    assert "g99 X error" in capsys.readouterr().out

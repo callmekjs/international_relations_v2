@@ -87,6 +87,10 @@ def test_read_pages_problems_go_back_to_the_model(qa_corpus):
     ("search", '["한미"]'),
     ("get_toc", '{"year": "이천이십삼"}'),
     ("delete_everything", "{}"),
+    ("get_toc", json.dumps({"year": chr(0x00B2)})),
+    ("get_toc", json.dumps({"year": chr(0x0662) + chr(0x0660) + chr(0x0662) + chr(0x0663)})),
+    ("search", json.dumps({"query": "정상회담", "years": [chr(0x00B9)], "k": None})),
+    ("search", json.dumps({"query": "정상회담", "years": None, "k": chr(0x00B3)})),
 ])
 def test_bad_calls_become_error_outputs(qa_corpus, name, arguments):
     outcome = ToolRunner(qa_corpus).execute(name, arguments)
@@ -100,3 +104,13 @@ def test_get_toc_accepts_a_year_string(qa_corpus):
     assert outcome.summary == "목차 보기 2023년치"
     _, missing = run(ToolRunner(qa_corpus), "get_toc", year=2012)
     assert missing["not_in_corpus"] is True
+
+
+def test_lone_surrogates_cannot_make_a_record_unwritable(qa_corpus):
+    runner = ToolRunner(qa_corpus)
+    outcome = runner.execute("search", json.dumps({"query": chr(0xD800) + "정상회담", "years": None, "k": None}))
+    assert outcome.ok and "정상회담" in outcome.summary
+    outcome.summary.encode("utf-8")
+    unknown = runner.execute("search" + chr(0xDC00), "{}")
+    assert unknown.ok is False
+    unknown.summary.encode("utf-8")

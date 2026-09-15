@@ -2,9 +2,9 @@ from types import SimpleNamespace as NS
 
 import pytest
 
-from assistant.errors import (ANSWER_CUT, CONTENT_FILTER, REFUSED, SAFETY_STOP, SERVER_ERROR, UNKNOWN, UserNotice,
-                              notice_for_exception, notice_for_moderation, notice_for_stream_error, notice_for_turn,
-                              retry_delay_s, stream_retry_delay_s)
+from assistant.errors import (ANSWER_CUT, BILLING, CONTENT_FILTER, REFUSED, SAFETY_STOP, SERVER_ERROR, UNKNOWN,
+                              UserNotice, notice_for_exception, notice_for_moderation, notice_for_stream_error,
+                              notice_for_turn, retry_delay_s, stream_retry_delay_s)
 from assistant.llm import TurnResult
 
 
@@ -45,6 +45,10 @@ class APITimeoutError(APIConnectionError):
     (APITimeoutError("timed out"), "timeout"),
     (APIConnectionError("no route"), "connection"),
     (APIError("An error occurred during streaming"), "stream_broken"),
+    (APIStatusError(408, "request_timeout"), "timeout"),
+    (APIStatusError(409, "conflict"), "server_error"),
+    (APIError("limit", code="insufficient_quota"), "budget"),
+    (APIError("policy", code="cyber_policy"), "safety_stop"),
 ])
 def test_exceptions_map_to_notices(exc, kind):
     assert notice_for_exception(exc).kind == kind
@@ -63,7 +67,6 @@ def test_retry_rules():
     assert retry_delay_s(RateLimitError(429, "rate_limit_exceeded", headers={"retry-after": "56"}), 0) is None
     assert retry_delay_s(APIStatusError(500), 2) is None
     assert 0 < retry_delay_s(APIStatusError(500), 1) <= 1.0
-    assert retry_delay_s(APIError("stream"), 0) is None
     assert 0 < stream_retry_delay_s("server_error", 0) <= 0.5
     assert 0 < stream_retry_delay_s(None, 1) <= 1.0
     assert stream_retry_delay_s("server_error", 2) is None
@@ -96,3 +99,28 @@ def test_stream_error_codes_and_moderation():
 
 def test_notice_to_dict_has_only_what_the_screen_needs():
     assert UserNotice("x", "안내", status="partial").to_dict() == {"kind": "x", "message": "안내"}
+
+
+def test_status_less_sdk_errors_retry_like_stream_errors():
+    assert 0 < retry_delay_s(APIError("An error occurred during streaming"), 0) <= 0.5
+    assert 0 < retry_delay_s(APIError("boom", code="server_error"), 1) <= 1.0
+    assert retry_delay_s(APIError("boom", code="server_error"), 2) is None
+    assert retry_delay_s(APIError("limit", code="insufficient_quota"), 0) is None
+    assert retry_delay_s(APIError("limit", etype="insufficient_quota"), 0) is None
+    assert retry_delay_s(APIError("policy", code="bio_policy"), 0) is None
+    assert retry_delay_s(ValueError("not an SDK error"), 0) is None
+
+
+def test_odd_retry_after_values_fall_back_to_backoff():
+    for raw in ("-3", "nan", "inf", "-inf"):
+        assert 0 < retry_delay_s(RateLimitError(429, "rate_limit_exceeded", headers={"retry-after": raw}), 0) <= 0.5
+    assert 0 < retry_delay_s(RateLimitError(429, "rate_limit_exceeded", headers={"retry-after-ms": "nan"}), 0) <= 0.5
+    assert 0 < retry_delay_s(APIStatusError(408), 0) <= 0.5
+    assert 0 < retry_delay_s(APIStatusError(409), 0) <= 0.5
+
+
+def test_billing_codes_mean_the_budget_notice_on_every_path():
+    assert notice_for_turn(turn("failed", error_code="insufficient_quota")) is BILLING
+    assert notice_for_turn(turn("failed", error_code="project_spend_limit_exceeded")) is BILLING
+    assert notice_for_stream_error("insufficient_quota") is BILLING
+    assert stream_retry_delay_s("insufficient_quota", 0) is None

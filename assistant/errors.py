@@ -3,6 +3,7 @@
 so this file imports nothing from openai (see limits-errors/error_handling_sketch.py)."""
 from __future__ import annotations
 
+import math
 import random
 from dataclasses import dataclass
 
@@ -55,14 +56,22 @@ CAP_STOPPED = UserNotice("cap_stopped", "충분히 찾지 못해 답을 만들�
                          status="partial")
 EMPTY_QUESTION = UserNotice("empty_question", "질문을 입력해 주세요.")
 QUESTION_TOO_LONG = UserNotice("question_too_long", "질문은 300자까지 쓸 수 있어요.")
+BAD_YEARS = UserNotice("bad_years", "연도는 2023처럼 숫자로 적어 주세요.")
 
 BILLING_CODES = frozenset({"project_spend_limit_exceeded", "organization_spend_limit_exceeded",
-                           "organization_usage_limit_exceeded", "credit_balance_exhausted"})
+                           "organization_usage_limit_exceeded", "credit_balance_exhausted",
+                           "insufficient_quota"})
 SAFETY_CODES = frozenset({"misalignment_policy_violation", "cyber_policy", "bio_policy"})
 MODERATION_BLOCK = frozenset({"sexual/minors", "self-harm/intent", "self-harm/instructions", "illicit/violent",
                               "hate/threatening", "harassment/threatening"})
 MAX_APP_RETRIES = 2
 MAX_RETRY_AFTER_S = 20.0
+MAX_ERROR_MESSAGE_CHARS = 300
+
+
+def error_text(exc: BaseException) -> str:
+    """'ExceptionType: message' for run records, the message cut to 300 characters."""
+    return f"{type(exc).__name__}: {str(exc)[:MAX_ERROR_MESSAGE_CHARS]}"
 
 
 def notice_for_exception(exc: BaseException, *, output_already_shown: bool = False) -> UserNotice:
@@ -75,17 +84,21 @@ def notice_for_exception(exc: BaseException, *, output_already_shown: bool = Fal
         return STREAM_BROKEN if output_already_shown else CONNECTION
     if code in BILLING_CODES or getattr(exc, "type", None) == "insufficient_quota":
         return BILLING
+    if status is None:  # e.g. openai.APIError raised from an SSE error payload
+        return notice_for_stream_error(code)
     if code in SAFETY_CODES:
         return SAFETY_STOP
-    if status is None or output_already_shown:
+    if output_already_shown:
         return STREAM_BROKEN
     if status == 429:
         return BUSY
-    if status >= 500:
+    if status == 408:
+        return TIMEOUT
+    if status >= 500 or status == 409:
         return SERVER_ERROR
     if status in (401, 403):
         return CONFIG_ERROR
-    if status in (400, 404, 409, 422):
+    if status in (400, 404, 422):
         return BAD_REQUEST
     return UNKNOWN
 
@@ -103,6 +116,8 @@ def notice_for_turn(turn: TurnResult) -> UserNotice | None:
     if turn.status == "failed":
         if turn.error_code in SAFETY_CODES:
             return SAFETY_STOP
+        if turn.error_code in BILLING_CODES:
+            return BILLING
         if turn.error_code == "rate_limit_exceeded":
             return BUSY
         if turn.error_code == "server_error":
@@ -122,8 +137,14 @@ def notice_for_moderation(flagged: list[str]) -> UserNotice | None:
 
 def retry_delay_s(exc: BaseException, attempt: int) -> float | None:
     """Seconds to wait before sending the same request again, or None for no retry. Call it only when
-    nothing from this turn has been shown yet. Billing, safety and setup errors never retry."""
-    if attempt >= MAX_APP_RETRIES or not notice_for_exception(exc).app_retry:
+    nothing from this turn has been shown yet. Billing, safety and setup errors never retry.
+    A status-less SDK error (the SDK raises one for an SSE error payload) retries like a stream error."""
+    if attempt >= MAX_APP_RETRIES:
+        return None
+    notice = notice_for_exception(exc)
+    if _is_stream_payload_error(exc):
+        return stream_retry_delay_s(getattr(exc, "code", None), attempt) if notice is STREAM_BROKEN else None
+    if not notice.app_retry:
         return None
     headers = getattr(getattr(exc, "response", None), "headers", None) or {}
     for name, per_second in (("retry-after-ms", 1000.0), ("retry-after", 1.0)):
@@ -132,7 +153,9 @@ def retry_delay_s(exc: BaseException, attempt: int) -> float | None:
             continue
         try:
             wait = float(raw) / per_second
-        except ValueError:
+        except (TypeError, ValueError):
+            continue
+        if not math.isfinite(wait) or wait < 0:
             continue
         return None if wait > MAX_RETRY_AFTER_S else wait + random.uniform(0.1, 0.5)
     return _backoff_s(attempt)
@@ -144,6 +167,12 @@ def stream_retry_delay_s(code: str | None, attempt: int) -> float | None:
     if attempt >= MAX_APP_RETRIES or code in BILLING_CODES or code in SAFETY_CODES:
         return None
     return _backoff_s(attempt)
+
+
+def _is_stream_payload_error(exc: BaseException) -> bool:
+    names = {cls.__name__ for cls in type(exc).__mro__}
+    return ("APIError" in names and getattr(exc, "status_code", None) is None
+            and not names & {"APITimeoutError", "APIConnectionError"})
 
 
 def _backoff_s(attempt: int) -> float:

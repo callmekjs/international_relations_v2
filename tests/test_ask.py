@@ -1,6 +1,13 @@
 import json
+import os
+import subprocess
+import sys
+
+import pytest
 
 from assistant.ask import format_event, main, turn_table
+from assistant.errors import BILLING, LLMError
+from assistant.runner import ROOT
 from tests.fake_llm import FakeLLM, answer_turn, call, tool_turn
 
 ANSWER = {"status": "answered", "sentences": [{"text": "워싱턴에서 열렸습니다.", "citations": [
@@ -29,3 +36,36 @@ def test_events_without_a_line_are_silent():
     assert format_event("tool_requested", {"name": "search"}) is None
     assert format_event("done", {"status": "answered"}) is None
     assert format_event("tool_finished", {"name": "search", "summary": "찾기", "ok": True}).endswith("찾기")
+
+
+def test_a_notice_is_printed_once_and_the_time_is_shown(qa_corpus, tmp_path, capsys):
+    assert format_event("notice", {"notice": "budget", "message": BILLING.message}) is None
+    code = main(["2023년 한미 정상회담은 어디서 열렸어?"], llm=FakeLLM(LLMError(BILLING)), corpus=qa_corpus,
+                out_dir=tmp_path)
+    out = capsys.readouterr().out
+    assert code == 1 and out.count(BILLING.message) == 1 and f"안내: {BILLING.message}" in out
+    record = json.loads(next(tmp_path.glob("*-qa.json")).read_text(encoding="utf-8"))
+    assert f"{record['elapsed_s']}초" in out
+
+
+@pytest.mark.parametrize("years", ["2023,이천", "2023," + chr(0x0662) + chr(0x0660) + chr(0x0662) + chr(0x0663)])
+def test_non_numeric_years_are_a_usage_error(qa_corpus, tmp_path, capsys, years):
+    llm, runs = FakeLLM(), tmp_path / "runs"  # qa_corpus already lives in tmp_path / "corpus"
+    with pytest.raises(SystemExit) as caught:
+        main(["2023년 한미 정상회담은 어디서 열렸어?", "--years", years], llm=llm, corpus=qa_corpus, out_dir=runs)
+    assert caught.value.code == 2 and "--years" in capsys.readouterr().err
+    assert llm.moderated == [] and not runs.exists()
+
+
+def test_a_missing_table_file_is_a_usage_error(tmp_path, capsys):
+    with pytest.raises(SystemExit) as caught:
+        main(["--table", str(tmp_path / "none.json")])
+    assert caught.value.code == 2 and "기록 파일" in capsys.readouterr().err
+
+
+def test_terminal_errors_are_utf8_even_on_a_narrow_console(tmp_path):
+    env = {**os.environ, "PYTHONIOENCODING": "ascii"}
+    done = subprocess.run([sys.executable, "-m", "assistant.ask", "--table", str(tmp_path / "none.json")],
+                          cwd=ROOT, capture_output=True, env=env, timeout=120)
+    assert done.returncode == 2
+    assert "기록 파일" in done.stderr.decode("utf-8")

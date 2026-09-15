@@ -32,9 +32,7 @@ def format_event(kind: str, data: dict) -> str | None:
         return f"  {WAIT} 답 정리 중"
     if kind == "retrying":
         return f"  {RETRY} 다시 시도 {data['attempt']}번째 ({data['delay_s']}초 뒤)"
-    if kind == "notice":
-        return f"  ! {data['message']}"
-    return None
+    return None  # a notice is shown once, by render_result
 
 
 def render_result(result: Result) -> str:
@@ -54,7 +52,7 @@ def render_result(result: Result) -> str:
     usage, tokens = result.usage, result.usage["tokens"]
     lines += ["", f"요청 {usage['turns']}번, 도구 {usage['tool_calls']}번, 입력 {tokens['input']:,}토큰"
                   f"(캐시 {tokens['cached']:,}), 출력 {tokens['output']:,}토큰(추론 {tokens['reasoning']:,}), "
-                  f"약 {usage['cost_krw']:,}원"]
+                  f"약 {usage['cost_krw']:,}원, 걸린 시간 {result.record.get('elapsed_s')}초"]
     return "\n".join(lines)
 
 
@@ -87,11 +85,16 @@ def main(argv: list[str] | None = None, *, llm=None, corpus=None, out_dir: Path 
     parser.add_argument("--table", help="저장된 실행 기록의 요청별 사용량 표를 출력")
     args = parser.parse_args(argv)
     if args.table:
+        if not Path(args.table).is_file():
+            parser.error(f"기록 파일이 없습니다: {args.table}")
         print(turn_table(json.loads(Path(args.table).read_text(encoding="utf-8"))))
         return 0
     if not args.question:
         parser.error("질문을 쓰거나 --table 을 주세요")
-    years = [int(year) for year in args.years.split(",") if year.strip()] or None
+    parts = [part.strip() for part in args.years.split(",") if part.strip()]
+    if not all(part.isascii() and part.isdigit() for part in parts):
+        parser.error(f"--years 에는 2023,2024처럼 연도 숫자를 쉼표로 구분해 적어 주세요: {args.years}")
+    years = [int(part) for part in parts] or None
 
     def on_event(kind: str, **data) -> None:
         line = format_event(kind, data)
@@ -106,4 +109,5 @@ def main(argv: list[str] | None = None, *, llm=None, corpus=None, out_dir: Path 
 
 if __name__ == "__main__":
     sys.stdout.reconfigure(encoding="utf-8")
+    sys.stderr.reconfigure(encoding="utf-8")
     raise SystemExit(main())

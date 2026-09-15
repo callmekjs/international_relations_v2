@@ -1,4 +1,5 @@
 import json
+from types import SimpleNamespace as NS
 
 import httpx2
 import pytest
@@ -57,6 +58,8 @@ class Server:
     def __call__(self, request):
         self.requests.append(json.loads(request.content or b"{}"))
         status, body = self.responses.pop(0)
+        if isinstance(body, bytes):
+            return httpx2.Response(status, headers={"content-type": "text/event-stream"}, content=body)
         if isinstance(body, list):
             return httpx2.Response(status, headers={"content-type": "text/event-stream"}, content=sse(body))
         return httpx2.Response(status, json=body)
@@ -185,3 +188,53 @@ def test_api_key_comes_from_the_environment_or_the_env_file(monkeypatch, tmp_pat
     assert load_api_key(env_file) == "sk-test-from-file"
     with pytest.raises(RuntimeError):
         load_api_key(tmp_path / "missing.env")
+
+
+def test_nested_sse_error_payload_before_any_output_is_retried():
+    created = {"type": "response.created", "sequence_number": 0, "response": BASE}
+    nested = {"type": "error", "sequence_number": 1,
+              "error": {"type": "server_error", "code": "server_error", "message": "boom", "param": None}}
+    server, sleeps = Server((200, [created, nested]), (200, stream_events([message("{}")]))), []
+    assert ask(make_llm(server, sleeps)).status == "completed"
+    assert len(server.requests) == 2 and len(sleeps) == 1
+    quota = {**nested, "error": {**nested["error"], "type": "insufficient_quota", "code": "insufficient_quota"}}
+    blocked = Server((200, [created, quota]), (200, stream_events([message("{}")])))
+    with pytest.raises(LLMError) as caught:
+        ask(make_llm(blocked, []))
+    assert caught.value.notice.kind == "budget" and len(blocked.requests) == 1
+
+
+def test_garbled_stream_data_counts_as_a_broken_stream():
+    garbled = b"event: response.created\ndata: {not json\n\n"
+    server, sleeps = Server((200, garbled), (200, stream_events([message("{}")]))), []
+    assert ask(make_llm(server, sleeps)).status == "completed"
+    assert len(server.requests) == 2 and len(sleeps) == 1
+    after_output = sse(stream_events([REASONING])[:2]) + garbled
+    broken = Server((200, after_output), (200, stream_events([message("{}")])))
+    with pytest.raises(LLMError) as caught:
+        ask(make_llm(broken, []))
+    assert caught.value.notice.kind == "stream_broken" and len(broken.requests) == 1
+
+
+def test_moderation_never_blocks_on_empty_results_or_client_crashes():
+    empty = {"id": "modr_2", "model": "omni-moderation-latest", "results": []}
+    assert make_llm(Server((200, empty))).moderate("질문") == []
+
+    def crash(**request):
+        raise RuntimeError("socket closed")
+
+    assert OpenAIResponses(NS(moderations=NS(create=crash))).moderate("질문") == []
+
+
+def test_api_key_file_may_have_a_bom_an_export_prefix_and_spaces(monkeypatch, tmp_path, capsys):
+    monkeypatch.delenv("OPENAI_API_KEY", raising=False)
+    env_file = tmp_path / ".env"
+    env_file.write_text("OPENAI_API_KEY=sk-test-with-bom\n", encoding="utf-8-sig")
+    assert load_api_key(env_file) == "sk-test-with-bom"
+    env_file.write_text("export  OPENAI_API_KEY = 'sk-test-exported'\n", encoding="utf-8")
+    assert load_api_key(env_file) == "sk-test-exported"
+    env_file.write_text("export OTHER_KEY=sk-test-other\nexportOPENAI_API_KEY=sk-test-glued\n", encoding="utf-8")
+    with pytest.raises(RuntimeError) as caught:
+        load_api_key(env_file)
+    assert "sk-test" not in str(caught.value)
+    assert capsys.readouterr() == ("", "")
