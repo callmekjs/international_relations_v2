@@ -60,7 +60,8 @@ def test_search_labels_chapters_and_appendix_flag(corpus_dir):
 
 def test_search_reports_years_outside_the_corpus(corpus_dir):
     corpus = Corpus(corpus_dir)
-    assert corpus.search("정상회담", years=[2015]) == {"hits": [], "out_of_range_years": [2015], "corpus_years": YEARS}
+    assert corpus.search("정상회담", years=[2015]) == {"hits": [], "order": "score", "out_of_range_years": [2015],
+                                                    "corpus_years": YEARS}
     mixed = corpus.search("정상회담", years=[2015, 2024])
     assert [h["page_id"] for h in mixed["hits"]] == ["2024-p020L"]
     assert mixed["out_of_range_years"] == [2015]
@@ -102,3 +103,22 @@ def test_assistant_does_not_import_pymupdf():
     code = "import sys, assistant.corpus; print('pymupdf' in sys.modules or 'fitz' in sys.modules)"
     out = subprocess.run([sys.executable, "-c", code], capture_output=True, text=True, check=True)
     assert out.stdout.strip() == "False"
+
+
+def test_pages_before_the_first_chapter_are_front_matter(qa_corpus):
+    pages = {p["page_id"]: p for p in qa_corpus.read_pages(["2023-p002R", "2023-p020L", "2023-p190L"])["pages"]}
+    assert pages["2023-p002R"]["front_matter"] is True
+    assert pages["2023-p020L"]["front_matter"] is False
+    assert pages["2023-p190L"]["front_matter"] is False
+
+
+def test_label_is_only_for_citable_pages(qa_corpus):
+    with pytest.raises(ValueError):
+        qa_corpus.label(qa_corpus.pages["2024-p004L"])
+
+
+def test_search_says_how_hits_are_ordered(qa_corpus):
+    assert qa_corpus.search("한미 정상회담")["order"] == "score"
+    assert qa_corpus.search("한미 정상회담", years=[2023])["order"] == "score"
+    assert qa_corpus.search("한미 정상회담", years=[2023, 2024])["order"] == "year_turns"
+    assert "front_matter" in qa_corpus.search("정상외교", years=[2023])["hits"][0]

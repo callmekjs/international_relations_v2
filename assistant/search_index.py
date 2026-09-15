@@ -73,13 +73,15 @@ def _top(scores: np.ndarray, mask: np.ndarray | None, k: int) -> list[tuple[int,
 
 
 def _snippet(text: str, query: str, width: int = SNIPPET_WIDTH) -> str:
-    """About `width` characters around the first query word found (page start if none)."""
+    """About `width` characters around the first query word found (page start if none).
+    Letter case is ignored, so 'nato' finds 'NATO'."""
     words = sorted({w for w in _WORDS.findall(normalize(query)) if len(w) >= 2}, key=len, reverse=True)
     pos = -1
     for word in words:
         candidates = (word, word[:-1]) if len(word) >= 3 else (word,)
         for candidate in candidates:
-            pos = text.find(candidate)
+            found = re.search(re.escape(candidate), text, re.IGNORECASE)
+            pos = found.start() if found else -1
             if pos >= 0:
                 break
         if pos >= 0:

@@ -45,3 +45,9 @@ def test_save_and_load_give_same_results(tmp_path):
     save_index(index, tmp_path / "index")
     loaded = load_index(tmp_path / "index")
     assert _ids(search(loaded, "한미 정상회담")) == _ids(search(index, "한미 정상회담"))
+
+
+def test_snippet_finds_latin_words_in_any_letter_case():
+    pages = [{"page_id": "2023-p001L", "year": 2023, "text": "가나다라마바사 " * 40 + "NATO 정상회의에 참석하였다."}]
+    hit = search(build_index(pages), "nato")[0]
+    assert "NATO" in hit["snippet"]
