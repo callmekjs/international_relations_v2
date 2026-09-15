@@ -29,6 +29,7 @@
 | Task 11 `evals/gold.jsonl` g02 | 캔버라 문항(2021-p139R, 확인됨이 나올 수 없는 표 칸)을 바하마 문항(정답 쪽 2022-p055L)으로 바꿈 | 758335c |
 | 최종 검토 뒤 보강: `loop.py`, `runner.py`, `errors.py`, `llm_openai.py`, `tools.py`, `ask.py`, `evals/run_gold.py` | 요금 계산 실패, 뜻밖의 예외, 잘못된 연도, 요금 한도 코드, 깨진 스트림, 정답지 한 문항 오류에도 실행이 멈추지 않고 기록을 남긴다. `TurnRecord.price_model`, `LoopOutcome.error`, 기록의 `error` 칸, 안내 `BAD_YEARS`가 새로 생김 | 03b7b57 |
 | 문서 | `.gitignore` 경로 고정(`/runs/`, `/evals/runs/`), README 시험 문장, 설계서 8.1에 "문단 바로잡음", 에러노트 항목 추가 | e17d96b |
+| 보강 검토 뒤: `loop.py`, `textnorm.py`, `tools.py`, `evals/run_gold.py` | 모델 답의 깨진 글자 조각(외톨이 서로게이트)을 '?'로 바꿔 기록을 저장할 수 있게 함. `textnorm.utf8_safe`가 새로 생기고 `tools._utf8_safe`는 없어짐. 정답지 시험은 저장이나 채점만 실패하면 요금을 그대로 적음(`crashed_row`에 `result` 인자 추가) | 71dc26f |
 
 ## Global Constraints
 
